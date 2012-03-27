@@ -1,0 +1,39 @@
+--- 
+layout: post
+title: !binary |
+  Q29kZSBTbmlwcGV0IOaooeadv+aooeW8jw==
+
+published: true
+meta: 
+  _edit_last: "1"
+tags: 
+- CodeSnippet
+- Java
+- !binary |
+  5Luj56CB6LSo6YeP
+
+type: post
+status: publish
+---
+<pre escaped="true" lang="java" line="1">// DAOTemplate.java:
+public static execute(Action action) {
+DAOSession session = null;
+try {
+     session = createSession();
+     session.beginTransaction();
+     action.execute(session);
+} catch (Exception e) {
+     rollbackSession(session);
+     throw e;
+} finally {
+     closeSession(session);
+}
+}
+
+// invoke:
+DAOTemplate.execute(new Action() {
+   public execute(Session session) {
+      // may invoke super.deleteByID(id, session);
+      reportletEntryDAO.deleteByID(id, session); 
+   }
+});</pre>

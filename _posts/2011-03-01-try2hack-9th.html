@@ -1,0 +1,44 @@
+--- 
+layout: post
+title: !binary |
+  44CQ6Laj5ZGzSGFja+OAkVRyeTJoYWNrLm5s56ys5Lmd5YWz4oCU4oCU5L+u
+  5pS5Q29va2llcw==
+
+published: true
+meta: 
+  _edit_last: "1"
+  _wp_old_slug: ""
+  _oembed_dd1225690abc52b357766ad2ed58360d: "{{unknown}}"
+tags: 
+- Cookies
+- Hack
+- !binary |
+  6Laj5ZGzSGFjaw==
+
+type: post
+status: publish
+---
+第九关地址：
+
+http://www.try2hack.nl/levels/level9-gnapei.xhtml
+
+a. 打开也面，提示登录，随机输入用户名密码，Enter后发现还是停留在这个页面。
+
+b. 检查HTML源代码，响应头信息，发现有Set-Cookies.
+<pre escaped="true" lang="txt" line="1">Content-Encoding	gzip
+Vary	Accept-Encoding
+X-Powered-By	PHP/5.3.3
+Set-Cookie	str_username=admin str_password=yu0aertehbomb auth=no
+Content-Type	text/html
+Content-Length	1614
+Date	Tue, 01 Mar 2011 14:58:22 GMT
+Server	LiteSpeed
+Connection	Keep-Alive
+Keep-Alive	timeout=5, max=100</pre>
+<div>c. 猜测用户名和密码分别是admin和yu0aertehbomb，登录提示没有auth，想到cookies里面还有个auth的key，于是想到到了修改cookies。</div>
+<div>可以在firebug中的获取附加组件中搜索"cookies"，可以找到很多修改cookies的插件，选择安装一个，比如<a href="http://addneditcookies.mozdev.org/">Add &amp; Edit Cookies</a>。</div>
+d. 搜索try2hack.nl，将cookies中的auth值改为yes，重新登录，得到第10关的入口：
+
+<em>Good job! You can find Level 10 at our IRC channels. Go to #try2hack.level10 on irc.efnet.org and use 'yu0aertehbomb' as key to continue. See the <a href="http://www.try2hack.nl/chat/">chat</a> page for more information.</em>
+
+<em>http://www.try2hack.nl/chat/</em>

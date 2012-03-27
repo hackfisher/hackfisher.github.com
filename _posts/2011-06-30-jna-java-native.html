@@ -1,0 +1,73 @@
+--- 
+layout: post
+title: !binary |
+  Sk5BLCBKYXZhIE5hdGl2ZeW8gOWPkeWIqeWZqA==
+
+published: true
+meta: 
+  _edit_last: "1"
+tags: 
+- Java
+- JNA
+- JNI
+type: post
+status: publish
+---
+简单的来说，这篇文章就是介绍一个十分好用的Java Native开发工具, JNA。
+
+在Java编程中，大部分时间都不需要理会JNI，但是当你需要调用一个本地的C/C++库的时候，你就不得不考虑如果在Java中调用C库中的接口(dll, so)。这样的情况有很多，比如当你需要访问一个硬件时，而硬件厂商只提供C语言写的驱动和库文件。
+
+刚开始，或许像我一样，大部分人知道Java有一个叫JNI的东西可以做到这一点，还不坏不是么，至少可以实现它。但是JNI的编写相当复杂和拙劣，关键的一点是需要编写C代码，要知道这对于相当一部分Java程序员来说可不是一个容易的事情。除了你要精通C语言，还要熟悉JNI的知识，包括C的数据类型如何对应到JNI的C数据类型，又如何对应到Java的数据类型，还有很多其他的细节需要注意，比如垃圾回收的问题，还有结构体数据类型对应问题，跨平台问题等等都足以把你搞得头大。很多情况下，只不过是为了调用一个第三方库，不得不再造出自己的一个库，不得不编写JNI代码和本地代码。我为什么不能直接调用本地库代码?
+
+直到有那么一天，某个人告诉你有个叫JNA的东西，就是专门用来解决这个问题的。像下面这个<a title="JNA GettingStartted" href="https://github.com/twall/jna/blob/master/www/GettingStarted.md" target="_blank">例子</a>这么简单。
+
+&nbsp;
+<pre escaped="true" lang="java" line="1">package com.sun.jna.examples;
+
+import com.sun.jna.Library;
+import com.sun.jna.Native;
+import com.sun.jna.Platform;
+
+/** Simple example of JNA interface mapping and usage. */
+public class HelloWorld {
+
+// This is the standard, stable way of mapping, which supports extensive
+// customization and mapping of Java to native types.
+
+public interface CLibrary extends Library {
+CLibrary INSTANCE = (CLibrary)
+Native.loadLibrary((Platform.isWindows() ? "msvcrt" : "c"),
+CLibrary.class);
+
+void printf(String format, Object... args);
+}
+
+public static void main(String[] args) {
+CLibrary.INSTANCE.printf("Hello, World\n");
+for (int i=0;i &lt; args.length;i++) {
+CLibrary.INSTANCE.printf("Argument %d: %s\n", i, args[i]);
+}
+}
+}</pre>
+&nbsp;
+
+使用JNA，你甚至不需要很多的文档，只要拿到第三方库的头文件，比如third.h，根据里面的函数定义直接生成Java的代码，几分钟就可以搞定。Java和本地C库的映射，可以根据头文件直接生成，甚至不用开发人员手动编写对应关系。要用哪几个函数，就在Java接口中添加哪几个函数。你可以按照自己想要的方式加载本地库(如果你曾被JNI下面System.loadLibrary那捉摸不定的java.library.path搞得生不如死)，JNA还可以做到C结构体和Java类的映射，如果你需要在Java中，向本地方法传递结构体，这就会很有用:
+
+&nbsp;
+<pre escaped="true" lang="java" line="1">public static class SYSTEMTIME extends Structure {
+public short wYear;
+public short wMonth;
+public short wDayOfWeek;
+public short wDay;
+public short wHour;
+public short wMinute;
+public short wSecond;
+public short wMilliseconds;
+}
+
+void GetSystemTime(SYSTEMTIME result);</pre>
+&nbsp;
+
+相比较与JNI来说，JNA也有它的缺点，其实JNA是建立与JNI的基础之上的，所以如果对性能要求特别高，那么多花点时间在JNI上面也许是值得的。另外，JNA在Java调用底层C库的时候特别方便，但是反过来，如果想要从C里面调用Java，JNA可能会遇到不小的麻烦，这时候你也许需要转回到JNI.
+
+如果你还对Java的Native开发心有余悸，希望这篇介绍的JNA的文章可以帮助你跨越JNI开发的这道鸿沟:)

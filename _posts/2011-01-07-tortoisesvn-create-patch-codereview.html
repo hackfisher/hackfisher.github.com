@@ -1,0 +1,52 @@
+--- 
+layout: post
+title: !binary |
+  5Luj56CB6LSo6YeP57O75YiX5LmL5LqM77ya5aaC5L2V5Yip55SoVG9ydG9p
+  c2VTVk7nmoRDcmVhdGVQYXRjaOWKn+iDvei/m+ihjENvZGVSZXZpZXc=
+
+published: true
+meta: 
+  _edit_last: "1"
+  _wp_old_slug: "%e4%bb%a3%e7%a0%81%e8%b4%a8%e9%87%8f%e7%b3%bb%e5%88%97%e4%b9%8b%e4%ba%8c%ef%bc%9a%e5%a6%82%e4%bd%95%e5%88%a9%e7%94%a8tortoisesvn%e7%9a%84createpatch%e5%8a%9f%e8%83%bd%e8%bf%9b%e8%a1%8ccodereview"
+tags: 
+- !binary |
+  5oqA5pyv566h55CG
+
+type: post
+status: publish
+---
+上次的代码质量系列之一讨论<a title="什么是代码质量" href="http://fisher.leehoan.com/wp/?p=46" target="_blank">什么是代码质量</a>？
+
+在这片文章中将会介绍提升团队代码质量的管理手段之一CodeReview，以及一些简单具体的实践办法。
+
+在IBM、微软等非常多公司都有一个非常好的实践，那就是Code Review - 代码复审。这种代码审查的过程，不是将代码发给某一个人或某几个人去看，而是强调程式员自己定期走上台，向其他人讲解自己源程式的活动。因为要向大家讲解自己的程式，show code to other guys, 程式员会极其重视自己的工作进度、代码质量，在写代码时，就时刻想着可能随时会被选中去做code review, 所以非常认真对待每一行代码。这种Code review 方式更有其他好处。
+
+目前我在的团队所进行的CodeReview还仅仅局限于资深程序员对新手的代码质量检查，主要目的有两个，一个是为了提升新手的代码质量水平，其次就是为了保证代码基不会被新手的低质量代码污染，要改进的地方还有很多。我个人认为前者要更重要一些，可以通过讨论交流，相互学习和传播产品技术知识来实现。我工作中很重要的一部分就是进行CodeReview，已经进行了一段时间了，我们实践并没有采用什么复杂的CodeReview工具，仅采用了Tortoise SVN的create patch，TortoiseUDiff和TortoiseMerge几个工具就可以搞定。除此之外就只利用Google的CodePro工具做一些代码Audit工作。
+
+1.create patch
+使用create patch可以生成一个或者多个修改过的文件和当前版本差异的patch（支持目录树）
+通常情况下，create patch将修改保存为.patch或.diff文件
+可以将.patch或.diff文件的内容复制出来，发给需要审查的人
+.patch或.diff文件中记录了发生这个patch的版本号以及具体修改的内容
+针对某个文件或某几个文件的若干种修改，可以生成多个.patch或.diff文件
+
+<img src="http://www.hackfisher.info/blog/wp-content/uploads/2011/01/create_patch_0001.png" alt="create_patch.png" width="605" height="360" />
+2.apply patch
+可以将.patch或.diff文件应用到对应版本的项目，就像打补丁一样
+同一个项目/文件夹下，可以选择应用需要的patch
+通常来说，应用一个patch时文件版本和生成这个patch时文件的版本是一致的；如果不一致，也可以强制应用，svn会自动进行diff（这时候需要手动合并）
+linux下，可以使用系统的patch命令来应用patch，eg: patch -p0 &lt;xxx.patch
+
+<img src="http://www.hackfisher.info/blog/wp-content/uploads/2011/01/diff_0001.png" alt="diff.png" width="1021" height="245" />
+
+3. TortoiseMerge工具操作
+
+Window默认可在安装目录的bin目录下找到此工具
+
+<img src="http://www.hackfisher.info/blog/wp-content/uploads/2011/01/merge_0001.png" alt="merge.png" width="494" height="372" />
+4.使用
+暂时不需要提交或不允许提交的修改，可以选择create patch来保存修改的内容
+选择create patch来保存修改的内容并且提交patch，通过审查后，(在服务器端)应用patch
+当一个功能有多种解决方案时，可以生成多个patch，（提交后）分别经过测试，再决定应用哪个patch
+多个功能分别需要改同一个文件的不同地方（即没有同一行），可以做成多个patch，应用patch的顺序没有要求（在linux下应用也一样成功，只是会生成多个.orig文件）
+多个连续性的功能，他们修改的文件都与一个base作patch，例：p1在v1的基础上开发v2，生成v2和v1之间的patch1；p2在v2的基础上开发v3，生成v3和v1之间的patch2，这样只要应用patch2也就应用了patch1。

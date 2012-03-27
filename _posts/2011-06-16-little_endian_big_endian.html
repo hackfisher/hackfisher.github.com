@@ -1,0 +1,56 @@
+--- 
+layout: post
+title: "Little-Endian\xE5\x92\x8CBig-Endian\xE7\x90\x86\xE8\xA7\xA3"
+published: true
+meta: 
+  _edit_last: "1"
+  _oembed_2e1a031e5ae437e7123a15dbe8459676: "{{unknown}}"
+tags: 
+- c
+- Java
+- !binary |
+  6Laj5ZGzSGFjaw==
+
+type: post
+status: publish
+---
+1. Big-Endian，表示“高字节在内存的低地址”。在Big-Endian的计算机中，变量的高字节在前;
+Little-Endian，表示“低字节在内存的低地址”。在Little-Endian的计算机中，变量的低字节在前
+
+2. Little-Endian更容易理解和记忆，Bing-Endian更直观，因为其表示和hex字符串方式相同
+
+3. 网络字节序、Java、Macintosh、Keil C51采用Big-Endian, X86系列采用Little-Endian
+
+4. 字节数组在不同的Little-Endian和Big-Endian下表现相同，位置在前面的仍然在前面
+
+5. 与字节内的bit位的顺序无关，也就是同一个字节在不同Endian下面是一样的，Little-Endian和Big-Endian指的是字节解释序。
+
+6. 一般只有那些位数大于一个字节的数据在存储或者传输时才会遇到这个问题，位数高的是放在低位还是放在高位，是放在前面还是放在后面。比如int,long,short等等。一些自定义的数据类型，比如如果拥有3个字节的数据，也会遇到这个表示和解释的问题。但是整个的文件（一个大的字节数组同4）字节顺序表示已一样。endian是相对于数据类型的表示而言的
+http://www.ixpub.net/thread-1430643-1-1.html
+
+7. 在自己的二进制文件中，自定义的数据类型，可以采用big-edian或者little-edian两种方式之一来存储和传输。
+
+8. 可以通过拿出数据中的字节判断，来判断这个系统的endian
+
+9. Java 是big-endian:
+<pre escaped="true" lang="java" line="1">DataOutputStream.writeInt(int)
+public final void writeInt(int v) throws IOException {
+        out.write((v &gt;&gt;&gt; 24) &amp; 0xFF);
+        out.write((v &gt;&gt;&gt; 16) &amp; 0xFF);
+        out.write((v &gt;&gt;&gt;  8) &amp; 0xFF);
+        out.write((v &gt;&gt;&gt;  0) &amp; 0xFF);
+        incCount(4);
+}
+
+DataInputStream.readInt() : int
+
+public final int readInt() throws IOException {
+        int ch1 = in.read();
+        int ch2 = in.read();
+        int ch3 = in.read();
+        int ch4 = in.read();
+        if ((ch1 | ch2 | ch3 | ch4) &lt; 0)
+            throw new EOFException();
+        return ((ch1 &lt;&lt; 24) + (ch2 &lt;&lt; 16) + (ch3 &lt;&lt; 8) + (ch4 &lt;&lt; 0));
+}</pre>
+其实也可以有对应的little-endian表示方式

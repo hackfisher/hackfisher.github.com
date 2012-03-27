@@ -1,0 +1,38 @@
+--- 
+layout: post
+title: !binary |
+  SmF2YeW5s+WPsOWIqeeUqE9wZW5PZmZpY2Xlrp7njrDkuI3lkIxPZmZpY2Xm
+  lofku7bmoLzlvI/nmoTovazljJbvvIzmr5TlpoLlsIZXb3Jk6L2s5o2i5oiQ
+  SHRtbA==
+
+published: true
+meta: 
+  _edit_last: "1"
+  _oembed_a7efcb7fd31108a16de72539a2d9cbaa: "{{unknown}}"
+tags: 
+- html
+- Java
+- jodconverter
+- office
+- word
+type: post
+status: publish
+---
+首先刚开始，除了Google, Baidu之外，还有一个重要的去处，那就是stackoverflow，现在经常可以在上面得到我想要的答案。下面是stackoverflow上面关于这个topic的讨论。
+
+<a href="http://stackoverflow.com/questions/227236/convert-word-doc-to-html-programmatically-in-java">Convert Word doc to HTML programmatically in Java</a>
+
+似乎没有简单的纯Java第三方库，可以将Word转化成Html，有一些需要自己大量动手，比如有人提供了MS关于.doc文件格式的规格文档，说用POI先将其读取成Java对象，再利用HTML Tag先出。这样无疑会遇到大量的细节，实现起来也很麻烦。
+
+http://www.oooninja.com/2008/02/batch-command-line-file-conversion-with.html
+有一个方案是：OpenOffice Service + jodconverter
+JODConverter, the Java OpenDocument Converter，是一个利用OpenOffice提供各种Office格式转化的类库，
+
+之所以这么选择的原因有：
+1. OpenOffice Service就像数据库服务一样，提供实际各种转化。需要在主机上部署，这里有<a href="http://www.artofsolving.com/node/10">文档</a>
+
+2. JODConverter提供了Java相关全面的接口和支持，文档齐全。
+
+3. 这种方式，比用POI等做转换，更可靠成本更低。比那些用Native API调用的跟开放，更可控一些。稳定性是建立在OpenOffice之上的，并且OpenOffice也是用Java写的，跨平台，可以比较好的部署
+
+4. 麻烦的地方就在于需要部署OpenOffice，这是需要想想怎么给用户用的问题。不过如果拿OpenOffice和数据库服务比较，用户也容易更接受了

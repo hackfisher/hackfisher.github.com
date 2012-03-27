@@ -1,0 +1,49 @@
+--- 
+layout: post
+title: !binary |
+  44CQ6Laj5ZGzSGFja+OAkVRyeTJoYWNrLm5s56ys5Zub5YWz
+
+published: true
+meta: 
+  _oembed_ec6010a8cb0438524bd4afeb1de5249c: "{{unknown}}"
+  _edit_last: "1"
+  _wp_old_slug: "%e3%80%90%e8%b6%a3%e5%91%b3hack%e3%80%91try2hack-nl%e7%ac%ac%e5%9b%9b%e5%85%b3"
+tags: 
+- Hack
+- Java
+- !binary |
+  5Y+N57yW6K+R
+
+- !binary |
+  6Laj5ZGzSGFjaw==
+
+type: post
+status: publish
+---
+第四关地址：
+
+http://www.try2hack.nl/levels/level4-kdnvxs.xhtml
+
+a. 首先打开网页，可以看到有一个Applet，firebug查看该元素，可以看到Applet加载的PasswdLevel4.class
+
+<a href="http://www.hackfisher.info/blog/wp-content/uploads/2011/02/level4_applet.png"><img class="aligncenter size-full wp-image-105" title="level4_applet" src="http://www.hackfisher.info/blog/wp-content/uploads/2011/02/level4_applet.png" alt="" width="688" height="343" /></a>
+
+b. 将该class文件下载下来保存，地址是：http://www.try2hack.nl/levels/PasswdLevel4.class
+
+c. 用Java反编译工具反编译之，推荐一个好用的反编译工具：<a href="http://yangtsefisher.javaeye.com/blog/907317" target="_blank">jd-gui</a>。从反编译的源文件代码片段可以看出还有个level4文件，下载下来
+<pre escaped="true" lang="java" line="1">this.infile = new String("level4");
+try
+{
+this.inURL = new URL(super.getCodeBase(), this.infile);
+}
+catch (MalformedURLException localMalformedURLException)
+{
+super.getAppletContext().showStatus("Bad Counter URL:" + this.inURL);
+}
+inFile();
+this.infile = new String("level4");    try    {      this.inURL = new URL(super.getCodeBase(), this.infile);    }    catch (MalformedURLException localMalformedURLException)    {      
+
+super.getAppletContext().showStatus("Bad Counter URL:" + this.inURL);    }
+
+inFile();</pre>
+d. leve4文件地址：http://www.try2hack.nl/levels/level4，打开后就可以看到答案了。

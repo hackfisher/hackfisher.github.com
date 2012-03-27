@@ -1,0 +1,48 @@
+--- 
+layout: post
+title: !binary |
+  44CQ6Laj5ZGzSGFja+OAkem7keWuouaooeaLn+aUu+WHu+mXr+WFs+e9keer
+  me+8jOmXr+WJjeS4pOWFsw==
+
+published: true
+meta: 
+  _edit_last: "1"
+  _wp_old_slug: "%e3%80%90%e8%b6%a3%e5%91%b3hack%e3%80%91%e9%bb%91%e5%ae%a2%e6%a8%a1%e6%8b%9f%e6%94%bb%e5%87%bb%e9%97%af%e5%85%b3%e7%bd%91%e7%ab%99%ef%bc%8c%e9%97%af%e5%89%8d%e4%b8%a4%e5%85%b3"
+tags: 
+- Hack
+- !binary |
+  572R6aG15ryP5rSe
+
+- !binary |
+  6Laj5ZGzSGFjaw==
+
+type: post
+status: publish
+---
+黑客模拟攻击闯关网站的地址是：http://www.try2hack.nl/。
+
+下面是闯前两关的过程：
+
+<strong>第一关</strong>：http://www.try2hack.nl/levels/
+
+a.打开页面后，看到一个click here to continue的按钮，用firebug查看其源代码，发现调用了Try()函数，如下图：
+
+<a href="http://www.hackfisher.info/blog/wp-content/uploads/2011/02/find_try.png"><img class="aligncenter size-full wp-image-77" title="find_try" src="http://www.hackfisher.info/blog/wp-content/uploads/2011/02/find_try.png" alt="" width="604" height="131" /></a>b. 将firebug切换到脚本，搜索"Try"，会发现如下脚本，找到密码答案：
+
+<a href="http://www.hackfisher.info/blog/wp-content/uploads/2011/02/find_passwd.png"><img class="aligncenter size-full wp-image-78" title="find_passwd" src="http://www.hackfisher.info/blog/wp-content/uploads/2011/02/find_passwd.png" alt="" width="471" height="230" /></a>
+
+<strong>第二关</strong>：http://www.try2hack.nl/levels/level2-xfdgnh.xhtml
+
+a. 打开网页，经过简单分析后，发现要找到用户名和密码，而用户名和密码是用的flash。简单搜寻脚本之后，发现如下passwd，但没有用户名，其实是迷惑性的。
+
+<a href="http://www.hackfisher.info/blog/wp-content/uploads/2011/02/find_itissoeasy.png"><img class="aligncenter size-full wp-image-79" title="find_itissoeasy" src="http://www.hackfisher.info/blog/wp-content/uploads/2011/02/find_itissoeasy.png" alt="" width="517" height="162" /></a>b. 从flash入手才是正道，还是利用firebug，打开网络，发现如下level2.swf，在最下面
+
+<a href="http://www.hackfisher.info/blog/wp-content/uploads/2011/02/find_level2_swf.png"><img class="aligncenter size-full wp-image-80" title="find_level2_swf" src="http://www.hackfisher.info/blog/wp-content/uploads/2011/02/find_level2_swf.png" alt="" width="588" height="405" /></a>c. 将该swf下载下来，然后从这个swf上想办法。firefox默认的缓存位置是C:\Documents and Settings\YourAcount\Local Settings\Temporary Internet Files，搜索*.swf，找到swf缓存文件。
+
+d. 先想办法看看能不能反编译过来，找到一个<a title="swf反编译" href="http://yangchangqing878.javaeye.com/blog/671148" target="_blank">swf的反编译工具</a>，下载下来，好像是叫Flare.
+
+e. 反编译一下，嗨，还真行，变成了as，得到如下.flr文件，得到用户名和密码，过关!
+
+<a href="http://www.hackfisher.info/blog/wp-content/uploads/2011/02/decompile_swf.png"><img class="aligncenter size-full wp-image-81" title="decompile_swf" src="http://www.hackfisher.info/blog/wp-content/uploads/2011/02/decompile_swf.png" alt="" width="669" height="513" /></a>
+
+<strong>第三关</strong>：http://www.try2hack.nl/levels/level3-.xhtml (未完待续)
