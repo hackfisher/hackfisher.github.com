@@ -5,7 +5,7 @@ tagline: Stay Foolish, Stay Hungry
 ---
 {% include JB/setup %}
 
-Read [Post Blog](http://www.hackfisher.info/blog/)
+Read [前世今生](http://www.hackfisher.info/blog/)
 
 <ul class="posts">
   {% for post in site.posts %}
