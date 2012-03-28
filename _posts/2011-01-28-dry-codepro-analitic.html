@@ -22,7 +22,7 @@ status: publish
 这个系列的<a title="破窗理论" href="http://www.hackfisher.info/blog/?p=55" target="_blank">上一篇文章</a>给我们介绍了破窗理论，说明代码里发现了坏味道要及时清理。而代码中最常见的坏味道就包括我们今天要说的重复代码。重复代码使得软件产品的可变更性迅速变差，复杂度增高，可读性也变差，重复的代码往往抽象度不高，说明对模型理解不够透彻。
 
 刘未鹏同学曾经在stackoverflow.com开张不久，跑上去问过一个问题，<a href="http://mindhacks.cn/2009/03/09/first-principles-of-programming/">编程的首要原则(s)是什么</a>?结果在得到的一大堆答案中，DRY原则(Don't Repeat Yourself)位居前列。我们今天先不谈其他的编程原则，先介绍一下DRY原则的简单实践。
-<p style="text-align: center;"><img src="{{ BASE_PATH }}/uploads2011/01/do_not_duplicate.jpg" alt="do-not-duplicate.jpg" width="482" height="249" /></p>
+<p style="text-align: center;"><img src="{{ BASE_PATH }}/uploads/2011/01/do_not_duplicate.jpg" alt="do-not-duplicate.jpg" width="482" height="249" /></p>
 如果让我例举一个我最讨厌的编程行为，最先跳出我脑海的该是复制粘贴，如果不是我用CodePro的Find Similar Code功能对代码进行了检测，大概我自己都不相信有怎么多的重复代码隐藏在工程的某些旮旯角落。首先感谢Google将其免费开放出来，官方地址在<a href="http://code.google.com/javadevtools/download-codepro.html">http://code.google.com/javadevtools/download-codepro.html</a>。
 
 使用说明就很简单了
@@ -31,11 +31,11 @@ status: publish
 
 2. 选中一些文件，或者某个文件夹，右击菜单|CodePro Tools|Find Similar Code
 
-<img src="{{ BASE_PATH }}/uploads2011/01/step2.png" alt="step2.png" width="637" height="364" />
+<img src="{{ BASE_PATH }}/uploads/2011/01/step2.png" alt="step2.png" width="637" height="364" />
 
 3. 执行查找动作，如果你是选中一个大的文件夹，Java源文件比较多的情况下，会慢一些，大概要一个小时才能好
 
-<img src="{{ BASE_PATH }}/uploads2011/01/step3.png" alt="step3.png" width="968" height="182" />
+<img src="{{ BASE_PATH }}/uploads/2011/01/step3.png" alt="step3.png" width="968" height="182" />
 
 4. 下面就可以选中某个，进行重构，清理重复代码的坏味道，如果这次没有改完的话，可以保存结果，下次继续修改时导入，就比重新执行要快的多了
 

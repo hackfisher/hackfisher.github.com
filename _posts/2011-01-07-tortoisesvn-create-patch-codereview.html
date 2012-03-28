@@ -30,20 +30,20 @@ status: publish
 .patch或.diff文件中记录了发生这个patch的版本号以及具体修改的内容
 针对某个文件或某几个文件的若干种修改，可以生成多个.patch或.diff文件
 
-<img src="{{ BASE_PATH }}/uploads2011/01/create_patch_0001.png" alt="create_patch.png" width="605" height="360" />
+<img src="{{ BASE_PATH }}/uploads/2011/01/create_patch_0001.png" alt="create_patch.png" width="605" height="360" />
 2.apply patch
 可以将.patch或.diff文件应用到对应版本的项目，就像打补丁一样
 同一个项目/文件夹下，可以选择应用需要的patch
 通常来说，应用一个patch时文件版本和生成这个patch时文件的版本是一致的；如果不一致，也可以强制应用，svn会自动进行diff（这时候需要手动合并）
 linux下，可以使用系统的patch命令来应用patch，eg: patch -p0 &lt;xxx.patch
 
-<img src="{{ BASE_PATH }}/uploads2011/01/diff_0001.png" alt="diff.png" width="1021" height="245" />
+<img src="{{ BASE_PATH }}/uploads/2011/01/diff_0001.png" alt="diff.png" width="1021" height="245" />
 
 3. TortoiseMerge工具操作
 
 Window默认可在安装目录的bin目录下找到此工具
 
-<img src="{{ BASE_PATH }}/uploads2011/01/merge_0001.png" alt="merge.png" width="494" height="372" />
+<img src="{{ BASE_PATH }}/uploads/2011/01/merge_0001.png" alt="merge.png" width="494" height="372" />
 4.使用
 暂时不需要提交或不允许提交的修改，可以选择create patch来保存修改的内容
 选择create patch来保存修改的内容并且提交patch，通过审查后，(在服务器端)应用patch
