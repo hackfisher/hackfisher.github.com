@@ -1,6 +1,6 @@
 ---
 layout: page
-title: HackFisher's Blog
+title: HackFisher
 tagline: Stay Foolish, Stay Hungry
 ---
 {% include JB/setup %}
