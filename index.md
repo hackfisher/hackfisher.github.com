@@ -5,8 +5,6 @@ tagline: Stay Foolish, Stay Hungry
 ---
 {% include JB/setup %}
 
-Read [前世今生](http://www.hackfisher.info/blog/)
-
 <ul class="posts">
   {% for post in site.posts %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
