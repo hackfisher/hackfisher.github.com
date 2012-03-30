@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "测试思考系列[3]：测试自动化"
+title: "测试思考系列[4]：测试自动化"
 description: ""
 category: 测试
 tags: [测试, 自动化]
