@@ -26,7 +26,7 @@ jekyll还有一个很好的地方就是，可以本地预览，预览地址默�
 
      jekyll --server
 
-这才是Hacker写博客的方式!
+这才是[Hacker写博客](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html)的方式!
 
 <div style="margin-top:20px">参考资料：</div>
 
