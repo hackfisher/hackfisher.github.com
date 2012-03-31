@@ -87,7 +87,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : hackfisher
     livefyre :
       site_id : 123
     intensedebate :

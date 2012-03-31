@@ -1,11 +1,10 @@
 _site/*
 _theme_packages/*
 _gist_cache/*
+!**/.gitkeep
 
 Thumbs.db
 .DS_Store
-
-!.gitkeep
 
 .rbenv-version
 .rvmrc
