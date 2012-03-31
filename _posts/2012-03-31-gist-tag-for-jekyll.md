@@ -16,7 +16,7 @@ GitHub有一个很好的功能[Gist](https://gist.github.com/)，可以收集和
 官方运行的jekyll命令其实是:
     $ jekyll --pygments --safe
 
-- 本地运行jekyll的时候无法编译，插件[https://github.com/mojombo/jekyll/wiki/Plugins]不起作用, [issue](https://github.com/mojombo/jekyll/issues/527)
+- 本地运行jekyll的时候无法编译，[插件](https://github.com/mojombo/jekyll/wiki/Plugins)不起作用, [issue](https://github.com/mojombo/jekyll/issues/527)
 最开始的原因找了好久，后来发现将site.safe属性设置为false就行了，官方的wiki竟然没有说明，GitHub也是用参数 --safe来禁用插件的。
 但是这边有一个问题，如果你是从jekyllbootstrap项目clone过来的话，将safe设置为false会[导致Google Analytics失效](https://github.com/plusjade/jekyll-bootstrap/issues/53)
 如果想同时用插件，又想用Google Analytis的话就冲突了，需要改一下 _includes\JB\analytics文件，将里面的site.safe条件判断去掉。
