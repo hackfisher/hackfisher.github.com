@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>JQuery选择器性能分析</title>
+	<meta name="author" content="HackFisher">
+	<link href='/assets/themes/the-program/css/style.css' rel="stylesheet" media="all">
+	<link href="http://feeds.feedburner.com/" rel="alternate" title="JQuery选择器性能分析" type="application/atom+xml">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<nav class="nav-global">
+					<ul>
+						<li class="logo"><a href="/">HackFisher</a></li>
+						<li class="archive"><a href="/archive.html">archive</a></li>
+						<li class="page"><a href="/pages.html">pages</a></li>
+						<li class="category"><a href="/categories.html">categories</a></li>
+						<li class="tag"><a href="/tags.html">tags</a></li>
+						<li class="about"><a href="/about.html">about</a></li>
+						<li class="forkme"><div><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=HackFisher&repo=hackfisher.github.com&type=fork&count=true"
+									allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe></div></li>
+					</ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">JQuery选择器性能分析</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					关于<a title="JQuery选择器" href="http://api.jquery.com/category/selectors/" target="_blank">JQuery选择器</a>，有很多介绍其<a title="性能影响" href="http://www.artzstudio.com/2009/04/jquery-performance-rules/" target="_blank">性能影响</a>的好文章，但因为一直没有遇到，知其然不知其所以然，所以一直没有十分关注，最近刚好碰到了一个严重的性能问题，经过分析，才使我意识到了JQuery选择器性能的重要性，看来东西还是要亲自实践一把，才能理解透彻。
+
+我在一个页面里面用到了多个Table，每个table里面会有很多td格子，多的时候能达到上千个。实现的是一个客户端浏览器自动重新计算公式的功能，我发现并没有要取很多格子的值，却十分的慢，特别是IE下面。我发现公式计算中有很多的冗余计算，首先我先把公式的冗余计算问题解决，FF没问题，但是IE中还是有一点顿的感觉。于是第二次，我打算profile一下，看看还有哪些可以优化的点，一般来说，当你决定进一步深入研究时，总有意外的收获在等着你。
+
+感谢firebug的概况功能，能让我通过profile获得性能初步的宝贵信息，截图如下，可以发现ID()方法和filter()方法，占用了超过70%的时间，而这两个方法都是$('#A1-0', $table)惹的祸，这样一个选择器，大概也就只需要选择不到100次，怎么这个ID方法调用却超过4万次？
+
+<img src="http://filer.blogbus.com/4216262/4216262_1283495223l.png" alt="点击查看原始尺寸" width="640" height="204" border="0" />
+
+点进ID方法，查看调用栈，如下：
+
+ID: function(elem, match){
+return elem.nodeType === 1 &amp;&amp; elem.getAttribute("id") === match;
+},
+
+<img src="http://filer.blogbus.com/4216262/4216262_1283495444y.png" alt="" width="168" height="129" border="0" />
+
+可以看到ID方法和filter方法是一伙的，有希望一起搞定，点进filter方法，想要有所收获，你要有福尔摩斯般的嗅觉，善于发现蛛丝马迹，你发现了什么？
+
+<img src="http://filer.blogbus.com/4216262/4216262_1283495438u.png" alt="" width="607" height="271" border="0" />
+
+没错，当前调用是在filter方法的一个循环里，你突然就会奇怪，哎，我只不过是想在$table里面拿一个id是A1-0的td罢了，$('#A1-0', $table)直接取不就行了，为什么还要遍历560多个元素，JQuery的那些大牛不会不知道吧。你转念一想如果是你自己来实现这个功能，通过id取元素的办法只有getElementByID，但是这个方法只有document对象能调用，如果调用的化我怎么判断这个元素$table里面，很遗憾我没有找到办法。而且如果document里面有有多个id为A1-0的td，那么$('#A1-0')和document.getElementById('A1-0')只能选择第一个，我觉得这是DOM设计上的缺陷，凭啥不能有诸如$table[0].getElementById的方法？
+
+很可惜，没有，所以Jquery那些大牛面对$('#A1-0', $table)也只能遍历所有元素。
+
+结论：$("#A1-0")的性能要大大好于$('#A1-0', $table)或者$('td#A1-0')，最理想的办法，保证同一个document即使多个table(比如有参数面板)，td的id也能保持唯一性，这样就可以用$("#A1-0")，而不需要担心不唯一性，导致必须用$('#A1-0', $table)。
+
+					<div class="meta">
+						<p class="date-publish">
+							Published: 
+							<date class="date-pub" title="2011-01-05T00:00:00+08:00" datetime="2011-01-05T00:00:00+08:00" pubdate>
+							<span class="month"><abbr>January</abbr></span>
+							<span class="day">05</span>
+							<span class="year">2011</span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">category: </li>
+							
+							
+
+
+  
+    
+  
+
+
+						</ul>
+						<ul class="list-tag list-linear">
+							<li class="list-head">tags: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/tags.html#前端开发-ref">前端开发 <span>3</span></a></li>
+     
+    	<li><a href="/tags.html#性能优化-ref">性能优化 <span>6</span></a></li>
+    
+  
+
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					<div class="social">
+						<ul class="list-linear">
+							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="hackfisher" data-lang="en">Tweet</a></div></li>
+							<li><div class="twitter-follow"><a href="https://twitter.com/hackfisher" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+						</ul>
+					</div>
+					<div class="comment">
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+					</div>
+				</div><!-- misc-content -->
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/blog/2011/01/chrome-date-setdate-problem" title="View Chrome浏览器Date.setDate遇到的一个问题">&laquo; Chrome浏览器Date.setDate遇到的一个问题</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/blog/2011/01/what-is-code-quality" title="View 代码质量系列之一：什么是代码质量?">代码质量系列之一：什么是代码质量? &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+					<h4>about</h4>
+					<ul>
+						<li class="contact"><address><span class="author fn n">HackFisher</span> - <span class="fn email">hackfisher@gmail.com</span></address></li>
+						<li class="github"><a href="http://github.com/HackFisher/" rel="me">github.com/HackFisher</a></li>
+						<li class="twitter"><a href="http://twitter.com/hackfisher/" rel="me">twitter.com/hackfisher</a></li>
+						<li class="rss"><a href="http://hackfisher.info/rss.xml">Subscribe to RSS Feed</a></li>
+					</ul>
+				</div><!-- misc -->
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+	(function(d, s) {
+		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.src = url; js.id = id;
+		fjs.parentNode.insertBefore(js, fjs);
+		};
+	load('//platform.twitter.com/widgets.js', 'tweetjs');
+	// load('https://apis.google.com/js/plusone.js', 'gplus1js'); // Checkout http://j.mp/ApDgMr for usage html for this is <div class="g-plusone" data-size="medium"></div>
+	// load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk'); // Checkout http://j.mp/wZw2xR for using open graph protorol html for this is <div class="fb-like" data-href="/blog/2011/01/jquery-performance-profile" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
+	}(document, 'script'));
+</script>
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+  
+  
+</body>
+</html>
+

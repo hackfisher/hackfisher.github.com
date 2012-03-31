@@ -1,0 +1,548 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>JDK1.4下面如何实现Java Source动态编译及其应用</title>
+	<meta name="author" content="HackFisher">
+	<link href='/assets/themes/the-program/css/style.css' rel="stylesheet" media="all">
+	<link href="http://feeds.feedburner.com/" rel="alternate" title="JDK1.4下面如何实现Java Source动态编译及其应用" type="application/atom+xml">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<nav class="nav-global">
+					<ul>
+						<li class="logo"><a href="/">HackFisher</a></li>
+						<li class="archive"><a href="/archive.html">archive</a></li>
+						<li class="page"><a href="/pages.html">pages</a></li>
+						<li class="category"><a href="/categories.html">categories</a></li>
+						<li class="tag"><a href="/tags.html">tags</a></li>
+						<li class="about"><a href="/about.html">about</a></li>
+						<li class="forkme"><div><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=HackFisher&repo=hackfisher.github.com&type=fork&count=true"
+									allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe></div></li>
+					</ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">JDK1.4下面如何实现Java Source动态编译及其应用</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					<strong>什么是动态编译?</strong>
+
+动态编译，我理解就是在执行期临时编译，并调用。我们都知道Java语言在运行前都会经过javac编译成.class文件，打包成jar，然后在JVM下用java执行。一般情况下，.class文件在运行时都是已经编译好的，不会有任何变化。而动态编译一般则指的是，在运行时调用Java编译器对Java源代码(Java Souce)进行编译，生成.class文件，或者不生成.class文件直接得到Class类，通过类的反射实例化得到对象，进行调用等操作。
+
+<a href="http://baike.baidu.com/view/3195155.htm">动态编译</a>是某些程式语言在执行时用来增进效能的方法。尽管这技术源于Self但使用此技术最为人所知的是Java。它可以做一些只在执行时才能得知的最佳化。使用动态编译的执行环境 一开始几分钟执行慢，之后，完成大部分的编译和再编译后，会执行快。因为初始效能的延迟，动态编译不适用于一些情况。在许多实作中，一些可以在编译时期做的最佳化被延到执行时期才编译，导致不必要的效能降低。即时编译是一种动态编译的形式。Java语言标准上，是要JDK5以上才开始支持Java动态编译的，但是在JDK1.4下面也可以通过其他方式实现。
+
+<strong>先说说Java6下如何进行动态编译？</strong>
+因为Java6本身就是支持动态编译的，所以相对来说比较容易。如要认识如下几个类就行了:
+ToolProvider, JavaCompiler, JavaFileObject, DiagnosticCollector, 还有常见的ClassLoader和Class.
+
+网上的例子有很多，随便找了<a href="http://blog.csdn.net/gumanren/article/details/4829748">一个</a>参考一下，懒得自己写了.
+
+&nbsp;
+<pre escaped="true" lang="java" line="1">package com.test;
+
+import java.io.IOException;
+import java.lang.reflect.Method;
+import java.net.URI;
+import java.util.Arrays;
+
+import javax.tools.JavaCompiler;
+import javax.tools.JavaFileObject;
+import javax.tools.SimpleJavaFileObject;
+import javax.tools.StandardJavaFileManager;
+import javax.tools.ToolProvider;
+
+public class CompileString {
+public static void main(String[] args) throws Exception {
+JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
+System.out.println(""+ToolProvider.getSystemJavaCompiler());
+StandardJavaFileManager fileManager = compiler.getStandardFileManager(
+null, null, null);
+
+StringObject so = new StringObject(
+"CalculatorTest",
+"class CalculatorTest {"
++ " public int multiply(int multiplicand, int multiplier) {"
++ " System.out.println(multiplicand);"
++ " System.out.println(multiplier);"
++ " return multiplicand * multiplier;" + " }" + "}");
+
+JavaFileObject file = so;
+
+Iterable files = Arrays.asList(file);
+JavaCompiler.CompilationTask task = compiler.getTask(null, fileManager,
+null, null, null, files);
+
+Boolean result = task.call();
+System.out.println(result);
+if (result) {
+Class clazz = Class.forName("CalculatorTest");
+
+Object instance = clazz.newInstance();
+
+Method m = clazz.getMethod("multiply", new Class[] { int.class,
+int.class });
+
+Object[] o = new Object[] { 3, 2 };
+System.out.println(m.invoke(instance, o));
+}
+}
+}
+
+class StringObject extends SimpleJavaFileObject {
+private String contents = null;
+
+public StringObject(String className, String contents) throws Exception {
+super(URI.create("string:///" + className.replace('.', '/')
++ Kind.SOURCE.extension), Kind.SOURCE);
+this.contents = contents;
+}
+
+public CharSequence getCharContent(boolean ignoreEncodingErrors)
+throws IOException {
+return contents;
+}
+}</pre>
+&nbsp;
+
+<strong>JDK1.4下如何实现动态编译?</strong>
+理论上1.4的JDK是不支持动态编译的，但是还是可以想一些办法的，一种方式说是用tools.jar。哪个tools.jar? 就是JDK自带JAVA_HOME/lib/tools.jar，jdk1.4就是用它来编译Java源代码的，所以有人想到了用它来实现动态编译。
+
+首先让我们来分析一下java源文件的编译, tool.jar里面有个com.sun.tools.javac.Main类，javac命令是调用“JAVA_HOME/lib/tools.jar”中的“com.sun.tools.javac.Main”的compile方法来编译：
+
+&nbsp;
+<pre escaped="true" lang="java" line="1">public static int compile(String as[]);
+
+public static int compile(String as[], PrintWriter printwriter);</pre>
+&nbsp;
+
+但是这个tool.jar用起来很不方便，也没有源代码。简单的直接从源文件生成.class文件还是可以的，但是如果希望不生成.class文件，编译输出的byte[]直接放在内存里似乎就不太好控制了，因为我希望可以直接生成Class而没有中间的临时文件。tools.jar功能太简单，有时还会遇到<a href="http://www.blogjava.net/pandawang/archive/2006/08/20/64639.html">一些问题</a>。
+
+于是只能想其他方式了，有一个Java程序员们容易忽略的细节对我们很有帮助，尤其是那些使用eclipse IDE的程序员们。如果你问他们Eclipse进行代码编译是用的外部安装的JDK，还是用的自带的编译器，大部分人都答不出来，毕竟这属于Eclipse内部的构造。但是如果你进行过Eclipse Plugin开发，你可能会知道Eclipse有个叫JDT的组件，Eclipse是用的他自带的Java编译器，而且这个自带的编译器还很强大，下面我们就介绍如果用JDT实现JDK1.4下面的动态编译，并且可以编译后直接生成Class。
+
+主程序：
+<pre escaped="true" lang="java" line="1">public static void main(String[] args) throws Exception {
+CustomCompiler customCompiler = new CustomCompiler(
+new PrintWriter(System.out),
+new PrintWriter(System.err),
+false /* systemExit */,
+null /* options */,
+null
+);
+
+customCompiler.pakageSourceMap.put("jdt/X.java", inputStream2String(CompileMain.class.getResourceAsStream("X.tpl"), "utf-8"));
+
+customCompiler
+.compile(org.eclipse.jdt.internal.compiler.batch.Main.tokenize(""));
+
+try {
+Class clazz = customCompiler.classLoader.loadClass("jdt.X");
+Object obj = clazz.newInstance();
+
+Method method = clazz.getDeclaredMethod("value", new Class[0]);
+Object value = method.invoke(obj, new Object[]{});
+
+System.out.println(value);
+} catch (Exception e) {
+e.printStackTrace();
+}
+}</pre>
+&nbsp;
+
+待动态编译的Java Source的内容:
+
+&nbsp;
+<pre escaped="true" lang="java" line="1">package jdt;
+
+public class X {
+
+public int value() {
+return 2 + 3 * 4;
+}
+
+}</pre>
+&nbsp;
+
+期望输出的值是14.
+
+<strong>步骤一：</strong>
+首先需要用到JDT的Jar包，这个可以从eclipse安装目录下面的plugins下面找到，eclipse的部分版本还会自带源代码，可以通过<a title="Eclipse Compare" href="http://www.eclipse.org/downloads/compare.php" target="_blank">这个地址</a>比较下载
+
+&nbsp;
+
+<strong>步骤二:</strong>
+实现一个CustomCompiler覆盖默认的org.eclipse.jdt.internal.compiler.batch.Main
+
+&nbsp;
+<pre escaped="true" lang="java" line="1">package jdt;
+
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Map;
+
+import org.eclipse.jdt.core.compiler.CharOperation;
+import org.eclipse.jdt.core.compiler.CompilationProgress;
+import org.eclipse.jdt.internal.compiler.ClassFile;
+import org.eclipse.jdt.internal.compiler.CompilationResult;
+import org.eclipse.jdt.internal.compiler.batch.CompilationUnit;
+import org.eclipse.jdt.internal.compiler.batch.Main;
+import org.eclipse.jdt.internal.compiler.impl.CompilerOptions;
+import org.eclipse.jdt.internal.compiler.impl.CompilerStats;
+import org.eclipse.jdt.internal.compiler.util.HashtableOfObject;
+import org.eclipse.jdt.internal.compiler.util.Util;
+
+public class CustomCompiler extends Main {
+ClassLoaderImpl classLoader = null;
+java.util.Map pakageSourceMap = new java.util.HashMap();
+
+public CustomCompiler(PrintWriter outWriter, PrintWriter errWriter,
+boolean systemExitWhenFinished, Map customDefaultOptions,
+CompilationProgress compilationProgress) {
+super(outWriter, errWriter, systemExitWhenFinished, customDefaultOptions,
+compilationProgress);
+classLoader = new ClassLoaderImpl(CustomCompiler.class.getClassLoader());
+}
+
+public void configure(String[] argv) {
+ArrayList bootclasspaths = new ArrayList(DEFAULT_SIZE_CLASSPATH);
+String sourcepathClasspathArg = null;
+ArrayList sourcepathClasspaths = new ArrayList(DEFAULT_SIZE_CLASSPATH);
+ArrayList classpaths = new ArrayList(DEFAULT_SIZE_CLASSPATH);
+ArrayList extdirsClasspaths = null;
+ArrayList endorsedDirClasspaths = null;
+
+String customEncoding = null;
+
+if (this.maxRepetition == 0) {
+this.maxRepetition = 1;
+}
+if (this.maxRepetition &gt;= 3 &amp;&amp; (this.timing &amp; TIMING_ENABLED) != 0) {
+this.compilerStats = new CompilerStats[this.maxRepetition];
+}
+
+setPaths(bootclasspaths,
+sourcepathClasspathArg,
+sourcepathClasspaths,
+classpaths,
+extdirsClasspaths,
+endorsedDirClasspaths,
+customEncoding);
+}
+
+// 覆盖，不输出成为.class文件
+public void outputClassFiles(CompilationResult unitResult) {
+if (!((unitResult == null) || (unitResult.hasErrors() &amp;&amp; !this.proceedOnError))) {
+ClassFile[] classFiles = unitResult.getClassFiles();
+
+for (int i = 0; i &lt; classFiles.length; i ++) {
+ClassFile classFile = classFiles[i];
+char[] filename = classFile.fileName();
+
+CharOperation.replace(filename, '/', '.');
+
+classLoader.add(new String(filename), classFile);
+}
+}
+}
+
+/*
+* Build the set of compilation source units
+*/
+public CompilationUnit[] getCompilationUnits() {
+Iterator iterator = pakageSourceMap.entrySet().iterator();
+
+int classCount = pakageSourceMap.size();
+CompilationUnit[] units = new CompilationUnit[classCount];
+
+HashtableOfObject knownFileNames = new HashtableOfObject(classCount);
+String defaultEncoding = (String) this.options.get(CompilerOptions.OPTION_Encoding);
+if (Util.EMPTY_STRING.equals(defaultEncoding))
+defaultEncoding = null;
+String encoding = defaultEncoding;
+
+int i = 0;
+while (iterator.hasNext()) {
+Map.Entry entry = (Map.Entry)iterator.next();
+String filename = (String)entry.getKey();
+String source = (String)entry.getValue();
+
+char[] charName = filename.toCharArray();
+if (knownFileNames.get(charName) != null)
+throw new IllegalArgumentException(this.bind("unit.more", filename)); //$NON-NLS-1$
+knownFileNames.put(charName, charName);
+
+units[i] = new CompilationUnit(source.toCharArray(), filename, encoding,
+null);
+}
+return units;
+}
+}</pre>
+&nbsp;
+
+<strong>步骤三：</strong>如果希望直接得到Class对象，而不生成临时.class文件，有一个关键的ClassLoaderImpl，可以直接通过byte[]生成Class, defineClass(qualifiedClassName, bytes, 0, bytes.length)
+<pre escaped="true" lang="java" line="1">package jdt;
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.eclipse.jdt.internal.compiler.ClassFile;
+
+/**
+* A custom ClassLoader which maps class names to JavaFileObjectImpl instances.
+*/
+public final class ClassLoaderImpl extends ClassLoader {
+private final Map/**/ classes = new HashMap();
+
+ClassLoaderImpl(final ClassLoader parentClassLoader) {
+super(parentClassLoader);
+}
+
+/**
+* @return An collection of JavaFileObject instances for the classes in the
+* class loader.
+*/
+Collection/**/ files() {
+return Collections.unmodifiableCollection(classes.values());
+}
+
+protected Class findClass(final String qualifiedClassName) throws ClassNotFoundException {
+ClassFile file = (ClassFile)classes.get(qualifiedClassName);
+if (file != null) {
+byte[] bytes = file.getBytes();
+return defineClass(qualifiedClassName, bytes, 0, bytes.length);
+}
+// Workaround for "feature" in Java 6
+// see http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6434149
+try {
+Class c = Class.forName(qualifiedClassName);
+return c;
+} catch (ClassNotFoundException nf) {
+// Ignore and fall through
+}
+return super.findClass(qualifiedClassName);
+}
+
+void add(final String qualifiedClassName, final ClassFile classFile) {
+classes.put(qualifiedClassName, classFile);
+}
+
+protected synchronized Class loadClass(final String name, final boolean resolve) throws ClassNotFoundException {
+return super.loadClass(name, resolve);
+}
+
+public InputStream getResourceAsStream(final String name) {
+if (name.endsWith(".class")) {
+String qualifiedClassName = name.substring(0, name.length() - ".class".length()).replace('/', '.');
+ClassFile file = (ClassFile) classes.get(qualifiedClassName);
+if (file != null) {
+return new ByteArrayInputStream(file.getBytes());
+}
+}
+return super.getResourceAsStream(name);
+}
+}</pre>
+&nbsp;
+
+<strong>补充：</strong>如果不需要直接生成Class，就不用这么麻烦了，直接如下几行代码就可以搞定了:
+<pre escaped="true" lang="java" line="1">BatchCompiler.compile("E:\\sources\\X.java -d E:\\output",
+new PrintWriter(System.out),
+new PrintWriter(System.err),
+null);</pre>
+<strong>动态编译的应用</strong>
+动态编译技术的应用应该不少，目前JVM上的很多动态语言，比如Scala和Clojure等，也好像用到了这种动态编译的技术。另外还有一些Java引用的DSL语言，也有用动态编译技术，配合预处理，缓存技术来提高性能，比如<a title="SimpleEL" href="http://www.iteye.com/topic/993292" target="_blank">SimpleEL</a>。
+
+<strong>参考资料:</strong>
+[1] http://www.iteye.com/topic/993292
+[2] http://topic.csdn.net/u/20080318/10/63e0b728-0385-4b81-b483-73b2b8c60250.html
+[3] http://www.blogjava.net/pandawang/archive/2006/08/20/64639.html
+[4] http://stackoverflow.com/questions/5423052/eclipse-jdt-tutorials
+[5] http://www.eclipse.org/forums/index.php?t=thread&amp;frm_id=13
+[6] http://stackoverflow.com/questions/121324/a-java-api-to-generate-java-source-files
+[7] http://www.vogella.de/articles/EclipseJDT/article.html#jdt_newelements
+[8] http://jeval.sourceforge.net/
+[9] http://www.eclipse.org/downloads/compare.php
+[10] http://blog.csdn.net/gumanren/article/details/4829748
+
+					<div class="meta">
+						<p class="date-publish">
+							Published: 
+							<date class="date-pub" title="2011-07-07T00:00:00+08:00" datetime="2011-07-07T00:00:00+08:00" pubdate>
+							<span class="month"><abbr>July</abbr></span>
+							<span class="day">07</span>
+							<span class="year">2011</span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">category: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/categories.html#Java-ref">
+    		Java <span>4</span>
+    	</a></li>
+    
+  
+
+
+						</ul>
+						<ul class="list-tag list-linear">
+							<li class="list-head">tags: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/tags.html#Compilation-ref">Compilation <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#Eclipse-ref">Eclipse <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#Java-ref">Java <span>9</span></a></li>
+     
+    	<li><a href="/tags.html#JDT-ref">JDT <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#JVM语言-ref">JVM语言 <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#动态编译-ref">动态编译 <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#性能优化-ref">性能优化 <span>6</span></a></li>
+    
+  
+
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					<div class="social">
+						<ul class="list-linear">
+							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="hackfisher" data-lang="en">Tweet</a></div></li>
+							<li><div class="twitter-follow"><a href="https://twitter.com/hackfisher" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+						</ul>
+					</div>
+					<div class="comment">
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+					</div>
+				</div><!-- misc-content -->
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/blog/2011/06/jna-java-native" title="View JNA, Java Native开发利器">&laquo; JNA, Java Native开发利器</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/blog/2011/07/open-source-etl-compare-commencial-etl-tool-translate" title="View 开源ETL工具和商业ETL工具比较(译文)">开源ETL工具和商业ETL工具比较(译文) &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+					<h4>about</h4>
+					<ul>
+						<li class="contact"><address><span class="author fn n">HackFisher</span> - <span class="fn email">hackfisher@gmail.com</span></address></li>
+						<li class="github"><a href="http://github.com/HackFisher/" rel="me">github.com/HackFisher</a></li>
+						<li class="twitter"><a href="http://twitter.com/hackfisher/" rel="me">twitter.com/hackfisher</a></li>
+						<li class="rss"><a href="http://hackfisher.info/rss.xml">Subscribe to RSS Feed</a></li>
+					</ul>
+				</div><!-- misc -->
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+	(function(d, s) {
+		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.src = url; js.id = id;
+		fjs.parentNode.insertBefore(js, fjs);
+		};
+	load('//platform.twitter.com/widgets.js', 'tweetjs');
+	// load('https://apis.google.com/js/plusone.js', 'gplus1js'); // Checkout http://j.mp/ApDgMr for usage html for this is <div class="g-plusone" data-size="medium"></div>
+	// load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk'); // Checkout http://j.mp/wZw2xR for using open graph protorol html for this is <div class="fb-like" data-href="/blog/2011/07/java-dynamic-compilation" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
+	}(document, 'script'));
+</script>
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+  
+  
+</body>
+</html>
+

@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>代码质量系列之四：垃圾代码清理重构的紧急性——破窗理论</title>
+	<meta name="author" content="HackFisher">
+	<link href='/assets/themes/the-program/css/style.css' rel="stylesheet" media="all">
+	<link href="http://feeds.feedburner.com/" rel="alternate" title="代码质量系列之四：垃圾代码清理重构的紧急性——破窗理论" type="application/atom+xml">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<nav class="nav-global">
+					<ul>
+						<li class="logo"><a href="/">HackFisher</a></li>
+						<li class="archive"><a href="/archive.html">archive</a></li>
+						<li class="page"><a href="/pages.html">pages</a></li>
+						<li class="category"><a href="/categories.html">categories</a></li>
+						<li class="tag"><a href="/tags.html">tags</a></li>
+						<li class="about"><a href="/about.html">about</a></li>
+						<li class="forkme"><div><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=HackFisher&repo=hackfisher.github.com&type=fork&count=true"
+									allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe></div></li>
+					</ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">代码质量系列之四：垃圾代码清理重构的紧急性——破窗理论</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					可能很多人都知道时间管理里面有个<a title="时间管理四象限法" href="http://baike.baidu.com/view/3916978.htm" target="_blank">四象限法</a>，根据事件的紧急性和重要性的程度，区分为四个象限。第一象限是紧急并且重要的事情，第二象限是不紧急但是重要的事情，第三象限是紧急但不重要的事情，第四象限是既不紧急也不重要的事情。对于第一类重要且紧急的事，要马上去做。对于第二类重要而不紧急的事，要重点去做。
+
+我们前面的"<a title="代码质量的重要性" href="http://www.hackfisher.info/blog/?p=26" target="_blank">代码质量系列之一：什么是代码质量</a>"这篇文章已经重点论述了其重要性，那么代码质量的紧急性如何呢？在这里，我借助于一个有名的理论来说明之。
+
+<strong>多年前，美国心理学家詹巴斗进行了一项实验，他找了二辆一模一样的汽车，把其中一辆摆在帕罗阿尔托的中产阶级区，而另一辆停在相对杂乱的布朗克斯街区。停在布朗克斯的那一辆，他把车牌摘掉，并把顶棚打开。结果这辆车一天之内就被人偷走，而放在帕罗阿尔托的那一辆，摆了一个星期都无人问津。后来，詹巴斗用锤子把那辆车的玻璃敲了一个大洞。结果呢，仅仅过几个小时，它就不见了。</strong>
+
+<strong>以这项实验为基础，政治学家威尔逊和犯罪学家提出了一个"</strong> <a title="破窗理论" href="http://baike.baidu.com/view/259903.htm" target="_blank"><strong>破窗理论</strong></a> <strong>"。理论认为：如果有人打坏一个建筑物的窗户玻璃，而这扇窗户又得不到及时维修，别人就可能受到某些暗示性的纵容去打烂更多的玻璃。久而久之，这些破窗户就给人造成一种无序的感觉。结果在这种公众麻木不仁的氛围中，犯罪就会滋生、繁荣。一个房子如果窗户破了，没有人去修补，隔不久，其它的窗户也会莫名其妙地被人打破;一面墙，如果出现一些涂鸦没有被清洗掉，很快的，墙上就布满了乱七八糟、不堪入目的东西;一个很干净的地方，人们不好意思丢垃圾，但是一旦地上有垃圾出现之后，人就会毫不犹疑地抛，丝毫不觉羞愧。</strong>
+<p style="text-align: center;"><img src="/uploads/2011/01/broken_window.jpg" alt="broken_window.jpg" width="800" height="471" /></p>
+软件开发中也是这样： 如果你发现自己在有好些破窗户的项目里工作，会很容易产生这样的想法："这些代码的其余部分也是垃圾，我只要照着做就行了" 。
+
+上面列出的种种现象，在我们每一个人身边时有发生，而且有的问题是多次重复，给公司直接和间接地带来了无法估量的损失。造成上述种种"窗户破洞"的主要原因：
+一是人员责任心不强，素质未能提升；其次是有章不循，有法不依；从而造成经营和管理上出现个别无序状况。
+
+如果发现了一个破的窗户，不及时去修理，管理者也不作为，就会造成更大的麻烦。无视垃圾代码就会造成更多的垃圾代码，越来越多，哪怕只是短时间的，破窗理论说明了及时清理重构垃圾代码的紧急性，应该被放在程序员时间管理的第一象限。
+
+其实，管理学中还有很多其他生动的故事和理论可以被应用到代码质量的管理方面，比如：
+
+<a title="蛇蛙原理" href="http://zhidao.baidu.com/question/36159237.html" target="_blank">蛇蛙原理</a>
+
+不希望发生的事情，决不妥协（小孩子哭不要管他，明明不希望他以哭为手段要挟自己，就不要妥协）；希望发生的事情，奖赏他，起到示范作用，让更多的人达到希望看到的目标。
+
+<a title="亚当斯现象" href="http://baike.baidu.com/view/839750.htm" target="_blank">亚斯兰现象</a>
+
+将一群羊用铁丝网圈起来，每天都有羊跳出铁丝网逃走，羊群的数量不断减少。后来将铁丝网通上电，开始还是有羊不断冲击电网，也有的羊因此而死掉。但是，慢慢的冲击电网的羊就越来越少了，羊群里的羊都远离电网，羊的数量也不再减少了。再后来，铁丝网保留，但是已经不再通电了，可是羊群依然不再靠近铁丝网。最后，连铁丝网都撤掉了，但是羊已经习惯了在这个区域内活动了，不会在走出圈子外去了。这种现象在生物学上叫做"亚斯兰"现象。
+
+同样的道理，在医学上也有广泛的使用，有一些癌症患者每天需要服用大量的镇痛剂，但是镇痛剂服用多了是有很严重的副作用的，所以有一些医生，就用维生素和钙片代替镇痛剂给患者服用，也起到了镇痛的效果。就药理来讲，应该是没有任何镇痛作用的，但是患者却能过感受到疼痛减轻，这也是"亚斯兰"原理。
+
+这种原理或是现象应用在管理学上也是非常有效的，在管理最初就要设定好规则，也就是电网，只要违规一定会受罚，而且要坚持，那么每次违规都会被电到，时间就会养成一个习惯。只在规则允许的范围内活动做事情，那么就算，以后规则撤了，习惯已经养成了，自然也就不会违规了，关键就在第一次违规的惩罚，好多的管理者都会说："念你是初犯，姑且放你一马，下次不许了！"但是，这就管理带头违规的开始，有了第一次的，也就会有第二次......
+
+先画圈，再通电，后断电，再撤圈...
+
+<a title="火炉法则" href="http://zhidao.baidu.com/question/102512271.html" target="_blank">火炉法则</a>
+
+所谓"火炉法则"，就是把"火炉"烧得红红的，放在那里，本身并不会主动烫人，但只要有人敢于触摸，它就必烫无疑，不会顾及触摸者的身份，人人平等，谁摸烫谁，而且立即处罚，没有下不为例。
+
+					<div class="meta">
+						<p class="date-publish">
+							Published: 
+							<date class="date-pub" title="2011-01-16T00:00:00+08:00" datetime="2011-01-16T00:00:00+08:00" pubdate>
+							<span class="month"><abbr>January</abbr></span>
+							<span class="day">16</span>
+							<span class="year">2011</span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">category: </li>
+							
+							
+
+
+  
+    
+  
+
+
+						</ul>
+						<ul class="list-tag list-linear">
+							<li class="list-head">tags: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/tags.html#代码质量 管理-ref">代码质量 管理 <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#技术管理-ref">技术管理 <span>6</span></a></li>
+    
+  
+
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					<div class="social">
+						<ul class="list-linear">
+							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="hackfisher" data-lang="en">Tweet</a></div></li>
+							<li><div class="twitter-follow"><a href="https://twitter.com/hackfisher" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+						</ul>
+					</div>
+					<div class="comment">
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+					</div>
+				</div><!-- misc-content -->
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/blog/2011/01/picture-driven-tech-translate" title="View 图片驱动的计算机技术(译文)">&laquo; 图片驱动的计算机技术(译文)</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/blog/2011/01/dry-codepro-analitic" title="View 代码质量系列之五：利用CodePro Analytic工具检测和删除重复代码——Don't Repeat Yourself">代码质量系列之五：利用CodePro Analytic工具检测和删除重复代码——Don't Repeat Yourself &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+					<h4>about</h4>
+					<ul>
+						<li class="contact"><address><span class="author fn n">HackFisher</span> - <span class="fn email">hackfisher@gmail.com</span></address></li>
+						<li class="github"><a href="http://github.com/HackFisher/" rel="me">github.com/HackFisher</a></li>
+						<li class="twitter"><a href="http://twitter.com/hackfisher/" rel="me">twitter.com/hackfisher</a></li>
+						<li class="rss"><a href="http://hackfisher.info/rss.xml">Subscribe to RSS Feed</a></li>
+					</ul>
+				</div><!-- misc -->
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+	(function(d, s) {
+		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.src = url; js.id = id;
+		fjs.parentNode.insertBefore(js, fjs);
+		};
+	load('//platform.twitter.com/widgets.js', 'tweetjs');
+	// load('https://apis.google.com/js/plusone.js', 'gplus1js'); // Checkout http://j.mp/ApDgMr for usage html for this is <div class="g-plusone" data-size="medium"></div>
+	// load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk'); // Checkout http://j.mp/wZw2xR for using open graph protorol html for this is <div class="fb-like" data-href="/blog/2011/01/urgency_broken-windows-theory" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
+	}(document, 'script'));
+</script>
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+  
+  
+</body>
+</html>
+

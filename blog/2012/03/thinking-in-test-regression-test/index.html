@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>测试思考系列[3]：回归测试</title>
+	<meta name="author" content="HackFisher">
+	<link href='/assets/themes/the-program/css/style.css' rel="stylesheet" media="all">
+	<link href="http://feeds.feedburner.com/" rel="alternate" title="测试思考系列[3]：回归测试" type="application/atom+xml">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<nav class="nav-global">
+					<ul>
+						<li class="logo"><a href="/">HackFisher</a></li>
+						<li class="archive"><a href="/archive.html">archive</a></li>
+						<li class="page"><a href="/pages.html">pages</a></li>
+						<li class="category"><a href="/categories.html">categories</a></li>
+						<li class="tag"><a href="/tags.html">tags</a></li>
+						<li class="about"><a href="/about.html">about</a></li>
+						<li class="forkme"><div><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=HackFisher&repo=hackfisher.github.com&type=fork&count=true"
+									allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe></div></li>
+					</ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">测试思考系列[3]：回归测试</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					<strong><a title="回归测试" href="http://baike.baidu.com/view/106720.htm" target="_blank">回归测试</a></strong>在百度百科上面的描述感觉还蛮准确，引用如下：
+<blockquote>回归测试是指修改了旧代码后，重新进行测试以确认修改没有引入新的错误或导致其他代码产生错误。自动回归测试将大幅降低系统测试、维护升级等阶段的成本。回归测试作为软件生命周期的一个组成部分，在整个软件测试过程中占有很大的工作量比重，软件开发的各个阶段都会进行多次回归测试。在渐进和快速迭代开发中，新版本的连续发布使回归测试进行的更加频繁，而在极端编程方法中，更是要求每天都进行若干次回归测试。因此，通过选择正确的回归测试策略来改进回归测试的效率和有效性是非常有意义的。</blockquote>
+因为需求功能不断变化，产品也会跟着变，所以测试用例库则免不了需要<strong>维护</strong>工作，而维护主要也是指的增删改查(CRUD)。
+<ul>
+	<li>测试用例的收集和添加，具体实践中的一种方式是与BUG跟踪系统结合起来， 每个模块有测试人员与之对应，那么在实现需求或者修复BUG的过程中，就可以添加测试用例了。基于这样一种理念，如果容易出BUG，说明那个地方就容易出问题，所以用测试用例覆盖的话价值会高一点。而新的需求，则是基于覆盖新的功能，特别是原先没有进行回归测试，功能已经比较完善的情况下，这种方式用的比较多一点。</li>
+	<li>查询和搜索是肯定需要的，因为进行回归测试之前需要选择回归测试包。在软件生命周期中，即使一个得到良好维护的测试用例库也可能变得相当大，这使每次回归测试都重新运行完整的测试包变得不切实际。一个完全的回归测试包括每个基线测试用例，时间和成本约束可能阻碍运行这样一个测试，有时测试组不得不选择一个缩减的回归测试包来完成回归测试。</li>
+	<li>修改的情况，主要是因为需求变更，或者旧的功能被删除，则测试用例要与需求同步</li>
+	<li>删除的测试用例，同上，具体实践时，可以采用增加测试用例状态D来实现，想法来源于Windows的垃圾回收箱。</li>
+</ul>
+<a href="/uploads/2012/03/regression.png"><img class="aligncenter size-full wp-image-338" title="regression" src="/uploads/2012/03/regression.png" alt="" width="640" height="252" /></a>
+
+<strong>迭代式开发</strong>，就是以一段时间为一个周期，将一些任务打包分配并完成，当这些任务完成后再完成下面一批的打包任务，而不是像原来那样随意的抽取研发任务，迭代式开发计划性更强，更容易产生周期性的反馈。并且迭代式开发还有一个好处是，这样可以按迭代跑回归测试，至少每个迭代跑一次。
+
+在实际工作中，回归测试需要反复进行，当测试者一次又一次地完成相同的测试时，这些回归测试将变得非常令人厌烦，而在大多数回归测试需要手工完成的时候尤其如此，因此，需要通过自动测试来实现重复的和一致的回归测试。
+<ul>
+	<li>自动测试，目前实践中比较成熟的是Web自动化测试，常见的工具主要是Selenium，这个会在后面的自动测试系列文章中介绍。</li>
+	<li>手动测试，这个就比较常见了，主要是基于ST(Script Based Test)。不像自动测试如单元测试只有两种状态：红(Failure)，绿(Pass)，手工测试的测试用例状态主要有三种： 通过(Pass), 待测试(O)，不通过(Failure)。因为手工测试从有希望知道测试用例是否通过的需要起，有很多测试用例需要很长时间才能知道测试用例是否通过，这段时间内，测试用例就是待测试O。所以，每次开始手动回归测试最基本的就是将所有的Pass改成O状态，而手工回归测试结束的简单标志就是 测试包中状态为O的测试用例数量归零。</li>
+</ul>
+<strong>回归测试的成本效用分析</strong>
+
+基于ST的手工回归测试有一个很大的问题就是手工测试的成本非常巨大，手工测试的成本就是人力成本，而现在的人力成本本身就很巨大，有人曾提过设想找一些实习生，像操作工人一样来测试，不谈现实的人力成本，这样做有一个严重的问题，就是再不懂需求的前提下测试相当于没有测试。并且还有另外一个很严重的问题就是ST会非常的枯燥，基本上就是按照步骤机械的操作和验证，测试者很容易感到疲劳和厌倦，测试效率随即降低。在回归测试用例库的初级阶段，大概有两千左右的测试用例脚本，实践中预测大概需要30个人天。而一次回归测试的效用就是对这一次迭代带来的变更修改，验证所有其他的产品模块，效用并不理想，但是回归测试不可或缺。
+
+所以，回归测试的<strong>关键策略</strong>在于兼顾成本和效率效用两方面，常用的有如下一些：
+<ul>
+	<li>因为测试用例之间存在依赖关系，那么就可以建立前置条件(一个测试用例是另外一个测试用例的前置)，利用这种依赖，基于分层的思想，慢慢的将测试用例库进化演变成不同的层次，就像自然界有不同层次的食物链一样的。越是重要和频繁使用的测试用例，比如冒烟测试用例库，就应该被越经常的跑。有了层次，就提供了更多了信息，帮助改进测试包缩减技术。</li>
+	<li>缩减技术，比如代码相依性分析、功能矩阵、基于风险的、基于严重程度的、基于主要/贡献功能等等</li>
+	<li>充分利用标签、分类信息</li>
+	<li>充分利用测试者的经验和能力，提高测试积极性，通过ST与探索性测试(ET)结合的方式进行测试，关于ET，后面会有系列文章进行介绍。探索性测试，在一些其他的公司已经得到了实践验证，比较好的书可以看看大牛James A.Whittaker的 <a title="探索式软件测试" href="http://book.douban.com/subject/4818689/" target="_blank">《探索式软件测试》</a>。</li>
+</ul>
+
+					<div class="meta">
+						<p class="date-publish">
+							Published: 
+							<date class="date-pub" title="2012-03-23T00:00:00+08:00" datetime="2012-03-23T00:00:00+08:00" pubdate>
+							<span class="month"><abbr>March</abbr></span>
+							<span class="day">23</span>
+							<span class="year">2012</span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">category: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/categories.html#测试-ref">
+    		测试 <span>5</span>
+    	</a></li>
+    
+  
+
+
+						</ul>
+						<ul class="list-tag list-linear">
+							<li class="list-head">tags: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/tags.html#ET-ref">ET <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#ST-ref">ST <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#回归测试-ref">回归测试 <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#成本效用分析-ref">成本效用分析 <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#测试-ref">测试 <span>6</span></a></li>
+     
+    	<li><a href="/tags.html#迭代式开发-ref">迭代式开发 <span>1</span></a></li>
+    
+  
+
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					<div class="social">
+						<ul class="list-linear">
+							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="hackfisher" data-lang="en">Tweet</a></div></li>
+							<li><div class="twitter-follow"><a href="https://twitter.com/hackfisher" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+						</ul>
+					</div>
+					<div class="comment">
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+					</div>
+				</div><!-- misc-content -->
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/blog/2012/03/thinking-in-test-commit-test" title="View 测试思考系列[2]：提交测试">&laquo; 测试思考系列[2]：提交测试</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/blog/2012/03/blog-migrate-to-github" title="View 使用Jekyll将博客从WordPress迁移至GitHub">使用Jekyll将博客从WordPress迁移至GitHub &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+					<h4>about</h4>
+					<ul>
+						<li class="contact"><address><span class="author fn n">HackFisher</span> - <span class="fn email">hackfisher@gmail.com</span></address></li>
+						<li class="github"><a href="http://github.com/HackFisher/" rel="me">github.com/HackFisher</a></li>
+						<li class="twitter"><a href="http://twitter.com/hackfisher/" rel="me">twitter.com/hackfisher</a></li>
+						<li class="rss"><a href="http://hackfisher.info/rss.xml">Subscribe to RSS Feed</a></li>
+					</ul>
+				</div><!-- misc -->
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+	(function(d, s) {
+		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.src = url; js.id = id;
+		fjs.parentNode.insertBefore(js, fjs);
+		};
+	load('//platform.twitter.com/widgets.js', 'tweetjs');
+	// load('https://apis.google.com/js/plusone.js', 'gplus1js'); // Checkout http://j.mp/ApDgMr for usage html for this is <div class="g-plusone" data-size="medium"></div>
+	// load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk'); // Checkout http://j.mp/wZw2xR for using open graph protorol html for this is <div class="fb-like" data-href="/blog/2012/03/thinking-in-test-regression-test" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
+	}(document, 'script'));
+</script>
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+  
+  
+</body>
+</html>
+

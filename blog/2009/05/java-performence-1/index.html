@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Java性能优化之实战漫谈[1]</title>
+	<meta name="author" content="HackFisher">
+	<link href='/assets/themes/the-program/css/style.css' rel="stylesheet" media="all">
+	<link href="http://feeds.feedburner.com/" rel="alternate" title="Java性能优化之实战漫谈[1]" type="application/atom+xml">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<nav class="nav-global">
+					<ul>
+						<li class="logo"><a href="/">HackFisher</a></li>
+						<li class="archive"><a href="/archive.html">archive</a></li>
+						<li class="page"><a href="/pages.html">pages</a></li>
+						<li class="category"><a href="/categories.html">categories</a></li>
+						<li class="tag"><a href="/tags.html">tags</a></li>
+						<li class="about"><a href="/about.html">about</a></li>
+						<li class="forkme"><div><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=HackFisher&repo=hackfisher.github.com&type=fork&count=true"
+									allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe></div></li>
+					</ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">Java性能优化之实战漫谈[1]</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					<div><span class="Apple-style-span" style="font-size: small;">——I can feel the need, the need of speed...</span></div>
+<div><span class="Apple-style-span" style="font-size: small;">——提前优化是万恶之源</span></div>
+<div><span class="Apple-style-span" style="font-size: small;">
+</span></div>
+<div><span class="Apple-style-span" style="font-size: small;">最近由于工作的原因，对Java的性能优化比较关注，其间也看到不少比较好的文章系列，比如Program-Think同学的</span><a href="http://program-think.blogspot.com/2009/03/java-performance-tuning-0-overview.html"><span class="Apple-style-span" style="font-size: small;">Java性能优化系列</span></a><span class="Apple-style-span" style="font-size: small;">。平常工作的时候，</span><span class="Apple-style-span" style="border-collapse: collapse; font-family: arial;"><span class="Apple-style-span" style="font-size: small;">发现稍微有点好想法的时候，</span><span class="Apple-style-span" style="font-size: small;"><wbr>把自己独自一个人关在小屋子里集中精力思考，效果很不错，俗称“</wbr></span><span class="Apple-style-span" style="font-size: small;"><wbr>闭关”，大家也可以试一试。</wbr></span></span></div>
+<div><span class="Apple-style-span" style="border-collapse: collapse; font-family: arial;"><span class="Apple-style-span" style="font-size: small;">
+</span></span></div>
+<div><span class="Apple-style-span" style="border-collapse: collapse; font-family: arial;"><span class="Apple-style-span" style="font-size: small;">谈到Java优化，我认为一切开始之前，最最重要的是找到一个合适的profile工具，这里有篇文章介绍的很详细：</span><a href="http://java.dzone.com/news/how-fix-memory-leaks-java"><span class="Apple-style-span" style="font-size: small;">How to Fix Memory Leaks in Java</span></a><span class="Apple-style-span" style="font-size: small;">，里面介绍了许多有用的profile工具，不用花太多时间，找到合适你自己的就行了，我用的是</span><a href="http://www.ej-technologies.com/products/jprofiler/overview.html"><span class="Apple-style-span" style="font-size: small;">jprofile</span></a><span class="Apple-style-span" style="font-size: small;">，感觉还不错。记住，重要的是，在每个优化开始之前，一定要用profile工具分析性能的问题出在哪边，千万不要想当然。</span></span></div>
+<div><span class="Apple-style-span" style="border-collapse: collapse; font-family: arial;"><span class="Apple-style-span" style="font-size: small;">
+</span></span></div>
+<div><span class="Apple-style-span" style="border-collapse: collapse; font-family: arial;"><span class="Apple-style-span" style="font-size: small;">今天就先将两个简单的例子作为开头吧，大家轻松轻松。
+例子一：</span></span></div>
+<pre escaped="true"><span class="Apple-style-span" style="font-family: 'courier new';"><span class="Apple-style-span" style="font-size: small;">class A {</span></span><span class="Apple-style-span" style="font-family: 'courier new';"><span class="Apple-style-span" style="font-size: small;">int a_num;</span></span><span class="Apple-style-span" style="font-family: 'courier new';"><span class="Apple-style-span" style="font-size: small;">B b;}</span></span></pre>
+<pre escaped="true"><span class="Apple-style-span" style="font-family: 'courier new';"><span class="Apple-style-span" style="font-size: small;">class B{</span></span><span class="Apple-style-span" style="font-family: 'courier new';"><span class="Apple-style-span" style="font-size: small;">int b_num;</span></span><span class="Apple-style-span" style="font-family: 'courier new';"><span class="Apple-style-span" style="font-size: small;">A a;}</span></span></pre>
+<span class="Apple-style-span" style="font-size: small;">如果改成下面这样怎么样？</span>
+<pre escaped="true"><span class="Apple-style-span" style="font-family: 'courier new';"><span class="Apple-style-span" style="font-size: small;">class AB {</span></span><span class="Apple-style-span" style="font-family: 'courier new';"><span class="Apple-style-span" style="font-size: small;">int a_num;</span></span><span class="Apple-style-span" style="font-family: 'courier new';"><span class="Apple-style-span" style="font-size: small;">int b_num;}</span></span></pre>
+<span class="Apple-style-span" style="font-size: small;">某些Java应用程序当对象太多而垃圾回收器还没有来得及回收的时候，就可能会导致堆内存溢出，其实内存溢出是分为栈内存溢出和堆内存溢出的，关于堆和栈的区别，可以参考program-think的</span><a href="http://program-think.blogspot.com/2009/03/java-performance-tuning-1-two-types.html"><span class="Apple-style-span" style="font-size: small;">这篇文章</span></a><span class="Apple-style-span" style="font-size: small;">,讲的通俗易懂。关于上面的这个例子，就是我在实际编码中发现的一个造成内存消耗严重的一个问题，你或许还会认为上面那种写法更技术，更××。如果A的实例和B的实例个数很少的时候还好，但是如果他们的实例个数达到上百万的级别的时候，你就会思考一下是不是要换成下面这种写法了。首先你要了解怎么去计算一个对象会占多少字节的内存，然后思考为什么下面的写法会比上面的占用更少的内存？</span>
+<div><span class="Apple-style-span" style="font-size: small;">
+</span></div>
+<div><span class="Apple-style-span" style="font-size: small;">例子二：</span></div>
+<div><span class="Apple-style-span" style="font-size: small;">如果你用Java写程序，那么你会怎么样把一个数组objct_array：Object[]加到一个list:java.util.List中去？</span></div>
+<div><span class="Apple-style-span" style="font-size: small;">我并不清楚你是怎么写的，不过我却见过一种非常常用的写法：</span></div>
+<pre escaped="true"><span class="Apple-style-span" style="font-family: 'courier new';"><span class="Apple-style-span" style="font-size: small;">list.addAll(java.util.Arrays.asList(objct_array))</span></span><span class="Apple-style-span" style="font-family: 'courier new';"><span class="Apple-style-span" style="font-size: small;">;</span></span></pre>
+<span class="Apple-style-span" style="font-size: small;">其实，如果不是在内核运算的地方，或者某个对性能要求很高的地方写这句话完全没有问题，但如果在某个关键的地方，比如在某个要调用极多次数的方法里写用这个方法，也许就会出现问题。在这种地方，最好还是不要偷懒，用最原始但很高效的数组来解决问题。</span>
+<pre escaped="true"><span class="Apple-style-span" style="font-family: 'courier new';"><span class="Apple-style-span" style="font-size: small;">Object[] old_array = array;array = new Object[old_array.length + new_array.length];System.arraycopy(old_array, 0, array, 0, old_array.length);System.arraycopy(new_array, 0, array, old_array.lengyh, new_array.length);</span></span></pre>
+<pre escaped="true"><span class="Apple-style-span" style="font-size: small;">事实上：ce_list.addAll(java.util.Arrays.asList(ce_array));这句效率是非常慢的，它将</span></pre>
+<pre escaped="true"><span class="Apple-style-span" style="font-size: small;">一个数组变成了一个list又变成一个数组又变成一个list，因为内部是这样实现的：</span></pre>
+<pre escaped="true"><span class="Apple-style-span" style="font-family: 'courier new';"><span class="Apple-style-span" style="font-size: small;">public static List asList(Object[] a) {return new ArrayList(a); // 新建了一个对象，同时数组变成一个list.}public boolean addAll(Collection c) {Object[] a = c.toArray(); // 看这里, list又变成了一个数组，绕了一圈啊int numNew = a.length;ensureCapacity(size + numNew); // Increments modCountSystem.arraycopy(a, 0, elementData, size, numNew); // 这个跟修改后做的差不多size += numNew;return numNew != 0;}</span></span></pre>
+<span class="Apple-style-span" style="font-size: small;">结果证明：修改后这部分消耗的临时内存没有了，速度也变快了。</span>
+<div><span class="Apple-style-span" style="font-family: 'Trebuchet MS'; font-weight: bold; line-height: 22px;"><span class="Apple-style-span" style="font-size: small;"><a href="http://yangtsefisher.blogspot.com/2009/05/java-performance-tuning-algorithm-2.html">Java性能优化之实战算法[2]</a></span></span></div>
+<div><span class="Apple-style-span" style="font-family: 'Trebuchet MS'; font-weight: bold; line-height: 22px;"><span class="Apple-style-span" style="font-size: small;"><a href="http://yangtsefisher.blogspot.com/2009/05/java-performance-tuning-realtime-3.html">Java性能优化之实时性[3]</a></span></span></div>
+
+					<div class="meta">
+						<p class="date-publish">
+							Published: 
+							<date class="date-pub" title="2009-05-09T00:00:00+08:00" datetime="2009-05-09T00:00:00+08:00" pubdate>
+							<span class="month"><abbr>May</abbr></span>
+							<span class="day">09</span>
+							<span class="year">2009</span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">category: </li>
+							
+							
+
+
+  
+    
+  
+
+
+						</ul>
+						<ul class="list-tag list-linear">
+							<li class="list-head">tags: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/tags.html#性能优化-ref">性能优化 <span>6</span></a></li>
+    
+  
+
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					<div class="social">
+						<ul class="list-linear">
+							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="hackfisher" data-lang="en">Tweet</a></div></li>
+							<li><div class="twitter-follow"><a href="https://twitter.com/hackfisher" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+						</ul>
+					</div>
+					<div class="comment">
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+					</div>
+				</div><!-- misc-content -->
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/blog/2009/04/info2_0-translation" title="View 信息2.0(译文)">&laquo; 信息2.0(译文)</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/blog/2009/05/java-performance-2" title="View Java性能优化之实战算法[2]">Java性能优化之实战算法[2] &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+					<h4>about</h4>
+					<ul>
+						<li class="contact"><address><span class="author fn n">HackFisher</span> - <span class="fn email">hackfisher@gmail.com</span></address></li>
+						<li class="github"><a href="http://github.com/HackFisher/" rel="me">github.com/HackFisher</a></li>
+						<li class="twitter"><a href="http://twitter.com/hackfisher/" rel="me">twitter.com/hackfisher</a></li>
+						<li class="rss"><a href="http://hackfisher.info/rss.xml">Subscribe to RSS Feed</a></li>
+					</ul>
+				</div><!-- misc -->
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+	(function(d, s) {
+		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.src = url; js.id = id;
+		fjs.parentNode.insertBefore(js, fjs);
+		};
+	load('//platform.twitter.com/widgets.js', 'tweetjs');
+	// load('https://apis.google.com/js/plusone.js', 'gplus1js'); // Checkout http://j.mp/ApDgMr for usage html for this is <div class="g-plusone" data-size="medium"></div>
+	// load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk'); // Checkout http://j.mp/wZw2xR for using open graph protorol html for this is <div class="fb-like" data-href="/blog/2009/05/java-performence-1" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
+	}(document, 'script'));
+</script>
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+  
+  
+</body>
+</html>
+

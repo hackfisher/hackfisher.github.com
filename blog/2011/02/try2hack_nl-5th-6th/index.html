@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>【趣味Hack】Try2hack.nl第五关和第六关</title>
+	<meta name="author" content="HackFisher">
+	<link href='/assets/themes/the-program/css/style.css' rel="stylesheet" media="all">
+	<link href="http://feeds.feedburner.com/" rel="alternate" title="【趣味Hack】Try2hack.nl第五关和第六关" type="application/atom+xml">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<nav class="nav-global">
+					<ul>
+						<li class="logo"><a href="/">HackFisher</a></li>
+						<li class="archive"><a href="/archive.html">archive</a></li>
+						<li class="page"><a href="/pages.html">pages</a></li>
+						<li class="category"><a href="/categories.html">categories</a></li>
+						<li class="tag"><a href="/tags.html">tags</a></li>
+						<li class="about"><a href="/about.html">about</a></li>
+						<li class="forkme"><div><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=HackFisher&repo=hackfisher.github.com&type=fork&count=true"
+									allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe></div></li>
+					</ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">【趣味Hack】Try2hack.nl第五关和第六关</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					<strong>第五关</strong>地址：
+
+http://www.try2hack.nl/levels/level5-fdvbdf.xhtml
+
+a. 提示下载一个Visual Basic 3.0程序，运行之提示输入用户名密码。
+
+b. 先尝试反编译之，vb3的程序似乎比vb5, vb6好反编译一些，找到一个好用的反编译软件Dodi，<a href="http://download.csdn.net/down/3011468/zjx20" target="_blank">下载地址</a>。反编译LEVEL5.EXE，得到LEVEL5.BAS代码
+<pre escaped="true" lang="vb" line="1">' LEVEL5.FRM
+Option Explicit
+Sub cmdLogin_Click ()
+If  edtUsername = Mid(gc0006, 56, 1) &amp; Mid(gc0006, 28, 1) &amp; Mid(gc0006, 35, 1) &amp; Mid(gc0006, 3, 1) &amp; Mid(gc0006, 44, 1) &amp; Mid(gc0006, 11, 1) &amp; Mid(gc0006, 13, 1) &amp; Mid(gc0006, 21, 1) Then
+If  edtPassword = Mid(gc0006, 45, 1) &amp; Mid(gc0006, 48, 1) &amp; Mid(gc0006, 25, 1) &amp; Mid(gc0006, 32, 1) &amp; Mid(gc0006, 15, 1) &amp; Mid(gc0006, 40, 1) &amp; Mid(gc0006, 25, 1) &amp; Mid(gc0006, 14, 1) &amp; Mid(gc0006, 19, 1) Then
+MsgBox "Level 6 can be found at: " &amp; Left$(gc000A, 37) &amp; Mid(gc0006, 21, 1) &amp; Mid(gc0006, 14, 1) &amp; Mid(gc0006, 29, 1) &amp; Mid(gc0006, 32, 1) &amp; Mid(gc0006, 12, 1) &amp; Mid(gc0006, 14, 1) &amp; Mid(gc000A, 44, 6), 0, "Horray!"
+End
+End If
+End If
+MsgBox "Invalid username and/or password!", 0, "ERROR!"
+End Sub
+Sub Form_Load ()
+Me.Move (Screen.Width - Me.Width) / 2, (Screen.Height - Me.Height) / 2
+End Su
+' LEVEL5.FRMOption Explicit
+Sub cmdLogin_Click ()If  edtUsername = Mid(gc0006, 56, 1) &amp; Mid(gc0006, 28, 1) &amp; Mid(gc0006, 35, 1) &amp; Mid(gc0006, 3, 1) &amp; Mid(gc0006, 44, 1) &amp; Mid(gc0006, 11, 1) &amp; Mid(gc0006, 13, 1) &amp; Mid(gc0006, 21, 1) Then  If  edtPassword = Mid(gc0006, 45, 1) &amp; Mid(gc0006, 48, 1) &amp; Mid(gc0006, 25, 1) &amp; Mid(gc0006, 32, 1) &amp; Mid(gc0006, 15, 1) &amp; Mid(gc0006, 40, 1) &amp; Mid(gc0006, 25, 1) &amp; Mid(gc0006, 14, 1) &amp; Mid(gc0006, 19, 1) Then    MsgBox "Level 6 can be found at: " &amp; Left$(gc000A, 37) &amp; Mid(gc0006, 21, 1) &amp; Mid(gc0006, 14, 1) &amp; Mid(gc0006, 29, 1) &amp; Mid(gc0006, 32, 1) &amp; Mid(gc0006, 12, 1) &amp; Mid(gc0006, 14, 1) &amp; Mid(gc000A, 44, 6), 0, "Horray!"    End  End IfEnd IfMsgBox "Invalid username and/or password!", 0, "ERROR!"End Sub
+Sub Form_Load ()Me.Move (Screen.Width - Me.Width) / 2, (Screen.Height - Me.Height) / 2End Su</pre>
+c. Mid是VB的库函数，没有VB也没关系，逻辑是一样的，用其他语言实现一下，处理的字符串在MAIN.TXT里，可得到结果。关键知道反编译成功就行了。
+
+<strong>第六关</strong>地址：http://www.try2hack.nl/levels/level6-kdsvbd.xhtml
+
+a. 打开网页，同样是VB程序，但是是Visual Basic 6.0的。先看看能不能反编译，试了一下第五关的Dodi，已经不管用了。到网上找了很久，感觉有，但是很多是商业版而且不知道管不管用。所以就打算从其他地方入手。
+
+b. 运行LEVEL6.EXE，随便输入用户名密码，确定，嘿，发现连接了网络读取数据，这下有招了。
+
+<a href="/uploads/2011/02/level6_exe.png"><img class="aligncenter size-full wp-image-114" title="level6_exe" src="/uploads/2011/02/level6_exe.png" alt="" width="471" height="330" /></a>c. 还记得<a href="http://www.hackfisher.info/blog/?p=68" target="_blank">如何在咖啡厅，网吧等公共场所要到漂亮MM的QQ号</a>这篇文章了，那里用到了网络抓取工具<span style="color: #333333; font-family: Georgia, 'Times New Roman', Times, serif; line-height: 26px;"><a style="text-decoration: underline; color: #772124;" title="Wireshark" href="http://www.wireshark.org/" target="_blank">Wireshark软件</a>。这里我们也可以派上用场。首先获得try2hack.nl的ip，wireshark下设置过滤"host 217.195.122.51"，再测试一下，捕捉获得如下信息。</span>
+
+<span style="color: #333333; font-family: Georgia, 'Times New Roman', Times, serif; line-height: 26px;"><a href="/uploads/2011/02/level6_capture.png"><img class="aligncenter size-full wp-image-115" title="level6_capture" src="/uploads/2011/02/level6_capture.png" alt="" width="685" height="379" /></a>d. 将level6.data下载下来，获得如下文本：</span>
+
+&nbsp;
+<pre escaped="true" lang="php" line="1">(ENCRYPTION TYPE)
+
+B*C*N**N
+
+(USERNAME)
+
+aaabb aaaaa aaaab abbab ababb aaaab
+
+(PASSWORD)
+
+aabaa abbaa aaaba baaaa babba abbba baaba abaaa abbab abbaa baaaa aaaaa babaa abaab baaab
+
+(PAGE)
+
+babab aabab abaab abbab aabbb aaaba</pre>
+&nbsp;
+
+<span style="font-family: Georgia, 'Times New Roman', Times, serif; color: #333333;"><span style="line-height: 26px;">e. 简单的Google搜索"B*C*N**N ENCRYPTION"后(google的技巧，*通配符要加引号)，获得如下链接</span></span>
+
+<span style="font-family: Georgia, 'Times New Roman', Times, serif; color: #333333;"><span style="line-height: 26px;">http://www.bbc.co.uk/dna/h2g2/A9837183</span></span>
+
+<span style="font-family: Georgia, 'Times New Roman', Times, serif; color: #333333;"><span style="line-height: 26px;">说明这是种编码方式，叫Baconian Cipher，写程序解码eve6.data得到用户名，密码和下一关的地址。</span></span>
+
+&nbsp;
+<pre escaped="true" lang="java" line="1">public class BaconianCypher {
+
+	/**
+
+	 * @param args
+
+	 */
+
+	public static void main(String[] args) {
+
+		String[] a = new String[] {
+
+				"aaaaa", "aaaab", "aaaba", "aaabb", "aabaa", "aabab", "aabba", "aabbb", "abaaa",
+
+				           "abaaa", "abaab", "ababa", "ababb", "abbaa", "abbab", "abbba", "abbbb", "baaaa",
+
+				           "baaab", "baaba", "baabb", "baabb", "babaa", "babab", "babba", "babbb"
+
+		};
+
+		char[] digits = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
+
+		java.util.Map cypherMap = new java.util.HashMap();
+
+		for (int i = 0; i &lt; a.length; i ++) {
+
+			cypherMap.put(a[i], digits[i]);
+
+		}
+
+		System.out.println(decode(new String[] {"aaabb", "aaaaa", "aaaab", "abbab", "ababb", "aaaab"}, cypherMap));
+
+		System.out.println(decode(new String[] {"aabaa", "abbaa", "aaaba", "baaaa", "babba", "abbba", "baaba", "abaaa", "abbab", "abbaa", "baaaa", "aaaaa", "babaa", "abaab", "baaab"}, cypherMap));
+
+		System.out.println(decode(new String[] {"babab", "aabab", "abaab", "abbab", "aabbb", "aaaba"}, cypherMap));
+
+	}
+
+	public static String decode(String[] txt, java.util.Map map) {
+
+		StringBuffer sb = new StringBuffer();
+
+		for (int i = 0; i &lt; txt.length; i ++) {
+
+			sb.append(map.get(txt[i]));
+
+		}
+
+		return sb.toString().toLowerCase();
+
+	}
+
+}</pre>
+参考资料：
+
+1. http://www.woodmann.com/crackz/Tools.htm
+
+2. http://www.program-transformation.org/Transform/VisualBasicDecompilers
+
+					<div class="meta">
+						<p class="date-publish">
+							Published: 
+							<date class="date-pub" title="2011-02-15T00:00:00+08:00" datetime="2011-02-15T00:00:00+08:00" pubdate>
+							<span class="month"><abbr>February</abbr></span>
+							<span class="day">15</span>
+							<span class="year">2011</span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">category: </li>
+							
+							
+
+
+  
+    
+  
+
+
+						</ul>
+						<ul class="list-tag list-linear">
+							<li class="list-head">tags: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/tags.html#Hack-ref">Hack <span>8</span></a></li>
+     
+    	<li><a href="/tags.html#VB-ref">VB <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#反编译-ref">反编译 <span>2</span></a></li>
+     
+    	<li><a href="/tags.html#趣味Hack-ref">趣味Hack <span>9</span></a></li>
+    
+  
+
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					<div class="social">
+						<ul class="list-linear">
+							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="hackfisher" data-lang="en">Tweet</a></div></li>
+							<li><div class="twitter-follow"><a href="https://twitter.com/hackfisher" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+						</ul>
+					</div>
+					<div class="comment">
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+					</div>
+				</div><!-- misc-content -->
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/blog/2011/02/try2hack_nl-4th" title="View 【趣味Hack】Try2hack.nl第四关">&laquo; 【趣味Hack】Try2hack.nl第四关</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/blog/2011/02/try2hack_nl-third" title="View 【趣味Hack】Try2hack.nl第三关">【趣味Hack】Try2hack.nl第三关 &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+					<h4>about</h4>
+					<ul>
+						<li class="contact"><address><span class="author fn n">HackFisher</span> - <span class="fn email">hackfisher@gmail.com</span></address></li>
+						<li class="github"><a href="http://github.com/HackFisher/" rel="me">github.com/HackFisher</a></li>
+						<li class="twitter"><a href="http://twitter.com/hackfisher/" rel="me">twitter.com/hackfisher</a></li>
+						<li class="rss"><a href="http://hackfisher.info/rss.xml">Subscribe to RSS Feed</a></li>
+					</ul>
+				</div><!-- misc -->
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+	(function(d, s) {
+		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.src = url; js.id = id;
+		fjs.parentNode.insertBefore(js, fjs);
+		};
+	load('//platform.twitter.com/widgets.js', 'tweetjs');
+	// load('https://apis.google.com/js/plusone.js', 'gplus1js'); // Checkout http://j.mp/ApDgMr for usage html for this is <div class="g-plusone" data-size="medium"></div>
+	// load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk'); // Checkout http://j.mp/wZw2xR for using open graph protorol html for this is <div class="fb-like" data-href="/blog/2011/02/try2hack_nl-5th-6th" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
+	}(document, 'script'));
+</script>
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+  
+  
+</body>
+</html>
+

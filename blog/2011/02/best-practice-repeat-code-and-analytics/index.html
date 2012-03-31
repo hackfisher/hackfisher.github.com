@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>代码质量系列之六：重复代码实战案例及其分析总结</title>
+	<meta name="author" content="HackFisher">
+	<link href='/assets/themes/the-program/css/style.css' rel="stylesheet" media="all">
+	<link href="http://feeds.feedburner.com/" rel="alternate" title="代码质量系列之六：重复代码实战案例及其分析总结" type="application/atom+xml">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<nav class="nav-global">
+					<ul>
+						<li class="logo"><a href="/">HackFisher</a></li>
+						<li class="archive"><a href="/archive.html">archive</a></li>
+						<li class="page"><a href="/pages.html">pages</a></li>
+						<li class="category"><a href="/categories.html">categories</a></li>
+						<li class="tag"><a href="/tags.html">tags</a></li>
+						<li class="about"><a href="/about.html">about</a></li>
+						<li class="forkme"><div><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=HackFisher&repo=hackfisher.github.com&type=fork&count=true"
+									allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe></div></li>
+					</ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">代码质量系列之六：重复代码实战案例及其分析总结</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					<span style="font-size: 14px;"><strong>案例一</strong>：使用递归去除嵌套重复代码，不难看出下面的代码一层套一层，但是代码完全一样，递归是最佳解决方案。</span><span class="Apple-style-span" style="widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;"><span class="Apple-style-span" style="border-collapse: collapse; font-family: arial, sans-serif; font-size: 13px;"><span class="Apple-style-span" style="widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;"><span class="Apple-style-span" style="border-collapse: collapse; font-family: arial, sans-serif; font-size: 13px;">if (tokenizer.hasMoreTokens()) {</span></span></span></span>
+<div>
+<blockquote>
+<div>try {</div>
+<div>Integer.parseInt(tokenizer.<wbr>nextToken().trim());</wbr></div>
+<div>} catch (NumberFormatException nfe) {</div>
+<div>throwFormatException();</div>
+<div>}</div>
+<div>if (tokenizer.hasMoreTokens()) {</div>
+<div>try {</div>
+<div>Integer.parseInt(tokenizer.<wbr>nextToken().trim());</wbr></div>
+<div>} catch (NumberFormatException nfe) {</div>
+<div>throwFormatException();</div>
+<div>}</div>
+<div>if (tokenizer.hasMoreTokens()) {</div>
+<div>try {</div>
+<div>Integer.parseInt(tokenizer.<wbr>nextToken().trim());</wbr></div>
+<div>} catch (NumberFormatException nfe) {</div>
+<div>throwFormatException();</div>
+<div>}</div>
+<div>if (tokenizer.hasMoreTokens()) {</div>
+<div>try {</div>
+<div>Integer.parseInt(tokenizer.<wbr>nextToken().trim());</wbr></div>
+<div>} catch (NumberFormatException nfe) {</div>
+<div>throwFormatException();</div>
+<div>}</div>
+<div>} else {</div>
+<div>throwFormatException();</div>
+<div>}</div>
+<div>} else {</div>
+<div>throwFormatException();</div>
+<div>}</div>
+<div>} else {</div>
+<div>throwFormatException();</div>
+<div>}</div>
+<div>} else {</div>
+<div>throwFormatException();</div>
+<div>}</div></blockquote>
+</div>
+<div><strong>案例二</strong>：这个重复代码，很多刚学编程的新手易犯的毛病，内在的逻辑重复，常量完全可以用变量代替：showGuidLine.setEnabled(isSelected());</div>
+<div>
+<div>
+<blockquote>
+<div><span class="Apple-style-span" style="widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">if(isSelected()) {</span></div>
+<div>showGuidLine.setEnabled(true);</div>
+<div>} else {</div>
+<div>showGuidLine.setEnabled(false)<wbr>;</wbr></div>
+<div>}</div></blockquote>
+</div>
+<div><strong>案例三</strong>：Tree, ATree, BTree, CTree，复杂继承为多个类，仅仅因为ATree, BTree, CTree的节点Node或其加载方式不同。</div>
+<div>解决方式：保留一个Tree模板，<span class="Apple-style-span" style="widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;"><span class="Apple-style-span" style="border-collapse: collapse; font-family: arial, sans-serif; font-size: 13px;">NodesLoader用来处理Node，分为ANodeLoader, BNodesLoader等等。</span></span></div>
+<div>
+<div><span class="Apple-style-span" style="widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">复杂继承(不利于重用)--&gt;模板+工厂模式+接口抽象--&gt; 组合方式(复合优于继承)</span></div>
+<div>利用工厂模式和接口，化整为零，便于复用</div>
+<div>面向对象OO，模型细分</div>
+<div><strong>案例四</strong>：<span class="Apple-style-span" style="widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;"><span class="Apple-style-span" style="border-collapse: collapse; font-family: arial, sans-serif; font-size: 13px;">Swing中有很多类似下面例子的小控件，都可以用类似的模式生产：<wbr>一组独立的控件+一个相关接口，这样最大的好处就是解耦，方便复用。</wbr></span></span>
+<div>
+<div>
+<blockquote>
+<div>public class SearchPane extends BasicPane {</div>
+<div>/*</div>
+<div>* 模糊查询用</div>
+<div>*/</div>
+<div>public JTextField searchField = new JTextField();</div>
+<div>public SearchPane(final Searchable searchable) {</div>
+<div>final JButton searchButton = new JButton();</div>
+<div>searchButton.setIcon(<wbr>BaseUtils.readIcon("/com/fr/<wbr>design/images/m_file/preview.<wbr>png"));</wbr></wbr></wbr></div>
+<div>searchButton.setPreferredSize(<wbr>new Dimension(25, this.getHeight()));</wbr></div>
+<div>searchButton.<wbr>addActionListener(new ActionListener() {</wbr></div>
+<div>@Override</div>
+<div>public void actionPerformed(ActionEvent e) {</div>
+<div>searchable.search(searchField.<wbr>getText());</wbr></div>
+<div>}</div>
+<div>});</div>
+<div>searchField.addKeyListener(new KeyAdapter() {</div>
+<div>public void keyPressed(KeyEvent e) {</div>
+<div>if (e.getKeyCode() == KeyEvent.VK_ENTER) {</div>
+<div>searchable.search(searchField.<wbr>getText());</wbr></div>
+<div>e.consume();</div>
+<div>}</div>
+<div>}</div>
+<div>});</div>
+<div>this.setLayout(new BorderLayout());</div>
+<div>this.add(searchField,<wbr>BorderLayout.CENTER);</wbr></div>
+<div>this.add(searchButton,<wbr>BorderLayout.EAST);</wbr></div>
+<div>}</div>
+<div><strong>public static interface Searchable {</strong></div>
+<div><strong>public void search(String key);</strong></div>
+<div><strong>}</strong></div>
+<div>}</div></blockquote>
+<strong>案例五</strong>：ORM。使用数据结构进行抽象。服务器端JDBC的增删改查CRUD操作相信很多人都不陌生，可是如果有大量的Plain Object的话，一个类写一个会累死你，其实只要思考其本质，抽象一下，就可以概括为一个Map。这是数据库到服务器端内存的映射，其实还有很多其他映射，<span class="Apple-style-span" style="widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;"><span class="Apple-style-span" style="border-collapse: collapse; font-family: arial, sans-serif; font-size: 13px;">DataBinding(Data-Widget)，XML-<wbr>Object-Swing，GWT(Java-JS)等等。</wbr></span></span>
+
+</div>
+<div><span class="Apple-style-span" style="widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;"><span class="Apple-style-span" style="border-collapse: collapse; font-family: arial, sans-serif; font-size: 13px;"><span class="Apple-style-span" style="widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;"><span class="Apple-style-span" style="border-collapse: collapse; font-family: arial, sans-serif; font-size: 13px;">很多东西抽象起来不过就是个Map，可以用循环遍历的东西，<wbr>为什么偏偏要用代码一个个机械的去列举，制造重复。<span class="Apple-style-span" style="widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;"><span class="Apple-style-span" style="border-collapse: collapse; font-family: arial, sans-serif; font-size: 13px;">抽象力！！抽象力哪里去了？不要成了悲哀的码工。</span></span></wbr></span></span></span></span></div>
+<div><span class="Apple-style-span" style="widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;"><span class="Apple-style-span" style="border-collapse: collapse; font-family: arial, sans-serif; font-size: 13px;"><span class="Apple-style-span" style="widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;"><span class="Apple-style-span" style="border-collapse: collapse; font-family: arial, sans-serif; font-size: 13px;"><span class="Apple-style-span" style="widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;"><span class="Apple-style-span" style="border-collapse: collapse; font-family: arial, sans-serif; font-size: 13px;"><strong>案例六</strong>：<a title="发现纯函数" href="http://yi-programmer.com/blog/2011-01-12_pure-code.html" target="_blank">发现纯函数</a>。<span class="Apple-style-span" style="widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;"><span class="Apple-style-span" style="text-align: left; line-height: 22px; font-family: TrebuchetMS, Arial, sans-serif; font-size: 15px;">函数式程序员可能清楚什么叫纯函数。<span class="Apple-style-span" style="widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;"><span class="Apple-style-span" style="text-align: left; line-height: 22px; font-family: TrebuchetMS, Arial, sans-serif; font-size: 15px;">发现纯函数，就是发现系统核心逻辑，提取（抽象）成不依赖IO，不依赖全局状态的代码，重新设计纯的输入和返回的数据结构，将他们置入独立的模块。其实除了文章中说的那些好处外，发现纯函数后，逻辑会被发现整理，而通常这些逻辑通常是独一无二的，但很可能散布在各个IO的地方，提取成纯函数并与IO分开后，更利于重用，消除重复。</span></span></span></span></span></span></span></span></span></span></div>
+<div><span class="Apple-style-span" style="widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;"><span class="Apple-style-span" style="border-collapse: collapse; font-family: arial, sans-serif; font-size: 13px;"><span class="Apple-style-span" style="widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;"><span class="Apple-style-span" style="border-collapse: collapse; font-family: arial, sans-serif; font-size: 13px;"><span class="Apple-style-span" style="widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;"><span class="Apple-style-span" style="border-collapse: collapse; font-family: arial, sans-serif; font-size: 13px;">PS:另外推荐Martin Fowler一本重构的好书《<a href="http://book.douban.com/subject/1229923/">重构</a>》。</span></span></span></span></span></span></div>
+<div><span class="Apple-style-span" style="widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;"><span class="Apple-style-span" style="border-collapse: collapse; font-family: arial, sans-serif; font-size: 13px;"><span class="Apple-style-span" style="widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;"><span class="Apple-style-span" style="border-collapse: collapse; font-family: arial, sans-serif; font-size: 13px;"><span class="Apple-style-span" style="widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;"><img src="/uploads/2011/02/refactor_0001.jpg" alt="refactor.jpg" width="318" height="417" /></span></span></span></span></span></div>
+</div>
+</div>
+</div>
+</div>
+
+					<div class="meta">
+						<p class="date-publish">
+							Published: 
+							<date class="date-pub" title="2011-02-09T00:00:00+08:00" datetime="2011-02-09T00:00:00+08:00" pubdate>
+							<span class="month"><abbr>February</abbr></span>
+							<span class="day">09</span>
+							<span class="year">2011</span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">category: </li>
+							
+							
+
+
+  
+    
+  
+
+
+						</ul>
+						<ul class="list-tag list-linear">
+							<li class="list-head">tags: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/tags.html#代码质量 重复代码-ref">代码质量 重复代码 <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#技术管理-ref">技术管理 <span>6</span></a></li>
+    
+  
+
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					<div class="social">
+						<ul class="list-linear">
+							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="hackfisher" data-lang="en">Tweet</a></div></li>
+							<li><div class="twitter-follow"><a href="https://twitter.com/hackfisher" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+						</ul>
+					</div>
+					<div class="comment">
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+					</div>
+				</div><!-- misc-content -->
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/blog/2011/01/dry-codepro-analitic" title="View 代码质量系列之五：利用CodePro Analytic工具检测和删除重复代码——Don't Repeat Yourself">&laquo; 代码质量系列之五：利用CodePro Analytic工具检测和删除重复代码——Don't Repeat Yourself</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/blog/2011/02/cafe-bar-girls-qq" title="View 【趣味Hack】如何在咖啡厅，网吧等公共场所要到漂亮MM的QQ号">【趣味Hack】如何在咖啡厅，网吧等公共场所要到漂亮MM的QQ号 &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+					<h4>about</h4>
+					<ul>
+						<li class="contact"><address><span class="author fn n">HackFisher</span> - <span class="fn email">hackfisher@gmail.com</span></address></li>
+						<li class="github"><a href="http://github.com/HackFisher/" rel="me">github.com/HackFisher</a></li>
+						<li class="twitter"><a href="http://twitter.com/hackfisher/" rel="me">twitter.com/hackfisher</a></li>
+						<li class="rss"><a href="http://hackfisher.info/rss.xml">Subscribe to RSS Feed</a></li>
+					</ul>
+				</div><!-- misc -->
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+	(function(d, s) {
+		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.src = url; js.id = id;
+		fjs.parentNode.insertBefore(js, fjs);
+		};
+	load('//platform.twitter.com/widgets.js', 'tweetjs');
+	// load('https://apis.google.com/js/plusone.js', 'gplus1js'); // Checkout http://j.mp/ApDgMr for usage html for this is <div class="g-plusone" data-size="medium"></div>
+	// load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk'); // Checkout http://j.mp/wZw2xR for using open graph protorol html for this is <div class="fb-like" data-href="/blog/2011/02/best-practice-repeat-code-and-analytics" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
+	}(document, 'script'));
+</script>
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+  
+  
+</body>
+</html>
+

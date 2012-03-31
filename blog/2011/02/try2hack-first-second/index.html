@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>【趣味Hack】黑客模拟攻击闯关网站，闯前两关</title>
+	<meta name="author" content="HackFisher">
+	<link href='/assets/themes/the-program/css/style.css' rel="stylesheet" media="all">
+	<link href="http://feeds.feedburner.com/" rel="alternate" title="【趣味Hack】黑客模拟攻击闯关网站，闯前两关" type="application/atom+xml">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<nav class="nav-global">
+					<ul>
+						<li class="logo"><a href="/">HackFisher</a></li>
+						<li class="archive"><a href="/archive.html">archive</a></li>
+						<li class="page"><a href="/pages.html">pages</a></li>
+						<li class="category"><a href="/categories.html">categories</a></li>
+						<li class="tag"><a href="/tags.html">tags</a></li>
+						<li class="about"><a href="/about.html">about</a></li>
+						<li class="forkme"><div><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=HackFisher&repo=hackfisher.github.com&type=fork&count=true"
+									allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe></div></li>
+					</ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">【趣味Hack】黑客模拟攻击闯关网站，闯前两关</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					黑客模拟攻击闯关网站的地址是：http://www.try2hack.nl/。
+
+下面是闯前两关的过程：
+
+<strong>第一关</strong>：http://www.try2hack.nl/levels/
+
+a.打开页面后，看到一个click here to continue的按钮，用firebug查看其源代码，发现调用了Try()函数，如下图：
+
+<a href="/uploads/2011/02/find_try.png"><img class="aligncenter size-full wp-image-77" title="find_try" src="/uploads/2011/02/find_try.png" alt="" width="604" height="131" /></a>b. 将firebug切换到脚本，搜索"Try"，会发现如下脚本，找到密码答案：
+
+<a href="/uploads/2011/02/find_passwd.png"><img class="aligncenter size-full wp-image-78" title="find_passwd" src="/uploads/2011/02/find_passwd.png" alt="" width="471" height="230" /></a>
+
+<strong>第二关</strong>：http://www.try2hack.nl/levels/level2-xfdgnh.xhtml
+
+a. 打开网页，经过简单分析后，发现要找到用户名和密码，而用户名和密码是用的flash。简单搜寻脚本之后，发现如下passwd，但没有用户名，其实是迷惑性的。
+
+<a href="/uploads/2011/02/find_itissoeasy.png"><img class="aligncenter size-full wp-image-79" title="find_itissoeasy" src="/uploads/2011/02/find_itissoeasy.png" alt="" width="517" height="162" /></a>b. 从flash入手才是正道，还是利用firebug，打开网络，发现如下level2.swf，在最下面
+
+<a href="/uploads/2011/02/find_level2_swf.png"><img class="aligncenter size-full wp-image-80" title="find_level2_swf" src="/uploads/2011/02/find_level2_swf.png" alt="" width="588" height="405" /></a>c. 将该swf下载下来，然后从这个swf上想办法。firefox默认的缓存位置是C:\Documents and Settings\YourAcount\Local Settings\Temporary Internet Files，搜索*.swf，找到swf缓存文件。
+
+d. 先想办法看看能不能反编译过来，找到一个<a title="swf反编译" href="http://yangchangqing878.javaeye.com/blog/671148" target="_blank">swf的反编译工具</a>，下载下来，好像是叫Flare.
+
+e. 反编译一下，嗨，还真行，变成了as，得到如下.flr文件，得到用户名和密码，过关!
+
+<a href="/uploads/2011/02/decompile_swf.png"><img class="aligncenter size-full wp-image-81" title="decompile_swf" src="/uploads/2011/02/decompile_swf.png" alt="" width="669" height="513" /></a>
+
+<strong>第三关</strong>：http://www.try2hack.nl/levels/level3-.xhtml (未完待续)
+
+					<div class="meta">
+						<p class="date-publish">
+							Published: 
+							<date class="date-pub" title="2011-02-13T00:00:00+08:00" datetime="2011-02-13T00:00:00+08:00" pubdate>
+							<span class="month"><abbr>February</abbr></span>
+							<span class="day">13</span>
+							<span class="year">2011</span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">category: </li>
+							
+							
+
+
+  
+    
+  
+
+
+						</ul>
+						<ul class="list-tag list-linear">
+							<li class="list-head">tags: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/tags.html#Hack-ref">Hack <span>8</span></a></li>
+     
+    	<li><a href="/tags.html#网页漏洞-ref">网页漏洞 <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#趣味Hack-ref">趣味Hack <span>9</span></a></li>
+    
+  
+
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					<div class="social">
+						<ul class="list-linear">
+							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="hackfisher" data-lang="en">Tweet</a></div></li>
+							<li><div class="twitter-follow"><a href="https://twitter.com/hackfisher" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+						</ul>
+					</div>
+					<div class="comment">
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+					</div>
+				</div><!-- misc-content -->
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/blog/2011/02/cafe-bar-girls-qq" title="View 【趣味Hack】如何在咖啡厅，网吧等公共场所要到漂亮MM的QQ号">&laquo; 【趣味Hack】如何在咖啡厅，网吧等公共场所要到漂亮MM的QQ号</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/blog/2011/02/%25e6%2583%2585%25e4%25ba%25ba%25e8%258a%2582%25e2%2597%258f%25e5%258d%2597%25e4%25ba%25ac%25e2%2597%258f%25e6%2599%25a8%25e9%259b%25aa" title="View 情人节●南京●晨雪">情人节●南京●晨雪 &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+					<h4>about</h4>
+					<ul>
+						<li class="contact"><address><span class="author fn n">HackFisher</span> - <span class="fn email">hackfisher@gmail.com</span></address></li>
+						<li class="github"><a href="http://github.com/HackFisher/" rel="me">github.com/HackFisher</a></li>
+						<li class="twitter"><a href="http://twitter.com/hackfisher/" rel="me">twitter.com/hackfisher</a></li>
+						<li class="rss"><a href="http://hackfisher.info/rss.xml">Subscribe to RSS Feed</a></li>
+					</ul>
+				</div><!-- misc -->
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+	(function(d, s) {
+		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.src = url; js.id = id;
+		fjs.parentNode.insertBefore(js, fjs);
+		};
+	load('//platform.twitter.com/widgets.js', 'tweetjs');
+	// load('https://apis.google.com/js/plusone.js', 'gplus1js'); // Checkout http://j.mp/ApDgMr for usage html for this is <div class="g-plusone" data-size="medium"></div>
+	// load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk'); // Checkout http://j.mp/wZw2xR for using open graph protorol html for this is <div class="fb-like" data-href="/blog/2011/02/try2hack-first-second" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
+	}(document, 'script'));
+</script>
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+  
+  
+</body>
+</html>
+

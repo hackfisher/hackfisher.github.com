@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>JNA, Java Native开发利器</title>
+	<meta name="author" content="HackFisher">
+	<link href='/assets/themes/the-program/css/style.css' rel="stylesheet" media="all">
+	<link href="http://feeds.feedburner.com/" rel="alternate" title="JNA, Java Native开发利器" type="application/atom+xml">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<nav class="nav-global">
+					<ul>
+						<li class="logo"><a href="/">HackFisher</a></li>
+						<li class="archive"><a href="/archive.html">archive</a></li>
+						<li class="page"><a href="/pages.html">pages</a></li>
+						<li class="category"><a href="/categories.html">categories</a></li>
+						<li class="tag"><a href="/tags.html">tags</a></li>
+						<li class="about"><a href="/about.html">about</a></li>
+						<li class="forkme"><div><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=HackFisher&repo=hackfisher.github.com&type=fork&count=true"
+									allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe></div></li>
+					</ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">JNA, Java Native开发利器</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					简单的来说，这篇文章就是介绍一个十分好用的Java Native开发工具, JNA。
+
+在Java编程中，大部分时间都不需要理会JNI，但是当你需要调用一个本地的C/C++库的时候，你就不得不考虑如果在Java中调用C库中的接口(dll, so)。这样的情况有很多，比如当你需要访问一个硬件时，而硬件厂商只提供C语言写的驱动和库文件。
+
+刚开始，或许像我一样，大部分人知道Java有一个叫JNI的东西可以做到这一点，还不坏不是么，至少可以实现它。但是JNI的编写相当复杂和拙劣，关键的一点是需要编写C代码，要知道这对于相当一部分Java程序员来说可不是一个容易的事情。除了你要精通C语言，还要熟悉JNI的知识，包括C的数据类型如何对应到JNI的C数据类型，又如何对应到Java的数据类型，还有很多其他的细节需要注意，比如垃圾回收的问题，还有结构体数据类型对应问题，跨平台问题等等都足以把你搞得头大。很多情况下，只不过是为了调用一个第三方库，不得不再造出自己的一个库，不得不编写JNI代码和本地代码。我为什么不能直接调用本地库代码?
+
+直到有那么一天，某个人告诉你有个叫JNA的东西，就是专门用来解决这个问题的。像下面这个<a title="JNA GettingStartted" href="https://github.com/twall/jna/blob/master/www/GettingStarted.md" target="_blank">例子</a>这么简单。
+
+&nbsp;
+<pre escaped="true" lang="java" line="1">package com.sun.jna.examples;
+
+import com.sun.jna.Library;
+import com.sun.jna.Native;
+import com.sun.jna.Platform;
+
+/** Simple example of JNA interface mapping and usage. */
+public class HelloWorld {
+
+// This is the standard, stable way of mapping, which supports extensive
+// customization and mapping of Java to native types.
+
+public interface CLibrary extends Library {
+CLibrary INSTANCE = (CLibrary)
+Native.loadLibrary((Platform.isWindows() ? "msvcrt" : "c"),
+CLibrary.class);
+
+void printf(String format, Object... args);
+}
+
+public static void main(String[] args) {
+CLibrary.INSTANCE.printf("Hello, World\n");
+for (int i=0;i &lt; args.length;i++) {
+CLibrary.INSTANCE.printf("Argument %d: %s\n", i, args[i]);
+}
+}
+}</pre>
+&nbsp;
+
+使用JNA，你甚至不需要很多的文档，只要拿到第三方库的头文件，比如third.h，根据里面的函数定义直接生成Java的代码，几分钟就可以搞定。Java和本地C库的映射，可以根据头文件直接生成，甚至不用开发人员手动编写对应关系。要用哪几个函数，就在Java接口中添加哪几个函数。你可以按照自己想要的方式加载本地库(如果你曾被JNI下面System.loadLibrary那捉摸不定的java.library.path搞得生不如死)，JNA还可以做到C结构体和Java类的映射，如果你需要在Java中，向本地方法传递结构体，这就会很有用:
+
+&nbsp;
+<pre escaped="true" lang="java" line="1">public static class SYSTEMTIME extends Structure {
+public short wYear;
+public short wMonth;
+public short wDayOfWeek;
+public short wDay;
+public short wHour;
+public short wMinute;
+public short wSecond;
+public short wMilliseconds;
+}
+
+void GetSystemTime(SYSTEMTIME result);</pre>
+&nbsp;
+
+相比较与JNI来说，JNA也有它的缺点，其实JNA是建立与JNI的基础之上的，所以如果对性能要求特别高，那么多花点时间在JNI上面也许是值得的。另外，JNA在Java调用底层C库的时候特别方便，但是反过来，如果想要从C里面调用Java，JNA可能会遇到不小的麻烦，这时候你也许需要转回到JNI.
+
+如果你还对Java的Native开发心有余悸，希望这篇介绍的JNA的文章可以帮助你跨越JNI开发的这道鸿沟:)
+
+					<div class="meta">
+						<p class="date-publish">
+							Published: 
+							<date class="date-pub" title="2011-06-30T00:00:00+08:00" datetime="2011-06-30T00:00:00+08:00" pubdate>
+							<span class="month"><abbr>June</abbr></span>
+							<span class="day">30</span>
+							<span class="year">2011</span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">category: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/categories.html#Java-ref">
+    		Java <span>4</span>
+    	</a></li>
+    
+  
+
+
+						</ul>
+						<ul class="list-tag list-linear">
+							<li class="list-head">tags: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/tags.html#Java-ref">Java <span>9</span></a></li>
+     
+    	<li><a href="/tags.html#JNA-ref">JNA <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#JNI-ref">JNI <span>1</span></a></li>
+    
+  
+
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					<div class="social">
+						<ul class="list-linear">
+							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="hackfisher" data-lang="en">Tweet</a></div></li>
+							<li><div class="twitter-follow"><a href="https://twitter.com/hackfisher" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+						</ul>
+					</div>
+					<div class="comment">
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+					</div>
+				</div><!-- misc-content -->
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/blog/2011/06/classloader-leak-protection-in-tomcat" title="View ClassLoader Memory Leak: Detection and Protection in Tomcat">&laquo; ClassLoader Memory Leak: Detection and Protection in Tomcat</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/blog/2011/07/java-dynamic-compilation" title="View JDK1.4下面如何实现Java Source动态编译及其应用">JDK1.4下面如何实现Java Source动态编译及其应用 &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+					<h4>about</h4>
+					<ul>
+						<li class="contact"><address><span class="author fn n">HackFisher</span> - <span class="fn email">hackfisher@gmail.com</span></address></li>
+						<li class="github"><a href="http://github.com/HackFisher/" rel="me">github.com/HackFisher</a></li>
+						<li class="twitter"><a href="http://twitter.com/hackfisher/" rel="me">twitter.com/hackfisher</a></li>
+						<li class="rss"><a href="http://hackfisher.info/rss.xml">Subscribe to RSS Feed</a></li>
+					</ul>
+				</div><!-- misc -->
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+	(function(d, s) {
+		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.src = url; js.id = id;
+		fjs.parentNode.insertBefore(js, fjs);
+		};
+	load('//platform.twitter.com/widgets.js', 'tweetjs');
+	// load('https://apis.google.com/js/plusone.js', 'gplus1js'); // Checkout http://j.mp/ApDgMr for usage html for this is <div class="g-plusone" data-size="medium"></div>
+	// load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk'); // Checkout http://j.mp/wZw2xR for using open graph protorol html for this is <div class="fb-like" data-href="/blog/2011/06/jna-java-native" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
+	}(document, 'script'));
+</script>
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+  
+  
+</body>
+</html>
+
