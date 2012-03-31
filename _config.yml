@@ -8,7 +8,7 @@ markdown: rdiscount
 pygments: true
 
 # For Google Analytics
-safe: true
+safe: false
 
 plugins: ./_plugins
 
