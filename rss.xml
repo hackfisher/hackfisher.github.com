@@ -6,8 +6,8 @@
     <atom:link href="http://hackfisher.info/rss.xml" rel="self" type="application/rss+xml" />
     <description>stuff from hackfisher</description>
     <language>en-us</language>
-    <pubDate>Sat, 31 Mar 2012 14:46:34 �й���׼ʱ��</pubDate>
-    <lastBuildDate>Sat, 31 Mar 2012 14:46:34 �й���׼ʱ��</lastBuildDate>
+    <pubDate>Sat, 31 Mar 2012 15:44:34 �й���׼ʱ��</pubDate>
+    <lastBuildDate>Sat, 31 Mar 2012 15:44:34 �й���׼ʱ��</lastBuildDate>
 
     
     <item>
@@ -16,7 +16,24 @@
       <pubDate>Sat, 31 Mar 2012 00:00:00 �й���׼ʱ��</pubDate>
       <author>hackfisher@gmail.com (HackFisher)</author>
       <guid>http://hackfisher.info/blog/2012/03/gist-tag-for-jekyll</guid>
-      <description>
+      <description>&lt;p&gt;GitHub有一个很好的功能&lt;a href=&quot;https://gist.github.com/&quot;&gt;Gist&lt;/a&gt;，可以收集和分享代码片段。自己写博客的时候也经常会需要在博客中嵌入代码片段，于是在想是否可以将这两个结合起来。&lt;/p&gt;
+
+&lt;p&gt;网上搜到一个&lt;a href=&quot;http://brandontilley.com/2011/01/30/gist-tag-for-jekyll.html&quot;&gt;教程&lt;/a&gt;，按照他写的插件基本上就可以直接重用了，但是在这个过程中遇到几个问题：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;GitHub Pages处于安全性的考虑&lt;a href=&quot;http://stackoverflow.com/questions/8646744/jekyll-plugin-not-working&quot;&gt;不支持自定义插件&lt;/a&gt;
+但是你别着急，还有有别的办法的，因为Jekyll生成的静态页面，所以也可以采取在本地用插件生成静态页面，然后再上传的&lt;a href=&quot;http://charliepark.org/jekyll-with-plugins/&quot;&gt;办法&lt;/a&gt;。
+方法有很多，我使用的方法来自于这个&lt;a href=&quot;http://arademaker.github.com/blog/2011/12/01/github-pages-jekyll-plugins.html&quot;&gt;教程&lt;/a&gt;，就是将工程分为两个branch: source和master，因为git的切换比较方便。
+官方运行的jekyll命令其实是:
+  $ jekyll --pygments --safe&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;本地运行jekyll的时候无法编译，插件[https://github.com/mojombo/jekyll/wiki/Plugins]不起作用, &lt;a href=&quot;https://github.com/mojombo/jekyll/issues/527&quot;&gt;issue&lt;/a&gt;
+最开始的原因找了好久，后来发现将site.safe属性设置为false就行了，官方的wiki竟然没有说明，GitHub也是用参数 --safe来禁用插件的。
+但是这边有一个问题，如果你是从jekyllbootstrap项目clone过来的话，将safe设置为false会&lt;a href=&quot;https://github.com/plusjade/jekyll-bootstrap/issues/53&quot;&gt;导致Google Analytics失效&lt;/a&gt;
+如果想同时用插件，又想用Google Analytis的话就冲突了，需要改一下 _includes\JB\analytics文件，将里面的site.safe条件判断去掉。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;下面的代码片段是插件的内容，也是我用这个办法，Gist 和 Jekyll集成的效果:&lt;/p&gt;
 
 &lt;script src='https://gist.github.com/2258459.js?file=gist_tag.rb'&gt;&lt;/script&gt;
 
