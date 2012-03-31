@@ -6,8 +6,8 @@
     <atom:link href="http://hackfisher.info/rss.xml" rel="self" type="application/rss+xml" />
     <description>stuff from hackfisher</description>
     <language>en-us</language>
-    <pubDate>Sat, 31 Mar 2012 14:33:53 中国标准时间</pubDate>
-    <lastBuildDate>Sat, 31 Mar 2012 14:33:53 中国标准时间</lastBuildDate>
+    <pubDate>Sat, 31 Mar 2012 14:46:34 中国标准时间</pubDate>
+    <lastBuildDate>Sat, 31 Mar 2012 14:46:34 中国标准时间</lastBuildDate>
 
     
     <item>
@@ -16,7 +16,12 @@
       <pubDate>Sat, 31 Mar 2012 00:00:00 中国标准时间</pubDate>
       <author>hackfisher@gmail.com (HackFisher)</author>
       <guid>http://hackfisher.info/blog/2012/03/gist-tag-for-jekyll</guid>
-      <description>&lt;p&gt;Liquid error: No such file or directory - c:/Documents and Settings/Administrator/hackfisher.github.com/_gist_cache/2258459-gist_tag.rb-9b1e044346e131a7c1fc65286fd893cd.cache&lt;/p&gt;
+      <description>
+
+&lt;script src='https://gist.github.com/2258459.js?file=gist_tag.rb'&gt;&lt;/script&gt;
+
+
+&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;You are being &amp;lt;a href=&amp;quot;https://raw.github.com/gist/2258459/gist_tag.rb&amp;quot;&amp;gt;redirected&amp;lt;/a&amp;gt;.&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/p&gt;
 </description>
     </item>
     
