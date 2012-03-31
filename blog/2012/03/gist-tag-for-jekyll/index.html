@@ -62,10 +62,10 @@
 方法有很多，我使用的方法来自于这个<a href="http://arademaker.github.com/blog/2011/12/01/github-pages-jekyll-plugins.html">教程</a>，就是将工程分为两个branch: source和master，因为git的切换比较方便。
 官方运行的jekyll命令其实是:
   $ jekyll --pygments --safe</p></li>
-<li><p>本地运行jekyll的时候无法编译，插件[https://github.com/mojombo/jekyll/wiki/Plugins]不起作用, <a href="https://github.com/mojombo/jekyll/issues/527">issue</a>
+<li><p>本地运行jekyll的时候无法编译，[插件](https://github.com/mojombo/jekyll/wiki/Plugins)不起作用, <a href="https://github.com/mojombo/jekyll/issues/527">issue</a>
 最开始的原因找了好久，后来发现将site.safe属性设置为false就行了，官方的wiki竟然没有说明，GitHub也是用参数 --safe来禁用插件的。
 但是这边有一个问题，如果你是从jekyllbootstrap项目clone过来的话，将safe设置为false会<a href="https://github.com/plusjade/jekyll-bootstrap/issues/53">导致Google Analytics失效</a>
-如果想同时用插件，又想用Google Analytis的话就冲突了，需要改一下 _includes\JB\analytics文件，将里面的site.safe条件判断去掉。</p></li>
+如果想同时用插件，又想用Google Analytis的话就冲突了，需要改一下 _includes\JB\analytics文件，[将里面的site.safe条件判断去掉](https://github.com/HackFisher/hackfisher.github.com/commit/d294ef8a60769088452e2540837b6579d4d95165)。</p></li>
 </ul>
 
 
