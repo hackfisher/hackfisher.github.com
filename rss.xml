@@ -1,22 +1,14 @@
-<?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>HackFisher</title>
-    <link>http://hackfisher.info/</link>
-    <atom:link href="http://hackfisher.info/rss.xml" rel="self" type="application/rss+xml" />
-    <description>stuff from hackfisher</description>
-    <language>en-us</language>
-    <pubDate>Fri, 06 Apr 2012 18:03:23 �й���׼ʱ��</pubDate>
-    <lastBuildDate>Fri, 06 Apr 2012 18:03:23 �й���׼ʱ��</lastBuildDate>
-
-    
-    <item>
-      <title>测试思考系列[5]：非功能性测试</title>
-      <link>http://hackfisher.info/blog/2012/04/thinking-in-test-non-functional-testing</link>
-      <pubDate>Fri, 06 Apr 2012 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2012/04/thinking-in-test-non-functional-testing</guid>
-      <description>&lt;p&gt;非功能性测试是针对非功能性需求来说的。所谓&lt;a href=&quot;http://www.51testing.com/html/90/n-79290.html&quot;&gt;非功能性需求&lt;/a&gt;，是指软件产品为满足用户业务需求而必须具有且除功能需求以外的特性。软件产品的非功能性需求包括系统的性能、可靠性、可维护性、可扩充性和对技术和对业务的适应性等。下面对其中的某些指标加以说明。在这里可以看到非功能性需求涉及的范围很广，软件产品本身不是孤立存在的，还涉及到诸多外在环境的影响。非功能性需求必须考虑软件既要可用，又要易用。这篇文章主要介绍在非功能性方面的一些思考和实践，分为性能测试、兼容性测试、安全性测试、易用可用性测试。&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<title></title>
+		<description></description>
+		<link></link>
+		<atom:link href="http://hackfisher.info/rss.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>测试思考系列[5]：非功能性测试</title>
+				<description>&lt;p&gt;非功能性测试是针对非功能性需求来说的。所谓&lt;a href=&quot;http://www.51testing.com/html/90/n-79290.html&quot;&gt;非功能性需求&lt;/a&gt;，是指软件产品为满足用户业务需求而必须具有且除功能需求以外的特性。软件产品的非功能性需求包括系统的性能、可靠性、可维护性、可扩充性和对技术和对业务的适应性等。下面对其中的某些指标加以说明。在这里可以看到非功能性需求涉及的范围很广，软件产品本身不是孤立存在的，还涉及到诸多外在环境的影响。非功能性需求必须考虑软件既要可用，又要易用。这篇文章主要介绍在非功能性方面的一些思考和实践，分为性能测试、兼容性测试、安全性测试、易用可用性测试。&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;性能测试.&lt;/strong&gt;&lt;/li&gt;
@@ -72,15 +64,13 @@
 &lt;/ol&gt;
 
 </description>
-    </item>
-    
-    <item>
-      <title>Gist Tag For Jekyll, 将Gist和Jekyll集成起来</title>
-      <link>http://hackfisher.info/blog/2012/03/gist-tag-for-jekyll</link>
-      <pubDate>Sat, 31 Mar 2012 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2012/03/gist-tag-for-jekyll</guid>
-      <description>&lt;p&gt;GitHub有一个很好的功能&lt;a href=&quot;https://gist.github.com/&quot;&gt;Gist&lt;/a&gt;，可以收集和分享代码片段。自己写博客的时候也经常会需要在博客中嵌入代码片段，于是在想是否可以将这两个结合起来。&lt;/p&gt;
+				<published>Fri Apr 06 00:00:00 +0800 2012</published>
+				<link>/blog/2012/04/thinking-in-test-non-functional-testing</link>
+			</item>
+		
+			<item>
+				<title>Gist Tag For Jekyll, 将Gist和Jekyll集成起来</title>
+				<description>&lt;p&gt;GitHub有一个很好的功能&lt;a href=&quot;https://gist.github.com/&quot;&gt;Gist&lt;/a&gt;，可以收集和分享代码片段。自己写博客的时候也经常会需要在博客中嵌入代码片段，于是在想是否可以将这两个结合起来。&lt;/p&gt;
 
 &lt;p&gt;网上搜到一个&lt;a href=&quot;http://brandontilley.com/2011/01/30/gist-tag-for-jekyll.html&quot;&gt;教程&lt;/a&gt;，按照他写的插件基本上就可以直接重用了，但是在这个过程中遇到几个问题：&lt;/p&gt;
 
@@ -104,15 +94,13 @@
 
 &lt;p&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;You are being &amp;lt;a href=&amp;quot;https://raw.github.com/gist/2258459/gist_tag.rb&amp;quot;&amp;gt;redirected&amp;lt;/a&amp;gt;.&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>测试思考系列[4]：测试自动化</title>
-      <link>http://hackfisher.info/blog/2012/03/thinking-in-test-automatization</link>
-      <pubDate>Fri, 30 Mar 2012 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2012/03/thinking-in-test-automatization</guid>
-      <description>&lt;p&gt;测试自动化是把以人为驱动的测试行为转化为机器执行的一种过程。通常，测试用例按照执行对象分为手动测试和自动化测试。手动测试往往面临人力消耗巨大，测试效率很低的问题。而自动化测试便是为了解决这些问题提出的概念。&lt;/p&gt;
+				<published>Sat Mar 31 00:00:00 +0800 2012</published>
+				<link>/blog/2012/03/gist-tag-for-jekyll</link>
+			</item>
+		
+			<item>
+				<title>测试思考系列[4]：测试自动化</title>
+				<description>&lt;p&gt;测试自动化是把以人为驱动的测试行为转化为机器执行的一种过程。通常，测试用例按照执行对象分为手动测试和自动化测试。手动测试往往面临人力消耗巨大，测试效率很低的问题。而自动化测试便是为了解决这些问题提出的概念。&lt;/p&gt;
 
 &lt;p&gt;自动化测试相对手动测试来说有很多优点：
 - 1) 充分利用时间资源。&lt;/p&gt;
@@ -162,15 +150,13 @@
 
 &lt;p&gt;&lt;img src=&quot;/uploads/2012/03/deployment.png&quot; alt=&quot;基于Selenium的web自动化测试框架图&quot; /&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>使用Jekyll将博客从WordPress迁移至GitHub</title>
-      <link>http://hackfisher.info/blog/2012/03/blog-migrate-to-github</link>
-      <pubDate>Thu, 29 Mar 2012 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2012/03/blog-migrate-to-github</guid>
-      <description>&lt;p&gt;Jekyll是一个使用Ruby编写的静态站点生成工具，使用Liquid模板渲染引擎，支持Markdown和Textile标记语言，并且可以为所有以 .html、.markdown、.textile扩展名结尾的件使用YAML配置，内置语法高亮功能。而Github的Pages服务可以为每个Github主机上的仓库提供静态页面服务，并且Pages服务支持Jekyll。因为Github Pages有两种Pages，分别是用户页面和项目页面，所以我们可以使用用户页面来创建自己的Blog。&lt;/p&gt;
+				<published>Fri Mar 30 00:00:00 +0800 2012</published>
+				<link>/blog/2012/03/thinking-in-test-automatization</link>
+			</item>
+		
+			<item>
+				<title>使用Jekyll将博客从WordPress迁移至GitHub</title>
+				<description>&lt;p&gt;Jekyll是一个使用Ruby编写的静态站点生成工具，使用Liquid模板渲染引擎，支持Markdown和Textile标记语言，并且可以为所有以 .html、.markdown、.textile扩展名结尾的件使用YAML配置，内置语法高亮功能。而Github的Pages服务可以为每个Github主机上的仓库提供静态页面服务，并且Pages服务支持Jekyll。因为Github Pages有两种Pages，分别是用户页面和项目页面，所以我们可以使用用户页面来创建自己的Blog。&lt;/p&gt;
 
 &lt;p&gt;用GitHub的好处就有很多了,比如版本控制,比如免费空间,又比如支持CNAME设置自定义域名。&lt;/p&gt;
 
@@ -205,15 +191,13 @@ $ git push origin master
 &lt;/ul&gt;
 
 </description>
-    </item>
-    
-    <item>
-      <title>测试思考系列[3]：回归测试</title>
-      <link>http://hackfisher.info/blog/2012/03/thinking-in-test-regression-test</link>
-      <pubDate>Fri, 23 Mar 2012 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2012/03/thinking-in-test-regression-test</guid>
-      <description>&lt;strong&gt;&lt;a title=&quot;回归测试&quot; href=&quot;http://baike.baidu.com/view/106720.htm&quot; target=&quot;_blank&quot;&gt;回归测试&lt;/a&gt;&lt;/strong&gt;在百度百科上面的描述感觉还蛮准确，引用如下：
+				<published>Thu Mar 29 00:00:00 +0800 2012</published>
+				<link>/blog/2012/03/blog-migrate-to-github</link>
+			</item>
+		
+			<item>
+				<title>测试思考系列[3]：回归测试</title>
+				<description>&lt;strong&gt;&lt;a title=&quot;回归测试&quot; href=&quot;http://baike.baidu.com/view/106720.htm&quot; target=&quot;_blank&quot;&gt;回归测试&lt;/a&gt;&lt;/strong&gt;在百度百科上面的描述感觉还蛮准确，引用如下：
 &lt;blockquote&gt;回归测试是指修改了旧代码后，重新进行测试以确认修改没有引入新的错误或导致其他代码产生错误。自动回归测试将大幅降低系统测试、维护升级等阶段的成本。回归测试作为软件生命周期的一个组成部分，在整个软件测试过程中占有很大的工作量比重，软件开发的各个阶段都会进行多次回归测试。在渐进和快速迭代开发中，新版本的连续发布使回归测试进行的更加频繁，而在极端编程方法中，更是要求每天都进行若干次回归测试。因此，通过选择正确的回归测试策略来改进回归测试的效率和有效性是非常有意义的。&lt;/blockquote&gt;
 因为需求功能不断变化，产品也会跟着变，所以测试用例库则免不了需要&lt;strong&gt;维护&lt;/strong&gt;工作，而维护主要也是指的增删改查(CRUD)。
 &lt;ul&gt;
@@ -243,15 +227,13 @@ $ git push origin master
 	&lt;li&gt;充分利用测试者的经验和能力，提高测试积极性，通过ST与探索性测试(ET)结合的方式进行测试，关于ET，后面会有系列文章进行介绍。探索性测试，在一些其他的公司已经得到了实践验证，比较好的书可以看看大牛James A.Whittaker的 &lt;a title=&quot;探索式软件测试&quot; href=&quot;http://book.douban.com/subject/4818689/&quot; target=&quot;_blank&quot;&gt;《探索式软件测试》&lt;/a&gt;。&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>测试思考系列[2]：提交测试</title>
-      <link>http://hackfisher.info/blog/2012/03/thinking-in-test-commit-test</link>
-      <pubDate>Mon, 19 Mar 2012 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2012/03/thinking-in-test-commit-test</guid>
-      <description>&amp;nbsp;
+				<published>Fri Mar 23 00:00:00 +0800 2012</published>
+				<link>/blog/2012/03/thinking-in-test-regression-test</link>
+			</item>
+		
+			<item>
+				<title>测试思考系列[2]：提交测试</title>
+				<description>&amp;nbsp;
 
 对于开发活动来说，代码提交是一个很重要的事件，代码变更被提交到版本控制服务器后(成为一次revision)，意味着该变更的影响范围从该开发人员自己推广到了更广阔的范围：
 
@@ -348,15 +330,13 @@ Alpha场所是一个地方，里面有一堆东西，常见的包括Alpha安装�
 
 为什么要有冒烟测试？ 我可以举一个没有冒烟测试之前的例子。有一段时间，开发组经常进行大规模的代码重构，并且导致很多基础的功能用不了，并且因此更多的依赖这些基础功能的测试工作也无法开展，按照持续集成的指导原则来说，越早的集成和测试越好，但是这样测试工作一下子就被阻滞了。原先想的办法是，提交紧急BUG，让开发优先修复，但后来发现根本不起作用，因为紧急只空留一个名义上的紧急，但实际处理的时候，可能还是要好几天才会得到处理。后来通过将那些最影响其他测试工作的项，组织成冒烟测试条目，并约定：&lt;strong&gt;如果冒烟测试失败，需要当天立刻修复，每一测试项都会对应有一个开发人员&lt;/strong&gt;。
 </description>
-    </item>
-    
-    <item>
-      <title>测试思考系列[1]：往持续交付的方向努力</title>
-      <link>http://hackfisher.info/blog/2012/03/thinking-in-test-ci</link>
-      <pubDate>Mon, 19 Mar 2012 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2012/03/thinking-in-test-ci</guid>
-      <description>测试应该朝什么方向努力，怎样做才能避免陷入泥潭? 产品不稳定的原因，粗略看上去，似乎是因为测试时间不够，测试不充分导致的，但是深入进去探讨会发现没有那么简单。这一篇文章就是探讨测试应该朝着什么目标去努力，而我在这半年的实践中选择的是持续交付的方向，下面就介绍介绍持续交付。
+				<published>Mon Mar 19 00:00:00 +0800 2012</published>
+				<link>/blog/2012/03/thinking-in-test-commit-test</link>
+			</item>
+		
+			<item>
+				<title>测试思考系列[1]：往持续交付的方向努力</title>
+				<description>测试应该朝什么方向努力，怎样做才能避免陷入泥潭? 产品不稳定的原因，粗略看上去，似乎是因为测试时间不够，测试不充分导致的，但是深入进去探讨会发现没有那么简单。这一篇文章就是探讨测试应该朝着什么目标去努力，而我在这半年的实践中选择的是持续交付的方向，下面就介绍介绍持续交付。
 
 首先，如果测试不能从产品周期的一开始就参与进去，后期等产品快发布前再测试，会面临很大的问题。工作量大不谈，如果发现了BUG，开发的修复时间也不够了，更不要说可能产生严重的架构问题，或者功能和需求不符问题。
 
@@ -394,29 +374,25 @@ Alpha场所是一个地方，里面有一堆东西，常见的包括Alpha安装�
 &lt;p style=&quot;text-align: center;&quot;&gt;也就是说，尽管右项有其价值，
 我们更重视左项的价值。&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>梅花山·南京，三月十七号二零一二</title>
-      <link>http://hackfisher.info/blog/2012/03/plum-blossom-hill</link>
-      <pubDate>Mon, 19 Mar 2012 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2012/03/plum-blossom-hill</guid>
-      <description>&lt;a href=&quot;/uploads/2012/03/red.png&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-326&quot; title=&quot;red&quot; src=&quot;/uploads/2012/03/red.png&quot; alt=&quot;&quot; width=&quot;991&quot; height=&quot;502&quot; /&gt;&lt;/a&gt;
+				<published>Mon Mar 19 00:00:00 +0800 2012</published>
+				<link>/blog/2012/03/thinking-in-test-ci</link>
+			</item>
+		
+			<item>
+				<title>梅花山·南京，三月十七号二零一二</title>
+				<description>&lt;a href=&quot;/uploads/2012/03/red.png&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-326&quot; title=&quot;red&quot; src=&quot;/uploads/2012/03/red.png&quot; alt=&quot;&quot; width=&quot;991&quot; height=&quot;502&quot; /&gt;&lt;/a&gt;
 
 &lt;a href=&quot;/uploads/2012/03/white.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-327&quot; title=&quot;white&quot; src=&quot;/uploads/2012/03/white-1024x811.png&quot; alt=&quot;&quot; width=&quot;1024&quot; height=&quot;811&quot; /&gt;&lt;/a&gt;
 
 &lt;a href=&quot;/uploads/2012/03/tree.png&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-328&quot; title=&quot;tree&quot; src=&quot;/uploads/2012/03/tree.png&quot; alt=&quot;&quot; width=&quot;814&quot; height=&quot;864&quot; /&gt;&lt;/a&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>思考测试系列[0]: 概述</title>
-      <link>http://hackfisher.info/blog/2012/03/thinking-in-test-summary</link>
-      <pubDate>Mon, 12 Mar 2012 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2012/03/thinking-in-test-summary</guid>
-      <description>从去年七月份开始做测试到现在，做了很多探索，实践，和思考，公司的新产品刚刚发布，是机会该将这段实践对测试的思考整理一下了，为未来的测试工作做好更深入的准备。
+				<published>Mon Mar 19 00:00:00 +0800 2012</published>
+				<link>/blog/2012/03/plum-blossom-hill</link>
+			</item>
+		
+			<item>
+				<title>思考测试系列[0]: 概述</title>
+				<description>从去年七月份开始做测试到现在，做了很多探索，实践，和思考，公司的新产品刚刚发布，是机会该将这段实践对测试的思考整理一下了，为未来的测试工作做好更深入的准备。
 
 在我理解，测试是一种非常具有挑战性的工作，并且非常需要创造性。
 
@@ -442,15 +418,13 @@ Alpha场所是一个地方，里面有一堆东西，常见的包括Alpha安装�
 8、 测试作为服务
 9、 漫谈测试管理
 </description>
-    </item>
-    
-    <item>
-      <title>上海, Saturday, November 26,2011</title>
-      <link>http://hackfisher.info/blog/2011/12/shanghai20111126</link>
-      <pubDate>Sat, 03 Dec 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/12/shanghai20111126</guid>
-      <description>&lt;p&gt;&lt;img src=&quot;/uploads/2011/12/bridge.jpg&quot; alt=&quot;bridge&quot; /&gt;
+				<published>Mon Mar 12 00:00:00 +0800 2012</published>
+				<link>/blog/2012/03/thinking-in-test-summary</link>
+			</item>
+		
+			<item>
+				<title>上海, Saturday, November 26,2011</title>
+				<description>&lt;p&gt;&lt;img src=&quot;/uploads/2011/12/bridge.jpg&quot; alt=&quot;bridge&quot; /&gt;
 &lt;img src=&quot;/uploads/2011/12/cat.jpg&quot; alt=&quot;cat&quot; /&gt;
 &lt;img src=&quot;/uploads/2011/12/cn.jpg&quot; alt=&quot;cn&quot; /&gt;
 &lt;img src=&quot;/uploads/2011/12/leaf.jpg&quot; alt=&quot;leaf&quot; /&gt;
@@ -460,15 +434,13 @@ Alpha场所是一个地方，里面有一堆东西，常见的包括Alpha安装�
 &lt;img src=&quot;/uploads/2011/12/sunset.jpg&quot; alt=&quot;sunset&quot; /&gt;
 &lt;img src=&quot;/uploads/2011/12/tower.jpg&quot; alt=&quot;tower&quot; /&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Code Snippet 模板模式</title>
-      <link>http://hackfisher.info/blog/2011/11/codesnippet</link>
-      <pubDate>Sun, 20 Nov 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/11/codesnippet</guid>
-      <description>&lt;pre escaped=&quot;true&quot; lang=&quot;java&quot; line=&quot;1&quot;&gt;// DAOTemplate.java:
+				<published>Sat Dec 03 00:00:00 +0800 2011</published>
+				<link>/blog/2011/12/shanghai20111126</link>
+			</item>
+		
+			<item>
+				<title>Code Snippet 模板模式</title>
+				<description>&lt;pre escaped=&quot;true&quot; lang=&quot;java&quot; line=&quot;1&quot;&gt;// DAOTemplate.java:
 public static execute(Action action) {
 DAOSession session = null;
 try {
@@ -491,15 +463,13 @@ DAOTemplate.execute(new Action() {
    }
 });&lt;/pre&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>乡土履痕</title>
-      <link>http://hackfisher.info/blog/2011/10/lost-land</link>
-      <pubDate>Mon, 31 Oct 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/10/lost-land</guid>
-      <description>小时候在家，父母基本上不让我干活，就是宁可让我看电视玩电脑，也不让我干活。道理很简单，他们这辈子过的太辛苦，绝对不想让我再重复他们走过的老路了。但是最近回家，虽然也会偷懒，但是或多或少，都会帮忙干一些农活。不仅因为长大的原因，还是因为最近渐渐意识到一点，我对小时候长大的这片土地其实是非常陌生的，对这片土地上发生的事的越来越陌生，所以想熟悉熟悉那些我过去未曾打算了解的东西。
+				<published>Sun Nov 20 00:00:00 +0800 2011</published>
+				<link>/blog/2011/11/codesnippet</link>
+			</item>
+		
+			<item>
+				<title>乡土履痕</title>
+				<description>小时候在家，父母基本上不让我干活，就是宁可让我看电视玩电脑，也不让我干活。道理很简单，他们这辈子过的太辛苦，绝对不想让我再重复他们走过的老路了。但是最近回家，虽然也会偷懒，但是或多或少，都会帮忙干一些农活。不仅因为长大的原因，还是因为最近渐渐意识到一点，我对小时候长大的这片土地其实是非常陌生的，对这片土地上发生的事的越来越陌生，所以想熟悉熟悉那些我过去未曾打算了解的东西。
 
 我大学毕业那会儿考虑过回家乡发展，也真正在家乡的银行实习了几个月。但是我发现在家时无法完全摆脱父母对我的影响。并且与大城市不同，家乡更多的是依靠现存的熟人和关系，至少在当时，我不喜欢这样，所以我离开了，又回到了大城市。
 
@@ -511,27 +481,23 @@ DAOTemplate.execute(new Action() {
 
 说这句话的时候，他家已经被拆迁，而我们正站在他拆迁后的新家窗户旁，离着地面十几米远，看着远处的刚建的工厂和整得不成样子的国道。当他正在说话的时候，我心里还在祈祷那些工厂的环境污染千万不要把这鱼米和丝绸之乡搞得千疮百孔，感天谢地。我的父母何尝不是这样，农民最怀念的还不是生活了一辈子的土地，这种深深的依赖突然失去的感觉就是一种落空感，像是失恋一样。可是在强大的国家机器面前，农民的这些情感又能占到几分重量，甚至都不会被人记起，最终会落进历史的尘埃，然后不知不觉得被打扫的一干二净。
 </description>
-    </item>
-    
-    <item>
-      <title>收养了一只小猫</title>
-      <link>http://hackfisher.info/blog/2011/08/little-cat</link>
-      <pubDate>Sun, 21 Aug 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/08/little-cat</guid>
-      <description>上周末逛街时，一直跟在我们后面，于是就收养了它，这只猫很喜欢跟人呆在一起。
+				<published>Mon Oct 31 00:00:00 +0800 2011</published>
+				<link>/blog/2011/10/lost-land</link>
+			</item>
+		
+			<item>
+				<title>收养了一只小猫</title>
+				<description>上周末逛街时，一直跟在我们后面，于是就收养了它，这只猫很喜欢跟人呆在一起。
 
 &lt;a href=&quot;/uploads/2011/08/cat.jpg&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-252&quot; title=&quot;cat&quot; src=&quot;/uploads/2011/08/cat-768x1024.jpg&quot; alt=&quot;&quot; width=&quot;768&quot; height=&quot;1024&quot; /&gt;&lt;/a&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>开源ETL工具和商业ETL工具比较(译文)</title>
-      <link>http://hackfisher.info/blog/2011/07/open-source-etl-compare-commencial-etl-tool-translate</link>
-      <pubDate>Thu, 07 Jul 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/07/open-source-etl-compare-commencial-etl-tool-translate</guid>
-      <description>因为我对开源ETL工具也不太了解，正好最近再做这方面的研究，发现了这篇文章概括的还蛮仔细，就翻译过来了，能对现有的开源ETL工具有个初步了解。因为文章好像是08年的，可能已经过时了，以为已经过去快3年了，世事发展变化很快。
+				<published>Sun Aug 21 00:00:00 +0800 2011</published>
+				<link>/blog/2011/08/little-cat</link>
+			</item>
+		
+			<item>
+				<title>开源ETL工具和商业ETL工具比较(译文)</title>
+				<description>因为我对开源ETL工具也不太了解，正好最近再做这方面的研究，发现了这篇文章概括的还蛮仔细，就翻译过来了，能对现有的开源ETL工具有个初步了解。因为文章好像是08年的，可能已经过时了，以为已经过去快3年了，世事发展变化很快。
 
 ——————————————
 
@@ -655,15 +621,13 @@ Infomatica真的是一个非常好的企业级ETL套件，但是非常大且昂�
 
 &amp;nbsp;
 </description>
-    </item>
-    
-    <item>
-      <title>JDK1.4下面如何实现Java Source动态编译及其应用</title>
-      <link>http://hackfisher.info/blog/2011/07/java-dynamic-compilation</link>
-      <pubDate>Thu, 07 Jul 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/07/java-dynamic-compilation</guid>
-      <description>&lt;strong&gt;什么是动态编译?&lt;/strong&gt;
+				<published>Thu Jul 07 00:00:00 +0800 2011</published>
+				<link>/blog/2011/07/open-source-etl-compare-commencial-etl-tool-translate</link>
+			</item>
+		
+			<item>
+				<title>JDK1.4下面如何实现Java Source动态编译及其应用</title>
+				<description>&lt;strong&gt;什么是动态编译?&lt;/strong&gt;
 
 动态编译，我理解就是在执行期临时编译，并调用。我们都知道Java语言在运行前都会经过javac编译成.class文件，打包成jar，然后在JVM下用java执行。一般情况下，.class文件在运行时都是已经编译好的，不会有任何变化。而动态编译一般则指的是，在运行时调用Java编译器对Java源代码(Java Souce)进行编译，生成.class文件，或者不生成.class文件直接得到Class类，通过类的反射实例化得到对象，进行调用等操作。
 
@@ -1004,15 +968,13 @@ null);&lt;/pre&gt;
 [9] http://www.eclipse.org/downloads/compare.php
 [10] http://blog.csdn.net/gumanren/article/details/4829748
 </description>
-    </item>
-    
-    <item>
-      <title>JNA, Java Native开发利器</title>
-      <link>http://hackfisher.info/blog/2011/06/jna-java-native</link>
-      <pubDate>Thu, 30 Jun 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/06/jna-java-native</guid>
-      <description>简单的来说，这篇文章就是介绍一个十分好用的Java Native开发工具, JNA。
+				<published>Thu Jul 07 00:00:00 +0800 2011</published>
+				<link>/blog/2011/07/java-dynamic-compilation</link>
+			</item>
+		
+			<item>
+				<title>JNA, Java Native开发利器</title>
+				<description>简单的来说，这篇文章就是介绍一个十分好用的Java Native开发工具, JNA。
 
 在Java编程中，大部分时间都不需要理会JNI，但是当你需要调用一个本地的C/C++库的时候，你就不得不考虑如果在Java中调用C库中的接口(dll, so)。这样的情况有很多，比如当你需要访问一个硬件时，而硬件厂商只提供C语言写的驱动和库文件。
 
@@ -1071,15 +1033,13 @@ void GetSystemTime(SYSTEMTIME result);&lt;/pre&gt;
 
 如果你还对Java的Native开发心有余悸，希望这篇介绍的JNA的文章可以帮助你跨越JNI开发的这道鸿沟:)
 </description>
-    </item>
-    
-    <item>
-      <title>ClassLoader Memory Leak: Detection and Protection in Tomcat</title>
-      <link>http://hackfisher.info/blog/2011/06/classloader-leak-protection-in-tomcat</link>
-      <pubDate>Tue, 28 Jun 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/06/classloader-leak-protection-in-tomcat</guid>
-      <description>最近在tomcat 6下面重新部署应用时，发现了下面一个抛错，非常困惑，所以就研究了一下。
+				<published>Thu Jun 30 00:00:00 +0800 2011</published>
+				<link>/blog/2011/06/jna-java-native</link>
+			</item>
+		
+			<item>
+				<title>ClassLoader Memory Leak: Detection and Protection in Tomcat</title>
+				<description>最近在tomcat 6下面重新部署应用时，发现了下面一个抛错，非常困惑，所以就研究了一下。
 
 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap严重: The web application [/test] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@c47498]) and a value of type [XXX] (value [XXX@1c2dad7]) but failed to remove it when the web application was stopped.
 
@@ -1135,15 +1095,13 @@ Logger.getLogger(&quot;test&quot;).log(customLevel, &quot;doGet() called&quot;);
 
 [5]&lt;a href=&quot;http://www.iteye.com/topic/75440&quot;&gt;http://www.iteye.com/topic/75440&lt;/a&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Java平台利用OpenOffice实现不同Office文件格式的转化，比如将Word转换成Html</title>
-      <link>http://hackfisher.info/blog/2011/06/word_to_html</link>
-      <pubDate>Thu, 23 Jun 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/06/word_to_html</guid>
-      <description>首先刚开始，除了Google, Baidu之外，还有一个重要的去处，那就是stackoverflow，现在经常可以在上面得到我想要的答案。下面是stackoverflow上面关于这个topic的讨论。
+				<published>Tue Jun 28 00:00:00 +0800 2011</published>
+				<link>/blog/2011/06/classloader-leak-protection-in-tomcat</link>
+			</item>
+		
+			<item>
+				<title>Java平台利用OpenOffice实现不同Office文件格式的转化，比如将Word转换成Html</title>
+				<description>首先刚开始，除了Google, Baidu之外，还有一个重要的去处，那就是stackoverflow，现在经常可以在上面得到我想要的答案。下面是stackoverflow上面关于这个topic的讨论。
 
 &lt;a href=&quot;http://stackoverflow.com/questions/227236/convert-word-doc-to-html-programmatically-in-java&quot;&gt;Convert Word doc to HTML programmatically in Java&lt;/a&gt;
 
@@ -1162,29 +1120,25 @@ JODConverter, the Java OpenDocument Converter，是一个利用OpenOffice提供�
 
 4. 麻烦的地方就在于需要部署OpenOffice，这是需要想想怎么给用户用的问题。不过如果拿OpenOffice和数据库服务比较，用户也容易更接受了
 </description>
-    </item>
-    
-    <item>
-      <title>A Post Test from Android</title>
-      <link>http://hackfisher.info/blog/2011/06/a-post-test-from-android</link>
-      <pubDate>Thu, 23 Jun 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/06/a-post-test-from-android</guid>
-      <description>&lt;img style=&quot;display: block; margin-right: auto; margin-left: auto;&quot; src=&quot;/uploads/2011/06/wpid-t.jpg&quot; alt=&quot;image&quot; /&gt;
+				<published>Thu Jun 23 00:00:00 +0800 2011</published>
+				<link>/blog/2011/06/word_to_html</link>
+			</item>
+		
+			<item>
+				<title>A Post Test from Android</title>
+				<description>&lt;img style=&quot;display: block; margin-right: auto; margin-left: auto;&quot; src=&quot;/uploads/2011/06/wpid-t.jpg&quot; alt=&quot;image&quot; /&gt;
 
 发自Android手机的一篇文章，测试WordPress for Andriod, 可以从安卓市场中下到。
 
 使用起来还是没有电脑方便，看来写文章还是离不开电脑。而且用的是wifi，gprs不知速度怎么样。
 </description>
-    </item>
-    
-    <item>
-      <title>Little-Endian和Big-Endian理解</title>
-      <link>http://hackfisher.info/blog/2011/06/little_endian_big_endian</link>
-      <pubDate>Thu, 16 Jun 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/06/little_endian_big_endian</guid>
-      <description>1. Big-Endian，表示“高字节在内存的低地址”。在Big-Endian的计算机中，变量的高字节在前;
+				<published>Thu Jun 23 00:00:00 +0800 2011</published>
+				<link>/blog/2011/06/a-post-test-from-android</link>
+			</item>
+		
+			<item>
+				<title>Little-Endian和Big-Endian理解</title>
+				<description>1. Big-Endian，表示“高字节在内存的低地址”。在Big-Endian的计算机中，变量的高字节在前;
 Little-Endian，表示“低字节在内存的低地址”。在Little-Endian的计算机中，变量的低字节在前
 
 2. Little-Endian更容易理解和记忆，Bing-Endian更直观，因为其表示和hex字符串方式相同
@@ -1225,15 +1179,13 @@ public final int readInt() throws IOException {
 }&lt;/pre&gt;
 其实也可以有对应的little-endian表示方式
 </description>
-    </item>
-    
-    <item>
-      <title>电子签章分析</title>
-      <link>http://hackfisher.info/blog/2011/06/e_signature_analysis</link>
-      <pubDate>Thu, 16 Jun 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/06/e_signature_analysis</guid>
-      <description>像任何传统的签名签章一样，电子签章必须能够起到认证的作用，同时应该能够起到法律效力的作用，满足&lt;a title=&quot;电子签章法&quot; href=&quot;http://wenku.baidu.com/view/3ceb6700bed5b9f3f90f1cf4.html&quot; target=&quot;_blank&quot;&gt;&amp;lt;电子签章法&amp;gt;&lt;/a&gt;里面规定必须满足的条件，否则没有法律效力的电子签章，即使具有签章的作用，也没有实际的意义，很难满足一般客户的需求。
+				<published>Thu Jun 16 00:00:00 +0800 2011</published>
+				<link>/blog/2011/06/little_endian_big_endian</link>
+			</item>
+		
+			<item>
+				<title>电子签章分析</title>
+				<description>像任何传统的签名签章一样，电子签章必须能够起到认证的作用，同时应该能够起到法律效力的作用，满足&lt;a title=&quot;电子签章法&quot; href=&quot;http://wenku.baidu.com/view/3ceb6700bed5b9f3f90f1cf4.html&quot; target=&quot;_blank&quot;&gt;&amp;lt;电子签章法&amp;gt;&lt;/a&gt;里面规定必须满足的条件，否则没有法律效力的电子签章，即使具有签章的作用，也没有实际的意义，很难满足一般客户的需求。
 电子签章必须能够能够保证如下几点:
 
 1. 文件的真实性。保证文件没有篡改过，如果修改过，测电子签章失效。(一般做法是如果修改过，则在电子签章上显示红色文档被修改过，相关技术可以用md5等对全文进行hash验证)
@@ -1253,15 +1205,13 @@ public final int readInt() throws IOException {
 
 [4]PKI的电子签章系统的实现：&lt;a href=&quot;http://www.doc88.com/p-34180437919.html&quot;&gt;http://www.doc88.com/p-34180437919.html&lt;/a&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>五.一上海行</title>
-      <link>http://hackfisher.info/blog/2011/05/tour_shanghai</link>
-      <pubDate>Tue, 31 May 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/05/tour_shanghai</guid>
-      <description>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;上海城隍庙&lt;/strong&gt;&lt;/p&gt;
+				<published>Thu Jun 16 00:00:00 +0800 2011</published>
+				<link>/blog/2011/06/e_signature_analysis</link>
+			</item>
+		
+			<item>
+				<title>五.一上海行</title>
+				<description>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;上海城隍庙&lt;/strong&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;&lt;a href=&quot;/uploads/2011/05/IMG_1400.jpg&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-167&quot; title=&quot;城隍庙&quot; src=&quot;/uploads/2011/05/IMG_1400.jpg&quot; alt=&quot;&quot; width=&quot;1024&quot; height=&quot;768&quot; /&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;南翔馒头店&lt;/strong&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;&lt;a href=&quot;/uploads/2011/05/IMG_1406.jpg&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-168&quot; title=&quot;南翔馒头店&quot; src=&quot;/uploads/2011/05/IMG_1406.jpg&quot; alt=&quot;&quot; width=&quot;1024&quot; height=&quot;768&quot; /&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -1275,15 +1225,13 @@ public final int readInt() throws IOException {
 &lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;&lt;a href=&quot;/uploads/2011/05/IMG_1464.jpg&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-171&quot; title=&quot;浦东图书馆&quot; src=&quot;/uploads/2011/05/IMG_1464.jpg&quot; alt=&quot;&quot; width=&quot;1024&quot; height=&quot;768&quot; /&gt;&lt;/a&gt;
 &lt;/strong&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>浙北安吉</title>
-      <link>http://hackfisher.info/blog/2011/05/north-of-zhejiang-anji</link>
-      <pubDate>Tue, 31 May 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/05/north-of-zhejiang-anji</guid>
-      <description>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;中南百草园&lt;/strong&gt;&lt;/p&gt;
+				<published>Tue May 31 00:00:00 +0800 2011</published>
+				<link>/blog/2011/05/tour_shanghai</link>
+			</item>
+		
+			<item>
+				<title>浙北安吉</title>
+				<description>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;中南百草园&lt;/strong&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;/uploads/2011/05/Grass.jpg&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-158&quot; title=&quot;中南百草园&quot; src=&quot;/uploads/2011/05/Grass.jpg&quot; alt=&quot;&quot; width=&quot;1024&quot; height=&quot;681&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;/uploads/2011/05/DSC01603.jpg&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-159&quot; title=&quot;DSC01603&quot; src=&quot;/uploads/2011/05/DSC01603.jpg&quot; alt=&quot;&quot; width=&quot;1024&quot; height=&quot;681&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;鸟瞰&lt;/strong&gt;&lt;/p&gt;
@@ -1295,15 +1243,13 @@ public final int readInt() throws IOException {
 &lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;倒影&lt;/strong&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;/uploads/2011/05/water.jpg&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-163&quot; title=&quot;water&quot; src=&quot;/uploads/2011/05/water.jpg&quot; alt=&quot;&quot; width=&quot;1024&quot; height=&quot;577&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>32位和64位，以及跨平台的那点儿事</title>
-      <link>http://hackfisher.info/blog/2011/03/32bit-64bit-cross-platform</link>
-      <pubDate>Fri, 11 Mar 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/03/32bit-64bit-cross-platform</guid>
-      <description>64位的CPU可以跑 32位或者64位的OS
+				<published>Tue May 31 00:00:00 +0800 2011</published>
+				<link>/blog/2011/05/north-of-zhejiang-anji</link>
+			</item>
+		
+			<item>
+				<title>32位和64位，以及跨平台的那点儿事</title>
+				<description>64位的CPU可以跑 32位或者64位的OS
 
 64位的OS可以跑32位或者64位的JVM
 
@@ -1371,15 +1317,13 @@ at java.lang.Runtime.loadLibrary0(Runtime.java:823)
 
 at java.lang.System.loadLibrary(System.java:1028)
 </description>
-    </item>
-    
-    <item>
-      <title>(? (= Clojure (+ Lisp Java-Platform)))</title>
-      <link>http://hackfisher.info/blog/2011/03/clojure-lisp-java-platform</link>
-      <pubDate>Thu, 03 Mar 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/03/clojure-lisp-java-platform</guid>
-      <description>仅仅经过三年的时间，Java就这样开始有点被我厌恶了，因为我最近一直在寻找一些和Java不一样的东西。模块化，可扩展性，函数编程，并行计算等等。
+				<published>Fri Mar 11 00:00:00 +0800 2011</published>
+				<link>/blog/2011/03/32bit-64bit-cross-platform</link>
+			</item>
+		
+			<item>
+				<title>(? (= Clojure (+ Lisp Java-Platform)))</title>
+				<description>仅仅经过三年的时间，Java就这样开始有点被我厌恶了，因为我最近一直在寻找一些和Java不一样的东西。模块化，可扩展性，函数编程，并行计算等等。
 
 一直听说这个世界上有两门古老但很神奇的语言，C和Lisp。自从开始接触SICP这本书，Lisp语言的强大特性吸引了我，尤其是那些抽象美的东西。Lisp是从数学发展而来，有数学这样一个无比坚固的基石，一点多余的东西都没有，可谓经典。学习一门语言的最好方式就是用它，能在工程中实用很重要，而不是只是用来学习和教授。尝试了一些Lisp的方言，Scheme, SBCL, CLisp等等，并非不实用，而是太小众了，只在某些专业领域用的人比较多，究其原因，是其他领域的库和工具太少了。并非不可以做，而是人太少了，构建一个齐全的平台库支持和好用的辅助工具需要花费很多的时间。就拿Clisp来说，我在Windows下面找一个十分好用的IDE都稍微有些困难，资料也少。没办法，是个美人，无人识。
 
@@ -1396,15 +1340,13 @@ at java.lang.System.loadLibrary(System.java:1028)
 参考资料：
 [1]JavaEye上面有一个关于Clojure的很好的Demo，对与那些正在Java平台上痛苦的程序员来说，是个很好的宣传资料：&lt;a href=&quot;http://www.javaeye.com/topic/713259&quot; target=&quot;_blank&quot;&gt;几行代码解决淘宝面试题 之Clojure版&lt;/a&gt;。
 </description>
-    </item>
-    
-    <item>
-      <title>【趣味Hack】Try2hack.nl第八关——phf漏洞和破解Linux密码</title>
-      <link>http://hackfisher.info/blog/2011/03/try2hack_nl-8th</link>
-      <pubDate>Tue, 01 Mar 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/03/try2hack_nl-8th</guid>
-      <description>第八关地址：
+				<published>Thu Mar 03 00:00:00 +0800 2011</published>
+				<link>/blog/2011/03/clojure-lisp-java-platform</link>
+			</item>
+		
+			<item>
+				<title>【趣味Hack】Try2hack.nl第八关——phf漏洞和破解Linux密码</title>
+				<description>第八关地址：
 
 &lt;a href=&quot;http://www.try2hack.nl/levels/level8-balnrg.xhtml&quot;&gt;http://www.try2hack.nl/levels/level8-balnrg.xhtml&lt;/a&gt;
 
@@ -1439,15 +1381,13 @@ e. 最终的答案会不会与这个有关系呢，其他行都没什么特殊�
 
 f. 输入用户名密码，拿到&lt;a href=&quot;http://www.try2hack.nl/levels/level9-gnapei.xhtml&quot;&gt;下一关&lt;/a&gt;的入场劵。
 </description>
-    </item>
-    
-    <item>
-      <title>【趣味Hack】Try2hack.nl第九关——修改Cookies</title>
-      <link>http://hackfisher.info/blog/2011/03/try2hack-9th</link>
-      <pubDate>Tue, 01 Mar 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/03/try2hack-9th</guid>
-      <description>第九关地址：
+				<published>Tue Mar 01 00:00:00 +0800 2011</published>
+				<link>/blog/2011/03/try2hack_nl-8th</link>
+			</item>
+		
+			<item>
+				<title>【趣味Hack】Try2hack.nl第九关——修改Cookies</title>
+				<description>第九关地址：
 
 http://www.try2hack.nl/levels/level9-gnapei.xhtml
 
@@ -1472,15 +1412,13 @@ d. 搜索try2hack.nl，将cookies中的auth值改为yes，重新登录，得到�
 
 &lt;em&gt;http://www.try2hack.nl/chat/&lt;/em&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>【趣味Hack】Try2hack.nl第七关</title>
-      <link>http://hackfisher.info/blog/2011/02/try2hack_nl-7th</link>
-      <pubDate>Mon, 28 Feb 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/02/try2hack_nl-7th</guid>
-      <description>第七关地址：
+				<published>Tue Mar 01 00:00:00 +0800 2011</published>
+				<link>/blog/2011/03/try2hack-9th</link>
+			</item>
+		
+			<item>
+				<title>【趣味Hack】Try2hack.nl第七关</title>
+				<description>第七关地址：
 
 &lt;a href=&quot;http://www.try2hack.nl/levels/level7-xfkohc.php&quot;&gt;http://www.try2hack.nl/levels/level7-xfkohc.php&lt;/a&gt;
 
@@ -1504,25 +1442,21 @@ h. 最终，使用drakma的http-request访问第七关的网址，输出返回�
 :additional-headers '((Referer . &quot;http://www.microsoft.com/ms.htm&quot;))
 )&lt;/pre&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>doubanclaim33d97e22ee8cb9de</title>
-      <link>http://hackfisher.info/blog/2011/02/doubanclaim33d97e22ee8cb9de</link>
-      <pubDate>Wed, 16 Feb 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/02/doubanclaim33d97e22ee8cb9de</guid>
-      <description>豆瓣验证
+				<published>Mon Feb 28 00:00:00 +0800 2011</published>
+				<link>/blog/2011/02/try2hack_nl-7th</link>
+			</item>
+		
+			<item>
+				<title>doubanclaim33d97e22ee8cb9de</title>
+				<description>豆瓣验证
 </description>
-    </item>
-    
-    <item>
-      <title>【趣味Hack】Try2hack.nl第三关</title>
-      <link>http://hackfisher.info/blog/2011/02/try2hack_nl-third</link>
-      <pubDate>Tue, 15 Feb 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/02/try2hack_nl-third</guid>
-      <description>第三关地址：&lt;a href=&quot;http://www.try2hack.nl/levels/level3-.xhtml&quot;&gt;http://www.try2hack.nl/levels/level3-.xhtml&lt;/a&gt;
+				<published>Wed Feb 16 00:00:00 +0800 2011</published>
+				<link>/blog/2011/02/doubanclaim33d97e22ee8cb9de</link>
+			</item>
+		
+			<item>
+				<title>【趣味Hack】Try2hack.nl第三关</title>
+				<description>第三关地址：&lt;a href=&quot;http://www.try2hack.nl/levels/level3-.xhtml&quot;&gt;http://www.try2hack.nl/levels/level3-.xhtml&lt;/a&gt;
 
 a. 刚打开网站，浏览器弹出如下一个对话框，如果点确定或者取消，就会立即跳转到另外一个网页，导致无法用Chrome的开发人员工具或者firebug查看源代码。
 
@@ -1592,15 +1526,13 @@ c. 运行这个Java程序，然后得到输出的HTML，注意输出中的脚本
 d. 你可能意味密码就是&quot;AbCdE&quot;，但是错了，这是为了误导里的，真正的密码在这个文件里面：
 &lt;pre escaped=&quot;true&quot; lang=&quot;java&quot; line=&quot;1&quot;&gt;http://www.try2hack.nl/levels/JavaScript&lt;/pre&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>【趣味Hack】Try2hack.nl第五关和第六关</title>
-      <link>http://hackfisher.info/blog/2011/02/try2hack_nl-5th-6th</link>
-      <pubDate>Tue, 15 Feb 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/02/try2hack_nl-5th-6th</guid>
-      <description>&lt;strong&gt;第五关&lt;/strong&gt;地址：
+				<published>Tue Feb 15 00:00:00 +0800 2011</published>
+				<link>/blog/2011/02/try2hack_nl-third</link>
+			</item>
+		
+			<item>
+				<title>【趣味Hack】Try2hack.nl第五关和第六关</title>
+				<description>&lt;strong&gt;第五关&lt;/strong&gt;地址：
 
 http://www.try2hack.nl/levels/level5-fdvbdf.xhtml
 
@@ -1720,15 +1652,13 @@ babab aabab abaab abbab aabbb aaaba&lt;/pre&gt;
 
 2. http://www.program-transformation.org/Transform/VisualBasicDecompilers
 </description>
-    </item>
-    
-    <item>
-      <title>【趣味Hack】Try2hack.nl第四关</title>
-      <link>http://hackfisher.info/blog/2011/02/try2hack_nl-4th</link>
-      <pubDate>Tue, 15 Feb 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/02/try2hack_nl-4th</guid>
-      <description>第四关地址：
+				<published>Tue Feb 15 00:00:00 +0800 2011</published>
+				<link>/blog/2011/02/try2hack_nl-5th-6th</link>
+			</item>
+		
+			<item>
+				<title>【趣味Hack】Try2hack.nl第四关</title>
+				<description>第四关地址：
 
 http://www.try2hack.nl/levels/level4-kdnvxs.xhtml
 
@@ -1756,30 +1686,26 @@ super.getAppletContext().showStatus(&quot;Bad Counter URL:&quot; + this.inURL);�
 inFile();&lt;/pre&gt;
 d. leve4文件地址：http://www.try2hack.nl/levels/level4，打开后就可以看到答案了。
 </description>
-    </item>
-    
-    <item>
-      <title>情人节●南京●晨雪</title>
-      <link>http://hackfisher.info/blog/2011/02/%25e6%2583%2585%25e4%25ba%25ba%25e8%258a%2582%25e2%2597%258f%25e5%258d%2597%25e4%25ba%25ac%25e2%2597%258f%25e6%2599%25a8%25e9%259b%25aa</link>
-      <pubDate>Tue, 15 Feb 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/02/%e6%83%85%e4%ba%ba%e8%8a%82%e2%97%8f%e5%8d%97%e4%ba%ac%e2%97%8f%e6%99%a8%e9%9b%aa</guid>
-      <description>昨天是情人节，据说南京半城下雪，半城没下，有人进地铁时还阳光高照，出地铁就见到漫天大雪了。
+				<published>Tue Feb 15 00:00:00 +0800 2011</published>
+				<link>/blog/2011/02/try2hack_nl-4th</link>
+			</item>
+		
+			<item>
+				<title>情人节●南京●晨雪</title>
+				<description>昨天是情人节，据说南京半城下雪，半城没下，有人进地铁时还阳光高照，出地铁就见到漫天大雪了。
 &lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;亭子&lt;/strong&gt;&lt;/p&gt;
 &lt;a href=&quot;/uploads/2011/02/IMG_1259.jpg&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-85&quot; title=&quot;IMG_1259&quot; src=&quot;/uploads/2011/02/IMG_1259.jpg&quot; alt=&quot;&quot; width=&quot;800&quot; height=&quot;600&quot; /&gt;&lt;/a&gt;
 &lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;行人&lt;/strong&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;/uploads/2011/02/IMG_1261.jpg&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-86&quot; title=&quot;IMG_1261&quot; src=&quot;/uploads/2011/02/IMG_1261.jpg&quot; alt=&quot;&quot; width=&quot;800&quot; height=&quot;600&quot; /&gt;&lt;/a&gt;&lt;strong&gt;树木&lt;/strong&gt;&lt;/p&gt;
 &lt;a href=&quot;/uploads/2011/02/IMG_1258.jpg&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-87&quot; title=&quot;IMG_1258&quot; src=&quot;/uploads/2011/02/IMG_1258.jpg&quot; alt=&quot;&quot; width=&quot;600&quot; height=&quot;800&quot; /&gt;&lt;/a&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>【趣味Hack】黑客模拟攻击闯关网站，闯前两关</title>
-      <link>http://hackfisher.info/blog/2011/02/try2hack-first-second</link>
-      <pubDate>Sun, 13 Feb 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/02/try2hack-first-second</guid>
-      <description>黑客模拟攻击闯关网站的地址是：http://www.try2hack.nl/。
+				<published>Tue Feb 15 00:00:00 +0800 2011</published>
+				<link>/blog/2011/02/%25e6%2583%2585%25e4%25ba%25ba%25e8%258a%2582%25e2%2597%258f%25e5%258d%2597%25e4%25ba%25ac%25e2%2597%258f%25e6%2599%25a8%25e9%259b%25aa</link>
+			</item>
+		
+			<item>
+				<title>【趣味Hack】黑客模拟攻击闯关网站，闯前两关</title>
+				<description>黑客模拟攻击闯关网站的地址是：http://www.try2hack.nl/。
 
 下面是闯前两关的过程：
 
@@ -1807,15 +1733,13 @@ e. 反编译一下，嗨，还真行，变成了as，得到如下.flr文件，�
 
 &lt;strong&gt;第三关&lt;/strong&gt;：http://www.try2hack.nl/levels/level3-.xhtml (未完待续)
 </description>
-    </item>
-    
-    <item>
-      <title>【趣味Hack】如何在咖啡厅，网吧等公共场所要到漂亮MM的QQ号</title>
-      <link>http://hackfisher.info/blog/2011/02/cafe-bar-girls-qq</link>
-      <pubDate>Sun, 13 Feb 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/02/cafe-bar-girls-qq</guid>
-      <description>今天是2月14号，情人节，如果你还是光棍的话，也许想趁这个机会告别单身。如果你现在在咖啡厅、网吧等公共场所上网，或者宽松的工作场所，我也许能帮你一点忙。找到目标后第一步，就是要到对方的QQ号。
+				<published>Sun Feb 13 00:00:00 +0800 2011</published>
+				<link>/blog/2011/02/try2hack-first-second</link>
+			</item>
+		
+			<item>
+				<title>【趣味Hack】如何在咖啡厅，网吧等公共场所要到漂亮MM的QQ号</title>
+				<description>今天是2月14号，情人节，如果你还是光棍的话，也许想趁这个机会告别单身。如果你现在在咖啡厅、网吧等公共场所上网，或者宽松的工作场所，我也许能帮你一点忙。找到目标后第一步，就是要到对方的QQ号。
 
 当然，如果你很自信，并且自己长得很帅，对异性有吸引力，脸皮厚点其实也行，你大可以直接走过去自己要过来。如果你像我一样，天生内向又害羞，我提供了另外一种选择，通过局域网络的抓包分析，步骤如下。
 
@@ -1835,15 +1759,13 @@ e. 反编译一下，嗨，还真行，变成了as，得到如下.flr文件，�
 
 这篇文章的内容属于趣味Hack，供宅男们自娱自乐，顺便学习一下网络知识。其实开发成商业应用也未尝不可，目前网络上的一种软件QQ Sniffer就提供类似功能。
 </description>
-    </item>
-    
-    <item>
-      <title>代码质量系列之六：重复代码实战案例及其分析总结</title>
-      <link>http://hackfisher.info/blog/2011/02/best-practice-repeat-code-and-analytics</link>
-      <pubDate>Wed, 09 Feb 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/02/best-practice-repeat-code-and-analytics</guid>
-      <description>&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;案例一&lt;/strong&gt;：使用递归去除嵌套重复代码，不难看出下面的代码一层套一层，但是代码完全一样，递归是最佳解决方案。&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;border-collapse: collapse; font-family: arial, sans-serif; font-size: 13px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;border-collapse: collapse; font-family: arial, sans-serif; font-size: 13px;&quot;&gt;if (tokenizer.hasMoreTokens()) {&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+				<published>Sun Feb 13 00:00:00 +0800 2011</published>
+				<link>/blog/2011/02/cafe-bar-girls-qq</link>
+			</item>
+		
+			<item>
+				<title>代码质量系列之六：重复代码实战案例及其分析总结</title>
+				<description>&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;案例一&lt;/strong&gt;：使用递归去除嵌套重复代码，不难看出下面的代码一层套一层，但是代码完全一样，递归是最佳解决方案。&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;border-collapse: collapse; font-family: arial, sans-serif; font-size: 13px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;border-collapse: collapse; font-family: arial, sans-serif; font-size: 13px;&quot;&gt;if (tokenizer.hasMoreTokens()) {&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;div&gt;
 &lt;blockquote&gt;
 &lt;div&gt;try {&lt;/div&gt;
@@ -1945,15 +1867,13 @@ e. 反编译一下，嗨，还真行，变成了as，得到如下.flr文件，�
 &lt;/div&gt;
 &lt;/div&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>代码质量系列之五：利用CodePro Analytic工具检测和删除重复代码——Don't Repeat Yourself</title>
-      <link>http://hackfisher.info/blog/2011/01/dry-codepro-analitic</link>
-      <pubDate>Fri, 28 Jan 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/01/dry-codepro-analitic</guid>
-      <description>这个系列的&lt;a title=&quot;破窗理论&quot; href=&quot;http://www.hackfisher.info/blog/?p=55&quot; target=&quot;_blank&quot;&gt;上一篇文章&lt;/a&gt;给我们介绍了破窗理论，说明代码里发现了坏味道要及时清理。而代码中最常见的坏味道就包括我们今天要说的重复代码。重复代码使得软件产品的可变更性迅速变差，复杂度增高，可读性也变差，重复的代码往往抽象度不高，说明对模型理解不够透彻。
+				<published>Wed Feb 09 00:00:00 +0800 2011</published>
+				<link>/blog/2011/02/best-practice-repeat-code-and-analytics</link>
+			</item>
+		
+			<item>
+				<title>代码质量系列之五：利用CodePro Analytic工具检测和删除重复代码——Don't Repeat Yourself</title>
+				<description>这个系列的&lt;a title=&quot;破窗理论&quot; href=&quot;http://www.hackfisher.info/blog/?p=55&quot; target=&quot;_blank&quot;&gt;上一篇文章&lt;/a&gt;给我们介绍了破窗理论，说明代码里发现了坏味道要及时清理。而代码中最常见的坏味道就包括我们今天要说的重复代码。重复代码使得软件产品的可变更性迅速变差，复杂度增高，可读性也变差，重复的代码往往抽象度不高，说明对模型理解不够透彻。
 
 刘未鹏同学曾经在stackoverflow.com开张不久，跑上去问过一个问题，&lt;a href=&quot;http://mindhacks.cn/2009/03/09/first-principles-of-programming/&quot;&gt;编程的首要原则(s)是什么&lt;/a&gt;?结果在得到的一大堆答案中，DRY原则(Don't Repeat Yourself)位居前列。我们今天先不谈其他的编程原则，先介绍一下DRY原则的简单实践。
 &lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;/uploads/2011/01/do_not_duplicate.jpg&quot; alt=&quot;do-not-duplicate.jpg&quot; width=&quot;482&quot; height=&quot;249&quot; /&gt;&lt;/p&gt;
@@ -1994,15 +1914,13 @@ e. 反编译一下，嗨，还真行，变成了as，得到如下.flr文件，�
 &lt;div&gt;&lt;span style=&quot;line-height: 25px; font-size: 14px;&quot;&gt;&lt;a style=&quot;color: #005488;&quot; href=&quot;http://www.cnblogs.com/wayfarer/category/272862.html&quot; target=&quot;_blank&quot;&gt;http://www.cnblogs.com/&lt;wbr&gt;wayfarer/category/272862.html&lt;/wbr&gt;&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>代码质量系列之四：垃圾代码清理重构的紧急性——破窗理论</title>
-      <link>http://hackfisher.info/blog/2011/01/urgency_broken-windows-theory</link>
-      <pubDate>Sun, 16 Jan 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/01/urgency_broken-windows-theory</guid>
-      <description>可能很多人都知道时间管理里面有个&lt;a title=&quot;时间管理四象限法&quot; href=&quot;http://baike.baidu.com/view/3916978.htm&quot; target=&quot;_blank&quot;&gt;四象限法&lt;/a&gt;，根据事件的紧急性和重要性的程度，区分为四个象限。第一象限是紧急并且重要的事情，第二象限是不紧急但是重要的事情，第三象限是紧急但不重要的事情，第四象限是既不紧急也不重要的事情。对于第一类重要且紧急的事，要马上去做。对于第二类重要而不紧急的事，要重点去做。
+				<published>Fri Jan 28 00:00:00 +0800 2011</published>
+				<link>/blog/2011/01/dry-codepro-analitic</link>
+			</item>
+		
+			<item>
+				<title>代码质量系列之四：垃圾代码清理重构的紧急性——破窗理论</title>
+				<description>可能很多人都知道时间管理里面有个&lt;a title=&quot;时间管理四象限法&quot; href=&quot;http://baike.baidu.com/view/3916978.htm&quot; target=&quot;_blank&quot;&gt;四象限法&lt;/a&gt;，根据事件的紧急性和重要性的程度，区分为四个象限。第一象限是紧急并且重要的事情，第二象限是不紧急但是重要的事情，第三象限是紧急但不重要的事情，第四象限是既不紧急也不重要的事情。对于第一类重要且紧急的事，要马上去做。对于第二类重要而不紧急的事，要重点去做。
 
 我们前面的&quot;&lt;a title=&quot;代码质量的重要性&quot; href=&quot;http://www.hackfisher.info/blog/?p=26&quot; target=&quot;_blank&quot;&gt;代码质量系列之一：什么是代码质量&lt;/a&gt;&quot;这篇文章已经重点论述了其重要性，那么代码质量的紧急性如何呢？在这里，我借助于一个有名的理论来说明之。
 
@@ -2037,15 +1955,13 @@ e. 反编译一下，嗨，还真行，变成了as，得到如下.flr文件，�
 
 所谓&quot;火炉法则&quot;，就是把&quot;火炉&quot;烧得红红的，放在那里，本身并不会主动烫人，但只要有人敢于触摸，它就必烫无疑，不会顾及触摸者的身份，人人平等，谁摸烫谁，而且立即处罚，没有下不为例。
 </description>
-    </item>
-    
-    <item>
-      <title>图片驱动的计算机技术(译文)</title>
-      <link>http://hackfisher.info/blog/2011/01/picture-driven-tech-translate</link>
-      <pubDate>Sun, 16 Jan 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/01/picture-driven-tech-translate</guid>
-      <description>&lt;p style=&quot;margin: 0px; padding: 0px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;&quot;&gt;这是MIT上介绍Sikuli的一篇文章&lt;/span&gt;&lt;/p&gt;
+				<published>Sun Jan 16 00:00:00 +0800 2011</published>
+				<link>/blog/2011/01/urgency_broken-windows-theory</link>
+			</item>
+		
+			<item>
+				<title>图片驱动的计算机技术(译文)</title>
+				<description>&lt;p style=&quot;margin: 0px; padding: 0px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;&quot;&gt;这是MIT上介绍Sikuli的一篇文章&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;margin: 0px; padding: 0px;&quot;&gt;Sikuli的网站： &lt;span style=&quot;line-height: 18px; font-family: Tahoma, Helvetica, Arial, sans-serif; color: #353535;&quot;&gt;http://sikuli.org/&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;margin: 0px; padding: 0px;&quot;&gt;&lt;span style=&quot;line-height: 18px; font-family: Tahoma, Helvetica, Arial, sans-serif; color: #353535;&quot;&gt;延伸阅读：http://blog.vgod.tw/2010/01/25/change-the-world/&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;margin: 0px; padding: 0px;&quot;&gt;---------------------&lt;/p&gt;
@@ -2076,15 +1992,13 @@ e. 反编译一下，嗨，还真行，变成了as，得到如下.flr文件，�
 &lt;p style=&quot;line-height: 1.8; margin: 0px 0px 10px; padding: 0px;&quot;&gt;&lt;span style=&quot;font-size: x-small;&quot;&gt;&lt;br style=&quot;margin: 0px; padding: 0px;&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;line-height: 1.8; margin: 0px 0px 10px; padding: 0px;&quot;&gt;&lt;span style=&quot;font-size: x-small;&quot;&gt;新的应用同时提供了另一种选择，可以通过记录一系列按键和点击鼠标来定义测试过程。例如，代替敲打一行包括&quot;dragDrop&quot;命令的代码，程序员可以简单的做拖拽文件这样一个动作。系统自动的生成相应的Python代码，包含一个同样文件的截图；只要这个程序员愿意，她就可以当插入其他GUI的截图时复用这些代码。这指明使用Sikuli将来的版本也许既不需要了解特殊应用程序的代码知识，也不需要学习像Python这样的脚本语言，这个系统赋予了普通计算机用户直观的创建程序的能力，这些程序可以跟其他的应用进行交互。&lt;/span&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>代码质量系列之三：盒子外面看世界，技术之外的思考——关于沟通</title>
-      <link>http://hackfisher.info/blog/2011/01/out-of-box-communication</link>
-      <pubDate>Sun, 16 Jan 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/01/out-of-box-communication</guid>
-      <description>&lt;span style=&quot;font-family: Arial;&quot;&gt;一直以来，很多尝试解决代码质量的思路都是从技术角度出发，也许技术出身的原因，思维一直局限于这个盒子里面。&lt;/span&gt;&lt;span style=&quot;font-family: Arial;&quot;&gt;突然想到也许代码质量这个问题的解决思路不在这个盒子里面，需要在盒子外面看这个世界。&lt;/span&gt;
+				<published>Sun Jan 16 00:00:00 +0800 2011</published>
+				<link>/blog/2011/01/picture-driven-tech-translate</link>
+			</item>
+		
+			<item>
+				<title>代码质量系列之三：盒子外面看世界，技术之外的思考——关于沟通</title>
+				<description>&lt;span style=&quot;font-family: Arial;&quot;&gt;一直以来，很多尝试解决代码质量的思路都是从技术角度出发，也许技术出身的原因，思维一直局限于这个盒子里面。&lt;/span&gt;&lt;span style=&quot;font-family: Arial;&quot;&gt;突然想到也许代码质量这个问题的解决思路不在这个盒子里面，需要在盒子外面看这个世界。&lt;/span&gt;
 
 &lt;span style=&quot;font-family: Arial;&quot;&gt;上网玩微博的时候在想，问题会不会出在沟通上面？比如遇到一个问题，两个人讨论一确定了某个API或者最佳实践，就Over了，其他人也不知道，结果又造了个轮子，或者用垃圾的代码实现，这是一个沟通问题。&lt;/span&gt;&lt;span style=&quot;font-family: Arial;&quot;&gt;还有一个，经常感觉有这样一种印象，好像代码质量是某一个人的事，而不是大家的事情，每个人都愿意并且乐意代码质量进行沟通，而不是一种感觉很严苛的纠错的别扭气氛，可以轻松一点。&lt;/span&gt;
 
@@ -2101,28 +2015,24 @@ e. 反编译一下，嗨，还真行，变成了as，得到如下.flr文件，�
 
 也许有其他的办法，比如最近看到新浪在推的所谓企业微博。说到沟通效率，目前来说应该是微博的效率最高了，但是微博的话题感觉是围绕主体(参与的人)展开，发送一句话，相关的其他人都能收到，其实邮件列表也有相同的功能，发送一个邮件列表，组里的所有人都能收到，更多的是围绕一个团队。另外，邮件列表式的讨论一般都是围绕一个主题，容易让讨论深入。这种古老的方式自从有编程活动开始，一直存在至今(像Google Group，很多开源软件开发团队一直使用)，我想一定有其背后的道理吧。
 </description>
-    </item>
-    
-    <item>
-      <title>2011年1月8日于南京中山陵</title>
-      <link>http://hackfisher.info/blog/2011/01/nanjing-sun-yat-sen</link>
-      <pubDate>Sun, 16 Jan 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/01/nanjing-sun-yat-sen</guid>
-      <description>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;天下为公&lt;/strong&gt;&lt;/p&gt;
+				<published>Sun Jan 16 00:00:00 +0800 2011</published>
+				<link>/blog/2011/01/out-of-box-communication</link>
+			</item>
+		
+			<item>
+				<title>2011年1月8日于南京中山陵</title>
+				<description>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;天下为公&lt;/strong&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;/uploads/2011/01/IMG_1251.jpg&quot; alt=&quot;IMG_1251.JPG&quot; width=&quot;800&quot; height=&quot;600&quot; /&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;墓顶的青天白日旗&lt;/strong&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;/uploads/2011/01/IMG_1255.jpg&quot; alt=&quot;IMG_1255.JPG&quot; width=&quot;800&quot; height=&quot;600&quot; /&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>代码质量系列之二：如何利用TortoiseSVN的CreatePatch功能进行CodeReview</title>
-      <link>http://hackfisher.info/blog/2011/01/tortoisesvn-create-patch-codereview</link>
-      <pubDate>Fri, 07 Jan 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/01/tortoisesvn-create-patch-codereview</guid>
-      <description>上次的代码质量系列之一讨论&lt;a title=&quot;什么是代码质量&quot; href=&quot;http://fisher.leehoan.com/wp/?p=46&quot; target=&quot;_blank&quot;&gt;什么是代码质量&lt;/a&gt;？
+				<published>Sun Jan 16 00:00:00 +0800 2011</published>
+				<link>/blog/2011/01/nanjing-sun-yat-sen</link>
+			</item>
+		
+			<item>
+				<title>代码质量系列之二：如何利用TortoiseSVN的CreatePatch功能进行CodeReview</title>
+				<description>上次的代码质量系列之一讨论&lt;a title=&quot;什么是代码质量&quot; href=&quot;http://fisher.leehoan.com/wp/?p=46&quot; target=&quot;_blank&quot;&gt;什么是代码质量&lt;/a&gt;？
 
 在这片文章中将会介绍提升团队代码质量的管理手段之一CodeReview，以及一些简单具体的实践办法。
 
@@ -2158,15 +2068,13 @@ Window默认可在安装目录的bin目录下找到此工具
 多个功能分别需要改同一个文件的不同地方（即没有同一行），可以做成多个patch，应用patch的顺序没有要求（在linux下应用也一样成功，只是会生成多个.orig文件）
 多个连续性的功能，他们修改的文件都与一个base作patch，例：p1在v1的基础上开发v2，生成v2和v1之间的patch1；p2在v2的基础上开发v3，生成v3和v1之间的patch2，这样只要应用patch2也就应用了patch1。
 </description>
-    </item>
-    
-    <item>
-      <title>代码质量系列之一：什么是代码质量?</title>
-      <link>http://hackfisher.info/blog/2011/01/what-is-code-quality</link>
-      <pubDate>Wed, 05 Jan 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/01/what-is-code-quality</guid>
-      <description>最近整天讨论代码质量，到底&quot;代码质量&quot;是什么，它为什么这么重要？搞不清楚它的意义，会让我们有时候觉得这个话题不仅大，而且空洞。
+				<published>Fri Jan 07 00:00:00 +0800 2011</published>
+				<link>/blog/2011/01/tortoisesvn-create-patch-codereview</link>
+			</item>
+		
+			<item>
+				<title>代码质量系列之一：什么是代码质量?</title>
+				<description>最近整天讨论代码质量，到底&quot;代码质量&quot;是什么，它为什么这么重要？搞不清楚它的意义，会让我们有时候觉得这个话题不仅大，而且空洞。
 
 我的理解：什么是代码质量?
 讨论代码质量前，先说说什么是质量？&lt;a href=&quot;http://www.google.com/url?sa=D&amp;amp;q=http://baike.baidu.com/view/13930.htm?fr=ala0_1#6&quot; target=&quot;_blank&quot;&gt;百度百科&lt;/a&gt;说：质量是产品或服务的总体特征和特性，基于此能力来满足明确或隐含的需要。
@@ -2184,15 +2092,13 @@ Alice: 客户是上帝，你们程序员又不是。Bob: 可我曾听一个程�
 
 软件质量不好迟早有一天会被用户抛弃，同样的，代码质量不好迟早有一天会被它的需求来源抛弃，最惨的状况是，自己被自己的代码抛弃，陷入无法自拔 复杂泥潭。
 </description>
-    </item>
-    
-    <item>
-      <title>JQuery选择器性能分析</title>
-      <link>http://hackfisher.info/blog/2011/01/jquery-performance-profile</link>
-      <pubDate>Wed, 05 Jan 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/01/jquery-performance-profile</guid>
-      <description>关于&lt;a title=&quot;JQuery选择器&quot; href=&quot;http://api.jquery.com/category/selectors/&quot; target=&quot;_blank&quot;&gt;JQuery选择器&lt;/a&gt;，有很多介绍其&lt;a title=&quot;性能影响&quot; href=&quot;http://www.artzstudio.com/2009/04/jquery-performance-rules/&quot; target=&quot;_blank&quot;&gt;性能影响&lt;/a&gt;的好文章，但因为一直没有遇到，知其然不知其所以然，所以一直没有十分关注，最近刚好碰到了一个严重的性能问题，经过分析，才使我意识到了JQuery选择器性能的重要性，看来东西还是要亲自实践一把，才能理解透彻。
+				<published>Wed Jan 05 00:00:00 +0800 2011</published>
+				<link>/blog/2011/01/what-is-code-quality</link>
+			</item>
+		
+			<item>
+				<title>JQuery选择器性能分析</title>
+				<description>关于&lt;a title=&quot;JQuery选择器&quot; href=&quot;http://api.jquery.com/category/selectors/&quot; target=&quot;_blank&quot;&gt;JQuery选择器&lt;/a&gt;，有很多介绍其&lt;a title=&quot;性能影响&quot; href=&quot;http://www.artzstudio.com/2009/04/jquery-performance-rules/&quot; target=&quot;_blank&quot;&gt;性能影响&lt;/a&gt;的好文章，但因为一直没有遇到，知其然不知其所以然，所以一直没有十分关注，最近刚好碰到了一个严重的性能问题，经过分析，才使我意识到了JQuery选择器性能的重要性，看来东西还是要亲自实践一把，才能理解透彻。
 
 我在一个页面里面用到了多个Table，每个table里面会有很多td格子，多的时候能达到上千个。实现的是一个客户端浏览器自动重新计算公式的功能，我发现并没有要取很多格子的值，却十分的慢，特别是IE下面。我发现公式计算中有很多的冗余计算，首先我先把公式的冗余计算问题解决，FF没问题，但是IE中还是有一点顿的感觉。于是第二次，我打算profile一下，看看还有哪些可以优化的点，一般来说，当你决定进一步深入研究时，总有意外的收获在等着你。
 
@@ -2218,15 +2124,13 @@ return elem.nodeType === 1 &amp;amp;&amp;amp; elem.getAttribute(&quot;id&quot;) 
 
 结论：$(&quot;#A1-0&quot;)的性能要大大好于$('#A1-0', $table)或者$('td#A1-0')，最理想的办法，保证同一个document即使多个table(比如有参数面板)，td的id也能保持唯一性，这样就可以用$(&quot;#A1-0&quot;)，而不需要担心不唯一性，导致必须用$('#A1-0', $table)。
 </description>
-    </item>
-    
-    <item>
-      <title>Chrome浏览器Date.setDate遇到的一个问题</title>
-      <link>http://hackfisher.info/blog/2011/01/chrome-date-setdate-problem</link>
-      <pubDate>Wed, 05 Jan 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/01/chrome-date-setdate-problem</guid>
-      <description>在Chrome中，下面这段代码竟然是有问题的！
+				<published>Wed Jan 05 00:00:00 +0800 2011</published>
+				<link>/blog/2011/01/jquery-performance-profile</link>
+			</item>
+		
+			<item>
+				<title>Chrome浏览器Date.setDate遇到的一个问题</title>
+				<description>在Chrome中，下面这段代码竟然是有问题的！
 
 var a = 0; var dat = new Date(); dat.setDate(-a);
 
@@ -2235,15 +2139,13 @@ var a = 0; var dat = new Date(); dat.setDate(-a);
 var a = 0; var dat = new Date(); dat.setDate(0-a);
 另外，参考下这个： &lt;a href=&quot;http://www.dynarch.com/projects/calendar/download/1.8/&quot; target=&quot;_blank&quot;&gt;http://www.dynarch.com/projects/calendar/download/1.8/&lt;/a&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>B/S交互数据时，用户自定义回调函数的一种直观方法</title>
-      <link>http://hackfisher.info/blog/2011/01/b_s-user-defined-callback</link>
-      <pubDate>Wed, 05 Jan 2011 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2011/01/b_s-user-defined-callback</guid>
-      <description>在js中经常有各种各样的回调函数，可以让用户自定义内容，比如：
+				<published>Wed Jan 05 00:00:00 +0800 2011</published>
+				<link>/blog/2011/01/chrome-date-setdate-problem</link>
+			</item>
+		
+			<item>
+				<title>B/S交互数据时，用户自定义回调函数的一种直观方法</title>
+				<description>在js中经常有各种各样的回调函数，可以让用户自定义内容，比如：
 
 1 dosomething({
 2 callback: function(res) {
@@ -2319,15 +2221,13 @@ var a = 0; var dat = new Date(); dat.setDate(0-a);
 
 PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utilities:Function_(Chinese)&quot; target=&quot;_blank&quot;&gt;http://www.extjs.com/learn/Manual:Utilities:Function_(Chinese)&lt;/a&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Java性能优化之实时性[3]</title>
-      <link>http://hackfisher.info/blog/2009/05/java-performance-3</link>
-      <pubDate>Sun, 10 May 2009 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2009/05/java-performance-3</guid>
-      <description>&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;——万事开头难&lt;/span&gt;
+				<published>Wed Jan 05 00:00:00 +0800 2011</published>
+				<link>/blog/2011/01/b_s-user-defined-callback</link>
+			</item>
+		
+			<item>
+				<title>Java性能优化之实时性[3]</title>
+				<description>&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;——万事开头难&lt;/span&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
 &lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: 'Trebuchet MS'; font-weight: bold; line-height: 22px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;&lt;a href=&quot;http://yangtsefisher.blogspot.com/2009/05/test-code.html&quot;&gt;Java性能优化之实战漫谈[1]&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
@@ -2360,15 +2260,13 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
 &lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: 22px; font-family: verdana;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;一旦找到的问题的原因，那么解决问题的方法很简单，可以在某个合适的空闲的时候，提前进行类加载和编译，那么当第一次进行一些实时操作时，所要用到的类已经加载或者相关代码已经编译，第一次操作便不再慢了。&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Java性能优化之实战算法[2]</title>
-      <link>http://hackfisher.info/blog/2009/05/java-performance-2</link>
-      <pubDate>Sun, 10 May 2009 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2009/05/java-performance-2</guid>
-      <description>&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;——当你拿着一把锤子的时候，所有的东西看起来都像钉子。&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
+				<published>Sun May 10 00:00:00 +0800 2009</published>
+				<link>/blog/2009/05/java-performance-3</link>
+			</item>
+		
+			<item>
+				<title>Java性能优化之实战算法[2]</title>
+				<description>&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;——当你拿着一把锤子的时候，所有的东西看起来都像钉子。&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
 &lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;——当你看到钉子的时候，手上拿着的东西看起来就像一把锤子。&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
@@ -2415,15 +2313,13 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: 'Trebuchet MS'; font-weight: bold; line-height: 22px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;&lt;a href=&quot;http://yangtsefisher.blogspot.com/2009/05/java-performance-tuning-realtime-3.html&quot;&gt;Java性能优化之实时性[3]&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Java性能优化之实战漫谈[1]</title>
-      <link>http://hackfisher.info/blog/2009/05/java-performence-1</link>
-      <pubDate>Sat, 09 May 2009 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2009/05/java-performence-1</guid>
-      <description>&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;——I can feel the need, the need of speed...&lt;/span&gt;&lt;/div&gt;
+				<published>Sun May 10 00:00:00 +0800 2009</published>
+				<link>/blog/2009/05/java-performance-2</link>
+			</item>
+		
+			<item>
+				<title>Java性能优化之实战漫谈[1]</title>
+				<description>&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;——I can feel the need, the need of speed...&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;——提前优化是万恶之源&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
 &lt;/span&gt;&lt;/div&gt;
@@ -2455,15 +2351,13 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: 'Trebuchet MS'; font-weight: bold; line-height: 22px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;&lt;a href=&quot;http://yangtsefisher.blogspot.com/2009/05/java-performance-tuning-algorithm-2.html&quot;&gt;Java性能优化之实战算法[2]&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: 'Trebuchet MS'; font-weight: bold; line-height: 22px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;&lt;a href=&quot;http://yangtsefisher.blogspot.com/2009/05/java-performance-tuning-realtime-3.html&quot;&gt;Java性能优化之实时性[3]&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>信息2.0(译文)</title>
-      <link>http://hackfisher.info/blog/2009/04/info2_0-translation</link>
-      <pubDate>Sat, 25 Apr 2009 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2009/04/info2_0-translation</guid>
-      <description>&lt;p class=&quot;inner&quot; style=&quot;padding: 0px; margin: 5px;&quot;&gt;这篇文章的作者是印度一家公司www.InRev.org的市场总监，这是一家十分年轻的公司，刚刚成立不久，致力于数据分析。就像它的名字InRev一样，他们野心勃勃的想要参与到信息革命中的浪潮来，并在其中充当至关重要的弄潮儿。
+				<published>Sat May 09 00:00:00 +0800 2009</published>
+				<link>/blog/2009/05/java-performence-1</link>
+			</item>
+		
+			<item>
+				<title>信息2.0(译文)</title>
+				<description>&lt;p class=&quot;inner&quot; style=&quot;padding: 0px; margin: 5px;&quot;&gt;这篇文章的作者是印度一家公司www.InRev.org的市场总监，这是一家十分年轻的公司，刚刚成立不久，致力于数据分析。就像它的名字InRev一样，他们野心勃勃的想要参与到信息革命中的浪潮来，并在其中充当至关重要的弄潮儿。
 在作者的另外一篇博客&lt;a href=&quot;http://engineeringanalytics.blogspot.com/2009/04/analytics-industry.html&quot;&gt;Analytics Industry(分析工业)&lt;/a&gt;中曾指出在中国这样数据分析公司几乎没有，而国外这些公司已经小有规模，中国如果想要赶上信息革命的浪潮，也许应该具备更长远的眼光。&lt;/p&gt;
 &lt;p class=&quot;inner&quot; style=&quot;font-family: Verdana, arial, sans-serif; padding: 0px; margin: 5px;&quot;&gt;这篇文章主要指出了市场对于智能处理数据的需求，介绍了Web上现有的一些处理工具和报表工具，指出信息2.0的时代已经到来——&lt;/p&gt;
 &lt;p class=&quot;inner&quot; style=&quot;font-family: Verdana, arial, sans-serif; padding: 0px; margin: 5px;&quot;&gt;----------------------------------------&lt;/p&gt;
@@ -2490,15 +2384,13 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
 &lt;p style=&quot;font-family: Verdana, arial, sans-serif; margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding: 0px;&quot;&gt;&lt;/p&gt;
 &lt;p style=&quot;font-family: Verdana, arial, sans-serif; margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding: 0px;&quot;&gt;由于市场上对于智能数据的需求，我十分确信的告诉诸位，这就是我们正在提及的&lt;a style=&quot;font-family: Verdana, arial, sans-serif; color: #2e6ab1; text-decoration: underline; padding: 0px; margin: 0px;&quot; title=&quot;Information 2.0&quot; href=&quot;http://analyticsbhups.blogspot.com/2008/11/information-20-and-openi.html&quot;&gt;信息2.0&lt;/a&gt;的时代。&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>读《少有人走的路》</title>
-      <link>http://hackfisher.info/blog/2009/04/read-road-less-traveled</link>
-      <pubDate>Mon, 06 Apr 2009 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2009/04/read-road-less-traveled</guid>
-      <description>在谈及这本书 之前，先说说一些个人经历。本人作为一个不修边幅的80后男生，平常对穿着打扮实在不太感冒，认为浪费时间。去年回家过年，我妈认为我头发太难看，逼着我去理发，而我这个从不烫发的老实小子怀着叛逆的心理第一次去理发店烫了个稍显古怪的发型。说实话，我自己也不喜欢这个发型，回南京有空就把它修理了。重要的不是发型，而是我所想要表达的，那种渴望独立的心情。正如不久前，即将毕业时，自己和父母在关于选择人生道路时的分歧一样，我所想要表达是每个人都应该选择他自己的独一无二的道路，这是一个心智成熟的旅程，而每个人的这条道路对于其他人来说都是“少有人走的”。
+				<published>Sat Apr 25 00:00:00 +0800 2009</published>
+				<link>/blog/2009/04/info2_0-translation</link>
+			</item>
+		
+			<item>
+				<title>读《少有人走的路》</title>
+				<description>在谈及这本书 之前，先说说一些个人经历。本人作为一个不修边幅的80后男生，平常对穿着打扮实在不太感冒，认为浪费时间。去年回家过年，我妈认为我头发太难看，逼着我去理发，而我这个从不烫发的老实小子怀着叛逆的心理第一次去理发店烫了个稍显古怪的发型。说实话，我自己也不喜欢这个发型，回南京有空就把它修理了。重要的不是发型，而是我所想要表达的，那种渴望独立的心情。正如不久前，即将毕业时，自己和父母在关于选择人生道路时的分歧一样，我所想要表达是每个人都应该选择他自己的独一无二的道路，这是一个心智成熟的旅程，而每个人的这条道路对于其他人来说都是“少有人走的”。
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #0000ee;&quot;&gt;&lt;img id=&quot;BLOGGER_PHOTO_ID_5321590232451303330&quot; style=&quot;display: block; margin-top: 0px; margin-right: auto; margin-bottom: 10px; margin-left: auto; text-align: center; cursor: pointer; width: 225px; height: 320px;&quot; src=&quot;http://2.bp.blogspot.com/_BU0qLYlS0SQ/SdoWHxVyx6I/AAAAAAAABCM/pdQvwl1FFBY/s320/%E5%B0%91%E6%9C%89%E4%BA%BA%E8%B5%B0%E7%9A%84%E8%B7%AF.jpg&quot; alt=&quot;&quot; border=&quot;0&quot; /&gt;&lt;/span&gt;
 &lt;div&gt;
 &lt;div&gt;&lt;a href=&quot;http://www.douban.com/subject/1775691/&quot;&gt;《少有人走的路》&lt;/a&gt;是一本畅销书，可是看到它时却不是在什么《纽约时报》的畅销书排行榜上，而是从好朋友的豆瓣上看到的，副标题是“心智成熟的旅程”。人可以拒绝任何东西，但绝不可以拒绝成熟。正如译者在序中所说：“如果说以前中国人最大的问题是温饱问题，那么，今天，中国人最大的问题就是心理问题，而心智不成熟又是心理问题中最大的问题”。这本书的作者，M.斯科特.派克，是一名杰出的心理医生，该书的观点和思想，大多来自于他的从业经历。我们长期以来的想法和感受，终有一天会被一些陌生人一语道破，而派克或许就是其中的一个。&lt;/div&gt;
@@ -2512,30 +2404,26 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
 &lt;/div&gt;
 &lt;/div&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>读《影响力》</title>
-      <link>http://hackfisher.info/blog/2009/04/read-influence</link>
-      <pubDate>Sun, 05 Apr 2009 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2009/04/read-influence</guid>
-      <description>&lt;div&gt;&lt;a href=&quot;http://www.douban.com/subject/1005576/&quot;&gt;《影响力》&lt;/a&gt;是一本销售心理学的书，按道理来说，它是写来给那些销售工作者看的，但事实上，这却不是作者的本意。书的作者写这本书时恰恰是用来告诉人们，甚至帮助人们，来应付那些怀有目的让他们轻易“说是”的“影响专家”。这本书阐述了各种有意无意的利用心理武器来捕猎的技巧，它的本意是用来教会人们怎么防止被捕猎，但同时也会教会人们去怎么捕猎别人。从某种意义上来说，每个人既是猎物又是猎人。因此，这本书对于每个人的教育都是意义深刻的，精彩之极。&lt;/div&gt;
+				<published>Mon Apr 06 00:00:00 +0800 2009</published>
+				<link>/blog/2009/04/read-road-less-traveled</link>
+			</item>
+		
+			<item>
+				<title>读《影响力》</title>
+				<description>&lt;div&gt;&lt;a href=&quot;http://www.douban.com/subject/1005576/&quot;&gt;《影响力》&lt;/a&gt;是一本销售心理学的书，按道理来说，它是写来给那些销售工作者看的，但事实上，这却不是作者的本意。书的作者写这本书时恰恰是用来告诉人们，甚至帮助人们，来应付那些怀有目的让他们轻易“说是”的“影响专家”。这本书阐述了各种有意无意的利用心理武器来捕猎的技巧，它的本意是用来教会人们怎么防止被捕猎，但同时也会教会人们去怎么捕猎别人。从某种意义上来说，每个人既是猎物又是猎人。因此，这本书对于每个人的教育都是意义深刻的，精彩之极。&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #0000ee;&quot;&gt;&lt;img id=&quot;BLOGGER_PHOTO_ID_5321589834695801682&quot; style=&quot;display: block; margin-top: 0px; margin-right: auto; margin-bottom: 10px; margin-left: auto; text-align: center; cursor: pointer; width: 224px; height: 320px;&quot; src=&quot;http://2.bp.blogspot.com/_BU0qLYlS0SQ/SdoVwnlfe1I/AAAAAAAABCE/PVxT_eYhhqE/s320/%E5%BD%B1%E5%93%8D%E5%8A%9B.jpg&quot; alt=&quot;&quot; border=&quot;0&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;这本书在豆瓣上的评论是相当高的，事实上，我当初正是好奇这是怎样一本书，能够获得如此高的评价，有些评价甚至让人觉得很夸张。比如有一位评论说：“我只希望这本书没有被出版”，还有些读者看完后写书评，题目叫做“看完了不要借给别人看，包括朋友”。这些人的心理其实是很有趣的，我甚至怀疑大部分人都会或多或少的这种想法。正如我一样，他们意识到了人类社会有时就像丛林，而《影响力》就是这样一本书，能提高人们在丛林社会中的技能。丛林社会体现在相互竞争性和互斥性上，别人提高了，对自己就越不利。这样说，确实有些太夸张了，因为这种看法太过片面了，谁都知道，除了竞争，还有合作。&lt;/div&gt;
 &lt;div&gt;但是，回到当前社会，尤其是中国，面对这么大的人口数量压力，我感觉人们的竞争意识大大强于合作意识，在我身边的几乎所有的同龄人，都是从高考过来的。在高考这种巨大的压力面前，提升的正是人们的竞争意识，对合作意识到培养是少之又少，而合作意识正是公司等社会团体十分重要的价值所在，我也仅仅是在工作后，才深刻的体会到合作的重要性。&lt;/div&gt;
 &lt;div&gt;我们生活在一个自动化的时代，人们觉得自己更有力量，能主宰自然。但是很少有人意识到，他们作为大自然的一部分，仍然存在着一些原始或者现代的依从，带着某些机械性，有一些正如作者所描述的雌火鸡的行为一样不可理喻。一只雌火鸡会满腔热情地拥抱一个天敌，仅仅因为它发出了“嘁噗-嘁噗”的声音；她会毫不留情地虐待甚至杀死自己的后代，也仅仅因为它没有发出这种声音。我想要说的是，人们自己也好不到哪里去，一旦按下按钮，便会播放自己体内事先录好的基因磁带，卡塔-哗...&lt;/div&gt;
 &lt;div&gt;我推荐此书的时候，总会在前面加上一句“很不情愿的”。我甚至怀疑书的作者写出这本书时，是不是也犹豫了一下。所以，即使是您或者我已经读过了这本书，我们仍然是人，不必期望能够通过读这本书来改变你的机械性和心理，因为你的心理反应在大多数情况下是合理的，只不过当心理学成为一种武器的时候被别人利用时，才会变得有些危险。所以，如果你不是用它来帮助你作为销售或者其他武器的话，不必太认真，这本书只不过是用来更好的帮助你认识自己和他人。&lt;/div&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>合肥行记</title>
-      <link>http://hackfisher.info/blog/2009/03/travel-hefei</link>
-      <pubDate>Sun, 22 Mar 2009 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2009/03/travel-hefei</guid>
-      <description>&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;最近公司派同事和我到合肥中科大去了一趟，公司事务不便详谈，谈谈对合肥这个城市的印象吧。以前对合肥的了解很少，只知道是安徽的省会，还有就是中科大的所在，这正是我们此行的目的。我们整个行程，从离开南京火车站到回到南京火车站，整个行程28小时，看看这效率..&lt;/span&gt;
+				<published>Sun Apr 05 00:00:00 +0800 2009</published>
+				<link>/blog/2009/04/read-influence</link>
+			</item>
+		
+			<item>
+				<title>合肥行记</title>
+				<description>&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;最近公司派同事和我到合肥中科大去了一趟，公司事务不便详谈，谈谈对合肥这个城市的印象吧。以前对合肥的了解很少，只知道是安徽的省会，还有就是中科大的所在，这正是我们此行的目的。我们整个行程，从离开南京火车站到回到南京火车站，整个行程28小时，看看这效率..&lt;/span&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
 &lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;从南京到合肥坐动车正好一个小时左右，车上同事告诉我在合肥打的很便宜，起步价只有6元钱左右，不知道这与各个城市的消费水平有没有关系。初到合肥，天气不是很好，正值下班高峰，打的队伍排的长长的，要等很长时间。从没见过哪个城市打的这么难的，我们走了老远，到了一个什么希尔顿大饭店的门口，才打到的。安徽是个欠发达省，合肥从气质上来说也少有了大城市的那种自信。穿走于街头，感觉到的除了是混乱的交通，俗气的街头灯饰，疲惫的人群，再有没有其他什么了。我瞬间仿佛感觉，这个城市是属于小市民的..&lt;/span&gt;&lt;/div&gt;
@@ -2557,15 +2445,13 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
 &lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;晚上有点郁闷，动车没票了，被黄牛拉过去，坐了一辆破车，颠啊颠的，两个多小时，才到南京。那黄牛也真够黑的，向一女生要了160，还好那美女机灵，上车趁不注意，向一乘客讯问了价格，才60，把她给气的。然后乘很多人在，给她壮胆，嚷嚷了才把价格拉到100。一路无事，晚上11点钟到家，洗洗倒头就睡...&lt;/span&gt;&lt;/div&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>谈谈学习型组织的实践</title>
-      <link>http://hackfisher.info/blog/2009/03/talk-about-the-practice-of-the-learning-organization</link>
-      <pubDate>Sat, 07 Mar 2009 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2009/03/talk-about-the-practice-of-the-learning-organization</guid>
-      <description>&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;学习型组织（Learning Organization），美国学者彼得·圣吉（Peter M. Senge）在《第五项修炼》（The Fifth Discipline）一书中提出此管理观念，企业应建立学习型组织，其涵义为面临变遭剧烈的外在环境，组织应力求精简、扁平化、弹性因应、终生学习、不断自我组织再造，以维持竞争力。
+				<published>Sun Mar 22 00:00:00 +0800 2009</published>
+				<link>/blog/2009/03/travel-hefei</link>
+			</item>
+		
+			<item>
+				<title>谈谈学习型组织的实践</title>
+				<description>&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;学习型组织（Learning Organization），美国学者彼得·圣吉（Peter M. Senge）在《第五项修炼》（The Fifth Discipline）一书中提出此管理观念，企业应建立学习型组织，其涵义为面临变遭剧烈的外在环境，组织应力求精简、扁平化、弹性因应、终生学习、不断自我组织再造，以维持竞争力。
 &lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;img id=&quot;BLOGGER_PHOTO_ID_5310725495105326274&quot; style=&quot;display: block; margin: 0px auto 10px; text-align: center; cursor: hand; width: 320px; height: 215px;&quot; src=&quot;http://2.bp.blogspot.com/_BU0qLYlS0SQ/SbN8s0tdDMI/AAAAAAAABBc/UqL0h8ABCas/s320/%E5%AD%A6%E4%B9%A0%E5%9E%8B%E7%BB%84%E7%BB%87.jpg&quot; alt=&quot;&quot; border=&quot;0&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
@@ -2604,15 +2490,13 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;　　学习是心灵的正向转换，企业如果能够顺利导入学习型组织，不只能够达致更高的组织绩效，更能够带动组织的生命力。&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>能坚持</title>
-      <link>http://hackfisher.info/blog/2009/02/can-persist</link>
-      <pubDate>Sun, 15 Feb 2009 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2009/02/can-persist</guid>
-      <description>&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;过完年后回到工作岗位，一直提醒自己脚踏实地，做的多点，想的少点，可是写的却也变少了。&lt;/span&gt;&lt;/div&gt;
+				<published>Sat Mar 07 00:00:00 +0800 2009</published>
+				<link>/blog/2009/03/talk-about-the-practice-of-the-learning-organization</link>
+			</item>
+		
+			<item>
+				<title>能坚持</title>
+				<description>&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;过完年后回到工作岗位，一直提醒自己脚踏实地，做的多点，想的少点，可是写的却也变少了。&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
 &lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;人生如果有十步路要走，很多时候走到第三步路，第四步路的时候就会比较难走，也有很多人走到这个时候就会放弃。前段时间一直在思考，为什么boss能够把一个公司从刚开始一个人，几千块钱，慢慢的两个人，几个人，十几个人的能够撑到现在，慢慢地发展壮大？就他个人的技术水平，商业运营水平实在不敢恭维，常常做出错误的决定，目前看来，绝不是一个优秀的领导者。按照他自己的说法，他有很好的运气，我赞成，运气有时确实很重要，甚至比其他因素都更加重要。但是我觉得他有一个我们公司里其他人都比不上的优点，那就是“能坚持”，甚至不管是对是错。也许，“能坚持”就能等来足够的运气。&lt;/span&gt;&lt;/div&gt;
@@ -2635,15 +2519,13 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
 &lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;如何才能够知道目标一定可以实现呢？不知道，但是我想除了“能坚持”，找不出别的法子了，你能吗？&lt;/span&gt;&lt;/div&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>酒、诗和女人</title>
-      <link>http://hackfisher.info/blog/2009/01/wine-poetry-girls</link>
-      <pubDate>Mon, 19 Jan 2009 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2009/01/wine-poetry-girls</guid>
-      <description>&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;我最近读到一则关于诗人的笑话，说是让一个诗人远离尘世，去一个岛上过一辈子，让他挑选三件最喜欢的和他一同前往。诗人毫不犹豫地选了三样：诗、酒和女人。如果让他选择两样，他会放弃酒，如果让他只选一样，他会放弃诗。&lt;/span&gt;&lt;/div&gt;
+				<published>Sun Feb 15 00:00:00 +0800 2009</published>
+				<link>/blog/2009/02/can-persist</link>
+			</item>
+		
+			<item>
+				<title>酒、诗和女人</title>
+				<description>&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;我最近读到一则关于诗人的笑话，说是让一个诗人远离尘世，去一个岛上过一辈子，让他挑选三件最喜欢的和他一同前往。诗人毫不犹豫地选了三样：诗、酒和女人。如果让他选择两样，他会放弃酒，如果让他只选一样，他会放弃诗。&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
 &lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;其实不单是诗人如此，其他一些人群同样如此，比如真正的数学家和真正的程序员，他们是这个社会中离诗人最近的一群人。只不过对于数学家和程序员来说，诗分别变成了数学问题和程序。不过诗人也好、数学家和程序员也好，首先他们都是人。女人的意思，我想是一种对爱的追求；诗，应该是对美的一种追求；而酒应该是一种入世的追求。程序员所关心的应该是代码之美，然后发现自己整天面对键盘、鼠标，感觉特焖，于是心中有火，开始想爱了；如果运气好点能够有份&quot;有意义&quot;的工作，或者是能够成为founder之类，那么就感觉为世界创造了价值，于是就完成&quot;入世&quot;了。数学也一样是美的，恨不能不吃不喝，生活在数学的虚拟世界里，遇到什么想往数学问题靠。但是久而久之，人的本性会让他们产生孤独，数学再美，却无人欣赏，没有爱。能够做到与世无争，数学就是自己的全部的数学家不是没有，少之又少，&lt;/span&gt;&lt;a href=&quot;http://baike.baidu.com/view/437087.htm&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;佩雷尔曼&lt;/span&gt;&lt;/a&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;可能算是一个，其他人或多或少有着对世俗(包括荣誉等等)和爱情的追求。&lt;/span&gt;&lt;/div&gt;
@@ -2654,29 +2536,25 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
 &lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;牛年快到了，祝福看到这篇文章的XDJM，能牛上加牛，好运连连，永远不要放弃追求自己心中的诗、酒和女人。&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>要想创新，就不要让一个人做同一个任务两次</title>
-      <link>http://hackfisher.info/blog/2009/01/innovation-by-do-things-times</link>
-      <pubDate>Thu, 15 Jan 2009 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2009/01/innovation-by-do-things-times</guid>
-      <description>&lt;pre escaped=&quot;true&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: arial;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;今天看着我写的设计器，呆呆地凝视了好久，发现自己已经不容易想到哪些地方可以改进了，回想到刚刚碰到它的时候，感觉浑身都是毛病，觉得处处都有地方可以提高？&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
+				<published>Mon Jan 19 00:00:00 +0800 2009</published>
+				<link>/blog/2009/01/wine-poetry-girls</link>
+			</item>
+		
+			<item>
+				<title>要想创新，就不要让一个人做同一个任务两次</title>
+				<description>&lt;pre escaped=&quot;true&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: arial;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;今天看着我写的设计器，呆呆地凝视了好久，发现自己已经不容易想到哪些地方可以改进了，回想到刚刚碰到它的时候，感觉浑身都是毛病，觉得处处都有地方可以提高？&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
 &lt;pre escaped=&quot;true&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: arial;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;那么，是现在的设计器达到完美的状态了吗？如果我不是犯傻的话，肯定不会这么认为，更不会觉得已经达到完美的状态了。那么为什么我不像刚接触它时有那么多想法可以去改进它呢？&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
 &lt;pre escaped=&quot;true&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: arial;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;因为这是我做的，设计器的每个细节都是我码出来的，是我的选择。普通人都会倾向于欣赏自己做出来的东西，这也算是一种偏见和本性。抛开这个偏见不说，一件事情的完成的多数细节，就是他自己的理念，性格，思想的表现。而这些东西恰恰是一个人内在最实质的东西，所以让他继续做这个事情，也摆脱不了这些实质东西所影响的范围。&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
 &lt;pre escaped=&quot;true&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: arial;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;所以，要想创新和提高，就不要让一个人重复完成某项任务两次，因为根据以上推论，这第二次很有可能失败，除非这个人的思想获得了实质性的飞跃。&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
 &lt;pre escaped=&quot;true&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: arial;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;好方法有很多，让有潜力的新人做肯定比那个已经做过这个事情的老手要好，这是我的想法。&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>大前研一的“专业主义”</title>
-      <link>http://hackfisher.info/blog/2009/01/ohmae-professionalism</link>
-      <pubDate>Wed, 07 Jan 2009 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2009/01/ohmae-professionalism</guid>
-      <description>&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;前段时间读管理类的书籍，收获很大，不过最近想要收收心，从而专心学习软件开发，最近发现自己不懂的东西很多，如果面面俱到，恐怕这一生都学不完的了，于是学乖了，懂得了要专注于一个方向，这样才可能深入，有所得。&lt;/span&gt;
+				<published>Thu Jan 15 00:00:00 +0800 2009</published>
+				<link>/blog/2009/01/innovation-by-do-things-times</link>
+			</item>
+		
+			<item>
+				<title>大前研一的“专业主义”</title>
+				<description>&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;前段时间读管理类的书籍，收获很大，不过最近想要收收心，从而专心学习软件开发，最近发现自己不懂的东西很多，如果面面俱到，恐怕这一生都学不完的了，于是学乖了，懂得了要专注于一个方向，这样才可能深入，有所得。&lt;/span&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
 &lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;前段时间注意到了不少书，阿朱的&lt;a href=&quot;http://www.douban.com/subject/3319935/&quot;&gt;《走出软件作坊》&lt;/a&gt;，德鲁克的&lt;a href=&quot;http://www.douban.com/subject/1433346/&quot;&gt;《旁观者》&lt;/a&gt;，还有就是大前研一的这本&lt;a href=&quot;http://www.douban.com/subject/1790456/&quot;&gt;《专业主义》&lt;/a&gt;了，前两本书都没有看完，只有大前研一的这本看完了。&lt;/span&gt;&lt;/div&gt;
@@ -2702,15 +2580,13 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
 &lt;div style=&quot;text-align: left;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: 13px;&quot;&gt;
 &lt;/span&gt;&lt;/div&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>高敏者和高感觉寻求者</title>
-      <link>http://hackfisher.info/blog/2009/01/high-sensation-seekers</link>
-      <pubDate>Sat, 03 Jan 2009 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2009/01/high-sensation-seekers</guid>
-      <description>&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;几天前，我偶然接触到两个新的心理学名词：“高敏者”和“高感觉寻求者”。我下意识的带着好奇心来了解相关的概念。了解完之后，很是兴奋，发现自己既是高敏者，也是高感觉寻求者，通过这两个概念，我发现自己从未这么深刻的理解自己的本性。因此，我有必要对我的读书笔记做一些总结。&lt;/span&gt;
+				<published>Wed Jan 07 00:00:00 +0800 2009</published>
+				<link>/blog/2009/01/ohmae-professionalism</link>
+			</item>
+		
+			<item>
+				<title>高敏者和高感觉寻求者</title>
+				<description>&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;几天前，我偶然接触到两个新的心理学名词：“高敏者”和“高感觉寻求者”。我下意识的带着好奇心来了解相关的概念。了解完之后，很是兴奋，发现自己既是高敏者，也是高感觉寻求者，通过这两个概念，我发现自己从未这么深刻的理解自己的本性。因此，我有必要对我的读书笔记做一些总结。&lt;/span&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
 &lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;高度敏感者，简称“高敏者”，“敏”即“敏感性”，不&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: 18px; -webkit-border-horizontal-spacing: 10px; -webkit-border-vertical-spacing: 10px; font-family: 宋体;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: 21px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;仅意味着一种比别人能发现更多的微妙的细节、信息和刺激的倾向或者能力，而且意味着高敏者在心理上体验着更大的紧张度。这里所说的紧张度就像一台压力机器，仅仅记录我们内心的状态，也就是我们的思想和感情的压力状态。高敏者是一个相对比较新的概念，至少在现在的认识上是这样的,我自己以前从未听说过。这个概念与富有天赋、害羞胆怯、内向自省，甚至可能与迈尔斯-勃雷格斯类型的人群都有互相交叠，但是我们对高敏者性情的某些方面还是缺乏很好的理解，因此，我们对自己了解越多，我们的成长就能获得越多的力量。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
@@ -2776,36 +2652,34 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;5. &lt;/span&gt;&lt;a href=&quot;http://www.joyful-work-for-sensitive-people.com/&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;http://www.joyful-work-for-sensitive-people.com/&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>管理者的素质是留住人才的重要因素</title>
-      <link>http://hackfisher.info/blog/2008/12/management-quality-personnel</link>
-      <pubDate>Mon, 29 Dec 2008 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2008/12/management-quality-personnel</guid>
-      <description>有很多创业型公司苦于寻找真正的人才，这样的人才能为公司带来正真的提升，帮助公司成长壮大。但是这些公司的管理者真的准备好了接纳这些人才吗？
+				<published>Sat Jan 03 00:00:00 +0800 2009</published>
+				<link>/blog/2009/01/high-sensation-seekers</link>
+			</item>
+		
+			<item>
+				<title>管理者的素质是留住人才的重要因素</title>
+				<description>有很多创业型公司苦于寻找真正的人才，这样的人才能为公司带来正真的提升，帮助公司成长壮大。但是这些公司的管理者真的准备好了接纳这些人才吗？
 &lt;div&gt;
 &lt;div&gt;许多创业的小公司的管理者苦于找不到好的人才，抱怨说是由于资金不足，不能给予人才相应的报酬，以此为借口来为自己开脱责任。可是真的有可塑之才来到他们身边来是，他们真正做好接受他们并留住他们的准备了吗，他们有足够的智慧和气度留住那些对于企业发展壮大至关重要的人吗？难说。&lt;/div&gt;
 &lt;div&gt;都说物以群分，人以类聚，其实很有道理，如果你自身的能力没有达到，那么期望别人跟着你的最起码的资本便没有了。这样，管理者的素质就成了成功道路上必须跨越的一道门槛，所以无论是老板还是员工，不断的提升自己，才是正确的做法，只懂得抱怨老板的员工不是好员工，因为他只知道抱怨，而放弃了脚踏实地努力追求适合自己环境的机会，同样的，无法用自己的智慧和气度留住人才，不重视员工的老板，也用自己的傲慢为代价，丧失了成功的机会。&lt;/div&gt;
 &lt;/div&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>职业并不重要，重要的是事业</title>
-      <link>http://hackfisher.info/blog/2008/12/occupational-cause</link>
-      <pubDate>Tue, 09 Dec 2008 00:00:00 �й���׼ʱ��</pubDate>
-      <author>hackfisher@gmail.com (HackFisher)</author>
-      <guid>http://hackfisher.info/blog/2008/12/occupational-cause</guid>
-      <description>&lt;div&gt;我是谁?我是做什么的？&lt;/div&gt;
+				<published>Mon Dec 29 00:00:00 +0800 2008</published>
+				<link>/blog/2008/12/management-quality-personnel</link>
+			</item>
+		
+			<item>
+				<title>职业并不重要，重要的是事业</title>
+				<description>&lt;div&gt;我是谁?我是做什么的？&lt;/div&gt;
 &lt;div&gt;我是Fisher，职业是Java程序员，看标题你就会猜到我是做什么的了。职业是什么并不重要，更多的时候它只是一个饭碗，衣食保障。天哪，衣食保障不重要，还有什么是重要的？且慢，我说的不重要是相对而言的，如果你的目标仅仅停留在一个职业上，那你永远也走不远，真正聪明的人懂得拿什么作为选择的依据，从这个角度上来说，依靠事业而不是职业来做出选择，显然要靠谱的多。这就是我最近由于困惑而得来的启发。人的一生中可以有很多个职业，可以在这个公司干完了去另外一家，甚至可以换到各行各业，但是事业只有一个，它是你生命中的精华，意义所在。&lt;/div&gt;
 &lt;div&gt;人们往往会在工作中遇到各种各样的困惑，对自己的公司有着各种的抱怨和不满，期望拥有更好的环境，获得更优厚的待遇，遇到更加优秀的领导，在努力工作和跳槽之间徘徊，不断的做着坚持还是放弃的选择，可是始终没有结果，时间在空想和忧虑中慢慢消逝，结果却是由于迫不得已或者冲动，使自己陷入被动之中。&lt;/div&gt;
 &lt;div&gt;真的有必要为了职业的问题绞尽脑汁吗？难道工作就非得在忧虑痛苦中度过？工作本身就应该是快乐的，但是要想快乐并非那么容易。只有认清楚了什么是重要的，选择才不会痛苦。一个好的职业规划，应该是事业专一的，而非职业专一，因此更多的时候无需选择，一些以自己的事业是否成长作为目标，进而得出行动的原则。职业是为了事业服务，没有事业你的职业就仅仅是养家糊口的饭碗，仅此无他。&lt;/div&gt;
 &lt;div&gt;那么什么才算是事业成功呢？物质的储存，经验的积累，能力的提高，人际关系等等，都包含在里面。一个聪明的人绝对不会因为离开一家公司，跟过去的同事闹翻，因为这完全没有必要。一个聪明的人也不会因为可能会离开一家公司就不好好的努力工作。因为他明白自己并不是为了自己的boss在工作，而是在打造自己的事业。即使老板在待遇上亏待他了，或者和同事不和睦，他也会聪明的做出选择，那就是只要有留下的必要，比如经验，或者学习计划的需要，他就会专心致志的做好自己，而避免让自己陷入胡思乱想之中。一旦继续留下来变得没有必要，并且对自己的事业没有帮助时，他则会经过慎重的选择后，带着自信的笑容和收获的喜悦离开，使自己处于主动的状态，并且在进入新的环境后继续上升而不是重新再来，从而不让自己陷入被动之中。&lt;/div&gt;
 &lt;div&gt;做一个快乐勤奋积极的programmer要比做一个辛苦忧虑的码工要好一些，难道不是吗？&lt;/div&gt;
 </description>
-    </item>
-    
-  </channel> 
+				<published>Tue Dec 09 00:00:00 +0800 2008</published>
+				<link>/blog/2008/12/occupational-cause</link>
+			</item>
+		
+	</channel>
 </rss>
