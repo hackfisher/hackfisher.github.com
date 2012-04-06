@@ -6,9 +6,76 @@
     <atom:link href="http://hackfisher.info/rss.xml" rel="self" type="application/rss+xml" />
     <description>stuff from hackfisher</description>
     <language>en-us</language>
-    <pubDate>Sat, 31 Mar 2012 16:16:05 �й���׼ʱ��</pubDate>
-    <lastBuildDate>Sat, 31 Mar 2012 16:16:05 �й���׼ʱ��</lastBuildDate>
+    <pubDate>Fri, 06 Apr 2012 13:57:41 �й���׼ʱ��</pubDate>
+    <lastBuildDate>Fri, 06 Apr 2012 13:57:41 �й���׼ʱ��</lastBuildDate>
 
+    
+    <item>
+      <title>测试思考系列[5]：非功能性测试</title>
+      <link>http://hackfisher.info/blog/2012/04/thinking-in-test-non-functional-testing</link>
+      <pubDate>Fri, 06 Apr 2012 00:00:00 �й���׼ʱ��</pubDate>
+      <author>hackfisher@gmail.com (HackFisher)</author>
+      <guid>http://hackfisher.info/blog/2012/04/thinking-in-test-non-functional-testing</guid>
+      <description>&lt;p&gt;非功能性测试是针对非功能性需求来说的。所谓&lt;a href=&quot;http://www.51testing.com/html/90/n-79290.html&quot;&gt;非功能性需求&lt;/a&gt;，是指软件产品为满足用户业务需求而必须具有且除功能需求以外的特性。软件产品的非功能性需求包括系统的性能、可靠性、可维护性、可扩充性和对技术和对业务的适应性等。下面对其中的某些指标加以说明。在这里可以看到非功能性需求涉及的范围很广，软件产品本身不是孤立存在的，还涉及到诸多外在环境的影响。非功能性需求必须考虑软件既要可用，又要易用。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;��文章主要介绍在非功能性方面的一些思考和实践，分为性能测试、兼容性测试、安全性测试、易用可用性测试。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;性能测�&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;性能测试主要分为性能报告和性能调优两个角度，但无论是从哪一个角度去做，最大的忌讳都是凭着感觉去猜，把90%的精力浪费在了10%不重要不是瓶颈的地方。&lt;/p&gt;
+
+&lt;p&gt;首先需要确定用户的性能需求，比如有些功能的性能虽然很差，但是用户并不十分在意，比如定时执行任务功能等等，再比如首页页面显示功能，虽然只需要几秒就可出现，但是用户对它的要求是非常高的(&amp;lt;=1s)，这个就是用户对不同功能有着不同的性能需求。如果性能调优的时间浪费在用户没有性能需求的地方，产生的优化结果对于用户的性能体验来说并没有任何的改善。&lt;/p&gt;
+
+&lt;p&gt;其次，一个重要的原则是，在做任何优化之前需要先profile一下性能瓶颈，切忌风风火火的优化，结果发现方向错了。有很多优秀的Profiler工具，比如&lt;a href=&quot;http://www.ej-technologies.com/products/jprofiler/overview.html&quot;&gt;JProfiler&lt;/a&gt;和&lt;a href=&quot;http://www.yourkit.com/&quot;&gt;YourKit&lt;/a&gt;，web前端优化方面，FireBug的概况和网络功能很不错。&lt;/p&gt;
+
+&lt;p&gt;在并发测试和疲劳强度测试方面，不得不提的工具是LoadRunner。关于LoadRunner和并发测试知识的介绍，推荐看看Jackei的&lt;a href=&quot;http://www.cnblogs.com/jackei/archive/2006/11/11/557972.html&quot;&gt;《LoadRunner没有告诉你的系列》&lt;/a&gt;，尤其是里面的&lt;a href=&quot;http://www.cnblogs.com/jackei/archive/2006/11/20/565527.html&quot;&gt;理发店模型&lt;/a&gt;，通俗易懂，性能测试入门者必看。并发测试的优化方面，关于结果缓存的优化，特别是那种执行得出结果需要较长时间的过程，Java并发包的Future.get()是一个很不错的面向对象的概念，具体的详细介绍请参考《Java Concurrency in Practice》一书的5.6章节: Building an Efficient, Scalable Result Cache。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/2012/04/java_concurrency.jpg&quot; alt=&quot;Java Concurrency in Practice&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Web前端性能测试方面，也有很多优化的技巧，如果你用的是Jquery，&lt;a href=&quot;http://www.artzstudio.com/2009/04/jquery-performance-rules/&quot;&gt;这篇文章&lt;/a&gt;总结的不错，尤其是第一条, Always Descend From an #id， 在我之前的&lt;a href=&quot;http://hackfisher.info/blog/2011/01/jquery-performance-profile/&quot;&gt;JQuery性能分析&lt;/a&gt;这篇文章里面有过详细介绍。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;兼容性测�&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;向后兼容性指硬件和软件系统可以使用该系统的早期版本的接口和数据。向后兼容性考虑的是对接口的变更如何影响接口的现有用户（也称为服务使用者）。如果现有用户不受影响，则变更就是向后兼容的。如果现有用户受到影响，则变更不向后兼容，将需要使用策略来管理变更的影响。&lt;/p&gt;
+
+&lt;p&gt;兼容性测试的关键点在于分清楚设计成兼容和设计成不兼容，这个是测试人员主要关注的点。在有兼容性报告之前，用户经常会发现一个功能不能用了，以为是BUG，其实是设计成不兼容的，又没有相应的文档告知。&lt;/p&gt;
+
+&lt;p&gt;就像程序员之间经常流传的一个笑话一样：It's not a bug, it's a feature. 感觉上，像是测试人员给设计人员背了黑锅，明明是设计的垃圾，结果导致增增减减修修补补，反正设计成不兼容到最后都反馈不到设计人员头上，都认为是测试人员的问题。但实际上，测试人员本身没有责任吗，可不可以做的更多使情况往更好的方向发展？ 其实测试只需要将反馈流弥补通，将不兼容的后果反馈给设计人员，产品设计也可以从用户身上学到更多，自然会对兼容性问题更谨慎一点，而测试本身通过兼容性报告也对产品发布的影响有了更多了解，还可以顺带帮文档把升级指南给做了。采用兼容性报告前后，对比各种兼容性问题造成的影响来看，兼容性报告效果明显。&lt;/p&gt;
+
+&lt;p&gt;与兼容性相关的就是发布的版本号，兼容性可能导致的一个问题在软件管理中叫做&lt;a href=&quot;http://en.wikipedia.org/wiki/Dependency_hell&quot;&gt;dependency hell&lt;/a&gt;，随着系统越来越大，越来越复杂，这个问题会越来越严重。于是有人想出了解决办法，通过规范版本号，叫做&lt;a href=&quot;http://semver.org/&quot;&gt;Semantic Versioning&lt;/a&gt;。作者&lt;a href=&quot;http://tom.preston-werner.com/&quot;&gt;preston-werner&lt;/a&gt;是github.com的创始人之一。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;安全性测�&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;安全性在中国正在受到越来越多的重视，比如前段时间闹得沸沸扬扬的&lt;a href=&quot;http://article.pchome.net/content-1481119.html&quot;&gt;CSDN密码泄密门&lt;/a&gt;，相应的安全性测试也会越来越受重视。常见的SQL注入等漏洞可以借助于&lt;a href=&quot;http://www-01.ibm.com/software/awdtools/appscan/&quot;&gt;AppScan&lt;/a&gt;这类安全性测试工具检测出来。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;易用可用性测�&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;易用性测试报告除了可以对发布的产品信息了解更充分的作用外，还可以作为资料反馈给产品组，用户改进用户体验和产品易用性。测试组成员作为“产品发布前使用产品最多的人”，所以“易用性测试报告”应该成为 用户体验改进和易用性改进的重要依据。&lt;/p&gt;
+
+&lt;p&gt;参考资料:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;http://www.uml.org.cn/zjjs/200609185.htm#1&lt;/li&gt;
+&lt;li&gt;http://hackfisher.info/blog/2011/01/jquery-performance-profile/&lt;/li&gt;
+&lt;li&gt;http://www.cnblogs.com/jackei/archive/2006/11/20/565527.html&lt;/li&gt;
+&lt;li&gt;http://www.artzstudio.com/2009/04/jquery-performance-rules/&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+    </item>
     
     <item>
       <title>Gist Tag For Jekyll, 将Gist和Jekyll集成起来</title>
@@ -2134,7 +2201,7 @@ Alice: 客户是上帝，你们程序员又不是。Bob: 可我曾听一个程�
 
 感谢firebug的概况功能，能让我通过profile获得性能初步的宝贵信息，截图如下，可以发现ID()方法和filter()方法，占用了超过70%的时间，而这两个方法都是$('#A1-0', $table)惹的祸，这样一个选择器，大概也就只需要选择不到100次，怎么这个ID方法调用却超过4万次？
 
-&lt;img src=&quot;http://filer.blogbus.com/4216262/4216262_1283495223l.png&quot; alt=&quot;点击查看原始尺寸&quot; width=&quot;640&quot; height=&quot;204&quot; border=&quot;0&quot; /&gt;
+&lt;img src=&quot;http://hackfisher.info/uploads/2011/01/jquery_profile.png&quot; alt=&quot;点击查看原始尺寸&quot; width=&quot;640&quot; height=&quot;204&quot; border=&quot;0&quot; /&gt;
 
 点进ID方法，查看调用栈，如下：
 
@@ -2142,11 +2209,11 @@ ID: function(elem, match){
 return elem.nodeType === 1 &amp;amp;&amp;amp; elem.getAttribute(&quot;id&quot;) === match;
 },
 
-&lt;img src=&quot;http://filer.blogbus.com/4216262/4216262_1283495444y.png&quot; alt=&quot;&quot; width=&quot;168&quot; height=&quot;129&quot; border=&quot;0&quot; /&gt;
+&lt;img src=&quot;http://hackfisher.info/uploads/2011/01/jquery_stack.png&quot; alt=&quot;&quot; width=&quot;168&quot; height=&quot;129&quot; border=&quot;0&quot; /&gt;
 
 可以看到ID方法和filter方法是一伙的，有希望一起搞定，点进filter方法，想要有所收获，你要有福尔摩斯般的嗅觉，善于发现蛛丝马迹，你发现了什么？
 
-&lt;img src=&quot;http://filer.blogbus.com/4216262/4216262_1283495438u.png&quot; alt=&quot;&quot; width=&quot;607&quot; height=&quot;271&quot; border=&quot;0&quot; /&gt;
+&lt;img src=&quot;http://hackfisher.info/uploads/2011/01/jquery_code.png&quot; alt=&quot;&quot; width=&quot;607&quot; height=&quot;271&quot; border=&quot;0&quot; /&gt;
 
 没错，当前调用是在filter方法的一个循环里，你突然就会奇怪，哎，我只不过是想在$table里面拿一个id是A1-0的td罢了，$('#A1-0', $table)直接取不就行了，为什么还要遍历560多个元素，JQuery的那些大牛不会不知道吧。你转念一想如果是你自己来实现这个功能，通过id取元素的办法只有getElementByID，但是这个方法只有document对象能调用，如果调用的化我怎么判断这个元素$table里面，很遗憾我没有找到办法。而且如果document里面有有多个id为A1-0的td，那么$('#A1-0')和document.getElementById('A1-0')只能选择第一个，我觉得这是DOM设计上的缺陷，凭啥不能有诸如$table[0].getElementById的方法？
 
