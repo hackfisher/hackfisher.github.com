@@ -6,8 +6,8 @@
     <atom:link href="http://hackfisher.info/rss.xml" rel="self" type="application/rss+xml" />
     <description>stuff from hackfisher</description>
     <language>en-us</language>
-    <pubDate>Fri, 06 Apr 2012 16:22:23 �й���׼ʱ��</pubDate>
-    <lastBuildDate>Fri, 06 Apr 2012 16:22:23 �й���׼ʱ��</lastBuildDate>
+    <pubDate>Fri, 06 Apr 2012 17:25:23 �й���׼ʱ��</pubDate>
+    <lastBuildDate>Fri, 06 Apr 2012 17:25:23 �й���׼ʱ��</lastBuildDate>
 
     
     <item>
@@ -19,7 +19,7 @@
       <description>&lt;p&gt;非功能性测试是针对非功能性需求来说的。所谓&lt;a href=&quot;http://www.51testing.com/html/90/n-79290.html&quot;&gt;非功能性需求&lt;/a&gt;，是指软件产品为满足用户业务需求而必须具有且除功能需求以外的特性。软件产品的非功能性需求包括系统的性能、可靠性、可维护性、可扩充性和对技术和对业务的适应性等。下面对其中的某些指标加以说明。在这里可以看到非功能性需求涉及的范围很广，软件产品本身不是孤立存在的，还涉及到诸多外在环境的影响。非功能性需求必须考虑软件既要可用，又要易用。这篇文章主要介绍在非功能性方面的一些思考和实践，分为性能测试、兼容性测试、安全性测试、易用可用性测试。&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&amp;lt;性能测试&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;性能测试.&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 
@@ -36,7 +36,7 @@
 &lt;p&gt;Web前端性能测试方面，也有很多优化的技巧，如果你用的是Jquery，&lt;a href=&quot;http://www.artzstudio.com/2009/04/jquery-performance-rules/&quot;&gt;这篇文章&lt;/a&gt;总结的不错，尤其是第一条, Always Descend From an #id， 在我之前的&lt;a href=&quot;http://hackfisher.info/blog/2011/01/jquery-performance-profile/&quot;&gt;JQuery性能分析&lt;/a&gt;这篇文章里面有过详细介绍。&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&amp;lt;兼容性测试&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;兼容性测试.&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 
@@ -49,14 +49,14 @@
 &lt;p&gt;与兼容性相关的就是发布的版本号，兼容性可能导致的一个问题在软件管理中叫做&lt;a href=&quot;http://en.wikipedia.org/wiki/Dependency_hell&quot;&gt;dependency hell&lt;/a&gt;，随着系统越来越大，越来越复杂，这个问题会越来越严重。于是有人想出了解决办法，通过规范版本号，叫做&lt;a href=&quot;http://semver.org/&quot;&gt;Semantic Versioning&lt;/a&gt;。作者&lt;a href=&quot;http://tom.preston-werner.com/&quot;&gt;preston-werner&lt;/a&gt;是github.com的创始人之一。&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&amp;lt;安全性测试&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;安全性测试.&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 
 &lt;p&gt;安全性在中国正在受到越来越多的重视，比如前段时间闹得沸沸扬扬的&lt;a href=&quot;http://article.pchome.net/content-1481119.html&quot;&gt;CSDN密码泄密门&lt;/a&gt;，相应的安全性测试也会越来越受重视。常见的SQL注入等漏洞可以借助于&lt;a href=&quot;http://www-01.ibm.com/software/awdtools/appscan/&quot;&gt;AppScan&lt;/a&gt;这类安全性测试工具检测出来。&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&amp;lt;易用可用性测试&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;易用可用性测试.&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 
@@ -433,10 +433,10 @@ Alpha场所是一个地方，里面有一堆东西，常见的包括Alpha安装�
 
 本系列的内容就是对测试做的一些思考而整理下来的内容，为了方便阅读，我将本系列的帖子整理如下：
 1、 &lt;a title=&quot;测试思考系列[1]：往持续交付的方向努力&quot; href=&quot;http://www.hackfisher.info/测试/2012/03/thinking-in-test-ci/&quot; target=&quot;_blank&quot;&gt;往持续交付的方向努力&lt;/a&gt;
-2、 &lt;a title=&quot;测试思考系列[2]：提交测试&quot; href=&quot;http://www.hackfisher.info/测试/2012/03/thinking-in-test-commit-test/&quot; target=&quot;_blank&quot;&gt;提交测试&lt;/a&gt;
-3、 &lt;a title=&quot;测试思考系列[3]：回归测试&quot; href=&quot;http://www.hackfisher.info/测试/2012/03/thinking-in-test-regression-test/&quot; target=&quot;_blank&quot;&gt;回归测试&lt;/a&gt;
-4、 &lt;a title=&quot;测试思考系列[4]：测试自动化&quot; href=&quot;http://www.hackfisher.info/测试/2012/03/thinking-in-test-automatization/&quot; target=&quot;_blank&quot;&gt;测试自动化&lt;/a&gt;
-5、 非功能性测试
+2、 &lt;a title=&quot;测试思考系列[2]：提交测试&quot; href=&quot;http://www.hackfisher.info/blog/2012/03/thinking-in-test-commit-test/&quot; target=&quot;_blank&quot;&gt;提交测试&lt;/a&gt;
+3、 &lt;a title=&quot;测试思考系列[3]：回归测试&quot; href=&quot;http://www.hackfisher.info/blog/2012/03/thinking-in-test-regression-test/&quot; target=&quot;_blank&quot;&gt;回归测试&lt;/a&gt;
+4、 &lt;a title=&quot;测试思考系列[4]：测试自动化&quot; href=&quot;http://www.hackfisher.info/blog/2012/03/thinking-in-test-automatization/&quot; target=&quot;_blank&quot;&gt;测试自动化&lt;/a&gt;
+5、 &lt;a title=&quot;测试思考系列[5]：非功能性测试&quot; href=&quot;http://hackfisher.info/blog/2012/04/thinking-in-test-non-functional-testing/&quot; target=&quot;_blank&quot;&gt;非功能性测试&lt;/a&gt;
 6、 测试环境和配置管理自动化
 7、 探索式软件测试
 8、 测试作为服务
