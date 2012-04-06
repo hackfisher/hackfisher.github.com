@@ -37,7 +37,7 @@ http://hackfisher.github.com/blog/2011/03/clojure-lisp-java-platform
 http://hackfisher.github.com/blog/2011/03/try2hack_nl-8th
 http://hackfisher.github.com/blog/2011/03/try2hack-9th
 http://hackfisher.github.com/blog/2011/02/try2hack_nl-7th
-http://hackfisher.github.com/blog/2011/02/doubanclaim33d97e22ee8cb9de
+http://hackfisher.github.com/blog/2011/02/doubanclaimcbd55902b8d99113
 http://hackfisher.github.com/blog/2011/02/try2hack_nl-third
 http://hackfisher.github.com/blog/2011/02/try2hack_nl-5th-6th
 http://hackfisher.github.com/blog/2011/02/try2hack_nl-4th

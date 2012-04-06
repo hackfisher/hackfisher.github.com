@@ -4,7 +4,7 @@
  <title>HackFisher</title>
  <link href="http://hackfisher.github.com/atom.xml" rel="self"/>
  <link href="http://hackfisher.github.com"/>
- <updated>2012-04-06T18:23:18+08:00</updated>
+ <updated>2012-04-06T18:39:31+08:00</updated>
  <id>http://hackfisher.github.com</id>
  <author>
    <name>HackFisher</name>
@@ -1482,9 +1482,9 @@ h. 最终，使用drakma的http-request访问第七关的网址，输出返回�
  
  <entry>
    <title>doubanclaim33d97e22ee8cb9de</title>
-   <link href="http://hackfisher.github.com/blog/2011/02/doubanclaim33d97e22ee8cb9de"/>
+   <link href="http://hackfisher.github.com/blog/2011/02/doubanclaimcbd55902b8d99113"/>
    <updated>2011-02-16T00:00:00+08:00</updated>
-   <id>http://hackfisher.github.com/blog/2011/02/doubanclaim33d97e22ee8cb9de</id>
+   <id>http://hackfisher.github.com/blog/2011/02/doubanclaimcbd55902b8d99113</id>
    <content type="html">豆瓣验证
 </content>
  </entry>

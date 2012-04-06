@@ -7,10 +7,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>【趣味Hack】Try2hack.nl第七关</title>
+	<title>doubanclaim33d97e22ee8cb9de</title>
 	<meta name="author" content="HackFisher">
 	<link href='/assets/themes/the-program/css/style.css' rel="stylesheet" media="all">
-	<link href="http://feeds.feedburner.com/" rel="alternate" title="【趣味Hack】Try2hack.nl第七关" type="application/atom+xml">
+	<link href="http://feeds.feedburner.com/" rel="alternate" title="doubanclaim33d97e22ee8cb9de" type="application/atom+xml">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
 </head>
 <body>
@@ -45,43 +45,21 @@
 			<header>
 				<div class="unit-head">
 					<div class="unit-inner unit-head-inner">
-						<h1 class="h2 entry-title">【趣味Hack】Try2hack.nl第七关</h1>
+						<h1 class="h2 entry-title">doubanclaim33d97e22ee8cb9de</h1>
 					</div><!-- unit-inner -->
 				</div><!-- unit-head -->
 			</header>
 
 			<div class="bd">
 				<div class="entry-content">
-					第七关地址：
-
-<a href="http://www.try2hack.nl/levels/level7-xfkohc.php">http://www.try2hack.nl/levels/level7-xfkohc.php</a>
-
-a. 打开页面，提示说必须要用IE 7.66登录，于是下了一个IE Tester访问，还是不行，必须是要这个版本的。
-
-b. 于是想到了重写访问报头(HTTP-HEADER)的user-agent，改成MSIE 7.66，又提示需要用Linux系统访问，照例在user-agent加上Linux
-
-c. 最后，还需要加上Referer为http://www.microsoft.com/ms.htm，也加上，这些都很简单，修改后，可以看到第八关的入口。
-
-d. 下面我们用Lisp语言来实现之，首先安装<a href="http://sourceforge.net/projects/clisp/">clisp</a>。找到一本书学习一下，比如<a href="http://landoflisp.com/">Land of Lisp</a>。
-
-<a href="/uploads/2011/02/land_of_lisp.jpg"><img class="aligncenter size-full wp-image-124" title="land_of_lisp" src="/uploads/2011/02/land_of_lisp.jpg" alt="" width="315" height="420" /></a>e. 下载安装并学会使用Lisp的一个库管理器<a href="http://www.quicklisp.org/">Quicklisp</a>。
-<pre escaped="true" lang="lisp" line="1">(quicklisp-quickstart:install)</pre>
-f. google 搜索 lisp http client，找到<a href="http://weitz.de/drakma/">drakma</a>。在quicklisp中搜索并安装drakma.
-<pre escaped="true" lang="lisp" line="1">(ql:system-apropos "drakma")
-(ql:quickload "drakma")</pre>
-<div>g. 在安装过程中可能会弹出找不到openssl的DLL外部库的信息，所有的库可以在<a href="http://gnuwin32.sourceforge.net/packages/openssl.htm">这里</a>找到。</div>
-h. 最终，使用drakma的http-request访问第七关的网址，输出返回的信息保存为html，用浏览器打开，得到<a href="http://www.try2hack.nl/levels/level8-balnrg.xhtml">第八关的地址</a>。
-<pre escaped="true" lang="lisp" line="1">(http-request "http://www.try2hack.nl/levels/level7-xfkohc.php"
-:user-agent "Mozilla/4.0 (compatible;MSIE 7.66;Linux)\\r\\n"
-:additional-headers '((Referer . "http://www.microsoft.com/ms.htm"))
-)</pre>
+					豆瓣验证
 
 					<div class="meta">
 						<p class="date-publish">
 							Published: 
-							<date class="date-pub" title="2011-02-28T00:00:00+08:00" datetime="2011-02-28T00:00:00+08:00" pubdate>
+							<date class="date-pub" title="2011-02-16T00:00:00+08:00" datetime="2011-02-16T00:00:00+08:00" pubdate>
 							<span class="month"><abbr>February</abbr></span>
-							<span class="day">28</span>
+							<span class="day">16</span>
 							<span class="year">2011</span>
 							</date>
 						</p>
@@ -105,13 +83,7 @@ h. 最终，使用drakma的http-request访问第七关的网址，输出返回�
 
   
      
-    	<li><a href="/tags.html#Hack-ref">Hack <span>8</span></a></li>
-     
-    	<li><a href="/tags.html#Http-ref">Http <span>1</span></a></li>
-     
-    	<li><a href="/tags.html#Lisp-ref">Lisp <span>2</span></a></li>
-     
-    	<li><a href="/tags.html#趣味Hack-ref">趣味Hack <span>9</span></a></li>
+    	<li><a href="/tags.html#疯言疯语-ref">疯言疯语 <span>10</span></a></li>
     
   
 
@@ -157,13 +129,13 @@ h. 最终，使用drakma的http-request访问第七关的网址，输出返回�
 					<nav class="pagination">
 						<ul>
 							
-							<li class="prev"><a class="internal" rel="prev"  href="/blog/2011/02/doubanclaimcbd55902b8d99113" title="View doubanclaim33d97e22ee8cb9de">&laquo; doubanclaim33d97e22ee8cb9de</a></li>
+							<li class="prev"><a class="internal" rel="prev"  href="/blog/2011/02/try2hack_nl-third" title="View 【趣味Hack】Try2hack.nl第三关">&laquo; 【趣味Hack】Try2hack.nl第三关</a></li>
 							
 							
 							<li class="pipe"> | </li>
 							
 							
-							<li class="next"><a class="internal" rel="next"  href="/blog/2011/03/try2hack-9th" title="View 【趣味Hack】Try2hack.nl第九关——修改Cookies">【趣味Hack】Try2hack.nl第九关——修改Cookies &raquo;</a></li>
+							<li class="next"><a class="internal" rel="next"  href="/blog/2011/02/try2hack_nl-7th" title="View 【趣味Hack】Try2hack.nl第七关">【趣味Hack】Try2hack.nl第七关 &raquo;</a></li>
 							
 						</ul>
 					</nav>
@@ -207,7 +179,7 @@ h. 最终，使用drakma的http-request访问第七关的网址，输出返回�
 		};
 	load('//platform.twitter.com/widgets.js', 'tweetjs');
 	// load('https://apis.google.com/js/plusone.js', 'gplus1js'); // Checkout http://j.mp/ApDgMr for usage html for this is <div class="g-plusone" data-size="medium"></div>
-	// load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk'); // Checkout http://j.mp/wZw2xR for using open graph protorol html for this is <div class="fb-like" data-href="/blog/2011/02/try2hack_nl-7th" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
+	// load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk'); // Checkout http://j.mp/wZw2xR for using open graph protorol html for this is <div class="fb-like" data-href="/blog/2011/02/doubanclaimcbd55902b8d99113" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
 	}(document, 'script'));
 </script>
 <script>
