@@ -23,7 +23,7 @@ status: publish
 
 感谢firebug的概况功能，能让我通过profile获得性能初步的宝贵信息，截图如下，可以发现ID()方法和filter()方法，占用了超过70%的时间，而这两个方法都是$('#A1-0', $table)惹的祸，这样一个选择器，大概也就只需要选择不到100次，怎么这个ID方法调用却超过4万次？
 
-<img src="http://filer.blogbus.com/4216262/4216262_1283495223l.png" alt="点击查看原始尺寸" width="640" height="204" border="0" />
+<img src="http://hackfisher.info/uploads/2011/01/jquery_profile.png" alt="点击查看原始尺寸" width="640" height="204" border="0" />
 
 点进ID方法，查看调用栈，如下：
 
@@ -31,11 +31,11 @@ ID: function(elem, match){
 return elem.nodeType === 1 &amp;&amp; elem.getAttribute("id") === match;
 },
 
-<img src="http://filer.blogbus.com/4216262/4216262_1283495444y.png" alt="" width="168" height="129" border="0" />
+<img src="http://hackfisher.info/uploads/2011/01/jquery_stack.png" alt="" width="168" height="129" border="0" />
 
 可以看到ID方法和filter方法是一伙的，有希望一起搞定，点进filter方法，想要有所收获，你要有福尔摩斯般的嗅觉，善于发现蛛丝马迹，你发现了什么？
 
-<img src="http://filer.blogbus.com/4216262/4216262_1283495438u.png" alt="" width="607" height="271" border="0" />
+<img src="http://hackfisher.info/uploads/2011/01/jquery_code.png" alt="" width="607" height="271" border="0" />
 
 没错，当前调用是在filter方法的一个循环里，你突然就会奇怪，哎，我只不过是想在$table里面拿一个id是A1-0的td罢了，$('#A1-0', $table)直接取不就行了，为什么还要遍历560多个元素，JQuery的那些大牛不会不知道吧。你转念一想如果是你自己来实现这个功能，通过id取元素的办法只有getElementByID，但是这个方法只有document对象能调用，如果调用的化我怎么判断这个元素$table里面，很遗憾我没有找到办法。而且如果document里面有有多个id为A1-0的td，那么$('#A1-0')和document.getElementById('A1-0')只能选择第一个，我觉得这是DOM设计上的缺陷，凭啥不能有诸如$table[0].getElementById的方法？
 
