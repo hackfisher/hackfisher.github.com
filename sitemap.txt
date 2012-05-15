@@ -9,6 +9,7 @@ http://hackfisher.github.com/rss.xml
 http://hackfisher.github.com/sitemap.txt
 http://hackfisher.github.com/tags.html
 
+http://hackfisher.github.com/blog/2012/05/algorithm-about-intersect-of-two-arrays
 http://hackfisher.github.com/blog/2012/04/thinking-in-test-environment-and-config-automation
 http://hackfisher.github.com/blog/2012/04/thinking-in-test-non-functional-testing
 http://hackfisher.github.com/blog/2012/03/gist-tag-for-jekyll

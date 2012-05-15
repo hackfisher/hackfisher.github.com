@@ -4,13 +4,27 @@
  <title>HackFisher</title>
  <link href="http://hackfisher.github.com/atom.xml" rel="self"/>
  <link href="http://hackfisher.github.com"/>
- <updated>2012-04-17T17:31:06+08:00</updated>
+ <updated>2012-05-15T10:28:24+08:00</updated>
  <id>http://hackfisher.github.com</id>
  <author>
    <name>HackFisher</name>
    <email>hackfisher@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>求两个整数数组交集的更快算法</title>
+   <link href="http://hackfisher.github.com/blog/2012/05/algorithm-about-intersect-of-two-arrays"/>
+   <updated>2012-05-15T00:00:00+08:00</updated>
+   <id>http://hackfisher.github.com/blog/2012/05/algorithm-about-intersect-of-two-arrays</id>
+   <content type="html">&lt;p&gt;今天在工作中遇到的一个问题，求两个整数数组的交集。一种方案是对其中一个排序，然后对另外一个数组循环，在已经排好序的数组中binarySearch，如果存在，就加到结果集中。下面给出另一种实现，感觉跟归并排序里的思想有点类似：&lt;/p&gt;
+
+&lt;script src='https://gist.github.com/2698628.js?file=ArrayIntersect.java'&gt;&lt;/script&gt;
+
+
+&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;You are being &amp;lt;a href=&amp;quot;https://raw.github.com/gist/2698628/ArrayIntersect.java&amp;quot;&amp;gt;redirected&amp;lt;/a&amp;gt;.&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>测试思考系列[6]：测试环境和配置管理自动化</title>
@@ -65,10 +79,14 @@
 
 &lt;p&gt;&lt;img src=&quot;/uploads/2012/03/devops.jpg&quot; alt=&quot;持续交付&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;参考资料:
-1. &lt;a href=&quot;http://www.infoq.com/cn/articles/xl-microsoft-virtualization&quot;&gt;http://www.infoq.com/cn/articles/xl-microsoft-virtualization&lt;/a&gt;
-2. &lt;a href=&quot;http://blogs.msdn.com/b/cheno/archive/2010/03/14/9978309.aspx&quot;&gt;http://blogs.msdn.com/b/cheno/archive/2010/03/14/9978309.aspx&lt;/a&gt;
-3. &lt;a href=&quot;http://wiki.opscode.com/display/chef/Home&quot;&gt;http://wiki.opscode.com/display/chef/Home&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;参考资料:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.infoq.com/cn/articles/xl-microsoft-virtualization&quot;&gt;http://www.infoq.com/cn/articles/xl-microsoft-virtualization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blogs.msdn.com/b/cheno/archive/2010/03/14/9978309.aspx&quot;&gt;http://blogs.msdn.com/b/cheno/archive/2010/03/14/9978309.aspx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://wiki.opscode.com/display/chef/Home&quot;&gt;http://wiki.opscode.com/display/chef/Home&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
 </content>
  </entry>
  

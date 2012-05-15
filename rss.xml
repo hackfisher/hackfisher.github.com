@@ -7,6 +7,19 @@
 		<atom:link href="http://hackfisher.info/rss.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>求两个整数数组交集的更快算法</title>
+				<description>&lt;p&gt;今天在工作中遇到的一个问题，求两个整数数组的交集。一种方案是对其中一个排序，然后对另外一个数组循环，在已经排好序的数组中binarySearch，如果存在，就加到结果集中。下面给出另一种实现，感觉跟归并排序里的思想有点类似：&lt;/p&gt;
+
+&lt;script src='https://gist.github.com/2698628.js?file=ArrayIntersect.java'&gt;&lt;/script&gt;
+
+
+&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;You are being &amp;lt;a href=&amp;quot;https://raw.github.com/gist/2698628/ArrayIntersect.java&amp;quot;&amp;gt;redirected&amp;lt;/a&amp;gt;.&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/p&gt;
+</description>
+				<published>Tue May 15 00:00:00 +0800 2012</published>
+				<link>/blog/2012/05/algorithm-about-intersect-of-two-arrays</link>
+			</item>
+		
+			<item>
 				<title>测试思考系列[6]：测试环境和配置管理自动化</title>
 				<description>&lt;p&gt;不同角色之间的划分往往有助于在角色的冲突中将问题暴露，实现透明，最终改进和保证质量。任何的软件开发团队都离不开两个基本角色：开发与测试。你可以没有项目经理，可以没有架构师，也可以没有设计师；但是不能没有开发，否则没有人可以帮你实现产品；也不能没有测试，否则没有人可以决定你的产品是否能够交付。这就好像你往杯子里面倒水必须要用眼睛看着，没有眼睛反馈的信息，你永远不知道何时该停下来，也不知道停在那里；我们不希望水太少，更不希望水溢出来。眼睛与手的反馈循环就是我们实现倒水这一动作高质量的必要系统，而开发和测试的有效循环就是我们实现高质量软件的必须环节。&lt;/p&gt;
 
@@ -56,10 +69,14 @@
 
 &lt;p&gt;&lt;img src=&quot;/uploads/2012/03/devops.jpg&quot; alt=&quot;持续交付&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;参考资料:
-1. &lt;a href=&quot;http://www.infoq.com/cn/articles/xl-microsoft-virtualization&quot;&gt;http://www.infoq.com/cn/articles/xl-microsoft-virtualization&lt;/a&gt;
-2. &lt;a href=&quot;http://blogs.msdn.com/b/cheno/archive/2010/03/14/9978309.aspx&quot;&gt;http://blogs.msdn.com/b/cheno/archive/2010/03/14/9978309.aspx&lt;/a&gt;
-3. &lt;a href=&quot;http://wiki.opscode.com/display/chef/Home&quot;&gt;http://wiki.opscode.com/display/chef/Home&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;参考资料:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.infoq.com/cn/articles/xl-microsoft-virtualization&quot;&gt;http://www.infoq.com/cn/articles/xl-microsoft-virtualization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blogs.msdn.com/b/cheno/archive/2010/03/14/9978309.aspx&quot;&gt;http://blogs.msdn.com/b/cheno/archive/2010/03/14/9978309.aspx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://wiki.opscode.com/display/chef/Home&quot;&gt;http://wiki.opscode.com/display/chef/Home&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
 </description>
 				<published>Tue Apr 17 00:00:00 +0800 2012</published>
 				<link>/blog/2012/04/thinking-in-test-environment-and-config-automation</link>
