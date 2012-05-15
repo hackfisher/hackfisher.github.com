@@ -56,6 +56,7 @@ tags: [测试环境, 配置管理自动化, Chef]
 ![持续交付]({{ BASE_PATH }}/uploads/2012/03/devops.jpg)
 
 参考资料:
+
 1. <http://www.infoq.com/cn/articles/xl-microsoft-virtualization>
 2. <http://blogs.msdn.com/b/cheno/archive/2010/03/14/9978309.aspx>
 3. <http://wiki.opscode.com/display/chef/Home>
