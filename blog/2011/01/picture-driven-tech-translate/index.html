@@ -37,7 +37,145 @@
 			<div class="unit-inner unit-body-inner">
 				<div class="entry-content">
 					
-Liquid error: incompatible character encodings: ASCII-8BIT and UTF-8
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">图片驱动的计算机技术(译文)</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					<p style="margin: 0px; padding: 0px;"><span class="Apple-style-span" style="widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">这是MIT上介绍Sikuli的一篇文章</span></p>
+<p style="margin: 0px; padding: 0px;">Sikuli的网站： <span style="line-height: 18px; font-family: Tahoma, Helvetica, Arial, sans-serif; color: #353535;">http://sikuli.org/</span></p>
+<p style="margin: 0px; padding: 0px;"><span style="line-height: 18px; font-family: Tahoma, Helvetica, Arial, sans-serif; color: #353535;">延伸阅读：http://blog.vgod.tw/2010/01/25/change-the-world/</span></p>
+<p style="margin: 0px; padding: 0px;">---------------------</p>
+<p style="margin: 0px; padding: 0px;">---------------------</p>
+<p style="margin: 0px; padding: 0px;"><span style="font-size: medium;"><strong style="font-weight: bold;">图片驱动的计算机技术</strong></span></p>
+<p style="margin: 0px; padding: 0px;">译者：HackFisher</p>
+<p style="margin: 0px; padding: 0px;">原文：<a style="color: #108ac6; text-decoration: underline;" href="http://web.mit.edu/newsoffice/2010/screen-shots-0120.html">http://web.mit.edu/newsoffice/2010/screen-shots-0120.html</a></p>
+<p style="margin: 0px; padding: 0px;">译言：<a style="color: #108ac6; text-decoration: underline;" href="http://article.yeeyan.org/view/YangtseFisher/75052">http://article.yeeyan.org/view/YangtseFisher/75052</a></p>
+<p style="line-height: 1.8; margin: 0px 0px 10px; padding: 0px;"><span style="font-size: x-small;">直到1980年代，使用一个计算机程序还意味着你要记住很多的命令，一次性的把它们打出来，仅仅得到反馈的几行文本。图形用户界面，或者称为GUI，改变了这些。通过表示程序，把程序中函数和数据表示成二维的图片--就像图标，按钮和窗口一样--GUI使得原本需要耗费体力仔细记忆的内容变得直观和容易理解。</span></p>
+<p style="line-height: 1.8; margin: 0px 0px 10px; padding: 0px;"><span style="font-size: x-small;"><br style="margin: 0px; padding: 0px;" /></span></p>
+<p style="line-height: 1.8; margin: 0px 0px 10px; padding: 0px;"><span style="font-size: x-small;">但是，在GUI使计算机用户处理事情更加容易的同时，对于计算机程序员来说，事情的容易程度并得到没有任何改进。在GUI控件下面的是大量的程序代码，通常情况下，构建和自定义一个程序，或者把不同的程序组合起来，仍然意味着要处理那些代码。MIT计算机科学人工智能实验的研究员们希望改变这种状况，他们开发了一个可以让人们利用GUI的截图来编写程序的系统。最终，这个系统将会使得那些没有掌握任何计算机语言的普通用户创建他们自己的程序成为可能。</span></p>
+<p style="line-height: 1.8; margin: 0px 0px 10px; padding: 0px;"><span style="font-size: x-small;"><br style="margin: 0px; padding: 0px;" /></span></p>
+<p style="line-height: 1.8; margin: 0px 0px 10px; padding: 0px;"><span style="font-size: x-small;">这个由副教授Rob Miller，研究生张琮翔，以及MarLand大学的Tom Yeh设计的脚本语言系统，叫做Sikuli, 在墨西哥惠慈尔土著人的语言中这是"上帝之眼"的意思。在去年九月ACM关于用户界面的最顶尖会议UIST上拿到Best Student Paper Award的一篇论文中，研究者展示了Sikuli可以通过构造脚本，简短的程序来扩展其他程序的功能。使用Sikuli需要对通用的脚本语言Python有一定了解。但是他不需要对它所扩展的那些语言的知识有任何了解。当程序员需要触发某个应用程序的功能时，她只需要在相关的GUI上面画个框框，点击鼠标截取图片，把它直接插入Python代码的中去。</span></p>
+<p style="line-height: 1.8; margin: 0px 0px 10px; padding: 0px;"><span style="font-size: x-small;"><br style="margin: 0px; padding: 0px;" /></span></p>
+<p style="line-height: 1.8; margin: 0px 0px 10px; padding: 0px;"><span style="font-size: x-small;">假设，比方说，某个Pyhon程序员想要写一个脚本，可以当她乘坐的公共汽车正好转过某个弯时，程序自动发送消息到她的手机里。如果当地交通管理局维护了一个网站，可以描述汽车标记在Google地图上行驶的过程，那么这个程序员就可以指定当汽车的标记进入某个指定的地图区域时发送消息。不是使用难以理解的术语来描述标记，或者指定地图区域边界的地理坐标，取而代之程序员可以简单的将截图加入脚本命令中：当(标记)到达(拐弯处)，给我发送消息。</span></p>
+<p style="line-height: 1.8; margin: 0px 0px 10px; padding: 0px;"><span style="font-size: x-small;"><br style="margin: 0px; padding: 0px;" /></span></p>
+<p style="line-height: 1.8; margin: 0px 0px 10px; padding: 0px;"><span style="font-size: x-small;">"我看到那个的时候，我想， '天哪， 你可以做到？'"Allen Cypher说到，他是一位IBM的Almaden研究中心专攻人机交互的研究员。"我从没想过你可以做任何像那样的事情。他们不仅做了，而且做得很好。已经是实用性的了。我想立即开始尝试那些以前不能做的事情。"</span></p>
+<p style="line-height: 1.8; margin: 0px 0px 10px; padding: 0px;"><span style="font-size: x-small;"><br style="margin: 0px; padding: 0px;" /></span></p>
+<p style="line-height: 1.8; margin: 0px 0px 10px; padding: 0px;"><span style="font-size: x-small;">在同一篇论文中，研究者们展示了一个面向更广受众的Sikuli应用。一个计算机用户希望学习使用某个计算机程序难以理解的特征，可以借助于GUI的截屏--也就是说，用一个像Adobe Photoshop中套索工具一样的按钮--在网络上来搜索相关内容。在一个允许人们在网络上使用这个系统的实验中，研究者发现用户们用可视化图片的方法来找到有用的内容只需要花费原来一般的时间。</span></p>
+<p style="line-height: 1.8; margin: 0px 0px 10px; padding: 0px;"><span style="font-size: x-small;"><br style="margin: 0px; padding: 0px;" /></span></p>
+<p style="line-height: 1.8; margin: 0px 0px 10px; padding: 0px;"><span style="font-size: x-small;">使用Sikuli的程序员不需要了解GUI内部的代码，同样，Sikuli对它毫无了解。取而代之，Sikuli使用计算机视觉算法来分析屏幕上正在发生的事情。"它作为一个代理，像人类一样看着屏幕"，Miller说到。这意味着，不需要任何额外的改动，Sikuli就可以在任何有图形界面的应用上工作。它不需要在不同的文件格式或者计算机语言之间转换，因为，就像人一样，它只是看着屏幕上的像素。</span></p>
+<p style="line-height: 1.8; margin: 0px 0px 10px; padding: 0px;"><span style="font-size: x-small;"><br style="margin: 0px; padding: 0px;" /></span></p>
+<p style="line-height: 1.8; margin: 0px 0px 10px; padding: 0px;"><span style="font-size: x-small;">在一篇将要在人机交互领域最高会议CHI上发表的论文中，研究者描述了Sikuli的一个新的应用，瞄准了大型软件开发项目中的程序员们。在一个这样的项目工程中，新的代码每天都在累计，并且其中的任何一行代码都可能导致之前开发的GUI功能不正确。理想状态下，一天工作结束后，测试人员将会跑遍整个应用程序，点击虚拟按钮确保正确的窗口和图标将会弹出。因为这样做将会极高的耗费时间，然而，也许要等到对应用程序进行了长时间并且高成本的质量保证测试后，被破坏的GUI才会被发现。</span></p>
+<p style="line-height: 1.8; margin: 0px 0px 10px; padding: 0px;"><span style="font-size: x-small;"><br style="margin: 0px; padding: 0px;" /></span></p>
+<p style="line-height: 1.8; margin: 0px 0px 10px; padding: 0px;"><span style="font-size: x-small;">然而，程序员们可以用新的Sikuli应用创建脚本，来对应用程序的GUI组件进行自动化测试。计算机视觉辨别GUI和那些应该被弹出的窗口使得脚本编写容易多了，并且只要写一次，这些脚本就可以不做修改的每天晚上运行。</span></p>
+<p style="line-height: 1.8; margin: 0px 0px 10px; padding: 0px;"><span style="font-size: x-small;"><br style="margin: 0px; padding: 0px;" /></span></p>
+<p style="line-height: 1.8; margin: 0px 0px 10px; padding: 0px;"><span style="font-size: x-small;">这个新的应用有一个新加的功能，对于那些非程序员来说尤其令人鼓舞。像它的前任一样，他允许用户写他们自己的脚本--这种情况下，GUI测试--使用Python语言。当然，用Python写脚本仍然需要一些Python的知识--至少，理解怎么使用像"dragDrop"和"assertNotExist"这样表述怎么处理GUI控件的命令。</span></p>
+<p style="line-height: 1.8; margin: 0px 0px 10px; padding: 0px;"><span style="font-size: x-small;"><br style="margin: 0px; padding: 0px;" /></span></p>
+<p style="line-height: 1.8; margin: 0px 0px 10px; padding: 0px;"><span style="font-size: x-small;">新的应用同时提供了另一种选择，可以通过记录一系列按键和点击鼠标来定义测试过程。例如，代替敲打一行包括"dragDrop"命令的代码，程序员可以简单的做拖拽文件这样一个动作。系统自动的生成相应的Python代码，包含一个同样文件的截图；只要这个程序员愿意，她就可以当插入其他GUI的截图时复用这些代码。这指明使用Sikuli将来的版本也许既不需要了解特殊应用程序的代码知识，也不需要学习像Python这样的脚本语言，这个系统赋予了普通计算机用户直观的创建程序的能力，这些程序可以跟其他的应用进行交互。</span></p>
+
+					<div class="meta">
+						<p class="date-publish">
+							Published: 
+							<date class="date-pub" title="2011-01-16T00:00:00+08:00" datetime="2011-01-16T00:00:00+08:00" pubdate>
+							<span class="month"><abbr>January</abbr></span>
+							<span class="day">16</span>
+							<span class="year">2011</span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">category: </li>
+							
+							
+
+
+  
+    
+  
+
+
+						</ul>
+						<ul class="list-tag list-linear">
+							<li class="list-head">tags: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/tags.html#翻译-ref">翻译 <span>3</span></a></li>
+    
+  
+
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					<div class="social">
+						<ul class="list-linear">
+							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="hackfisher" data-lang="en">Tweet</a></div></li>
+							<li><div class="twitter-follow"><a href="https://twitter.com/hackfisher" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+						</ul>
+					</div>
+					<div class="comment">
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'hackfisher'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+					</div>
+				</div><!-- misc-content -->
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/blog/2011/01/out-of-box-communication" title="View 代码质量系列之三：盒子外面看世界，技术之外的思考——关于沟通">&laquo; 代码质量系列之三：盒子外面看世界，技术之外的思考——关于沟通</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/blog/2011/01/urgency_broken-windows-theory" title="View 代码质量系列之四：垃圾代码清理重构的紧急性——破窗理论">代码质量系列之四：垃圾代码清理重构的紧急性——破窗理论 &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
 
 				</div>
 			</div><!-- unit-inner -->

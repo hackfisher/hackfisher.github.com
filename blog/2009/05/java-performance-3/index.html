@@ -37,7 +37,147 @@
 			<div class="unit-inner unit-body-inner">
 				<div class="entry-content">
 					
-Liquid error: incompatible character encodings: ASCII-8BIT and UTF-8
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">Java性能优化之实时性[3]</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					<span class="Apple-style-span" style="font-size: small;">——万事开头难</span>
+<div><span class="Apple-style-span" style="font-size: small;">
+</span></div>
+<div><span class="Apple-style-span" style="font-family: 'Trebuchet MS'; font-weight: bold; line-height: 22px;"><span class="Apple-style-span" style="font-size: small;"><a href="http://yangtsefisher.blogspot.com/2009/05/test-code.html">Java性能优化之实战漫谈[1]</a></span></span><span class="Apple-style-span" style="font-size: small;">
+</span></div>
+<div><span class="Apple-style-span" style="font-family: 'Trebuchet MS'; font-size: 20px; font-weight: bold; line-height: 22px;"><span class="Apple-style-span" style="font-size: small;"><a href="http://yangtsefisher.blogspot.com/2009/05/java-performance-tuning-algorithm-2.html">Java性能优化之实战算法[2]</a></span>
+</span></div>
+<div><span class="Apple-style-span" style="font-size: 13px;">
+</span></div>
+<div><span class="Apple-style-span" style="font-size: small;">如果你的应用程序能够满足内存和速度的要求，有时还是不够的，对于某些应用程序来说，尤其是实时系统，它还必须满足良好的用户体验，这就要求你的程序能够做到好的实时性。</span></div>
+<div><span class="Apple-style-span" style="font-size: small;">
+</span></div>
+<div><span class="Apple-style-span" style="font-size: small;">关于用户体验，有很多心理学的研究。如果你了解用户懒惰和缺乏耐心等心理，你也许会更加明白，实时性有时会如此重要。相关的文章比如</span><a href="http://www.ruanyifeng.com/blog/2009/03/the_psychology_of_web_performance.html"><span class="Apple-style-span" style="font-size: small;">网站打开速度的心理学</span></a><span class="Apple-style-span" style="font-size: small;">，</span><a href="http://lifesinger.org/blog/?p=1576"><span class="Apple-style-span" style="font-size: small;">人之初，性本懒</span></a><span class="Apple-style-span" style="font-size: small;"> 等等。但是实时性的要求也不局限于用户体验，有许多被称之为</span><span class="Apple-style-span" style="line-height: 22px; font-family: verdana;"><em style="font-style: normal;"><span class="Apple-style-span" style="font-size: small;">硬</span></em><span class="Apple-style-span" style="font-size: small;"> RT 应用的程序要求必须严格地满足实时同步需求，比如控制飞机方向的应用程序不能够有任何原因的延迟，否则将导致灾难性的后果。</span></span></div>
+<div><span class="Apple-style-span" style="font-size: small;">
+</span></div>
+<div><span class="Apple-style-span" style="line-height: 22px; font-family: verdana;"><span class="Apple-style-span" style="font-size: small;">由于很多重要原因，Java 语言在实时系统中的应用非常有限，导致Java写出来的应用程序有时实时性很差。这些原因包括 Java 语言设计中固有的不确定性性能影响，例如动态类加载，以及 Java 运行时环境（Java Runtime Environment，JRE）本身的不确定性性能影响，例如垃圾收集器和本地代码编译。</span></span><span class="Apple-style-span" style="font-size: small;">
+</span></div>
+<div><span class="Apple-style-span" style="line-height: 22px; font-family: verdana;"><span class="Apple-style-span" style="font-size: small;">
+</span></span></div>
+<div><span class="Apple-style-span" style="line-height: 22px; font-family: verdana;"><span class="Apple-style-span" style="font-size: small;">当然，为了解决这些问题，使得Java能够用来构建实时系统，一些规范应运而生，比如</span><a href="http://www.rtsj.org/"><span class="Apple-style-span" style="font-size: small;">RTSJ</span></a><span class="Apple-style-span" style="font-size: small;">。关于实时系统和RTSJ，可以参照文章：</span><span class="Apple-style-span" style="line-height: 18px; font-family: 'Microsoft yahei';"><a href="http://www.ibm.com/developerworks/cn/java/j-rtj1/index.html"><span class="Apple-style-span" style="font-size: small;">实时 Java: 使用 Java 语言编写实时系统</span></a><span class="Apple-style-span" style="font-size: small;">或者</span><a href="http://blog.csdn.net/hdy007/archive/2007/05/12/1605856.aspx"><span class="Apple-style-span" style="font-size: small;">这里的转载</span></a><span class="Apple-style-span" style="font-size: small;">。我这里不再赘述。</span></span></span></div>
+<div><span class="Apple-style-span" style="line-height: 18px; font-family: 'Microsoft yahei';"><span class="Apple-style-span" style="font-size: small;">
+</span></span></div>
+<div><span class="Apple-style-span" style="line-height: 18px; font-family: 'Microsoft yahei';"><span class="Apple-style-span" style="font-size: small;">我主要讲一下我碰到的一个例子: 在某些Swing应用程序中发现，做某些操作时，第一次总是比较慢，以后就好了，有时候时间相差一个数量级，导致使用起来达不到正常的用户RT需求，用户就不高兴了，这正是没有满足用户缺乏耐心的需求，可以说是软障碍。为什么第一次总是比较慢呢，第一次新建慢，第一次编辑慢，第一次弹出某个对话框也慢？这真是奇怪。我之所以出现这样的困惑，其实是因为那时候我还不理解类加载和本地代码编译的具体细节。</span></span></div>
+<div><span class="Apple-style-span" style="font-size: small;">
+</span></div>
+<div><span class="Apple-style-span" style="line-height: 18px; font-family: 'Microsoft yahei';"><span class="Apple-style-span" style="font-size: small;">在运行时，当我们想生成这个类的对象时，JVM首先检查这个类的Class对象是否已经加载。如果尚未加载，JVM就会根据类名查找.class文件，并将其载入内存。</span><span class="Apple-style-span" style="line-height: 22px; font-family: verdana;"><span class="Apple-style-span" style="font-size: small;">一个与 Java 一致的 JVM 必须延迟加载类，直到程序第一次引用该类。根据被加载类所在的介质（磁盘或其他）的速度、类的大小、类加载器本身的开销，类加载的时间有所不同。加载类的延迟通常高达 10 毫秒。如果需要加载几十或几百个类，则加载时间本身就会引起很长时间的意外延迟。仔细地设计应用程序，使应用程序在启动时加载所有的类，但是这必须手动完成，因为 Java 语言规范不让 JVM 提前执行这一步。</span></span></span></div>
+<div><span class="Apple-style-span" style="line-height: 22px; font-family: verdana;"><span class="Apple-style-span" style="font-size: small;">
+</span></span></div>
+<div><span class="Apple-style-span" style="line-height: 22px; font-family: verdana;"><span class="Apple-style-span" style="font-size: small;">再让我们来看看编译：将 Java 代码编译为本地代码引发了与类加载类似的问题。大多数现代 JVM 开始先解释 Java 方法，然后仅将频繁执行的方法编译成本地代码。延迟编译促成了快速启动，并减少了应用程序运行期间执行的编译数量。但是使用解释后的代码执行任务和使用编译后的代码执行任务在时间上有巨大的差异。对于硬 RT 应用程序来说，由于无法预测何时发生编译，将导致很大程度的不确定性，从而无法有效地规划应用程序的行为。对于类加载，通过在应用程序启动阶段使用 </span><code style="font-style: normal;"><span class="Apple-style-span" style="font-size: small;">Compiler</span></code><span class="Apple-style-span" style="font-size: small;"> 类以编程的方式编译方法可以减轻这一问题，但是维护这样的方法非常乏味并且容易发生错误。</span></span></div>
+<div><span class="Apple-style-span" style="line-height: 22px; font-family: verdana;"><span class="Apple-style-span" style="font-size: small;">
+</span></span></div>
+<div><span class="Apple-style-span" style="line-height: 22px; font-family: verdana;"><span class="Apple-style-span" style="font-size: small;">一旦找到的问题的原因，那么解决问题的方法很简单，可以在某个合适的空闲的时候，提前进行类加载和编译，那么当第一次进行一些实时操作时，所要用到的类已经加载或者相关代码已经编译，第一次操作便不再慢了。</span></span></div>
+
+					<div class="meta">
+						<p class="date-publish">
+							Published: 
+							<date class="date-pub" title="2009-05-10T00:00:00+08:00" datetime="2009-05-10T00:00:00+08:00" pubdate>
+							<span class="month"><abbr>May</abbr></span>
+							<span class="day">10</span>
+							<span class="year">2009</span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">category: </li>
+							
+							
+
+
+  
+    
+  
+
+
+						</ul>
+						<ul class="list-tag list-linear">
+							<li class="list-head">tags: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/tags.html#性能优化-ref">性能优化 <span>6</span></a></li>
+    
+  
+
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					<div class="social">
+						<ul class="list-linear">
+							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="hackfisher" data-lang="en">Tweet</a></div></li>
+							<li><div class="twitter-follow"><a href="https://twitter.com/hackfisher" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+						</ul>
+					</div>
+					<div class="comment">
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'hackfisher'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+					</div>
+				</div><!-- misc-content -->
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/blog/2009/05/java-performance-2" title="View Java性能优化之实战算法[2]">&laquo; Java性能优化之实战算法[2]</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/blog/2011/01/b_s-user-defined-callback" title="View B/S交互数据时，用户自定义回调函数的一种直观方法">B/S交互数据时，用户自定义回调函数的一种直观方法 &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
 
 				</div>
 			</div><!-- unit-inner -->

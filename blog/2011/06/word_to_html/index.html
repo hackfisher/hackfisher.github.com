@@ -37,7 +37,145 @@
 			<div class="unit-inner unit-body-inner">
 				<div class="entry-content">
 					
-Liquid error: incompatible character encodings: ASCII-8BIT and UTF-8
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">Java平台利用OpenOffice实现不同Office文件格式的转化，比如将Word转换成Html</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					首先刚开始，除了Google, Baidu之外，还有一个重要的去处，那就是stackoverflow，现在经常可以在上面得到我想要的答案。下面是stackoverflow上面关于这个topic的讨论。
+
+<a href="http://stackoverflow.com/questions/227236/convert-word-doc-to-html-programmatically-in-java">Convert Word doc to HTML programmatically in Java</a>
+
+似乎没有简单的纯Java第三方库，可以将Word转化成Html，有一些需要自己大量动手，比如有人提供了MS关于.doc文件格式的规格文档，说用POI先将其读取成Java对象，再利用HTML Tag先出。这样无疑会遇到大量的细节，实现起来也很麻烦。
+
+http://www.oooninja.com/2008/02/batch-command-line-file-conversion-with.html
+有一个方案是：OpenOffice Service + jodconverter
+JODConverter, the Java OpenDocument Converter，是一个利用OpenOffice提供各种Office格式转化的类库，
+
+之所以这么选择的原因有：
+1. OpenOffice Service就像数据库服务一样，提供实际各种转化。需要在主机上部署，这里有<a href="http://www.artofsolving.com/node/10">文档</a>
+
+2. JODConverter提供了Java相关全面的接口和支持，文档齐全。
+
+3. 这种方式，比用POI等做转换，更可靠成本更低。比那些用Native API调用的跟开放，更可控一些。稳定性是建立在OpenOffice之上的，并且OpenOffice也是用Java写的，跨平台，可以比较好的部署
+
+4. 麻烦的地方就在于需要部署OpenOffice，这是需要想想怎么给用户用的问题。不过如果拿OpenOffice和数据库服务比较，用户也容易更接受了
+
+					<div class="meta">
+						<p class="date-publish">
+							Published: 
+							<date class="date-pub" title="2011-06-23T00:00:00+08:00" datetime="2011-06-23T00:00:00+08:00" pubdate>
+							<span class="month"><abbr>June</abbr></span>
+							<span class="day">23</span>
+							<span class="year">2011</span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">category: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/categories.html#研究-ref">
+    		研究 <span>6</span>
+    	</a></li>
+    
+  
+
+
+						</ul>
+						<ul class="list-tag list-linear">
+							<li class="list-head">tags: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/tags.html#html-ref">html <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#Java-ref">Java <span>9</span></a></li>
+     
+    	<li><a href="/tags.html#jodconverter-ref">jodconverter <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#office-ref">office <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#word-ref">word <span>1</span></a></li>
+    
+  
+
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					<div class="social">
+						<ul class="list-linear">
+							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="hackfisher" data-lang="en">Tweet</a></div></li>
+							<li><div class="twitter-follow"><a href="https://twitter.com/hackfisher" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+						</ul>
+					</div>
+					<div class="comment">
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'hackfisher'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+					</div>
+				</div><!-- misc-content -->
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/blog/2011/06/a-post-test-from-android" title="View A Post Test from Android">&laquo; A Post Test from Android</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/blog/2011/06/classloader-leak-protection-in-tomcat" title="View ClassLoader Memory Leak: Detection and Protection in Tomcat">ClassLoader Memory Leak: Detection and Protection in Tomcat &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
 
 				</div>
 			</div><!-- unit-inner -->

@@ -37,7 +37,190 @@
 			<div class="unit-inner unit-body-inner">
 				<div class="entry-content">
 					
-Liquid error: incompatible character encodings: ASCII-8BIT and UTF-8
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">B/S交互数据时，用户自定义回调函数的一种直观方法</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					在js中经常有各种各样的回调函数，可以让用户自定义内容，比如：
+
+1 dosomething({
+2 callback: function(res) {
+3 // content
+4 alert('hello world' + res)
+5 }
+6 })
+
+在一个框架中，这些callback的形参往往是框架已经定义好的，调用也是由框架负责， 框架的用户唯一能做的就是改变callback函数的内容。
+
+有时，content的数据需要由服务器生成，比如{arg1: 1, arg2, 2}是由服务器生成的，用户定义这个callback行为时并不知道这些参数的值，只知道参数的名arg1, arg2, 用户希望可以直观舒服的定义，既能取到arg1, arg2, 又能取到res,能适应不同的callback，像下面这样：
+
+1 function(arg1, arg2, res, status) {
+2 alert(arg1 + res);// 用户能定义的内容
+3 }
+
+前面已经说过，callback的形参定义和调用用户都无法介入，那怎么样才能做到这样呢?方法总是有的，下面是一种解决方案，大体的思路就是利用closure取到callback实参的值，同时将callback的实参嵌入用户定义的函数来保持arguments和形参形式的统一。Callback的形式：
+
+1 function(res, status){${jsImpl}}
+
+这是用户定义的代码：
+
+1 function(arg1, arg2, res, status) {
+2 // user defined
+3 }()
+
+用下面这段代码替换${jsImpl}, 其中arg1, arg2和[1, 2]是服务器端生成的：
+
+1 ;return (
+2 function(arg1, arg2) {
+3 ${userDefined}
+4 }
+5 )
+6 .createDelegate(this, [1, 2], true)
+7 .apply(this, arguments)
+
+整个的替换后就是：
+
+01 (function(res){
+02 ;return
+03 (function(arg1, arg2, arg3){//abc, 1, 2
+04 alert(arguments[0]);
+05 alert(arguments[1]);
+06 alert(arguments[2]);
+07 alert(res);
+08 alert(arg1);
+09 alert(arg2);
+10 alert(arg3);
+11 })
+12 .createDelegate(this, [1, 2], 0)
+13 .apply(this, arguments)
+14 })
+15 .apply(window, ["abc"])
+
+有人可能会问，如果只是要取到callback参数的值为什么不简单一点：
+
+01 (function(res){
+02 //...
+03 ;return
+04 (function(arg1, arg2, arg3){//abc, 1, 2
+05 alert(arguments[0]);
+06 alert(arguments[1]);
+07 alert(arguments[2]);
+08 alert(res);
+09 alert(arg1);
+10 alert(arg2);
+11 alert(arg3);
+12 }).call(this, 1, 2);
+13 })
+14 .apply(window, ["abc"])
+
+不这样的原因，主要是形参和arguments形式上就不统一了，以防有人用arguments取参数值，谈到arguments, 这边还要注意如果是取原来callback的第i个参数的话，需要加上形参的个数arguments[2+i]，2为用户自定义的形参个数。
+
+PS: createDelegate请看<a href="http://www.extjs.com/learn/Manual:Utilities:Function_(Chinese)" target="_blank">http://www.extjs.com/learn/Manual:Utilities:Function_(Chinese)</a>
+
+					<div class="meta">
+						<p class="date-publish">
+							Published: 
+							<date class="date-pub" title="2011-01-05T00:00:00+08:00" datetime="2011-01-05T00:00:00+08:00" pubdate>
+							<span class="month"><abbr>January</abbr></span>
+							<span class="day">05</span>
+							<span class="year">2011</span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">category: </li>
+							
+							
+
+
+  
+    
+  
+
+
+						</ul>
+						<ul class="list-tag list-linear">
+							<li class="list-head">tags: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/tags.html#前端开发-ref">前端开发 <span>3</span></a></li>
+    
+  
+
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					<div class="social">
+						<ul class="list-linear">
+							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="hackfisher" data-lang="en">Tweet</a></div></li>
+							<li><div class="twitter-follow"><a href="https://twitter.com/hackfisher" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+						</ul>
+					</div>
+					<div class="comment">
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'hackfisher'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+					</div>
+				</div><!-- misc-content -->
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/blog/2009/05/java-performance-3" title="View Java性能优化之实时性[3]">&laquo; Java性能优化之实时性[3]</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/blog/2011/01/chrome-date-setdate-problem" title="View Chrome浏览器Date.setDate遇到的一个问题">Chrome浏览器Date.setDate遇到的一个问题 &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
 
 				</div>
 			</div><!-- unit-inner -->
