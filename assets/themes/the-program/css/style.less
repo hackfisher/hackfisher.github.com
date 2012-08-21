@@ -113,6 +113,54 @@ pre {
 					}
 				}
 			}
+			
+			div {
+			  .grid {
+			     width : 600px;
+			     height : 800px;
+			  }
+			  
+			  .subgrid {
+			    width: 50%;
+          height: 50%;
+          font-size: 2em;
+          font-family: Georgia, Times, sans-serif;
+          p {
+            font-size: 10%;
+          }
+          a {
+            font-size: 60%;
+            color: inherit;
+          }
+			  }
+			  
+			  .grid11 {
+			    float:left;
+			    text-align: right;
+			    background: #DDD;
+			    color: black;
+			  }
+			  .grid12 {
+			    float:right;
+			    left: 50%;
+			    text-align: left;
+			    background: black;
+			    color: #DDD;
+			  }
+			  .grid21 {
+			    float:left;
+			    text-align: right;
+			    background: black;
+			    color: #DDD;
+			  }
+			  .grid22 {
+			    float:right;
+			    left: 50%;
+			    text-align:left;
+			    background: #DDD;
+			    color: black;
+			  }
+			}
 		} // .article-inner .entry-content
 
 		.entry-content:first-child h2,
@@ -135,8 +183,13 @@ pre {
 				margin-right: 0;
 			}
 		}
+		
+		time {
+		  font-size: 12px;
+		}
+		
 		ul, ol, dl { padding-left: 0; }
-		ul { list-style: square; }
+		ul { list-style: none; }
 		ol { list-style: decimal; }
 		li, dt, dd {
 			h1, h2, h3, h4, h5, p, ul, ol, dl, blockquote, .hasGrid { margin-left: 0; margin-right: 0; }
