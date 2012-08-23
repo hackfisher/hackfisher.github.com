@@ -16,7 +16,7 @@ plugins: ./_plugins
 # so be sure to set them if your theme uses them.
 #
 title : HackFisher
-tagline: Site Tagline
+tagline: Stay foolish, Stay hungry
 author :
   name : HackFisher
   email : hackfisher@gmail.com
