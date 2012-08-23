@@ -7,36 +7,36 @@ body {
 .navbar {
   margin-bottom: 0;
 }
-.container {
+body > .container {
   background-color: #eee;
 }
-.container > header {
+body > .container > header {
   background-color: #333;
   padding-top: 6px;
   padding-bottom: 6px;
 }
-.container > header h1 a {
+body > .container > header h1 a {
   color: white;
   text-decoration: none;
 }
-.container > header h1 small {
+body > .container > header h1 small {
   color: #AAA;
 }
-.container > div.navbar {
+body > .container > div.navbar {
   background-color: #CCC;
 }
-.container > div.navbar .container {
+body > .container > div.navbar .container {
   background-color: #CCC;
 }
-.container > div.navbar .container fieldset[role="search"] {
+body > .container > div.navbar .container fieldset[role="search"] {
   width: 99%;
   margin-top: 4px;
   float: right;
 }
-.container > footer {
+body > .container > footer {
   margin-top: 20px;
 }
-.container > footer p {
+body > .container > footer p {
   text-align: center;
   /* center align it with the container */
 
@@ -95,3 +95,5 @@ body {
   border: 1px solid #4C964D;
   color: #FFF;
 }
+
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
