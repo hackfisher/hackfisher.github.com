@@ -1,0 +1,109 @@
+/* Override some defaults */
+html, body {
+  background-color: #252525;
+}
+.navbar {
+  margin-bottom: 0;
+}
+
+.container {
+  background-color: #eee;
+  > header {
+    background-color: #333;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    h1 a {
+      color: white;
+      text-decoration: none;
+    }
+    h1 small {
+      color: #AAA;
+    }
+  }
+  
+  > div.navbar {
+    background-color: #CCC;
+    
+    .container {
+      background-color: #CCC;
+      
+      fieldset[role="search"] {
+        width: 99%;
+        margin-top: 4px;
+        float: right
+      }
+    }
+  }
+  
+  > footer {
+    margin-top: 20px;
+    p {
+      text-align: center; /* center align it with the container */
+    }
+  }
+}
+
+/* The white background content wrapper */
+.content {
+  background-color: #fff;
+  padding: 20px;
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+          box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  font-family: 'Signika', 'Xin Gothic', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', Arial, sans-serif;
+}
+
+.topbar .btn {
+  border: 0;
+}
+
+.posts{
+  font: 14px/1.62 "Signika", "Xin Gothic", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
+  li {
+    list-style: none;
+  }
+  time {
+    font-size: 60%;
+  }
+}
+
+
+/* tag_box ======================================================== */
+
+.tag_box {
+  list-style:none;
+  margin:0;
+  padding:5px 0 ;
+  overflow:hidden;
+  li {
+    line-height:28px;
+  }
+  
+  inline li {
+    float:left;
+  }
+  
+  a {
+    padding: 3px 6px;
+    margin: 2px;
+    background: #eee;
+    color:#005F6B;
+    border-radius: 3px;
+    text-decoration:none;
+    
+    span {
+      vertical-align:super;
+      font-size:0.8em;
+    }
+  }
+  
+  a.active {
+    background:#57A957;
+    border:1px solid #4C964D;
+    color:#FFF;
+  }
+}
+  

@@ -1,56 +1,131 @@
 
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>测试思考系列[1]：往持续交付的方向努力</title>
-	<meta name="author" content="HackFisher">
-	<link href='/assets/themes/the-program/css/style.css' rel="stylesheet" media="all">
-	<link href="http://feeds.feedburner.com/" rel="alternate" title="测试思考系列[1]：往持续交付的方向努力" type="application/atom+xml">
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>测试思考系列[1]：往持续交付的方向努力</title>
+    
+    <meta name="author" content="HackFisher">
 
-<div id="page" class="hentry">
-	<header class="the-header">
-		<div class="unit-head">
-			<div class="unit-inner unit-head-inner">
-				<nav class="nav-global">
-					<ul>
-						<li class="logo"><a href="/">HackFisher</a></li>
-						<li class="archive"><a href="/archive.html">archive</a></li>
-						<li class="page"><a href="/pages.html">pages</a></li>
-						<li class="category"><a href="/categories.html">categories</a></li>
-						<li class="tag"><a href="/tags.html">tags</a></li>
-						<li class="about"><a href="/about.html">about</a></li>
-					</ul>
-				</nav>
-			</div><!-- unit-inner -->
-		</div><!-- unit-head -->
-	</header>
-	<div class="body" role="main">
-		<div class="unit-body">
-			<div class="unit-inner unit-body-inner">
-				<div class="entry-content">
-					
-<article class="unit-article layout-post">
-	<div class="unit-inner unit-article-inner">
-		<div class="content">
-			<header>
-				<div class="unit-head">
-					<div class="unit-inner unit-head-inner">
-						<h1 class="h2 entry-title">测试思考系列[1]：往持续交付的方向努力</h1>
-					</div><!-- unit-inner -->
-				</div><!-- unit-head -->
-			</header>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-			<div class="bd">
-				<div class="entry-content">
-					测试应该朝什么方向努力，怎样做才能避免陷入泥潭? 产品不稳定的原因，粗略看上去，似乎是因为测试时间不够，测试不充分导致的，但是深入进去探讨会发现没有那么简单。这一篇文章就是探讨测试应该朝着什么目标去努力，而我在这半年的实践中选择的是持续交付的方向，下面就介绍介绍持续交付。
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+    <div class="container">
+		<header>
+			<h1><a href="/">HackFisher</a>  <small>Stay foolish, Stay hungry</small></h1>
+		</header>
+		<div class="navbar">
+		  <div class="container">
+		      <ul class="nav">
+		        
+		        
+		        
+
+
+  
+    
+      
+      	
+      	<li><a href="/about.html">About</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/projects.html">Project</a></li>
+      	
+      
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+		      </ul>
+		      <form action="http://google.com/search" method="get" class="nav">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:hackfisher.info">
+    <input class="search" type="text" name="q" results="0" placeholder="Search">
+  </fieldset>
+</form>
+
+<ul class="subscription nav" data-subscription="rss">
+  <li><a href="/rss.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> 
+</ul>
+		    </div>
+		</div>
+		  <div class="content">
+		    
+<div class="page-header">
+  <h2>测试思考系列[1]：往持续交付的方向努力 </h2>
+</div>
+
+<div class="row">
+  <div class="span8">
+    测试应该朝什么方向努力，怎样做才能避免陷入泥潭? 产品不稳定的原因，粗略看上去，似乎是因为测试时间不够，测试不充分导致的，但是深入进去探讨会发现没有那么简单。这一篇文章就是探讨测试应该朝着什么目标去努力，而我在这半年的实践中选择的是持续交付的方向，下面就介绍介绍持续交付。
 
 首先，如果测试不能从产品周期的一开始就参与进去，后期等产品快发布前再测试，会面临很大的问题。工作量大不谈，如果发现了BUG，开发的修复时间也不够了，更不要说可能产生严重的架构问题，或者功能和需求不符问题。
 
@@ -88,35 +163,51 @@
 <p style="text-align: center;">也就是说，尽管右项有其价值，
 我们更重视左项的价值。</p>
 
-					<div class="meta">
-						<p class="date-publish">
-							Published: 
-							<date class="date-pub" title="2012-03-19T00:00:00+08:00" datetime="2012-03-19T00:00:00+08:00" pubdate>
-							<span class="month"><abbr>March</abbr></span>
-							<span class="day">19</span>
-							<span class="year">2012</span>
-							</date>
-						</p>
-						<ul class="list-category list-linear">
-							<li class="list-head">category: </li>
-							
-							
-
-
-  
-     
-    	<li><a href="/categories.html#测试-ref">
-    		测试 <span>7</span>
-    	</a></li>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/blog/2012/03/plum-blossom-hill" title="梅花山·南京，三月十七号二零一二">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/blog/2012/03/thinking-in-test-commit-test" title="测试思考系列[2]：提交测试">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
     
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'hackfisher'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
   
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>19 March 2012</span></div>
 
-
-						</ul>
-						<ul class="list-tag list-linear">
-							<li class="list-head">tags: </li>
-							
-							
+  
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+    
 
 
   
@@ -139,105 +230,16 @@
 
 
 
-						</ul>
-					</div><!-- meta -->
-				</div><!-- entry-content -->
-				<div class="misc-content">
-					<div class="social">
-						<ul class="list-linear">
-							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="hackfisher" data-lang="en">Tweet</a></div></li>
-							<li><div class="twitter-follow"><a href="https://twitter.com/hackfisher" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
-						</ul>
-					</div>
-					<div class="comment">
-					
-
-
-  <div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_developer = 1;
-    var disqus_shortname = 'hackfisher'; // required: replace example with your forum shortname
+    </ul>
     
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</div>
 
 
+		  </div>
+    </div> <!-- /container -->
 
-
-					</div>
-				</div><!-- misc-content -->
-			</div><!-- bd -->
-			<footer class="unit-foot">
-				<div class="unit-inner unit-foot-inner">
-					<nav class="pagination">
-						<ul>
-							
-							<li class="prev"><a class="internal" rel="prev"  href="/blog/2012/03/plum-blossom-hill" title="View 梅花山·南京，三月十七号二零一二">&laquo; 梅花山·南京，三月十七号二零一二</a></li>
-							
-							
-							<li class="pipe"> | </li>
-							
-							
-							<li class="next"><a class="internal" rel="next"  href="/blog/2012/03/thinking-in-test-commit-test" title="View 测试思考系列[2]：提交测试">测试思考系列[2]：提交测试 &raquo;</a></li>
-							
-						</ul>
-					</nav>
-					<p class="gotop">
-						<a href="#page">Back to Top</a>
-					</p>
-				</div>
-			</footer>
-
-		</div><!-- content -->
-	</div><!-- unit-inner -->
-</article>
-
-
-				</div>
-			</div><!-- unit-inner -->
-		</div><!-- unit-body -->
-	</div><!-- body -->
-	<footer class="the-footer">
-		<div class="unit-foot">
-			<div class="unit-inner unit-foot-inner">
-				<div class="misc vcard">
-					<h4>about</h4>
-					<ul>
-						<li class="contact"><address><span class="author fn n">HackFisher</span> - <span class="fn email">hackfisher@gmail.com</span></address></li>
-						<li class="github"><a href="http://github.com/HackFisher/" rel="me">github.com/HackFisher</a></li>
-						<li class="twitter"><a href="http://twitter.com/hackfisher/" rel="me">twitter.com/hackfisher</a></li>
-						<li class="rss"><a href="http://hackfisher.info/rss.xml">Subscribe to RSS Feed</a></li>
-					</ul>
-				</div><!-- misc -->
-			</div><!-- unit-foot-inner -->
-		</div><!-- unit-foot -->
-	</footer>
-</div><!-- page -->
-<script>
-	(function(d, s) {
-		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
-		if (d.getElementById(id)) {return;}
-		js = d.createElement(s); js.src = url; js.id = id;
-		fjs.parentNode.insertBefore(js, fjs);
-		};
-	load('//platform.twitter.com/widgets.js', 'tweetjs');
-	// load('https://apis.google.com/js/plusone.js', 'gplus1js'); // Checkout http://j.mp/ApDgMr for usage html for this is <div class="g-plusone" data-size="medium"></div>
-	// load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk'); // Checkout http://j.mp/wZw2xR for using open graph protorol html for this is <div class="fb-like" data-href="/blog/2012/03/thinking-in-test-ci" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
-	}(document, 'script'));
-</script>
-<script>
-/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
-(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
-</script>
-  
-  
+    
 
 
   <script type="text/javascript">
@@ -254,6 +256,10 @@
 
 
 
-</body>
+    <!-- JiaThis Button BEGIN -->
+<script type="text/javascript">var jiathis_config = {data_track_clickback:true};</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?move=0&amp;uid=1344392196475354" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+  </body>
 </html>
 

@@ -1,3 +1,4 @@
+/* Improve readability of pre-formatted text in all browsers */
 /*
 HTML5 display definitions from [HTML5 Boilerplate](http://j.mp/rP0wmY)
 
@@ -48,9 +49,6 @@ html {
 body {
   margin: 0;
   font-size: 1em;
-  font-family:"Galdeano","Hiragino Sans GB","Microsoft YaHei",Trebuchet,"Trebuchet MS",Tahoma,"Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;
-  background-color:#ffffff;
-  color:#000000;
   line-height: 1.4;
   -webkit-tap-highlight-color: rgba(255, 0, 0, 0.62);
 }
@@ -404,7 +402,7 @@ Calculation should be done via  http://j.mp/rNg5uA
 No styleguide reference.
 */
 body {
-  font-family: "Galdeano","Hiragino Sans GB","Microsoft YaHei",Trebuchet,"Trebuchet MS",Tahoma,"Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;
+  font-family: consolas, monaco, monospace;
   font-size: 1em;
   line-height: 1.625em;
 }
@@ -651,6 +649,49 @@ pre {
   color: #474747;
   border: 0;
 }
+.unit-article .entry-content div .grid {
+  width: 600px;
+  height: 800px;
+}
+.unit-article .entry-content div .subgrid {
+  width: 50%;
+  height: 50%;
+  font-size: 2em;
+  font-family: Georgia, Times, sans-serif;
+}
+.unit-article .entry-content div .subgrid p {
+  font-size: 10%;
+}
+.unit-article .entry-content div .subgrid a {
+  font-size: 60%;
+  color: inherit;
+}
+.unit-article .entry-content div .grid11 {
+  float: left;
+  text-align: right;
+  background: #DDD;
+  color: black;
+}
+.unit-article .entry-content div .grid12 {
+  float: right;
+  left: 50%;
+  text-align: left;
+  background: black;
+  color: #DDD;
+}
+.unit-article .entry-content div .grid21 {
+  float: left;
+  text-align: right;
+  background: black;
+  color: #DDD;
+}
+.unit-article .entry-content div .grid22 {
+  float: right;
+  left: 50%;
+  text-align: left;
+  background: #DDD;
+  color: black;
+}
 .unit-article .entry-content:first-child h2,
 .unit-article .entry-content:first-child h3,
 .unit-article .entry-content:first-child h4,
@@ -675,13 +716,16 @@ pre {
   margin-left: 0;
   margin-right: 0;
 }
+.unit-article time {
+  font-size: 12px;
+}
 .unit-article ul,
 .unit-article ol,
 .unit-article dl {
   padding-left: 0;
 }
 .unit-article ul {
-  list-style: square;
+  list-style: none;
 }
 .unit-article ol {
   list-style: decimal;
@@ -1485,3 +1529,5 @@ hr {
   *display: inline;
   float: right;
 }
+
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */

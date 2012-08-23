@@ -1,56 +1,131 @@
 
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>测试思考系列[2]：提交测试</title>
-	<meta name="author" content="HackFisher">
-	<link href='/assets/themes/the-program/css/style.css' rel="stylesheet" media="all">
-	<link href="http://feeds.feedburner.com/" rel="alternate" title="测试思考系列[2]：提交测试" type="application/atom+xml">
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>测试思考系列[2]：提交测试</title>
+    
+    <meta name="author" content="HackFisher">
 
-<div id="page" class="hentry">
-	<header class="the-header">
-		<div class="unit-head">
-			<div class="unit-inner unit-head-inner">
-				<nav class="nav-global">
-					<ul>
-						<li class="logo"><a href="/">HackFisher</a></li>
-						<li class="archive"><a href="/archive.html">archive</a></li>
-						<li class="page"><a href="/pages.html">pages</a></li>
-						<li class="category"><a href="/categories.html">categories</a></li>
-						<li class="tag"><a href="/tags.html">tags</a></li>
-						<li class="about"><a href="/about.html">about</a></li>
-					</ul>
-				</nav>
-			</div><!-- unit-inner -->
-		</div><!-- unit-head -->
-	</header>
-	<div class="body" role="main">
-		<div class="unit-body">
-			<div class="unit-inner unit-body-inner">
-				<div class="entry-content">
-					
-<article class="unit-article layout-post">
-	<div class="unit-inner unit-article-inner">
-		<div class="content">
-			<header>
-				<div class="unit-head">
-					<div class="unit-inner unit-head-inner">
-						<h1 class="h2 entry-title">测试思考系列[2]：提交测试</h1>
-					</div><!-- unit-inner -->
-				</div><!-- unit-head -->
-			</header>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-			<div class="bd">
-				<div class="entry-content">
-					&nbsp;
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+    <div class="container">
+		<header>
+			<h1><a href="/">HackFisher</a>  <small>Stay foolish, Stay hungry</small></h1>
+		</header>
+		<div class="navbar">
+		  <div class="container">
+		      <ul class="nav">
+		        
+		        
+		        
+
+
+  
+    
+      
+      	
+      	<li><a href="/about.html">About</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/projects.html">Project</a></li>
+      	
+      
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+		      </ul>
+		      <form action="http://google.com/search" method="get" class="nav">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:hackfisher.info">
+    <input class="search" type="text" name="q" results="0" placeholder="Search">
+  </fieldset>
+</form>
+
+<ul class="subscription nav" data-subscription="rss">
+  <li><a href="/rss.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li> 
+</ul>
+		    </div>
+		</div>
+		  <div class="content">
+		    
+<div class="page-header">
+  <h2>测试思考系列[2]：提交测试 </h2>
+</div>
+
+<div class="row">
+  <div class="span8">
+    &nbsp;
 
 对于开发活动来说，代码提交是一个很重要的事件，代码变更被提交到版本控制服务器后(成为一次revision)，意味着该变更的影响范围从该开发人员自己推广到了更广阔的范围：
 
@@ -147,31 +222,51 @@ Alpha场所是一个地方，里面有一堆东西，常见的包括Alpha安装�
 
 为什么要有冒烟测试？ 我可以举一个没有冒烟测试之前的例子。有一段时间，开发组经常进行大规模的代码重构，并且导致很多基础的功能用不了，并且因此更多的依赖这些基础功能的测试工作也无法开展，按照持续集成的指导原则来说，越早的集成和测试越好，但是这样测试工作一下子就被阻滞了。原先想的办法是，提交紧急BUG，让开发优先修复，但后来发现根本不起作用，因为紧急只空留一个名义上的紧急，但实际处理的时候，可能还是要好几天才会得到处理。后来通过将那些最影响其他测试工作的项，组织成冒烟测试条目，并约定：<strong>如果冒烟测试失败，需要当天立刻修复，每一测试项都会对应有一个开发人员</strong>。
 
-					<div class="meta">
-						<p class="date-publish">
-							Published: 
-							<date class="date-pub" title="2012-03-19T00:00:00+08:00" datetime="2012-03-19T00:00:00+08:00" pubdate>
-							<span class="month"><abbr>March</abbr></span>
-							<span class="day">19</span>
-							<span class="year">2012</span>
-							</date>
-						</p>
-						<ul class="list-category list-linear">
-							<li class="list-head">category: </li>
-							
-							
-
-
-  
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/blog/2012/03/thinking-in-test-ci" title="测试思考系列[1]：往持续交付的方向努力">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/blog/2012/03/thinking-in-test-regression-test" title="测试思考系列[3]：回归测试">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
     
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'hackfisher'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
   
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>19 March 2012</span></div>
 
-
-						</ul>
-						<ul class="list-tag list-linear">
-							<li class="list-head">tags: </li>
-							
-							
+  
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+    
 
 
   
@@ -198,105 +293,16 @@ Alpha场所是一个地方，里面有一堆东西，常见的包括Alpha安装�
 
 
 
-						</ul>
-					</div><!-- meta -->
-				</div><!-- entry-content -->
-				<div class="misc-content">
-					<div class="social">
-						<ul class="list-linear">
-							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="hackfisher" data-lang="en">Tweet</a></div></li>
-							<li><div class="twitter-follow"><a href="https://twitter.com/hackfisher" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
-						</ul>
-					</div>
-					<div class="comment">
-					
-
-
-  <div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_developer = 1;
-    var disqus_shortname = 'hackfisher'; // required: replace example with your forum shortname
+    </ul>
     
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</div>
 
 
+		  </div>
+    </div> <!-- /container -->
 
-
-					</div>
-				</div><!-- misc-content -->
-			</div><!-- bd -->
-			<footer class="unit-foot">
-				<div class="unit-inner unit-foot-inner">
-					<nav class="pagination">
-						<ul>
-							
-							<li class="prev"><a class="internal" rel="prev"  href="/blog/2012/03/thinking-in-test-ci" title="View 测试思考系列[1]：往持续交付的方向努力">&laquo; 测试思考系列[1]：往持续交付的方向努力</a></li>
-							
-							
-							<li class="pipe"> | </li>
-							
-							
-							<li class="next"><a class="internal" rel="next"  href="/blog/2012/03/thinking-in-test-regression-test" title="View 测试思考系列[3]：回归测试">测试思考系列[3]：回归测试 &raquo;</a></li>
-							
-						</ul>
-					</nav>
-					<p class="gotop">
-						<a href="#page">Back to Top</a>
-					</p>
-				</div>
-			</footer>
-
-		</div><!-- content -->
-	</div><!-- unit-inner -->
-</article>
-
-
-				</div>
-			</div><!-- unit-inner -->
-		</div><!-- unit-body -->
-	</div><!-- body -->
-	<footer class="the-footer">
-		<div class="unit-foot">
-			<div class="unit-inner unit-foot-inner">
-				<div class="misc vcard">
-					<h4>about</h4>
-					<ul>
-						<li class="contact"><address><span class="author fn n">HackFisher</span> - <span class="fn email">hackfisher@gmail.com</span></address></li>
-						<li class="github"><a href="http://github.com/HackFisher/" rel="me">github.com/HackFisher</a></li>
-						<li class="twitter"><a href="http://twitter.com/hackfisher/" rel="me">twitter.com/hackfisher</a></li>
-						<li class="rss"><a href="http://hackfisher.info/rss.xml">Subscribe to RSS Feed</a></li>
-					</ul>
-				</div><!-- misc -->
-			</div><!-- unit-foot-inner -->
-		</div><!-- unit-foot -->
-	</footer>
-</div><!-- page -->
-<script>
-	(function(d, s) {
-		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
-		if (d.getElementById(id)) {return;}
-		js = d.createElement(s); js.src = url; js.id = id;
-		fjs.parentNode.insertBefore(js, fjs);
-		};
-	load('//platform.twitter.com/widgets.js', 'tweetjs');
-	// load('https://apis.google.com/js/plusone.js', 'gplus1js'); // Checkout http://j.mp/ApDgMr for usage html for this is <div class="g-plusone" data-size="medium"></div>
-	// load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk'); // Checkout http://j.mp/wZw2xR for using open graph protorol html for this is <div class="fb-like" data-href="/blog/2012/03/thinking-in-test-commit-test" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
-	}(document, 'script'));
-</script>
-<script>
-/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
-(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
-</script>
-  
-  
+    
 
 
   <script type="text/javascript">
@@ -313,6 +319,10 @@ Alpha场所是一个地方，里面有一堆东西，常见的包括Alpha安装�
 
 
 
-</body>
+    <!-- JiaThis Button BEGIN -->
+<script type="text/javascript">var jiathis_config = {data_track_clickback:true};</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?move=0&amp;uid=1344392196475354" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+  </body>
 </html>
 

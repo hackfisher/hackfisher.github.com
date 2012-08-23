@@ -5,6 +5,7 @@ http://hackfisher.github.com/atom.xml
 http://hackfisher.github.com/categories.html
 http://hackfisher.github.com/index.html
 http://hackfisher.github.com/pages.html
+http://hackfisher.github.com/projects.html
 http://hackfisher.github.com/rss.xml
 http://hackfisher.github.com/sitemap.txt
 http://hackfisher.github.com/tags.html
