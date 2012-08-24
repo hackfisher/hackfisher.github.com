@@ -1,3 +1,4 @@
+---
 layout: post
 title: "Raspberry Pi第一印象"
 description: "看看Raspberry Pi这款信用卡大小的DIY电脑有什么好玩的？"
