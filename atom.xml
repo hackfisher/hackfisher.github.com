@@ -4,13 +4,44 @@
  <title>HackFisher</title>
  <link href="http://hackfisher.github.com/atom.xml" rel="self"/>
  <link href="http://hackfisher.github.com"/>
- <updated>2012-08-23T23:38:53+08:00</updated>
+ <updated>2012-08-24T11:53:39+08:00</updated>
  <id>http://hackfisher.github.com</id>
  <author>
    <name>HackFisher</name>
    <email>hackfisher@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Raspberrypi First Impress</title>
+   <link href="http://hackfisher.github.com/blog/2012/08/RaspberryPI-first-impress"/>
+   <updated>2012-08-24T00:00:00+08:00</updated>
+   <id>http://hackfisher.github.com/blog/2012/08/RaspberryPI-first-impress</id>
+   <content type="html">&lt;p&gt;layout: post
+title: &quot;Raspberry Pi第一印象&quot;
+description: &quot;看看Raspberry Pi这款信用卡大小的DIY电脑有什么好玩的？&quot;
+category: 研究&lt;/p&gt;
+
+&lt;h2&gt;tags: [DIY, RaspberryPi]&lt;/h2&gt;
+
+&lt;p&gt;现在移动互联网正处在大爆发的时候，各种iphone和Android智能手机充斥大街，对于IT宅男来说，仅仅知道如何开发移动应用已经无法满足他们的好奇心了，他们还关心一个移动终端是如何被造出来的，除了手机之外是否还存在其他的可能性。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.raspberrypi.org/&quot;&gt;Raspberry Pi&lt;/a&gt;算是我们听到的第一个好消息，这款迷你电脑所能运行的系统已经堪称强大，价格便宜门槛低，提供各种DIY的接口，最关键的是它只有信用卡大小，满足你对于手机无法满足的移动设备需要的无线幻想，还有自己DIY学习创造的乐趣。&lt;/p&gt;
+
+&lt;p&gt;虽然RaspberryPI定位的目标小孩(教育产业)，还有业余爱好者和热心 DIY 的科技迷，但我觉得它的出现意味深长，也许预示着下面一轮移动设备种类的大爆炸。想想吧，手机只是众多移动设备中的一个。&lt;/p&gt;
+
+&lt;p&gt;国内用户可以再&lt;a href=&quot;http://cn.element14.com/jsp/search/productdetail.jsp?id=2081185&amp;amp;Ntt=2081185?ICID=ap-rpi-hwb&quot;&gt;elment14&lt;/a&gt;上买到，价格比国外贵，因为要多个税和路费，三百多。下面我们来看看对Raspberry Pi的第一印象。&lt;/p&gt;
+
+&lt;p&gt;打开包装盒，插上鼠标、键盘、显示器、网卡、电源等等，树莓派的各个接口
+&lt;img src=&quot;/uploads/2012/08/raspberry-pi-0.jpg&quot; alt=&quot;Raspberry Pi的接口&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;反面可以看到指示灯，还有Raspberry Pi的各个组件，什么CPU，主板啊等等，隐藏的细节被暴露
+&lt;img src=&quot;/uploads/2012/08/raspberry-pi-1.jpg&quot; alt=&quot;Raspberry Pi组件&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;插上电源，系统自动启动，制作系统SDCard的教程可以查看&lt;a href=&quot;http://www.raspberrypi.org/quick-start-guide&quot;&gt;官网Quick start guide&lt;/a&gt;，我这里用的是Raspian “wheezy” 镜像，可以看到包含python, gcc，还有一些实例程序。
+&lt;img src=&quot;/uploads/2012/08/raspberry-pi-2.jpg&quot; alt=&quot;Raspberry Pi系统&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>求两个整数数组交集的更快算法</title>
