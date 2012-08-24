@@ -4,7 +4,7 @@
  <title>HackFisher</title>
  <link href="http://hackfisher.github.com/atom.xml" rel="self"/>
  <link href="http://hackfisher.github.com"/>
- <updated>2012-08-24T11:53:39+08:00</updated>
+ <updated>2012-08-24T11:58:20+08:00</updated>
  <id>http://hackfisher.github.com</id>
  <author>
    <name>HackFisher</name>
@@ -13,18 +13,11 @@
 
  
  <entry>
-   <title>Raspberrypi First Impress</title>
+   <title>Raspberry Pi第一印象</title>
    <link href="http://hackfisher.github.com/blog/2012/08/RaspberryPI-first-impress"/>
    <updated>2012-08-24T00:00:00+08:00</updated>
    <id>http://hackfisher.github.com/blog/2012/08/RaspberryPI-first-impress</id>
-   <content type="html">&lt;p&gt;layout: post
-title: &quot;Raspberry Pi第一印象&quot;
-description: &quot;看看Raspberry Pi这款信用卡大小的DIY电脑有什么好玩的？&quot;
-category: 研究&lt;/p&gt;
-
-&lt;h2&gt;tags: [DIY, RaspberryPi]&lt;/h2&gt;
-
-&lt;p&gt;现在移动互联网正处在大爆发的时候，各种iphone和Android智能手机充斥大街，对于IT宅男来说，仅仅知道如何开发移动应用已经无法满足他们的好奇心了，他们还关心一个移动终端是如何被造出来的，除了手机之外是否还存在其他的可能性。&lt;/p&gt;
+   <content type="html">&lt;p&gt;现在移动互联网正处在大爆发的时候，各种iphone和Android智能手机充斥大街，对于IT宅男来说，仅仅知道如何开发移动应用已经无法满足他们的好奇心了，他们还关心一个移动终端是如何被造出来的，除了手机之外是否还存在其他的可能性。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://www.raspberrypi.org/&quot;&gt;Raspberry Pi&lt;/a&gt;算是我们听到的第一个好消息，这款迷你电脑所能运行的系统已经堪称强大，价格便宜门槛低，提供各种DIY的接口，最关键的是它只有信用卡大小，满足你对于手机无法满足的移动设备需要的无线幻想，还有自己DIY学习创造的乐趣。&lt;/p&gt;
 
