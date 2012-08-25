@@ -4,7 +4,7 @@
  <title>HackFisher</title>
  <link href="http://hackfisher.github.com/atom.xml" rel="self"/>
  <link href="http://hackfisher.github.com"/>
- <updated>2012-08-25T15:43:07+08:00</updated>
+ <updated>2012-08-25T15:57:43+08:00</updated>
  <id>http://hackfisher.github.com</id>
  <author>
    <name>HackFisher</name>
@@ -22,24 +22,24 @@
 &lt;p&gt;后来，在网上寻到一张1：1的设计PDF图纸，可以直接下载下来，很方便的用打印机打印，然后裁剪，制作树莓派盒子，这正是我要找的:&lt;/p&gt;
 
 &lt;p&gt;设计图纸大概
-&lt;img src=&quot;/uploads/2012/08/raspberry-pi-print.jpg&quot; alt=&quot;设计图纸&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/uploads/2012/08/case/raspberry-pi-print.jpg&quot; alt=&quot;设计图纸&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;首先将&lt;a href=&quot;http://squareitround.co.uk/Resources/Punnet_net_Alpha3.pdf&quot;&gt;设计图纸的PDF&lt;/a&gt;下载下来，打印。&lt;/p&gt;
 
 &lt;p&gt;下面我们开始制作, 首先是从包装盒取出树莓派
-&lt;img src=&quot;/uploads/2012/08/raspberry-pi-case-1.JPG&quot; alt=&quot;RaspberryPi包装&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/uploads/2012/08/case/raspberry-pi-case-1.jpg&quot; alt=&quot;RaspberryPi包装&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;剪切，并找一张硬纸(比如鞋盒)，按照设计图纸进行剪切
-&lt;img src=&quot;/uploads/2012/08/raspberry-pi-case-2.JPG&quot; alt=&quot;Case剪切&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/uploads/2012/08/case/raspberry-pi-case-2.jpg&quot; alt=&quot;Case剪切&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;剪切完成
-&lt;img src=&quot;/uploads/2012/08/raspberry-pi-case-3.JPG&quot; alt=&quot;剪切完成&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/uploads/2012/08/case/raspberry-pi-case-3.jpg&quot; alt=&quot;剪切完成&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;折叠
-&lt;img src=&quot;/uploads/2012/08/raspberry-pi-case-4.JPG&quot; alt=&quot;折叠&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/uploads/2012/08/case/raspberry-pi-case-4.jpg&quot; alt=&quot;折叠&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;制作完成，将Raspberry Pi放入制作好的盒子，怎么样，是不是很方便。
-&lt;img src=&quot;/uploads/2012/08/raspberry-pi-case-5.JPG&quot; alt=&quot;制作完成&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/uploads/2012/08/case/raspberry-pi-case-5.jpg&quot; alt=&quot;制作完成&quot; /&gt;&lt;/p&gt;
 </content>
  </entry>
  
