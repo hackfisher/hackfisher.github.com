@@ -18,16 +18,16 @@ Raspberry Pi到手后，在摆弄的过程中，发现电路板很容易扎手�
 
 
 下面我们开始制作, 首先是从包装盒取出树莓派
-![RaspberryPi包装]({{ BASE_PATH }}/uploads/2012/08/raspberry-pi-case-1.jpg)
+![RaspberryPi包装]({{ BASE_PATH }}/uploads/2012/08/raspberry-pi-case-1.JPG)
 
 剪切，并找一张硬纸(比如鞋盒)，按照设计图纸进行剪切
-![Case剪切]({{ BASE_PATH }}/uploads/2012/08/raspberry-pi-case-2.jpg)
+![Case剪切]({{ BASE_PATH }}/uploads/2012/08/raspberry-pi-case-2.JPG)
 
 剪切完成
-![剪切完成]({{ BASE_PATH }}/uploads/2012/08/raspberry-pi-case-3.jpg)
+![剪切完成]({{ BASE_PATH }}/uploads/2012/08/raspberry-pi-case-3.JPG)
 
 折叠
-![折叠]({{ BASE_PATH }}/uploads/2012/08/raspberry-pi-case-4.jpg)
+![折叠]({{ BASE_PATH }}/uploads/2012/08/raspberry-pi-case-4.JPG)
 
 制作完成，将Raspberry Pi放入制作好的盒子，怎么样，是不是很方便。
-![制作完成]({{ BASE_PATH }}/uploads/2012/08/raspberry-pi-case-5.jpg)
+![制作完成]({{ BASE_PATH }}/uploads/2012/08/raspberry-pi-case-5.JPG)
