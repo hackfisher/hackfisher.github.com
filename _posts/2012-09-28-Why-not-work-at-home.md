@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: "为什么不在家办公？"
 description: "下载PDF, 打印出一比一的盒子设计图，然后给草莓派制作盒子"
