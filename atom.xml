@@ -4,7 +4,7 @@
  <title>HackFisher</title>
  <link href="http://hackfisher.github.com/atom.xml" rel="self"/>
  <link href="http://hackfisher.github.com"/>
- <updated>2012-09-28T13:21:44+08:00</updated>
+ <updated>2012-09-28T13:26:04+08:00</updated>
  <id>http://hackfisher.github.com</id>
  <author>
    <name>HackFisher</name>
@@ -13,19 +13,11 @@
 
  
  <entry>
-   <title>Why Not Work At Home</title>
+   <title>为什么不在家办公？</title>
    <link href="http://hackfisher.github.com/blog/2012/09/Why-not-work-at-home"/>
    <updated>2012-09-28T00:00:00+08:00</updated>
    <id>http://hackfisher.github.com/blog/2012/09/Why-not-work-at-home</id>
-   <content type="html">&lt;p&gt;﻿---
-layout: post
-title: &quot;为什么不在家办公？&quot;
-description: &quot;下载PDF, 打印出一比一的盒子设计图，然后给草莓派制作盒子&quot;
-category: 疯言疯语&lt;/p&gt;
-
-&lt;h2&gt;tags: [宅办公, 云桌面]&lt;/h2&gt;
-
-&lt;p&gt;我每天早上坐地铁一个小时到公司，下班回家也是一个小时，也就是说，一天24小时中，有两个小时会花在路上，是上班时间的四分之一。在中国像我这样的上班族，绝对是一个庞大的数字。&lt;/p&gt;
+   <content type="html">&lt;p&gt;我每天早上坐地铁一个小时到公司，下班回家也是一个小时，也就是说，一天24小时中，有两个小时会花在路上，是上班时间的四分之一。在中国像我这样的上班族，绝对是一个庞大的数字。&lt;/p&gt;
 
 &lt;h1&gt;那么，为什么我们不在家办公？&lt;/h1&gt;
 
