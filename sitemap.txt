@@ -10,6 +10,7 @@ http://hackfisher.github.com/rss.xml
 http://hackfisher.github.com/sitemap.txt
 http://hackfisher.github.com/tags.html
 
+http://hackfisher.github.com/blog/2012/09/Why-not-work-at-home
 http://hackfisher.github.com/blog/2012/08/RaspberryPi-Print-out-Case
 http://hackfisher.github.com/blog/2012/08/RaspberryPI-first-impress
 http://hackfisher.github.com/blog/2012/05/algorithm-about-intersect-of-two-arrays
