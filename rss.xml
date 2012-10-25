@@ -7,6 +7,50 @@
 		<atom:link href="http://hackfisher.info/rss.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>GUI开发的趋势变化</title>
+				<description>&lt;p&gt;感觉GUI开发的一个趋势之一就是XML可扩展标记(Flex, eclipse e4, Apache Pivot, Web开发(HTML)，Android手机开发等等)，现在开发App程序，和开发Web程序，已经没有太大的区别
+优点是效率高，可读性也好，但是Swing在这方面就差了很多，要写很多代码，虽然我们在这方面做了很多封装，效率有所改善，但是做的还不够好。&lt;/p&gt;
+
+&lt;p&gt;高质量代码的一个特征就是简洁，可读性好，有时候为了达到这一点，甚至“笨”一点也没关系。&lt;/p&gt;
+
+&lt;p&gt;有一个故事可能大家都知道，是这么说的：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;“唐代的诗人白居易做诗，力求通俗易懂，明白晓畅。据说他每写一诗，必对家中老妪读之，老太太能理解的就抄录，不明白的就改写。”
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;高质量的代码也应该这样，每写一段程序，都应该尽力达到这样一种要求，只要已经过了英语四级的人都应该能读懂。&lt;/p&gt;
+
+&lt;p&gt;这是我所理解的KISS(Keep it Simple Stupid).&lt;/p&gt;
+</description>
+				<published>Fri Oct 19 00:00:00 +0800 2012</published>
+				<link>/blog/2012/10/Trend-of-gui-devlopment</link>
+			</item>
+		
+			<item>
+				<title>比较QQ和Excel兼容性处理的区别：数据在哪里很关键</title>
+				<description>&lt;h1&gt;前言&lt;/h1&gt;
+
+&lt;p&gt;今天登录QQ，发现提示QQ新版公布了（QQ启动页面）。下载后，不需要删掉原有程序，双击新的安装包即可将原有的先卸载掉再进行安装（安装时会体现新的功能亮点，很多软件都是如此）。聊天记录，个性设置无缝继承，兼容度非常好，界面操作习惯不变。&lt;/p&gt;
+
+&lt;p&gt;但相对来说，Excel的升级就麻烦很多，从Excel2003升级到Excel2007，需要下载新的安装包，很多时候用户升级和下载的办法，还是购买CD或者从官网购买。在这个方面，微软落后很多了。另外，Excel这两个版本的文件格式也不一样，Excel2003是无法直接打开2007的格式文件的，除非用额外的工具插件，这导致了市面上Excel使用的一些混乱，用户界面也比较大。&lt;/p&gt;
+
+&lt;h1&gt;比较一下QQ和Excel在兼容性上的区别&lt;/h1&gt;
+
+&lt;h2&gt;QQ的兼容性处理&lt;/h2&gt;
+
+&lt;p&gt;QQ的所有数据都存储在云端(除了聊天记录好像是在本地)，所以如果客户端升级有变化(比如接口变化，数据交互格式变化)，QQ可以自己直接在云端修改数据，清洗数据，所有客户端用到的服务和数据都在QQ手上，用户根本感觉不到内部数据格式的兼容性的问题。&lt;/p&gt;
+
+&lt;h2&gt;Excel的兼容性处理&lt;/h2&gt;
+
+&lt;p&gt;但是Excel和QQ就不太一样，Excel跟多看起来像是一个工具，做起来的.xls文件数据在用户手里，MS基本上没办法对数据进行升级，如果工具有变化(比如从Excel2003升级到Excel2007)，微软只能在Excel2007上下功夫，并且因为数据格式变化，采用了新的后缀名。Excel2003刚开始的时候也无法打开Excel2007，后来提供了工具插件，但是感觉会减缓用户升级Excel2007的步伐。&lt;/p&gt;
+
+&lt;p&gt;Office的兼容性是做的相当好的，Excel2007基本上可以打开Excel2003文件，但这还是在基本上没有删除功能的情况下，没有提供太多二次开发接口。相信Google Doc在这个问题上会好解决的多。&lt;/p&gt;
+</description>
+				<published>Mon Oct 15 00:00:00 +0800 2012</published>
+				<link>/blog/2012/10/Compare-qq-excel-compatibility</link>
+			</item>
+		
+			<item>
 				<title>为什么不在家办公？</title>
 				<description>&lt;p&gt;我每天早上坐地铁一个小时到公司，下班回家也是一个小时，也就是说，一天24小时中，有两个小时会花在路上，是上班时间的四分之一。在中国像我这样的上班族，绝对是一个庞大的数字。&lt;/p&gt;
 
