@@ -3,8 +3,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>GUI开发的趋势变化</title>
-    <meta name="description" content="GUI开发的XML化趋势">
+    <title>开发微信公众平台第三方自定义接口——火星人</title>
+    <meta name="description" content="火星人是一个微信公众账号，可以支持自动翻译，交流一些好玩的东西">
     <meta name="author" content="HackFisher">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -120,34 +120,30 @@
 		  <div class="content">
 		    
 <div class="page-header">
-  <h2>GUI开发的趋势变化 </h2>
+  <h2>开发微信公众平台第三方自定义接口——火星人 </h2>
 </div>
 
 <div class="row">
   <div class="span8">
-    <p>感觉GUI开发的一个趋势之一就是XML可扩展标记(Flex, eclipse e4, Apache Pivot, Web开发(HTML)，Android手机开发等等)，现在开发App程序，和开发Web程序，已经没有太大的区别
-优点是效率高，可读性也好，但是Swing在这方面就差了很多，要写很多代码，虽然我们在这方面做了很多封装，效率有所改善，但是做的还不够好。</p>
+    <p>周末无聊，<a href="http://www.36kr.com/p/171907.html">36kr</a>上看到<a href="http://mp.weixin.qq.com/">微信公众平台</a>刚推出了第三方API，所以想利用微信的API写点好玩的东西。早先曾用python给之前的公司写过一个Gtalk的订餐机器人，同事们都觉得很好玩。这次我把这个微信机器人取名为“火星人”，够火星吧~</p>
 
-<p>高质量代码的一个特征就是简洁，可读性好，有时候为了达到这一点，甚至“笨”一点也没关系。</p>
+<p>在微信手机客户端里面搜索“火星人”，或者扫描如下二维码，就可以关注“火星人”了，当然，现在做的功能还很粗糙简单啦，只有简单的中英自动翻译功能。</p>
 
-<p>有一个故事可能大家都知道，是这么说的：</p>
+<p><img src="/uploads/2012/11/qrcode.jpg" alt="火星人二维码" /></p>
 
-<pre><code>“唐代的诗人白居易做诗，力求通俗易懂，明白晓畅。据说他每写一诗，必对家中老妪读之，老太太能理解的就抄录，不明白的就改写。”
-</code></pre>
+<p>正好最近在学英语，有事没事可以查查，可以看到历史的单词查询，简单但实用。</p>
 
-<p>高质量的代码也应该这样，每写一段程序，都应该尽力达到这样一种要求，只要已经过了英语四级的人都应该能读懂。</p>
-
-<p>这是我所理解的KISS(Keep it Simple Stupid).</p>
+<p>具体的实现是用的PHP加上百度的翻译API，微信公众平台和百度的API上面的文档Demo简单改改就可以了，这里就不给Link了。</p>
 
     <hr>
     <div class="pagination">
       <ul>
       
-        <li class="prev"><a href="/blog/2012/10/Compare-qq-excel-compatibility" title="比较QQ和Excel兼容性处理的区别：数据在哪里很关键">&larr; Previous</a></li>
+        <li class="prev"><a href="/blog/2012/10/Trend-of-gui-devlopment" title="GUI开发的趋势变化">&larr; Previous</a></li>
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/blog/2012/11/weixin-mars-robot" title="开发微信公众平台第三方自定义接口——火星人">Next &rarr;</a></li>
+        <li class="next disabled"><a>Next &rarr;</a>
       
       </ul>
     </div>
@@ -177,7 +173,7 @@
   
   <div class="span4">
     <h4>Published</h4>
-    <div class="date"><span>19 October 2012</span></div>
+    <div class="date"><span>25 November 2012</span></div>
 
   
     <h4>Tags</h4>
@@ -188,9 +184,11 @@
 
   
      
-    	<li><a href="/tags.html#GUI-ref">GUI <span>1</span></a></li>
+    	<li><a href="/tags.html#weixin-ref">weixin <span>1</span></a></li>
      
-    	<li><a href="/tags.html#XML-ref">XML <span>1</span></a></li>
+    	<li><a href="/tags.html#PHP-ref">PHP <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#API-ref">API <span>1</span></a></li>
     
   
 

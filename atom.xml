@@ -4,13 +4,30 @@
  <title>HackFisher</title>
  <link href="http://hackfisher.github.com/atom.xml" rel="self"/>
  <link href="http://hackfisher.github.com"/>
- <updated>2012-10-25T16:41:23+08:00</updated>
+ <updated>2012-11-25T16:15:33+08:00</updated>
  <id>http://hackfisher.github.com</id>
  <author>
    <name>HackFisher</name>
    <email>hackfisher@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>开发微信公众平台第三方自定义接口——火星人</title>
+   <link href="http://hackfisher.github.com/blog/2012/11/weixin-mars-robot"/>
+   <updated>2012-11-25T00:00:00+08:00</updated>
+   <id>http://hackfisher.github.com/blog/2012/11/weixin-mars-robot</id>
+   <content type="html">&lt;p&gt;周末无聊，&lt;a href=&quot;http://www.36kr.com/p/171907.html&quot;&gt;36kr&lt;/a&gt;上看到&lt;a href=&quot;http://mp.weixin.qq.com/&quot;&gt;微信公众平台&lt;/a&gt;刚推出了第三方API，所以想利用微信的API写点好玩的东西。早先曾用python给之前的公司写过一个Gtalk的订餐机器人，同事们都觉得很好玩。这次我把这个微信机器人取名为“火星人”，够火星吧~&lt;/p&gt;
+
+&lt;p&gt;在微信手机客户端里面搜索“火星人”，或者扫描如下二维码，就可以关注“火星人”了，当然，现在做的功能还很粗糙简单啦，只有简单的中英自动翻译功能。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/2012/11/qrcode.jpg&quot; alt=&quot;火星人二维码&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;正好最近在学英语，有事没事可以查查，可以看到历史的单词查询，简单但实用。&lt;/p&gt;
+
+&lt;p&gt;具体的实现是用的PHP加上百度的翻译API，微信公众平台和百度的API上面的文档Demo简单改改就可以了，这里就不给Link了。&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>GUI开发的趋势变化</title>

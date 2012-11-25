@@ -10,6 +10,7 @@ http://hackfisher.github.com/rss.xml
 http://hackfisher.github.com/sitemap.txt
 http://hackfisher.github.com/tags.html
 
+http://hackfisher.github.com/blog/2012/11/weixin-mars-robot
 http://hackfisher.github.com/blog/2012/10/Trend-of-gui-devlopment
 http://hackfisher.github.com/blog/2012/10/Compare-qq-excel-compatibility
 http://hackfisher.github.com/blog/2012/09/Why-not-work-at-home
