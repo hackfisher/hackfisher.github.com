@@ -147,7 +147,96 @@
 <script src='https://gist.github.com/2258459.js?file=gist_tag.rb'></script>
 
 
-<p><noscript><pre><code>&lt;html&gt;&lt;body&gt;You are being &lt;a href=&quot;https://raw.github.com/gist/2258459/gist_tag.rb&quot;&gt;redirected&lt;/a&gt;.&lt;/body&gt;&lt;/html&gt;</code></pre></noscript></p>
+<p><noscript><pre><code>require 'cgi'
+require 'digest/md5'
+require 'net/https'
+require 'uri'</p>
+
+<p>module Jekyll
+  class GistTag &lt; Liquid::Tag</p>
+
+<pre><code>def initialize(tag_name, text, token)
+  super
+  @text           = text
+  @cache_disabled = false
+  @cache_folder   = File.expand_path &amp;quot;../_gist_cache&amp;quot;, File.dirname(__FILE__)
+end
+
+def render(context)
+  if parts = @text.match(/([\d]*) (.*)/)
+    gist, file = parts[1].strip, parts[2].strip
+    script_url = script_url_for gist, file
+    code       = get_cached_gist(gist, file) || get_gist_from_web(gist, file)
+    html_output_for script_url, code
+  else
+    &amp;quot;&amp;quot;
+  end
+end
+
+def html_output_for(script_url, code)
+  code = CGI.escapeHTML code
+  &amp;quot;&amp;lt;script src='#{script_url}'&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;noscript&amp;gt;&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;#{code}&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/noscript&amp;gt;&amp;quot;
+end
+
+def script_url_for(gist_id, filename)
+  &amp;quot;https://gist.github.com/#{gist_id}.js?file=#{filename}&amp;quot;
+end
+
+def get_gist_url_for(gist, file)
+  &amp;quot;https://gist.github.com/raw/#{gist}/#{file}&amp;quot;
+end
+
+def cache(gist, file, data)
+  cache_file = get_cache_file_for gist, file
+  File.open(cache_file, &amp;quot;w&amp;quot;) do |io|
+    io.write data
+  end
+end
+
+def get_cached_gist(gist, file)
+  return nil if @cache_disabled
+  cache_file = get_cache_file_for gist, file
+  File.read cache_file if File.exist? cache_file
+end
+
+def get_cache_file_for(gist, file)
+  bad_chars = /[^a-zA-Z0-9\-_.]/
+  gist      = gist.gsub bad_chars, ''
+  file      = file.gsub bad_chars, ''
+  md5       = Digest::MD5.hexdigest &amp;quot;#{gist}-#{file}&amp;quot;
+  File.join @cache_folder, &amp;quot;#{gist}-#{file}-#{md5}.cache&amp;quot;
+end
+
+def get_gist_from_web(gist, file)
+  gist_url          = get_gist_url_for gist, file
+  raw_uri           = URI.parse gist_url
+  https             = Net::HTTP.new raw_uri.host, raw_uri.port
+  https.use_ssl     = true
+  https.verify_mode = OpenSSL::SSL::VERIFY_NONE
+  request           = Net::HTTP::Get.new raw_uri.request_uri
+  data              = https.request request
+  data              = data.body
+  cache gist, file, data unless @cache_disabled
+  data
+end
+</code></pre>
+
+<p>  end</p>
+
+<p>  class GistTagNoCache &lt; GistTag</p>
+
+<pre><code>def initialize(tag_name, text, token)
+  super
+  @cache_disabled = true
+end
+</code></pre>
+
+<p>  end
+end</p>
+
+<p>Liquid::Template.register_tag('gist', Jekyll::GistTag)
+Liquid::Template.register_tag('gistnocache', Jekyll::GistTagNoCache)
+</code></pre></noscript></p>
 
     <hr>
     <div class="pagination">

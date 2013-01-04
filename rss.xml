@@ -7,6 +7,32 @@
 		<atom:link href="http://hackfisher.info/rss.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>初识Arduino</title>
+				<description>&lt;p&gt;偶然的机会看到公司有俱乐部在玩机器人，感觉很有意思，简单看了一下是用Arduino搭建开发的，回来就查询了一下资料，发现是个好东西，开源硬件，又可以十分方便的将各种传感器的输入输出集成起来。感觉最近硬件社区火热了不少，也许是受到移动互联网的影响，国外的Apple，国内的小米，大家似乎都开始软件硬件一起上，因为硬件，软件系统会让人耳目一新不少。&lt;/p&gt;
+
+&lt;p&gt;所以，贴一下初次接触Arduino的一些图片。借助搜索引擎和淘宝，基本上可以买到这些入门套件，上手的难度不大。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/2013/01/arduino1.jpg&quot; alt=&quot;Arduino1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/2013/01/arduino2.jpg&quot; alt=&quot;Arduino2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/2013/01/arduino3.jpg&quot; alt=&quot;Arduino3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/2013/01/arduino4.jpg&quot; alt=&quot;Arduino4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下面是一些教程和链接：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://arduino.cc/&quot;&gt;Arduino官网&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.designspark.com/jpn/knowledge-item/arduino-starter-kit-video-tutorial&quot;&gt;Arduino入门套件教程视频&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flamingoeda.com/2008/09/04/arduino-ethernet-%E7%BD%91%E7%BB%9C%E6%89%A9%E5%B1%95%E6%9D%BF/&quot;&gt;Arduino Ethernet 网络扩展板&lt;/a&gt;&lt;/p&gt;
+</description>
+				<published>Tue Jan 01 00:00:00 +0800 2013</published>
+				<link>/blog/2013/01/first-meet-arduino</link>
+			</item>
+		
+			<item>
 				<title>开发微信公众平台第三方自定义接口——火星人</title>
 				<description>&lt;p&gt;周末无聊，&lt;a href=&quot;http://www.36kr.com/p/171907.html&quot;&gt;36kr&lt;/a&gt;上看到&lt;a href=&quot;http://mp.weixin.qq.com/&quot;&gt;微信公众平台&lt;/a&gt;刚推出了第三方API，所以想利用微信的API写点好玩的东西。早先曾用python给之前的公司写过一个Gtalk的订餐机器人，同事们都觉得很好玩。这次我把这个微信机器人取名为“火星人”，够火星吧~&lt;/p&gt;
 
@@ -184,7 +210,28 @@
 &lt;script src='https://gist.github.com/2698628.js?file=ArrayIntersect.java'&gt;&lt;/script&gt;
 
 
-&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;You are being &amp;lt;a href=&amp;quot;https://raw.github.com/gist/2698628/ArrayIntersect.java&amp;quot;&amp;gt;redirected&amp;lt;/a&amp;gt;.&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/p&gt;
+&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;private static int[] intersect_int_array(int[] array1, int[] array2) {&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;     java.util.Arrays.sort(array1);
+     java.util.Arrays.sort(array2);
+
+     IntList res = new IntList();
+     for(int index2 = 0, index1 = 0; index2 &amp;amp;lt; array2.length &amp;amp;amp;&amp;amp;amp; index1 &amp;amp;lt; array1.length; ) {
+         if (array1[index1] &amp;amp;gt; array2[index2]) {
+             index2 ++;
+         } else if (array2[index2] &amp;amp;gt; array1[index1]) {
+             index1 ++;
+         } else {
+             res.add(array2[index2]);
+             index1 ++;
+             index2 ++;
+         }
+     }
+
+     return res.toArray();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;}&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/p&gt;
 </description>
 				<published>Tue May 15 00:00:00 +0800 2012</published>
 				<link>/blog/2012/05/algorithm-about-intersect-of-two-arrays</link>
@@ -339,7 +386,96 @@
 &lt;script src='https://gist.github.com/2258459.js?file=gist_tag.rb'&gt;&lt;/script&gt;
 
 
-&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;You are being &amp;lt;a href=&amp;quot;https://raw.github.com/gist/2258459/gist_tag.rb&amp;quot;&amp;gt;redirected&amp;lt;/a&amp;gt;.&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/p&gt;
+&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;require 'cgi'
+require 'digest/md5'
+require 'net/https'
+require 'uri'&lt;/p&gt;
+
+&lt;p&gt;module Jekyll
+  class GistTag &amp;lt; Liquid::Tag&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;def initialize(tag_name, text, token)
+  super
+  @text           = text
+  @cache_disabled = false
+  @cache_folder   = File.expand_path &amp;amp;quot;../_gist_cache&amp;amp;quot;, File.dirname(__FILE__)
+end
+
+def render(context)
+  if parts = @text.match(/([\d]*) (.*)/)
+    gist, file = parts[1].strip, parts[2].strip
+    script_url = script_url_for gist, file
+    code       = get_cached_gist(gist, file) || get_gist_from_web(gist, file)
+    html_output_for script_url, code
+  else
+    &amp;amp;quot;&amp;amp;quot;
+  end
+end
+
+def html_output_for(script_url, code)
+  code = CGI.escapeHTML code
+  &amp;amp;quot;&amp;amp;lt;script src='#{script_url}'&amp;amp;gt;&amp;amp;lt;/script&amp;amp;gt;&amp;amp;lt;noscript&amp;amp;gt;&amp;amp;lt;pre&amp;amp;gt;&amp;amp;lt;code&amp;amp;gt;#{code}&amp;amp;lt;/code&amp;amp;gt;&amp;amp;lt;/pre&amp;amp;gt;&amp;amp;lt;/noscript&amp;amp;gt;&amp;amp;quot;
+end
+
+def script_url_for(gist_id, filename)
+  &amp;amp;quot;https://gist.github.com/#{gist_id}.js?file=#{filename}&amp;amp;quot;
+end
+
+def get_gist_url_for(gist, file)
+  &amp;amp;quot;https://gist.github.com/raw/#{gist}/#{file}&amp;amp;quot;
+end
+
+def cache(gist, file, data)
+  cache_file = get_cache_file_for gist, file
+  File.open(cache_file, &amp;amp;quot;w&amp;amp;quot;) do |io|
+    io.write data
+  end
+end
+
+def get_cached_gist(gist, file)
+  return nil if @cache_disabled
+  cache_file = get_cache_file_for gist, file
+  File.read cache_file if File.exist? cache_file
+end
+
+def get_cache_file_for(gist, file)
+  bad_chars = /[^a-zA-Z0-9\-_.]/
+  gist      = gist.gsub bad_chars, ''
+  file      = file.gsub bad_chars, ''
+  md5       = Digest::MD5.hexdigest &amp;amp;quot;#{gist}-#{file}&amp;amp;quot;
+  File.join @cache_folder, &amp;amp;quot;#{gist}-#{file}-#{md5}.cache&amp;amp;quot;
+end
+
+def get_gist_from_web(gist, file)
+  gist_url          = get_gist_url_for gist, file
+  raw_uri           = URI.parse gist_url
+  https             = Net::HTTP.new raw_uri.host, raw_uri.port
+  https.use_ssl     = true
+  https.verify_mode = OpenSSL::SSL::VERIFY_NONE
+  request           = Net::HTTP::Get.new raw_uri.request_uri
+  data              = https.request request
+  data              = data.body
+  cache gist, file, data unless @cache_disabled
+  data
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;  end&lt;/p&gt;
+
+&lt;p&gt;  class GistTagNoCache &amp;lt; GistTag&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;def initialize(tag_name, text, token)
+  super
+  @cache_disabled = true
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;  end
+end&lt;/p&gt;
+
+&lt;p&gt;Liquid::Template.register_tag('gist', Jekyll::GistTag)
+Liquid::Template.register_tag('gistnocache', Jekyll::GistTagNoCache)
+&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/p&gt;
 </description>
 				<published>Sat Mar 31 00:00:00 +0800 2012</published>
 				<link>/blog/2012/03/gist-tag-for-jekyll</link>
