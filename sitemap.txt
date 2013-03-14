@@ -10,6 +10,7 @@ http://hackfisher.github.com/rss.xml
 http://hackfisher.github.com/sitemap.txt
 http://hackfisher.github.com/tags.html
 
+http://hackfisher.github.com/blog/2013/03/bitcoin-economic-research-1
 http://hackfisher.github.com/blog/2013/01/first-meet-arduino
 http://hackfisher.github.com/blog/2012/11/weixin-mars-robot
 http://hackfisher.github.com/blog/2012/10/Trend-of-gui-devlopment

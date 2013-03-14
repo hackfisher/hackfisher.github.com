@@ -4,13 +4,38 @@
  <title>HackFisher</title>
  <link href="http://hackfisher.github.com/atom.xml" rel="self"/>
  <link href="http://hackfisher.github.com"/>
- <updated>2013-01-04T15:44:45+08:00</updated>
+ <updated>2013-03-14T15:24:25+08:00</updated>
  <id>http://hackfisher.github.com</id>
  <author>
    <name>HackFisher</name>
    <email>hackfisher@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Bitcoin经济研究系列文章一，比特币介绍</title>
+   <link href="http://hackfisher.github.com/blog/2013/03/bitcoin-economic-research-1"/>
+   <updated>2013-03-14T00:00:00+08:00</updated>
+   <id>http://hackfisher.github.com/blog/2013/03/bitcoin-economic-research-1</id>
+   <content type="html">&lt;p&gt;Bitcoin，中文比特币，是一个天才的想法，一种新型的电子货币，区别于QQ币或人民币，比特币是有史以来第一种去中心化的货币，不能被任何一个政府或组织控制。Bitcoin也是一个&lt;a href=&quot;https://github.com/bitcoin/&quot;&gt;开源项目&lt;/a&gt;，在GitHub上你可以找到它的源代码，目前被超过10万人使用，并且出现了很多接受比特币支付的服务，已经有一定的影响力。世界各地的人们每天使用比特币进行价值几十万美元的交易，没有中间人，没有信用卡公司，一种刚刚兴起的从未有过的货币。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/2013/03/bitcoin.jpg&quot; alt=&quot;Bitcoin&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Bitcoin是第一个完全分布式电子货币，是由像你我这样的用户组成的网络，所以没有必要需要银行或支付中介来处理交易，完全可以点对点的进行。这种权力下放是比特币的安全和自由的基础。&lt;/p&gt;
+
+&lt;p&gt;电子邮件让我们在世界的任何地方免费发出信件，Skype的让我们在世界任何地方进行电话和视频通话。现在比特币，可以让你把钱在线给任何一个人，在世界的任何地方以很低的交易费进行交易。Bitcoin的是一个分布式的社区运行系统，任何银行或政府无法控制。也没有华尔街的银行家们通过站在你的旁边要你发送和接收款项来致富。&lt;/p&gt;
+
+&lt;p&gt;这一篇文章只是简单的向你引荐这一新型的电子货币，并不包括详细的技术分析，关于基本的原理，云风有一篇不错的介绍&lt;a href=&quot;http://blog.codingnow.com/2011/05/bitcoin.html&quot;&gt;文章&lt;/a&gt;，我这里就不再重复了。下面的系列文章将主要包括比特币经济相关的分析和猜测。&lt;/p&gt;
+
+&lt;p&gt;除此之外，无论其他的文章介绍的有多详细，都抵不过Satoshi Nakamoto那一篇十分经典的Paper，强烈推荐看一遍:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bitcoin.org/bitcoin.pdf&quot;&gt;Bitcoin: A Peer-to-Peer Electronic Cash System&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;如果你觉得这篇文章对你有用，可以捐赠一点 BTC 给我玩玩。帐号是 12UhL99zFAF154ip4v9c52YAL8wWUcNXSv&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>初识Arduino</title>
@@ -226,28 +251,7 @@
 &lt;script src='https://gist.github.com/2698628.js?file=ArrayIntersect.java'&gt;&lt;/script&gt;
 
 
-&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;private static int[] intersect_int_array(int[] array1, int[] array2) {&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;     java.util.Arrays.sort(array1);
-     java.util.Arrays.sort(array2);
-
-     IntList res = new IntList();
-     for(int index2 = 0, index1 = 0; index2 &amp;amp;lt; array2.length &amp;amp;amp;&amp;amp;amp; index1 &amp;amp;lt; array1.length; ) {
-         if (array1[index1] &amp;amp;gt; array2[index2]) {
-             index2 ++;
-         } else if (array2[index2] &amp;amp;gt; array1[index1]) {
-             index1 ++;
-         } else {
-             res.add(array2[index2]);
-             index1 ++;
-             index2 ++;
-         }
-     }
-
-     return res.toArray();
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;}&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/p&gt;
+&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;You are being &amp;lt;a href=&amp;quot;https://gist.github.com/HackFisher/2698628/raw/ArrayIntersect.java&amp;quot;&amp;gt;redirected&amp;lt;/a&amp;gt;.&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -405,96 +409,7 @@
 &lt;script src='https://gist.github.com/2258459.js?file=gist_tag.rb'&gt;&lt;/script&gt;
 
 
-&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;require 'cgi'
-require 'digest/md5'
-require 'net/https'
-require 'uri'&lt;/p&gt;
-
-&lt;p&gt;module Jekyll
-  class GistTag &amp;lt; Liquid::Tag&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;def initialize(tag_name, text, token)
-  super
-  @text           = text
-  @cache_disabled = false
-  @cache_folder   = File.expand_path &amp;amp;quot;../_gist_cache&amp;amp;quot;, File.dirname(__FILE__)
-end
-
-def render(context)
-  if parts = @text.match(/([\d]*) (.*)/)
-    gist, file = parts[1].strip, parts[2].strip
-    script_url = script_url_for gist, file
-    code       = get_cached_gist(gist, file) || get_gist_from_web(gist, file)
-    html_output_for script_url, code
-  else
-    &amp;amp;quot;&amp;amp;quot;
-  end
-end
-
-def html_output_for(script_url, code)
-  code = CGI.escapeHTML code
-  &amp;amp;quot;&amp;amp;lt;script src='#{script_url}'&amp;amp;gt;&amp;amp;lt;/script&amp;amp;gt;&amp;amp;lt;noscript&amp;amp;gt;&amp;amp;lt;pre&amp;amp;gt;&amp;amp;lt;code&amp;amp;gt;#{code}&amp;amp;lt;/code&amp;amp;gt;&amp;amp;lt;/pre&amp;amp;gt;&amp;amp;lt;/noscript&amp;amp;gt;&amp;amp;quot;
-end
-
-def script_url_for(gist_id, filename)
-  &amp;amp;quot;https://gist.github.com/#{gist_id}.js?file=#{filename}&amp;amp;quot;
-end
-
-def get_gist_url_for(gist, file)
-  &amp;amp;quot;https://gist.github.com/raw/#{gist}/#{file}&amp;amp;quot;
-end
-
-def cache(gist, file, data)
-  cache_file = get_cache_file_for gist, file
-  File.open(cache_file, &amp;amp;quot;w&amp;amp;quot;) do |io|
-    io.write data
-  end
-end
-
-def get_cached_gist(gist, file)
-  return nil if @cache_disabled
-  cache_file = get_cache_file_for gist, file
-  File.read cache_file if File.exist? cache_file
-end
-
-def get_cache_file_for(gist, file)
-  bad_chars = /[^a-zA-Z0-9\-_.]/
-  gist      = gist.gsub bad_chars, ''
-  file      = file.gsub bad_chars, ''
-  md5       = Digest::MD5.hexdigest &amp;amp;quot;#{gist}-#{file}&amp;amp;quot;
-  File.join @cache_folder, &amp;amp;quot;#{gist}-#{file}-#{md5}.cache&amp;amp;quot;
-end
-
-def get_gist_from_web(gist, file)
-  gist_url          = get_gist_url_for gist, file
-  raw_uri           = URI.parse gist_url
-  https             = Net::HTTP.new raw_uri.host, raw_uri.port
-  https.use_ssl     = true
-  https.verify_mode = OpenSSL::SSL::VERIFY_NONE
-  request           = Net::HTTP::Get.new raw_uri.request_uri
-  data              = https.request request
-  data              = data.body
-  cache gist, file, data unless @cache_disabled
-  data
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;  end&lt;/p&gt;
-
-&lt;p&gt;  class GistTagNoCache &amp;lt; GistTag&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;def initialize(tag_name, text, token)
-  super
-  @cache_disabled = true
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;  end
-end&lt;/p&gt;
-
-&lt;p&gt;Liquid::Template.register_tag('gist', Jekyll::GistTag)
-Liquid::Template.register_tag('gistnocache', Jekyll::GistTagNoCache)
-&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/p&gt;
+&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;You are being &amp;lt;a href=&amp;quot;https://gist.github.com/HackFisher/2258459/raw/gist_tag.rb&amp;quot;&amp;gt;redirected&amp;lt;/a&amp;gt;.&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/p&gt;
 </content>
  </entry>
  
