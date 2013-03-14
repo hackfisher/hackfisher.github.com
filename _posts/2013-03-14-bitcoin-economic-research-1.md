@@ -20,3 +20,8 @@ Bitcoin是第一个完全分布式电子货币，是由像你我这样的用户�
 除此之外，无论其他的文章介绍的有多详细，都抵不过Satoshi Nakamoto那一篇十分经典的Paper，强烈推荐看一遍:
 
 [Bitcoin: A Peer-to-Peer Electronic Cash System](http://bitcoin.org/bitcoin.pdf)
+
+--------------------------------------------------------------------
+
+如果你觉得这篇文章对你有用，可以捐赠一点 BTC 给我玩玩。帐号是 12UhL99zFAF154ip4v9c52YAL8wWUcNXSv
+
