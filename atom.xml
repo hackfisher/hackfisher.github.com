@@ -4,7 +4,7 @@
  <title>HackFisher</title>
  <link href="http://hackfisher.github.com/atom.xml" rel="self"/>
  <link href="http://hackfisher.github.com"/>
- <updated>2013-03-21T15:44:26+08:00</updated>
+ <updated>2013-03-21T15:55:28+08:00</updated>
  <id>http://hackfisher.github.com</id>
  <author>
    <name>HackFisher</name>
@@ -21,9 +21,9 @@
 
 &lt;p&gt;本文将列数Bitcoin中的各种风险:&lt;/p&gt;
 
-&lt;h1&gt;交易所和在线钱包的信用和被攻击风险&lt;/h1&gt;
+&lt;h2&gt;交易所和在线钱包的信用和被攻击风险&lt;/h2&gt;
 
-&lt;p&gt;Bitcoin需要流通，尤其在初期支持的应用比较少的情况下，就需要与法定货币按照一定的汇率进行交换。而交易所就是一个交换Bitcoin的地方，在去中心化的系统中增加了一些相对中心化的组织，本身就增大了一些风险。事实上Mt.Gox就做过回滚交易的事情。&lt;a href=&quot;http://www.bitecoin.com/online/2011/06/73.html&quot; title=&quot;Mt.Gox回滚BTC交易&quot;&gt;5&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Bitcoin需要流通，尤其在初期支持的应用比较少的情况下，就需要与法定货币按照一定的汇率进行交换。而交易所就是一个交换Bitcoin的地方，在去中心化的系统中增加了一些相对中心化的组织，本身就增大了一些风险。事实上Mt.Gox就做过&lt;a href=&quot;http://www.bitecoin.com/online/2011/06/73.html&quot; title=&quot;Mt.Gox回滚BTC交易&quot;&gt;回滚交易&lt;/a&gt;的事情。&lt;/p&gt;
 
 &lt;p&gt;一方面，这些交易所的信用本省就很值得怀疑，谁都不敢保证哪天出状况的时候他们不会跑路。不过到目前为止，这种信用的风险还没有产生现实的严重影响，比特币的最大交易商在日本注册了公司，从某种程度上降低了人们对信用风险的担忧。另一方面，这些交易所存在被黑客攻击的风险，犹豫交易所是大量BTC和现金存放的地方，再加上BTC本省存在的匿名性和不可追踪性，转移起来非常容易。所以BTC交易所成了黑客们最受欢迎的攻击目标。Satoshi Nakamoto所构建的比特币网络一定程度上确保黑客不会攻击网络本身，但不代表不存在其他攻击对象。&lt;/p&gt;
 
@@ -34,16 +34,17 @@
 &lt;ul&gt;
 &lt;li&gt;2011年MtGox被攻击事件
 
-&lt;blockquote&gt;&lt;p&gt;主要的Bitcoin交流场所Mt.Gox遭受了重大破坏，造成数据库中的关键账户被完全破坏并有资金被盗的情况，为此人们对Bitcoin的信心崩盘，币值迅速下跌到之前的1%，并且人们依然在试图疯狂清理他们手上的资金。下面是2011年当时的市场价格跳水情况。
-&lt;img src=&quot;/uploads/2013/03/mt_gox_2011.png&quot; alt=&quot;Mt-Gox2011年被攻击后价格跳水&quot; /&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/li&gt;
-&lt;li&gt;Bitcoinica的Mt.Gox账户再次被黑, 损失40k BTC和40K USD, 周同对于联合指控的&lt;a href=&quot;http://cnbtcnews.com/bitcoin-news/economics/%E5%91%A8%E5%90%8C%E5%AF%B9%E4%BA%8E%E8%81%94%E5%90%88%E6%8C%87%E6%8E%A7%E7%9A%84%E8%A7%A3%E9%87%8A.html&quot; title=&quot;Bitcoinica被盗&quot;&gt;解释&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;比特币中介Bitinstant遭黑客攻击，价值1.2万美元的比特币被盗&lt;a href=&quot;http://www.36kr.com/p/201783.html&quot; title=&quot;BitInstant被盗&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;2013年2月24日，国内BTC交易网站FxBTC 被盗，用户遭受大量损失&lt;a href=&quot;http://www.btcbbs.com/forum.php?mod=viewthread&amp;amp;tid=227&amp;amp;extra=page%3D1&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;国内最大的BTC交易网站btcchina.com被爆用户信息泄露，交易密码被重置。同时BTCChina被FxBTC指责为2月24日攻击者，btcchina杨林科随后发表申明否认。&lt;a href=&quot;http://www.btcbbs.com/forum.php?mod=viewthread&amp;amp;tid=242&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+&lt;blockquote&gt;&lt;p&gt;主要的Bitcoin交流场所Mt.Gox遭受了重大破坏，造成数据库中的关键账户被完全破坏并有资金被盗的情况，为此人们对Bitcoin的信心崩盘，币值迅速下跌到之前的1%，并且人们依然在试图疯狂清理他们手上的资金。下面是2011年当时的市场价格跳水情况。&lt;/p&gt;&lt;/blockquote&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 
-&lt;h1&gt;Bitcoin网络系统复杂度带来的风险&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;/uploads/2013/03/mt_gox_2011.png&quot; alt=&quot;Mt-Gox2011年被攻击后价格跳水&quot; /&gt;
+* Bitcoinica的Mt.Gox账户再次被黑, 损失40k BTC和40K USD, 周同对于联合指控的&lt;a href=&quot;http://cnbtcnews.com/bitcoin-news/economics/%E5%91%A8%E5%90%8C%E5%AF%B9%E4%BA%8E%E8%81%94%E5%90%88%E6%8C%87%E6%8E%A7%E7%9A%84%E8%A7%A3%E9%87%8A.html&quot; title=&quot;Bitcoinica被盗&quot;&gt;解释&lt;/a&gt;
+* &lt;a href=&quot;http://www.36kr.com/p/201783.html&quot; title=&quot;BitInstant被盗&quot;&gt;比特币中介Bitinstant遭黑客攻击，价值1.2万美元的比特币被盗&lt;/a&gt;
+* &lt;a href=&quot;http://www.btcbbs.com/forum.php?mod=viewthread&amp;amp;tid=227&amp;amp;extra=page%3D1&quot;&gt;2013年2月24日，国内BTC交易网站FxBTC 被盗，用户遭受大量损失&lt;/a&gt;
+* &lt;a href=&quot;http://www.btcbbs.com/forum.php?mod=viewthread&amp;amp;tid=242&quot;&gt;国内最大的BTC交易网站btcchina.com被爆用户信息泄露，交易密码被重置。同时BTCChina被FxBTC指责为2月24日攻击者，btcchina杨林科随后发表申明否认&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;Bitcoin网络系统复杂度带来的风险&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://book.douban.com/subject/1102259/&quot;&gt;《人月神话》&lt;/a&gt;里面提到了巴比伦塔的故事，是这样说的：&lt;/p&gt;
 
@@ -51,68 +52,65 @@
 
 &lt;p&gt;也许，比特币网络最大的威胁并不像Satoshi Nakamoto想象的那样来自于外部，最大的威胁也许恰恰来源于它自己的复杂度，还有软件工程管理的挑战。这个并不只是臆测，而是实实在在发生了的:&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;3月12号的那次&lt;a href=&quot;http://www.btcbbs.com/forum.php?mod=viewthread&amp;amp;tid=238&quot;&gt;网络事故&lt;/a&gt;，导致blockchain分叉，源于发布不久的比特币客户端v0.8的一个bug，导致比特币的市场价格下挫20%，Mt-gox和Bitchina网站停止交易多时，好在最后由于开发团队的迅速反应，没有造成更大的损失。&lt;/li&gt;
-&lt;/ul&gt;
-
+&lt;blockquote&gt;&lt;p&gt;3月12号的那次&lt;a href=&quot;http://www.btcbbs.com/forum.php?mod=viewthread&amp;amp;tid=238&quot;&gt;网络事故&lt;/a&gt;，导致blockchain分叉，源于发布不久的比特币客户端v0.8的一个bug，导致比特币的市场价格下挫20%，Mt-gox和Bitchina网站停止交易多时，好在最后由于开发团队的迅速反应，没有造成更大的损失。&lt;/p&gt;&lt;/blockquote&gt;
 
 &lt;p&gt;Satoshi Nakamoto的设计可能没有缺陷，但事实证明比特币网络的实现极有可能出现BUG，而这种缺陷的弥补很大程度上依赖于比特币网络的开放和开源社区的合作努力。&lt;/p&gt;
 
-&lt;h1&gt;来源于其它类BTC的竞争&lt;a href=&quot;http://bitcoin.stackexchange.com/questions/8363/how-will-other-coins-like-litecoin-influence-market-price-of-btc&quot;&gt;6&lt;/a&gt;&lt;/h1&gt;
+&lt;h2&gt;&lt;a href=&quot;http://bitcoin.stackexchange.com/questions/8363/how-will-other-coins-like-litecoin-influence-market-price-of-btc&quot;&gt;来源于其它类BTC的竞争&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;事实上，在3月12日，BTC爆出blockchain分叉的负面消息后，LTC大涨。BTC本身是一种创新，不可避免的会带来一大堆模仿者，LTC就是其中比较出色的，创新的第一名不一定会坚持的最后，虽然目前LTC等模仿者并没有特别优于BTC的特点。但我认为，他们之间存在很强的竞争，就像市场领导者和追随者的竞争。BTC在前面开路，遇到的陷阱追随者可以有效的避免，避免重蹈覆辙，这是后来者的优势。 但是BTC本省作为领先者，优势也很明显。&lt;/p&gt;
 
-&lt;p&gt;最后BTC和他们的竞争者，到底谁能胜出，我认为这将取决于他们中谁能够解决货币存在的根本原因，降低交易成本。&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;最后BTC和他们的竞争者，到底谁能胜出，我认为这将取决于他们中谁能够解决货币存在的根本原因，降低交易成本。&lt;/p&gt;&lt;/blockquote&gt;
 
 &lt;p&gt;&lt;img src=&quot;/uploads/2013/03/cost_per_transaction.png&quot; alt=&quot;Cost Per Transaction&quot; /&gt;&lt;/p&gt;
 
-&lt;h1&gt;通货紧缩&lt;/h1&gt;
+&lt;h2&gt;通货紧缩&lt;/h2&gt;
 
 &lt;p&gt;根据Satoshi Nakamoto的设计，最终BTC的数量将会到达一个有限的总数，大概2100万左右，由挖矿新产生的BTC数量，每隔几年就会数量减半。虽然BTC的数量是不断增加的，但是实际上到达了2031年以后，BTC的数量增长就很小很小了。考虑到实际生产率的提高，最终BTC经济会满足通货紧缩，也就是买到相同的货物需要的BTC越来越少。&lt;/p&gt;
 
-&lt;p&gt;![BTC数量趋势] (/uploads/2013/03/total_btc_amout.png)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/uploads/2013/03/total_btc_amout.png&quot; alt=&quot;BTC数量趋势&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;当前主流的经济学观点认为适当的通货膨胀是有利于经济发展的，通货紧缩会让人们更愿意存储货币，而不是消费和投资。张五常在他的&lt;a href=&quot;http://book.douban.com/subject/4178315/&quot;&gt;《货币战略论》&lt;/a&gt;中认为货币必须有锚，一直不停的说明为什么人民币应该一篮子物价挂钩，而不是学习美英的法定货币。诺贝尔经济学奖获得者克鲁格曼写了一篇&lt;a href=&quot;http://krugman.blogs.nytimes.com/2010/08/02/why-is-deflation-bad/&quot;&gt;博文&lt;/a&gt;，说明通货紧缩为什么不好，理由有3点。&lt;/p&gt;
 
-&lt;ol&gt;
+&lt;ul&gt;
 &lt;li&gt;当人们预期价格下跌时，他们变得​​不太愿意花钱，尤其是不太愿意借钱。&lt;/li&gt;
 &lt;li&gt;价格下跌加重债务人实际负​​担。&lt;/li&gt;
 &lt;li&gt;在通货紧缩经济中，工资经常不得不下降，但实际上这在现实中是非常困难的。&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 
 
 &lt;p&gt;但是，也有人提出反对，尤其认为比特币完全不同于传统货币，they are swimming in the different sea. 传统的法定货币由信用机构发行，很难控制发行量，即使通货紧缩的理论正确，也不一定适用于比特币，比特币采用的是完全不同的一条方式。再说关于通货紧缩是否一定不好，还有很大的分歧。例如，&lt;a href=&quot;http://www.reddit.com/r/Bitcoin/comments/1ape0f/why_krugman_is_wrong_about_deflation/&quot;&gt;这篇文章&lt;/a&gt;里对上述三个理由的反驳，就非常有道理。其他的还有stackexchange上一篇&lt;a href=&quot;http://bitcoin.stackexchange.com/questions/408/does-hoarding-really-hurt-bitcoin/414#414&quot;&gt;讨论&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;所以，通货紧缩到底对于Bitcoin来说是不是威胁，现在还很难下结论。&lt;/p&gt;
 
-&lt;h1&gt;攻击矿池&lt;/h1&gt;
+&lt;h2&gt;攻击矿池&lt;/h2&gt;
 
 &lt;p&gt;在Satoshi Nakamoto的设计里，挖矿可以使分布式的，但是由于算力的提高，单打独斗参与挖矿似乎越来越难挖到BTC了，一种新的模式已经流行，挖矿连接到大的矿池入股参与计算，计算出新的Block得到BTC后，参与BTC分红。这样的挖矿模式无疑比原先效率更高。但是矿池和上面的交易所和银行存在一样的问题，攻击和信任。这是中心化所不可避免的，就算是现有法定货币的中心也并不完全值得信任。 如果矿池被攻击，算力可能突然下降，被51%攻击就有了可能。 3月12日比特币客户端BUG导致的事件，其实就是比特币网络自己对自己进行的一次51%攻击，矿池挖矿的客户端版本差异造成了问题的关键，解铃还须系铃人，最后大的矿池的配合和决定也成了解决问题的关键，最后甚至出现了0.7 Orphaned block chain合力追赶更长的v0.8 main chain的壮观景象。由此也可以看出，矿池的信用保证十分重要，矿池的影响力也许会对比特币网络造成重大伤害。&lt;/p&gt;
 
-&lt;h1&gt;政府和中心化趋势&lt;/h1&gt;
+&lt;h2&gt;政府和中心化趋势&lt;/h2&gt;
 
 &lt;p&gt;政府的态度现在还很难说，有很大的可能，政府会很不喜欢比特币，尤其是大政府。下面是一些理由。&lt;/p&gt;
 
-&lt;ol&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;比特币网络对传统的货币体制构成威胁和驱逐，而政府恰恰是传统法定货币体制的最大收益者。 虽然我认为很大程度上两者会共存，但是信息充分的自由市场中，优币是会驱逐劣币的。Gresham's Law的所谓&lt;a href=&quot;http://baike.baidu.com/view/469869.htm&quot;&gt;劣币驱逐良币&lt;/a&gt;的理论是没有道理的，这个以后可能会做解释。&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;比特币的匿名性，导致政府不喜欢，容易被用于非法交易中。&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;比特币是P2P的，所以政府很难征税，而税收是政府的财务来源。&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;很多政府存在汇率管制，并且法定货币是很多国家进行经济调控的手段。&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 
 
 &lt;p&gt;不过也有好消息，最近美国金融犯罪执法网络发布&lt;a href=&quot;http://www.fincen.gov/statutes_regs/guidance/html/FIN-2013-G001.html&quot;&gt;《关于公民申请管理、交换、使用虚拟货币的规定》&lt;/a&gt;，首次允许分布式P2P货币（比特币）的申请，这也许意味着通往比特币合法化的大门正式敞开。其他的一些关于各国对于比特币态度的文章可以参考这篇&lt;a href=&quot;http://www.btcman.com/bitebixinwen/20120929/772.html&quot;&gt;文章&lt;/a&gt;。&lt;/p&gt;
 
 &lt;p&gt;关于中心化趋势，指的是内部的中心化，中心化以为着比特币容易被挟持和利用，上面已经提到了一些，总结如下：&lt;/p&gt;
 
-&lt;ol&gt;
+&lt;ul&gt;
 &lt;li&gt;交易所和银行的中心化&lt;/li&gt;
 &lt;li&gt;矿池的中心化&lt;/li&gt;
 &lt;li&gt;开发者社区的中心化(相信3月12日事件，大家已经见识了core dev team的影响力)&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 
 
-&lt;h2&gt;参考:&lt;/h2&gt;
+&lt;hr /&gt;
 
 &lt;p&gt;如果你觉得这篇文章对你有用，可以捐赠一点 BTC 给我玩玩。帐号是 &lt;strong&gt;12UhL99zFAF154ip4v9c52YAL8wWUcNXSv&lt;/strong&gt;&lt;/p&gt;
 </content>
