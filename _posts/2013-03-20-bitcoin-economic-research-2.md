@@ -56,11 +56,11 @@ Satoshi Nakamoto的设计可能没有缺陷，但事实证明比特币网络的�
 
 当前主流的经济学观点认为适当的通货膨胀是有利于经济发展的，通货紧缩会让人们更愿意存储货币，而不是消费和投资。张五常在他的[《货币战略论》](http://book.douban.com/subject/4178315/)中认为货币必须有锚，一直不停的说明为什么人民币应该一篮子物价挂钩，而不是学习美英的法定货币。诺贝尔经济学奖获得者克鲁格曼写了一篇[博文](http://krugman.blogs.nytimes.com/2010/08/02/why-is-deflation-bad/)，说明通货紧缩为什么不好，理由有3点。
 
-* 当人们预期价格下跌时，他们变得​​不太愿意花钱，尤其是不太愿意借钱。
+* [当人们预期价格下跌时，他们变得​​不太愿意花钱，尤其是不太愿意借钱。](http://www.reddit.com/r/Bitcoin/comments/15omyz/long_term_success_of_bitcoins_i_have_my_doubts/)
 * 价格下跌加重债务人实际负​​担。
 * 在通货紧缩经济中，工资经常不得不下降，但实际上这在现实中是非常困难的。
 
-但是，也有人提出反对，尤其认为比特币完全不同于传统货币，they are swimming in the different sea. 传统的法定货币由信用机构发行，很难控制发行量，即使通货紧缩的理论正确，也不一定适用于比特币，比特币采用的是完全不同的一条方式。再说关于通货紧缩是否一定不好，还有很大的分歧。例如，[这篇文章](http://www.reddit.com/r/Bitcoin/comments/1ape0f/why_krugman_is_wrong_about_deflation/)里对上述三个理由的反驳，就非常有道理。其他的还有stackexchange上一篇[讨论](http://bitcoin.stackexchange.com/questions/408/does-hoarding-really-hurt-bitcoin/414#414)
+但是，也有人提出反对，尤其认为比特币完全不同于传统货币，they are swimming in the different sea. 传统的法定货币由信用机构发行，很难控制发行量，即使通货紧缩的理论正确，也不一定适用于比特币，比特币采用的是完全不同的一条方式。再说关于[通货紧缩是否一定不好](http://www.forbes.com/sites/jonmatonis/2012/12/23/fear-not-deflation/)，还有很大的分歧。例如，[这篇文章](http://www.reddit.com/r/Bitcoin/comments/1ape0f/why_krugman_is_wrong_about_deflation/)里对上述三个理由的反驳，就非常有道理。其他的还有stackexchange上一篇[讨论](http://bitcoin.stackexchange.com/questions/408/does-hoarding-really-hurt-bitcoin/414#414)
 
 所以，通货紧缩到底对于Bitcoin来说是不是威胁，现在还很难下结论。
 
