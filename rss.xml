@@ -7,10 +7,10 @@
 		<atom:link href="http://hackfisher.info/rss.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>Bitcoin经济研究系列文章二，交易零手续费下面的炒作模型</title>
+				<title>Bitcoin经济研究系列文章三，交易零手续费下面的炒作模型</title>
 				<description>&lt;p&gt;近日BTC的市场价格已经突破$90，达到历史新高点。投资者普遍认为市场很可能存在庄家进行炒作，尤其是经历了3月23日，也就是上个星期六下午市场无缘由的大幅波动之后，很多人都认为这是庄家的一次炒作，先是大幅下挫，抄底后又大幅上扬。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/uploads/2013/03/k_chart_10.tiff&quot; alt=&quot;近10日K线图&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/uploads/2013/03/k_chart_10.png&quot; alt=&quot;近10日K线图&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;比特币本身的价值在于利用网络的高效率降低交易成本，越来越多的人和商业活动参与其中，就代表着比特币的效率越高，从而其价值价格越高。然而，还有另外一件事情也会促使比特币的价格高涨，并且不是一件好事，就是炒作。怪不得经常有人说比特币看上去不靠谱，有点像传销，炒作虚无价值的东西，与比特币不同的是，传销除了炒作之外，一无是处，毫无价值。比特币有价值的部分主要集中在用比特币进行财富交易转移，购买物品，兑换法定货币等交易(Transanction)，而这些交易中的有些部分，比如兑换法定货币，在MtGox等处进行投资(Trade)，则是炒作的集中发生地。&lt;/p&gt;
 
@@ -18,7 +18,7 @@
 
 &lt;p&gt;下面这个图表，就是这个指标，试图描述这个指标，即总体交易和投资炒作的比。因为很多交易所内交易，并不一定产生交易，所以这幅图远达不到精确，只能作为定性分析的一个参考:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/uploads/2013/03/trade_transaction_radio.tiff&quot; alt=&quot;Trade和Transaction的比&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/uploads/2013/03/trade_transaction_radio.png&quot; alt=&quot;Trade和Transaction的比&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;炒作有很多手法，而且不拘一格，比如最近两三天，主要的一些交易所报告称遭到DDOS攻击，国内的btcchina.com则直接挂了(估计是连夜部署CloudFlare后恢复)。多家交易所在同一时间&lt;a href=&quot;http://www.reddit.com/r/Bitcoin/comments/1b8onj/&quot;&gt;遭到DDOS攻击&lt;/a&gt;，我猜测这次攻击的目的应该不是为了盗窃BTC和资金，而很有可能是和炒家合谋的一次行动，通过攻击造成恐慌拉低价格，从而进行抄底，不过最终似乎这次DDOS攻击的效果并不理想。更多详细的关于此次攻击，请参考&lt;a href=&quot;http://siliconangle.com/blog/2013/03/29/this-week-in-ddos-cyberbunker-vs-spamhaus-mtgox-bitcoin-exchange-and-dwolla-sendgrid/&quot;&gt;这篇文章&lt;/a&gt;。&lt;/p&gt;
 
