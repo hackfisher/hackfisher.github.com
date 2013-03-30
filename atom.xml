@@ -4,13 +4,61 @@
  <title>HackFisher</title>
  <link href="http://hackfisher.github.com/atom.xml" rel="self"/>
  <link href="http://hackfisher.github.com"/>
- <updated>2013-03-21T15:55:28+08:00</updated>
+ <updated>2013-03-30T16:36:02+08:00</updated>
  <id>http://hackfisher.github.com</id>
  <author>
    <name>HackFisher</name>
    <email>hackfisher@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Bitcoin经济研究系列文章二，交易零手续费下面的炒作模型</title>
+   <link href="http://hackfisher.github.com/blog/2013/03/bitcoin-economic-research-3"/>
+   <updated>2013-03-30T00:00:00+08:00</updated>
+   <id>http://hackfisher.github.com/blog/2013/03/bitcoin-economic-research-3</id>
+   <content type="html">&lt;p&gt;近日BTC的市场价格已经突破$90，达到历史新高点。投资者普遍认为市场很可能存在庄家进行炒作，尤其是经历了3月23日，也就是上个星期六下午市场无缘由的大幅波动之后，很多人都认为这是庄家的一次炒作，先是大幅下挫，抄底后又大幅上扬。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/2013/03/k_chart_10.tiff&quot; alt=&quot;近10日K线图&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;比特币本身的价值在于利用网络的高效率降低交易成本，越来越多的人和商业活动参与其中，就代表着比特币的效率越高，从而其价值价格越高。然而，还有另外一件事情也会促使比特币的价格高涨，并且不是一件好事，就是炒作。怪不得经常有人说比特币看上去不靠谱，有点像传销，炒作虚无价值的东西，与比特币不同的是，传销除了炒作之外，一无是处，毫无价值。比特币有价值的部分主要集中在用比特币进行财富交易转移，购买物品，兑换法定货币等交易(Transanction)，而这些交易中的有些部分，比如兑换法定货币，在MtGox等处进行投资(Trade)，则是炒作的集中发生地。&lt;/p&gt;
+
+&lt;p&gt;对这种情况，有些喜欢钻研的家伙就做了一些统计和研究，以尝试寻找一些指标来&lt;a href=&quot;http://codinginmysleep.com/measuring-bitcoin-speculation/&quot;&gt;测量比特币的炒作程度&lt;/a&gt;，能比较好的统计比特币的指标，源于比特币的所有交易账本都是公开的，这是一个很不错的副产品，也许是中本聪当时设计所没有考虑到的。&lt;/p&gt;
+
+&lt;p&gt;下面这个图表，就是这个指标，试图描述这个指标，即总体交易和投资炒作的比。因为很多交易所内交易，并不一定产生交易，所以这幅图远达不到精确，只能作为定性分析的一个参考:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/2013/03/trade_transaction_radio.tiff&quot; alt=&quot;Trade和Transaction的比&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;炒作有很多手法，而且不拘一格，比如最近两三天，主要的一些交易所报告称遭到DDOS攻击，国内的btcchina.com则直接挂了(估计是连夜部署CloudFlare后恢复)。多家交易所在同一时间&lt;a href=&quot;http://www.reddit.com/r/Bitcoin/comments/1b8onj/&quot;&gt;遭到DDOS攻击&lt;/a&gt;，我猜测这次攻击的目的应该不是为了盗窃BTC和资金，而很有可能是和炒家合谋的一次行动，通过攻击造成恐慌拉低价格，从而进行抄底，不过最终似乎这次DDOS攻击的效果并不理想。更多详细的关于此次攻击，请参考&lt;a href=&quot;http://siliconangle.com/blog/2013/03/29/this-week-in-ddos-cyberbunker-vs-spamhaus-mtgox-bitcoin-exchange-and-dwolla-sendgrid/&quot;&gt;这篇文章&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;在这篇文章，我试图从理论角度分析一种可能存在的有条件约束的炒作模型，这个炒作模型必须要符合下面的几个条件，恰好这些条件在比特币经济中是可以经常被观察到的。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;存在庄家实力雄厚，储备资金充足，BTC储备也充足。这种庄家应该不少见。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;市场预期整体看好，就像现在的BTC一样。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;交易零手续费。这个条件就不常见了，但是不代表不存在，比如交易零手续费的交易所(国内的比如42BTC)，或者交易商自身(比如MtGox或BTCChina的老板)，虽然这些交易商声称不会参与，但是毕竟没有透明到用户和社区可以监督，Who knows?&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;这个模型可以简单的总结为零手续费下的炒高，通过在横盘时期，用自己的资金买自己的比特币，模拟并控制大盘走势，并且有交易量增长的假象，引导散户入场，只要没有其他大庄护盘或打压，问题就不大。结果分成两部分，手中的资金以较低的价格换成自己手中等量的比特币，而比特币则以较高的价格换成了资金。其中比特币部分被自己购买(对庄家来说相当于左手换右手，因为没有交易手续费，没有任何损失，目的是为了增大市场交易量)，另一部分则在控制价格上涨后卖了。资金量变多，比特币不变但价格升高，可以选择继续持有，或卖掉，完美收场。 价格就这样被炒高，看似容易，但是具备这样条件的庄家并不多。&lt;/p&gt;
+
+&lt;p&gt;以上只是一个简化了的模型，真实情况中的市场要远比这个复杂，下面举个例子以简化说明:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;初始状态: 某交易市场，当前市价500 RMB/BTC, 某庄家资金充足，有10,000BTC, 6000,000RMB, 市场看好，也没有其他庄家打压或干扰&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;开始炒作: 庄家开始动用6000,000RMB买入，目标要炒作BTC到700RMB/BTC, 在炒作的同时，如果没有其他人跟随，就用10000BTC挂卖盘，自己左手RMB倒右手BTC(交易零手续费，没有成本)，注意控制价格，形成700RMB/BTC交易量增大的假象，散户跟随进入，6000，000RMB倒手成部分自己的BTC，另外部分的BTC以高于700RMB/BTC的价格卖掉&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;炒作结束: 最终该庄家手里的格局会变成10,000BTC不变, 7500, 000RMB, 净赚1500,000RMB, 因为市场看好，市价可能被炒到比800更高的价格。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;后续: 10,000BTC可以选择继续持有，或者慢慢给市场消化。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;结论是： 在交易零手续费情况下，庄家如果可以通过这个模型把市场做大, 炒作成本变低，获利容易，风险也很小。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;如果你觉得这篇文章对你有用，可以捐赠一点 BTC 给我玩玩。帐号是 &lt;strong&gt;12UhL99zFAF154ip4v9c52YAL8wWUcNXSv&lt;/strong&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Bitcoin经济研究系列文章二，有关风险</title>
@@ -38,11 +86,15 @@
 &lt;/ul&gt;
 
 
-&lt;p&gt;&lt;img src=&quot;/uploads/2013/03/mt_gox_2011.png&quot; alt=&quot;Mt-Gox2011年被攻击后价格跳水&quot; /&gt;
-* Bitcoinica的Mt.Gox账户再次被黑, 损失40k BTC和40K USD, 周同对于联合指控的&lt;a href=&quot;http://cnbtcnews.com/bitcoin-news/economics/%E5%91%A8%E5%90%8C%E5%AF%B9%E4%BA%8E%E8%81%94%E5%90%88%E6%8C%87%E6%8E%A7%E7%9A%84%E8%A7%A3%E9%87%8A.html&quot; title=&quot;Bitcoinica被盗&quot;&gt;解释&lt;/a&gt;
-* &lt;a href=&quot;http://www.36kr.com/p/201783.html&quot; title=&quot;BitInstant被盗&quot;&gt;比特币中介Bitinstant遭黑客攻击，价值1.2万美元的比特币被盗&lt;/a&gt;
-* &lt;a href=&quot;http://www.btcbbs.com/forum.php?mod=viewthread&amp;amp;tid=227&amp;amp;extra=page%3D1&quot;&gt;2013年2月24日，国内BTC交易网站FxBTC 被盗，用户遭受大量损失&lt;/a&gt;
-* &lt;a href=&quot;http://www.btcbbs.com/forum.php?mod=viewthread&amp;amp;tid=242&quot;&gt;国内最大的BTC交易网站btcchina.com被爆用户信息泄露，交易密码被重置。同时BTCChina被FxBTC指责为2月24日攻击者，btcchina杨林科随后发表申明否认&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/uploads/2013/03/mt_gox_2011.png&quot; alt=&quot;Mt-Gox2011年被攻击后价格跳水&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Bitcoinica的Mt.Gox账户再次被黑, 损失40k BTC和40K USD, 周同对于联合指控的&lt;a href=&quot;http://cnbtcnews.com/bitcoin-news/economics/%E5%91%A8%E5%90%8C%E5%AF%B9%E4%BA%8E%E8%81%94%E5%90%88%E6%8C%87%E6%8E%A7%E7%9A%84%E8%A7%A3%E9%87%8A.html&quot; title=&quot;Bitcoinica被盗&quot;&gt;解释&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.36kr.com/p/201783.html&quot; title=&quot;BitInstant被盗&quot;&gt;比特币中介Bitinstant遭黑客攻击，价值1.2万美元的比特币被盗&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.btcbbs.com/forum.php?mod=viewthread&amp;amp;tid=227&amp;amp;extra=page%3D1&quot;&gt;2013年2月24日，国内BTC交易网站FxBTC 被盗，用户遭受大量损失&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.btcbbs.com/forum.php?mod=viewthread&amp;amp;tid=242&quot;&gt;国内最大的BTC交易网站btcchina.com被爆用户信息泄露，交易密码被重置。同时BTCChina被FxBTC指责为2月24日攻击者，btcchina杨林科随后发表申明否认&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 
 &lt;h2&gt;Bitcoin网络系统复杂度带来的风险&lt;/h2&gt;
 
@@ -73,13 +125,13 @@
 &lt;p&gt;当前主流的经济学观点认为适当的通货膨胀是有利于经济发展的，通货紧缩会让人们更愿意存储货币，而不是消费和投资。张五常在他的&lt;a href=&quot;http://book.douban.com/subject/4178315/&quot;&gt;《货币战略论》&lt;/a&gt;中认为货币必须有锚，一直不停的说明为什么人民币应该一篮子物价挂钩，而不是学习美英的法定货币。诺贝尔经济学奖获得者克鲁格曼写了一篇&lt;a href=&quot;http://krugman.blogs.nytimes.com/2010/08/02/why-is-deflation-bad/&quot;&gt;博文&lt;/a&gt;，说明通货紧缩为什么不好，理由有3点。&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;当人们预期价格下跌时，他们变得​​不太愿意花钱，尤其是不太愿意借钱。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.reddit.com/r/Bitcoin/comments/15omyz/long_term_success_of_bitcoins_i_have_my_doubts/&quot;&gt;当人们预期价格下跌时，他们变得​​不太愿意花钱，尤其是不太愿意借钱。&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;价格下跌加重债务人实际负​​担。&lt;/li&gt;
 &lt;li&gt;在通货紧缩经济中，工资经常不得不下降，但实际上这在现实中是非常困难的。&lt;/li&gt;
 &lt;/ul&gt;
 
 
-&lt;p&gt;但是，也有人提出反对，尤其认为比特币完全不同于传统货币，they are swimming in the different sea. 传统的法定货币由信用机构发行，很难控制发行量，即使通货紧缩的理论正确，也不一定适用于比特币，比特币采用的是完全不同的一条方式。再说关于通货紧缩是否一定不好，还有很大的分歧。例如，&lt;a href=&quot;http://www.reddit.com/r/Bitcoin/comments/1ape0f/why_krugman_is_wrong_about_deflation/&quot;&gt;这篇文章&lt;/a&gt;里对上述三个理由的反驳，就非常有道理。其他的还有stackexchange上一篇&lt;a href=&quot;http://bitcoin.stackexchange.com/questions/408/does-hoarding-really-hurt-bitcoin/414#414&quot;&gt;讨论&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;但是，也有人提出反对，尤其认为比特币完全不同于传统货币，they are swimming in the different sea. 传统的法定货币由信用机构发行，很难控制发行量，即使通货紧缩的理论正确，也不一定适用于比特币，比特币采用的是完全不同的一条方式。再说关于&lt;a href=&quot;http://www.forbes.com/sites/jonmatonis/2012/12/23/fear-not-deflation/&quot;&gt;通货紧缩是否一定不好&lt;/a&gt;，还有很大的分歧。例如，&lt;a href=&quot;http://www.reddit.com/r/Bitcoin/comments/1ape0f/why_krugman_is_wrong_about_deflation/&quot;&gt;这篇文章&lt;/a&gt;里对上述三个理由的反驳，就非常有道理。其他的还有stackexchange上一篇&lt;a href=&quot;http://bitcoin.stackexchange.com/questions/408/does-hoarding-really-hurt-bitcoin/414#414&quot;&gt;讨论&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;所以，通货紧缩到底对于Bitcoin来说是不是威胁，现在还很难下结论。&lt;/p&gt;
 
@@ -355,7 +407,7 @@
 &lt;script src='https://gist.github.com/2698628.js?file=ArrayIntersect.java'&gt;&lt;/script&gt;
 
 
-&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;You are being &amp;lt;a href=&amp;quot;https://gist.github.com/HackFisher/2698628/raw/ArrayIntersect.java&amp;quot;&amp;gt;redirected&amp;lt;/a&amp;gt;.&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/p&gt;
+&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;You are being &amp;lt;a href=&amp;quot;https://raw.github.com/gist/2698628/ArrayIntersect.java&amp;quot;&amp;gt;redirected&amp;lt;/a&amp;gt;.&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -513,7 +565,7 @@
 &lt;script src='https://gist.github.com/2258459.js?file=gist_tag.rb'&gt;&lt;/script&gt;
 
 
-&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;You are being &amp;lt;a href=&amp;quot;https://gist.github.com/HackFisher/2258459/raw/gist_tag.rb&amp;quot;&amp;gt;redirected&amp;lt;/a&amp;gt;.&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/p&gt;
+&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;You are being &amp;lt;a href=&amp;quot;https://raw.github.com/gist/2258459/gist_tag.rb&amp;quot;&amp;gt;redirected&amp;lt;/a&amp;gt;.&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/p&gt;
 </content>
  </entry>
  
