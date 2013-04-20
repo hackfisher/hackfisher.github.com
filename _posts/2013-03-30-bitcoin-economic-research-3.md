@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Bitcoin经济研究系列文章三，交易零手续费下面的炒作模型"
-description: "Part Two of Bitcoin Economic Reseach, speculation model under zero transaction fees"
+description: "Part Three of Bitcoin Economic Reseach, speculation model under zero transaction fees"
 category: 研究
 tags: [Bitcoin, Risk]
 ---
