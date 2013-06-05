@@ -10,6 +10,7 @@ http://hackfisher.github.com/rss.xml
 http://hackfisher.github.com/sitemap.txt
 http://hackfisher.github.com/tags.html
 
+http://hackfisher.github.com/blog/2013/06/bitcoin-economic-research-5
 http://hackfisher.github.com/blog/2013/04/bitcoin-economic-research-4
 http://hackfisher.github.com/blog/2013/03/bitcoin-economic-research-3
 http://hackfisher.github.com/blog/2013/03/bitcoin-economic-research-2
