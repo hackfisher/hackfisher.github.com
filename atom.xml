@@ -4,7 +4,7 @@
  <title>HackFisher</title>
  <link href="http://hackfisher.github.com/atom.xml" rel="self"/>
  <link href="http://hackfisher.github.com"/>
- <updated>2013-06-05T16:00:26+08:00</updated>
+ <updated>2014-06-21T20:53:44-04:00</updated>
  <id>http://hackfisher.github.com</id>
  <author>
    <name>HackFisher</name>
@@ -15,7 +15,7 @@
  <entry>
    <title>Bitcoin经济研究系列文章五, Ripple的野心</title>
    <link href="http://hackfisher.github.com/blog/2013/06/bitcoin-economic-research-5"/>
-   <updated>2013-06-02T00:00:00+08:00</updated>
+   <updated>2013-06-02T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2013/06/bitcoin-economic-research-5</id>
    <content type="html">&lt;p&gt;我们在上一篇文章“货币的非国家化”中提到过，最终那些最好的货币不一定是靠天才设计出来的，但一定是通过竞争生存下来的，这也是哈耶克的观点，他认为优秀货币理应如此胜出。比特币虽然在某些特性上明显要比传统法币出色，但是由于局限于中心化的交易所，不断受到威胁，苦于无法与传统法币自由竞争。于是似乎受到某种感召，&lt;a href=&quot;https://ripple.com/&quot;&gt;Ripple&lt;/a&gt;出现了，带着蓬勃的野心，伺机颠覆传统的金融系统并创造金融货币的自由市场。Ripple的目标，不仅仅是货币。&lt;/p&gt;
 
@@ -78,7 +78,7 @@
  <entry>
    <title>Bitcoin经济研究系列文章四, 货币的非国家化-货币价值稳定重要性</title>
    <link href="http://hackfisher.github.com/blog/2013/04/bitcoin-economic-research-4"/>
-   <updated>2013-04-20T00:00:00+08:00</updated>
+   <updated>2013-04-20T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2013/04/bitcoin-economic-research-4</id>
    <content type="html">&lt;p&gt;这个月的比特币行情就像是过山车，先是像发射火箭似的垂直上升到历史高位$266，然后因为交易所被攻击以及市场恐慌，下挫到$50，直到最近的回升，不可谓不惊心动魄。但是比特币的这种价格的剧烈波动，并不利于用于市场交易，对比特币的发展来说并非是件好事。&lt;/p&gt;
 
@@ -113,7 +113,7 @@
  <entry>
    <title>Bitcoin经济研究系列文章三，交易零手续费下面的炒作模型</title>
    <link href="http://hackfisher.github.com/blog/2013/03/bitcoin-economic-research-3"/>
-   <updated>2013-03-30T00:00:00+08:00</updated>
+   <updated>2013-03-30T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2013/03/bitcoin-economic-research-3</id>
    <content type="html">&lt;p&gt;近日BTC的市场价格已经突破$90，达到历史新高点。投资者普遍认为市场很可能存在庄家进行炒作，尤其是经历了3月23日，也就是上个星期六下午市场无缘由的大幅波动之后，很多人都认为这是庄家的一次炒作，先是大幅下挫，抄底后又大幅上扬。&lt;/p&gt;
 
@@ -161,7 +161,7 @@
  <entry>
    <title>Bitcoin经济研究系列文章二，有关风险</title>
    <link href="http://hackfisher.github.com/blog/2013/03/bitcoin-economic-research-2"/>
-   <updated>2013-03-20T00:00:00+08:00</updated>
+   <updated>2013-03-20T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2013/03/bitcoin-economic-research-2</id>
    <content type="html">&lt;p&gt;Bitcoin无疑是当前最具挑战性的一种货币，与当前的法定货币完全处于不同的系统之中。今天Bitcoin的Mt-gox价格已经涨到了$60左右，伴随着的是Bitcoin的各种风险。已经发生的，或未发生的，外部的威胁，内在设计的缺陷，都有可能对比特币经济造成严重打击。&lt;/p&gt;
 
@@ -242,7 +242,7 @@
 &lt;p&gt;政府的态度现在还很难说，有很大的可能，政府会很不喜欢比特币，尤其是大政府。下面是一些理由。&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;比特币网络对传统的货币体制构成威胁和驱逐，而政府恰恰是传统法定货币体制的最大收益者。 虽然我认为很大程度上两者会共存，但是信息充分的自由市场中，优币是会驱逐劣币的。Gresham's Law的所谓&lt;a href=&quot;http://baike.baidu.com/view/469869.htm&quot;&gt;劣币驱逐良币&lt;/a&gt;的理论是没有道理的，这个以后可能会做解释。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;比特币网络对传统的货币体制构成威胁和驱逐，而政府恰恰是传统法定货币体制的最大收益者。 虽然我认为很大程度上两者会共存，但是信息充分的自由市场中，优币是会驱逐劣币的。Gresham&#39;s Law的所谓&lt;a href=&quot;http://baike.baidu.com/view/469869.htm&quot;&gt;劣币驱逐良币&lt;/a&gt;的理论是没有道理的，这个以后可能会做解释。&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;比特币的匿名性，导致政府不喜欢，容易被用于非法交易中。&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;比特币是P2P的，所以政府很难征税，而税收是政府的财务来源。&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;很多政府存在汇率管制，并且法定货币是很多国家进行经济调控的手段。&lt;/p&gt;&lt;/li&gt;
@@ -269,7 +269,7 @@
  <entry>
    <title>Bitcoin经济研究系列文章一，比特币介绍</title>
    <link href="http://hackfisher.github.com/blog/2013/03/bitcoin-economic-research-1"/>
-   <updated>2013-03-14T00:00:00+08:00</updated>
+   <updated>2013-03-14T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2013/03/bitcoin-economic-research-1</id>
    <content type="html">&lt;p&gt;Bitcoin，中文比特币，是一个天才的想法，一种新型的电子货币，区别于QQ币或人民币，比特币是有史以来第一种去中心化的货币，不能被任何一个政府或组织控制。Bitcoin也是一个&lt;a href=&quot;https://github.com/bitcoin/&quot;&gt;开源项目&lt;/a&gt;，在GitHub上你可以找到它的源代码，目前被超过10万人使用，并且出现了很多接受比特币支付的服务，已经有一定的影响力。世界各地的人们每天使用比特币进行价值几十万美元的交易，没有中间人，没有信用卡公司，一种刚刚兴起的从未有过的货币。&lt;/p&gt;
 
@@ -294,7 +294,7 @@
  <entry>
    <title>初识Arduino</title>
    <link href="http://hackfisher.github.com/blog/2013/01/first-meet-arduino"/>
-   <updated>2013-01-01T00:00:00+08:00</updated>
+   <updated>2013-01-01T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2013/01/first-meet-arduino</id>
    <content type="html">&lt;p&gt;偶然的机会看到公司有俱乐部在玩机器人，感觉很有意思，简单看了一下是用Arduino搭建开发的，回来就查询了一下资料，发现是个好东西，开源硬件，又可以十分方便的将各种传感器的输入输出集成起来。感觉最近硬件社区火热了不少，也许是受到移动互联网的影响，国外的Apple，国内的小米，大家似乎都开始软件硬件一起上，因为硬件，软件系统会让人耳目一新不少。&lt;/p&gt;
 
@@ -321,7 +321,7 @@
  <entry>
    <title>开发微信公众平台第三方自定义接口——火星人</title>
    <link href="http://hackfisher.github.com/blog/2012/11/weixin-mars-robot"/>
-   <updated>2012-11-25T00:00:00+08:00</updated>
+   <updated>2012-11-25T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2012/11/weixin-mars-robot</id>
    <content type="html">&lt;p&gt;周末无聊，&lt;a href=&quot;http://www.36kr.com/p/171907.html&quot;&gt;36kr&lt;/a&gt;上看到&lt;a href=&quot;http://mp.weixin.qq.com/&quot;&gt;微信公众平台&lt;/a&gt;刚推出了第三方API，所以想利用微信的API写点好玩的东西。早先曾用python给之前的公司写过一个Gtalk的订餐机器人，同事们都觉得很好玩。这次我把这个微信机器人取名为“火星人”，够火星吧~&lt;/p&gt;
 
@@ -338,17 +338,15 @@
  <entry>
    <title>GUI开发的趋势变化</title>
    <link href="http://hackfisher.github.com/blog/2012/10/Trend-of-gui-devlopment"/>
-   <updated>2012-10-19T00:00:00+08:00</updated>
+   <updated>2012-10-19T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2012/10/Trend-of-gui-devlopment</id>
    <content type="html">&lt;p&gt;感觉GUI开发的一个趋势之一就是XML可扩展标记(Flex, eclipse e4, Apache Pivot, Web开发(HTML)，Android手机开发等等)，现在开发App程序，和开发Web程序，已经没有太大的区别
 优点是效率高，可读性也好，但是Swing在这方面就差了很多，要写很多代码，虽然我们在这方面做了很多封装，效率有所改善，但是做的还不够好。&lt;/p&gt;
 
 &lt;p&gt;高质量代码的一个特征就是简洁，可读性好，有时候为了达到这一点，甚至“笨”一点也没关系。&lt;/p&gt;
 
-&lt;p&gt;有一个故事可能大家都知道，是这么说的：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;“唐代的诗人白居易做诗，力求通俗易懂，明白晓畅。据说他每写一诗，必对家中老妪读之，老太太能理解的就抄录，不明白的就改写。”
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;有一个故事可能大家都知道，是这么说的：
+    “唐代的诗人白居易做诗，力求通俗易懂，明白晓畅。据说他每写一诗，必对家中老妪读之，老太太能理解的就抄录，不明白的就改写。”&lt;/p&gt;
 
 &lt;p&gt;高质量的代码也应该这样，每写一段程序，都应该尽力达到这样一种要求，只要已经过了英语四级的人都应该能读懂。&lt;/p&gt;
 
@@ -359,7 +357,7 @@
  <entry>
    <title>比较QQ和Excel兼容性处理的区别：数据在哪里很关键</title>
    <link href="http://hackfisher.github.com/blog/2012/10/Compare-qq-excel-compatibility"/>
-   <updated>2012-10-15T00:00:00+08:00</updated>
+   <updated>2012-10-15T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2012/10/Compare-qq-excel-compatibility</id>
    <content type="html">&lt;h1&gt;前言&lt;/h1&gt;
 
@@ -384,7 +382,7 @@
  <entry>
    <title>为什么不在家办公？</title>
    <link href="http://hackfisher.github.com/blog/2012/09/Why-not-work-at-home"/>
-   <updated>2012-09-28T00:00:00+08:00</updated>
+   <updated>2012-09-28T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2012/09/Why-not-work-at-home</id>
    <content type="html">&lt;p&gt;我每天早上坐地铁一个小时到公司，下班回家也是一个小时，也就是说，一天24小时中，有两个小时会花在路上，是上班时间的四分之一。在中国像我这样的上班族，绝对是一个庞大的数字。&lt;/p&gt;
 
@@ -443,7 +441,7 @@
  <entry>
    <title>给Raspberry Pi打印一个盒子</title>
    <link href="http://hackfisher.github.com/blog/2012/08/RaspberryPi-Print-out-Case"/>
-   <updated>2012-08-25T00:00:00+08:00</updated>
+   <updated>2012-08-25T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2012/08/RaspberryPi-Print-out-Case</id>
    <content type="html">&lt;p&gt;Raspberry Pi到手后，在摆弄的过程中，发现电路板很容易扎手，又担心把它给弄坏了，所以一直琢磨着怎么给它制作一个盒子。在网上搜了一遍，发现竟然有用&lt;a href=&quot;http://www.infzm.com/content/79453&quot;&gt;3D打印机&lt;/a&gt;就可以根据软件3D模型，给Raspberry Pi打印出一个盒子，国外有人已经这么做了。如果你有一台&lt;a href=&quot;http://www.mbot3d.cn/&quot;&gt;3D打印机&lt;/a&gt;，你甚至可以在家就&lt;a href=&quot;http://www.geek.com/articles/chips/raspberry-pi-gets-a-case-you-can-download-and-3d-print-2012035/&quot;&gt;下载和3D打印&lt;/a&gt;出来这个盒子，也有人打印出来&lt;a href=&quot;https://www.modmypi.com/shop/raspberry-pi-cases&quot;&gt;出售&lt;/a&gt;这些盒子。 可惜现在个人3D打印机的价格还是太贵了点，家里暂时也没有3D打印机，我只好另寻他法。&lt;/p&gt;
 
@@ -474,7 +472,7 @@
  <entry>
    <title>Raspberry Pi第一印象</title>
    <link href="http://hackfisher.github.com/blog/2012/08/RaspberryPI-first-impress"/>
-   <updated>2012-08-24T00:00:00+08:00</updated>
+   <updated>2012-08-24T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2012/08/RaspberryPI-first-impress</id>
    <content type="html">&lt;p&gt;现在移动互联网正处在大爆发的时候，各种iphone和Android智能手机充斥大街，对于IT宅男来说，仅仅知道如何开发移动应用已经无法满足他们的好奇心了，他们还关心一个移动终端是如何被造出来的，除了手机之外是否还存在其他的可能性。&lt;/p&gt;
 
@@ -498,21 +496,21 @@
  <entry>
    <title>求两个整数数组交集的更快算法</title>
    <link href="http://hackfisher.github.com/blog/2012/05/algorithm-about-intersect-of-two-arrays"/>
-   <updated>2012-05-15T00:00:00+08:00</updated>
+   <updated>2012-05-15T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2012/05/algorithm-about-intersect-of-two-arrays</id>
    <content type="html">&lt;p&gt;今天在工作中遇到的一个问题，求两个整数数组的交集。一种方案是对其中一个排序，然后对另外一个数组循环，在已经排好序的数组中binarySearch，如果存在，就加到结果集中。下面给出另一种实现，感觉跟归并排序里的思想有点类似：&lt;/p&gt;
 
-&lt;script src='https://gist.github.com/2698628.js?file=ArrayIntersect.java'&gt;&lt;/script&gt;
+&lt;script src=&#39;https://gist.github.com/2698628.js?file=ArrayIntersect.java&#39;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;You are being &amp;lt;a href=&amp;quot;https://gist.github.com/HackFisher/2698628/raw/ArrayIntersect.java&amp;quot;&amp;gt;redirected&amp;lt;/a&amp;gt;.&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/p&gt;
+&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/p&gt;
 </content>
  </entry>
  
  <entry>
    <title>测试思考系列[6]：测试环境和配置管理自动化</title>
    <link href="http://hackfisher.github.com/blog/2012/04/thinking-in-test-environment-and-config-automation"/>
-   <updated>2012-04-17T00:00:00+08:00</updated>
+   <updated>2012-04-17T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2012/04/thinking-in-test-environment-and-config-automation</id>
    <content type="html">&lt;p&gt;不同角色之间的划分往往有助于在角色的冲突中将问题暴露，实现透明，最终改进和保证质量。任何的软件开发团队都离不开两个基本角色：开发与测试。你可以没有项目经理，可以没有架构师，也可以没有设计师；但是不能没有开发，否则没有人可以帮你实现产品；也不能没有测试，否则没有人可以决定你的产品是否能够交付。这就好像你往杯子里面倒水必须要用眼睛看着，没有眼睛反馈的信息，你永远不知道何时该停下来，也不知道停在那里；我们不希望水太少，更不希望水溢出来。眼睛与手的反馈循环就是我们实现倒水这一动作高质量的必要系统，而开发和测试的有效循环就是我们实现高质量软件的必须环节。&lt;/p&gt;
 
@@ -576,7 +574,7 @@
  <entry>
    <title>测试思考系列[5]：非功能性测试</title>
    <link href="http://hackfisher.github.com/blog/2012/04/thinking-in-test-non-functional-testing"/>
-   <updated>2012-04-06T00:00:00+08:00</updated>
+   <updated>2012-04-06T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2012/04/thinking-in-test-non-functional-testing</id>
    <content type="html">&lt;p&gt;非功能性测试是针对非功能性需求来说的。所谓&lt;a href=&quot;http://www.51testing.com/html/90/n-79290.html&quot;&gt;非功能性需求&lt;/a&gt;，是指软件产品为满足用户业务需求而必须具有且除功能需求以外的特性。软件产品的非功能性需求包括系统的性能、可靠性、可维护性、可扩充性和对技术和对业务的适应性等。下面对其中的某些指标加以说明。在这里可以看到非功能性需求涉及的范围很广，软件产品本身不是孤立存在的，还涉及到诸多外在环境的影响。非功能性需求必须考虑软件既要可用，又要易用。这篇文章主要介绍在非功能性方面的一些思考和实践，分为性能测试、兼容性测试、安全性测试、易用可用性测试。&lt;/p&gt;
 
@@ -606,7 +604,7 @@
 
 &lt;p&gt;兼容性测试的关键点在于分清楚设计成兼容和设计成不兼容，这个是测试人员主要关注的点。在有兼容性报告之前，用户经常会发现一个功能不能用了，以为是BUG，其实是设计成不兼容的，又没有相应的文档告知。&lt;/p&gt;
 
-&lt;p&gt;就像程序员之间经常流传的一个笑话一样：It's not a bug, it's a feature. 感觉上，像是测试人员给设计人员背了黑锅，明明是设计的垃圾，导致增增减减修修补补，反正设计成不兼容到最后都反馈不到设计人员头上，都认为是测试人员的问题。但实际上，测试人员本身没有责任吗，可不可以做的更多使情况往更好的方向发展？ 其实测试只需要将反馈流弥补通，将不兼容的后果反馈给设计人员，产品设计也可以从用户身上学到更多，自然会对兼容性问题更谨慎一点，而测试本身通过兼容性报告也对产品发布的影响有了更多了解，还可以顺带帮文档把升级指南给做了。采用兼容性报告前后，对比各种兼容性问题造成的影响来看，兼容性报告效果明显。&lt;/p&gt;
+&lt;p&gt;就像程序员之间经常流传的一个笑话一样：It&#39;s not a bug, it&#39;s a feature. 感觉上，像是测试人员给设计人员背了黑锅，明明是设计的垃圾，导致增增减减修修补补，反正设计成不兼容到最后都反馈不到设计人员头上，都认为是测试人员的问题。但实际上，测试人员本身没有责任吗，可不可以做的更多使情况往更好的方向发展？ 其实测试只需要将反馈流弥补通，将不兼容的后果反馈给设计人员，产品设计也可以从用户身上学到更多，自然会对兼容性问题更谨慎一点，而测试本身通过兼容性报告也对产品发布的影响有了更多了解，还可以顺带帮文档把升级指南给做了。采用兼容性报告前后，对比各种兼容性问题造成的影响来看，兼容性报告效果明显。&lt;/p&gt;
 
 &lt;p&gt;与兼容性相关的就是发布的版本号，兼容性可能导致的一个问题在软件管理中叫做&lt;a href=&quot;http://en.wikipedia.org/wiki/Dependency_hell&quot;&gt;dependency hell&lt;/a&gt;，随着系统越来越大，越来越复杂，这个问题会越来越严重。于是有人想出了解决办法，通过规范版本号，叫做&lt;a href=&quot;http://semver.org/&quot;&gt;Semantic Versioning&lt;/a&gt;。作者&lt;a href=&quot;http://tom.preston-werner.com/&quot;&gt;preston-werner&lt;/a&gt;是github.com的创始人之一。&lt;/p&gt;
 
@@ -639,7 +637,7 @@
  <entry>
    <title>Gist Tag For Jekyll, 将Gist和Jekyll集成起来</title>
    <link href="http://hackfisher.github.com/blog/2012/03/gist-tag-for-jekyll"/>
-   <updated>2012-03-31T00:00:00+08:00</updated>
+   <updated>2012-03-31T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2012/03/gist-tag-for-jekyll</id>
    <content type="html">&lt;p&gt;GitHub有一个很好的功能&lt;a href=&quot;https://gist.github.com/&quot;&gt;Gist&lt;/a&gt;，可以收集和分享代码片段。自己写博客的时候也经常会需要在博客中嵌入代码片段，于是在想是否可以将这两个结合起来。&lt;/p&gt;
 
@@ -660,17 +658,17 @@
 
 &lt;p&gt;下面的代码片段是插件的内容，也是我用这个办法，Gist 和 Jekyll集成的效果:&lt;/p&gt;
 
-&lt;script src='https://gist.github.com/2258459.js?file=gist_tag.rb'&gt;&lt;/script&gt;
+&lt;script src=&#39;https://gist.github.com/2258459.js?file=gist_tag.rb&#39;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;You are being &amp;lt;a href=&amp;quot;https://gist.github.com/HackFisher/2258459/raw/gist_tag.rb&amp;quot;&amp;gt;redirected&amp;lt;/a&amp;gt;.&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/p&gt;
+&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/p&gt;
 </content>
  </entry>
  
  <entry>
    <title>测试思考系列[4]：测试自动化</title>
    <link href="http://hackfisher.github.com/blog/2012/03/thinking-in-test-automatization"/>
-   <updated>2012-03-30T00:00:00+08:00</updated>
+   <updated>2012-03-30T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2012/03/thinking-in-test-automatization</id>
    <content type="html">&lt;p&gt;测试自动化是把以人为驱动的测试行为转化为机器执行的一种过程。通常，测试用例按照执行对象分为手动测试和自动化测试。手动测试往往面临人力消耗巨大，测试效率很低的问题。而自动化测试便是为了解决这些问题提出的概念。&lt;/p&gt;
 
@@ -727,7 +725,7 @@
  <entry>
    <title>使用Jekyll将博客从WordPress迁移至GitHub</title>
    <link href="http://hackfisher.github.com/blog/2012/03/blog-migrate-to-github"/>
-   <updated>2012-03-29T00:00:00+08:00</updated>
+   <updated>2012-03-29T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2012/03/blog-migrate-to-github</id>
    <content type="html">&lt;p&gt;Jekyll是一个使用Ruby编写的静态站点生成工具，使用Liquid模板渲染引擎，支持Markdown和Textile标记语言，并且可以为所有以 .html、.markdown、.textile扩展名结尾的件使用YAML配置，内置语法高亮功能。而Github的Pages服务可以为每个Github主机上的仓库提供静态页面服务，并且Pages服务支持Jekyll。因为Github Pages有两种Pages，分别是用户页面和项目页面，所以我们可以使用用户页面来创建自己的Blog。&lt;/p&gt;
 
@@ -769,7 +767,7 @@ $ git push origin master
  <entry>
    <title>测试思考系列[3]：回归测试</title>
    <link href="http://hackfisher.github.com/blog/2012/03/thinking-in-test-regression-test"/>
-   <updated>2012-03-23T00:00:00+08:00</updated>
+   <updated>2012-03-23T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2012/03/thinking-in-test-regression-test</id>
    <content type="html">&lt;strong&gt;&lt;a title=&quot;回归测试&quot; href=&quot;http://baike.baidu.com/view/106720.htm&quot; target=&quot;_blank&quot;&gt;回归测试&lt;/a&gt;&lt;/strong&gt;在百度百科上面的描述感觉还蛮准确，引用如下：
 &lt;blockquote&gt;回归测试是指修改了旧代码后，重新进行测试以确认修改没有引入新的错误或导致其他代码产生错误。自动回归测试将大幅降低系统测试、维护升级等阶段的成本。回归测试作为软件生命周期的一个组成部分，在整个软件测试过程中占有很大的工作量比重，软件开发的各个阶段都会进行多次回归测试。在渐进和快速迭代开发中，新版本的连续发布使回归测试进行的更加频繁，而在极端编程方法中，更是要求每天都进行若干次回归测试。因此，通过选择正确的回归测试策略来改进回归测试的效率和有效性是非常有意义的。&lt;/blockquote&gt;
@@ -806,7 +804,7 @@ $ git push origin master
  <entry>
    <title>测试思考系列[2]：提交测试</title>
    <link href="http://hackfisher.github.com/blog/2012/03/thinking-in-test-commit-test"/>
-   <updated>2012-03-19T00:00:00+08:00</updated>
+   <updated>2012-03-19T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2012/03/thinking-in-test-commit-test</id>
    <content type="html">&amp;nbsp;
 
@@ -910,7 +908,7 @@ Alpha场所是一个地方，里面有一堆东西，常见的包括Alpha安装�
  <entry>
    <title>测试思考系列[1]：往持续交付的方向努力</title>
    <link href="http://hackfisher.github.com/blog/2012/03/thinking-in-test-ci"/>
-   <updated>2012-03-19T00:00:00+08:00</updated>
+   <updated>2012-03-19T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2012/03/thinking-in-test-ci</id>
    <content type="html">测试应该朝什么方向努力，怎样做才能避免陷入泥潭? 产品不稳定的原因，粗略看上去，似乎是因为测试时间不够，测试不充分导致的，但是深入进去探讨会发现没有那么简单。这一篇文章就是探讨测试应该朝着什么目标去努力，而我在这半年的实践中选择的是持续交付的方向，下面就介绍介绍持续交付。
 
@@ -955,7 +953,7 @@ Alpha场所是一个地方，里面有一堆东西，常见的包括Alpha安装�
  <entry>
    <title>梅花山·南京，三月十七号二零一二</title>
    <link href="http://hackfisher.github.com/blog/2012/03/plum-blossom-hill"/>
-   <updated>2012-03-19T00:00:00+08:00</updated>
+   <updated>2012-03-19T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2012/03/plum-blossom-hill</id>
    <content type="html">&lt;a href=&quot;/uploads/2012/03/red.png&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-326&quot; title=&quot;red&quot; src=&quot;/uploads/2012/03/red.png&quot; alt=&quot;&quot; width=&quot;991&quot; height=&quot;502&quot; /&gt;&lt;/a&gt;
 
@@ -968,7 +966,7 @@ Alpha场所是一个地方，里面有一堆东西，常见的包括Alpha安装�
  <entry>
    <title>思考测试系列[0]: 概述</title>
    <link href="http://hackfisher.github.com/blog/2012/03/thinking-in-test-summary"/>
-   <updated>2012-03-12T00:00:00+08:00</updated>
+   <updated>2012-03-12T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2012/03/thinking-in-test-summary</id>
    <content type="html">从去年七月份开始做测试到现在，做了很多探索，实践，和思考，公司的新产品刚刚发布，是机会该将这段实践对测试的思考整理一下了，为未来的测试工作做好更深入的准备。
 
@@ -999,9 +997,9 @@ Alpha场所是一个地方，里面有一堆东西，常见的包括Alpha安装�
  </entry>
  
  <entry>
-   <title>上海, Saturday, November 26,2011</title>
+   <title>ä¸æµ·, Saturday, November 26,2011</title>
    <link href="http://hackfisher.github.com/blog/2011/12/shanghai20111126"/>
-   <updated>2011-12-03T00:00:00+08:00</updated>
+   <updated>2011-12-03T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2011/12/shanghai20111126</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/uploads/2011/12/bridge.jpg&quot; alt=&quot;bridge&quot; /&gt;
 &lt;img src=&quot;/uploads/2011/12/cat.jpg&quot; alt=&quot;cat&quot; /&gt;
@@ -1018,7 +1016,7 @@ Alpha场所是一个地方，里面有一堆东西，常见的包括Alpha安装�
  <entry>
    <title>Code Snippet 模板模式</title>
    <link href="http://hackfisher.github.com/blog/2011/11/codesnippet"/>
-   <updated>2011-11-20T00:00:00+08:00</updated>
+   <updated>2011-11-20T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2011/11/codesnippet</id>
    <content type="html">&lt;pre escaped=&quot;true&quot; lang=&quot;java&quot; line=&quot;1&quot;&gt;// DAOTemplate.java:
 public static execute(Action action) {
@@ -1048,7 +1046,7 @@ DAOTemplate.execute(new Action() {
  <entry>
    <title>乡土履痕</title>
    <link href="http://hackfisher.github.com/blog/2011/10/lost-land"/>
-   <updated>2011-10-31T00:00:00+08:00</updated>
+   <updated>2011-10-31T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2011/10/lost-land</id>
    <content type="html">小时候在家，父母基本上不让我干活，就是宁可让我看电视玩电脑，也不让我干活。道理很简单，他们这辈子过的太辛苦，绝对不想让我再重复他们走过的老路了。但是最近回家，虽然也会偷懒，但是或多或少，都会帮忙干一些农活。不仅因为长大的原因，还是因为最近渐渐意识到一点，我对小时候长大的这片土地其实是非常陌生的，对这片土地上发生的事的越来越陌生，所以想熟悉熟悉那些我过去未曾打算了解的东西。
 
@@ -1067,7 +1065,7 @@ DAOTemplate.execute(new Action() {
  <entry>
    <title>收养了一只小猫</title>
    <link href="http://hackfisher.github.com/blog/2011/08/little-cat"/>
-   <updated>2011-08-21T00:00:00+08:00</updated>
+   <updated>2011-08-21T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2011/08/little-cat</id>
    <content type="html">上周末逛街时，一直跟在我们后面，于是就收养了它，这只猫很喜欢跟人呆在一起。
 
@@ -1078,7 +1076,7 @@ DAOTemplate.execute(new Action() {
  <entry>
    <title>开源ETL工具和商业ETL工具比较(译文)</title>
    <link href="http://hackfisher.github.com/blog/2011/07/open-source-etl-compare-commencial-etl-tool-translate"/>
-   <updated>2011-07-07T00:00:00+08:00</updated>
+   <updated>2011-07-07T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2011/07/open-source-etl-compare-commencial-etl-tool-translate</id>
    <content type="html">因为我对开源ETL工具也不太了解，正好最近再做这方面的研究，发现了这篇文章概括的还蛮仔细，就翻译过来了，能对现有的开源ETL工具有个初步了解。因为文章好像是08年的，可能已经过时了，以为已经过去快3年了，世事发展变化很快。
 
@@ -1209,7 +1207,7 @@ Infomatica真的是一个非常好的企业级ETL套件，但是非常大且昂�
  <entry>
    <title>JDK1.4下面如何实现Java Source动态编译及其应用</title>
    <link href="http://hackfisher.github.com/blog/2011/07/java-dynamic-compilation"/>
-   <updated>2011-07-07T00:00:00+08:00</updated>
+   <updated>2011-07-07T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2011/07/java-dynamic-compilation</id>
    <content type="html">&lt;strong&gt;什么是动态编译?&lt;/strong&gt;
 
@@ -1278,7 +1276,7 @@ class StringObject extends SimpleJavaFileObject {
 private String contents = null;
 
 public StringObject(String className, String contents) throws Exception {
-super(URI.create(&quot;string:///&quot; + className.replace('.', '/')
+super(URI.create(&quot;string:///&quot; + className.replace(&#39;.&#39;, &#39;/&#39;)
 + Kind.SOURCE.extension), Kind.SOURCE);
 this.contents = contents;
 }
@@ -1424,7 +1422,7 @@ for (int i = 0; i &amp;lt; classFiles.length; i ++) {
 ClassFile classFile = classFiles[i];
 char[] filename = classFile.fileName();
 
-CharOperation.replace(filename, '/', '.');
+CharOperation.replace(filename, &#39;/&#39;, &#39;.&#39;);
 
 classLoader.add(new String(filename), classFile);
 }
@@ -1521,7 +1519,7 @@ return super.loadClass(name, resolve);
 
 public InputStream getResourceAsStream(final String name) {
 if (name.endsWith(&quot;.class&quot;)) {
-String qualifiedClassName = name.substring(0, name.length() - &quot;.class&quot;.length()).replace('/', '.');
+String qualifiedClassName = name.substring(0, name.length() - &quot;.class&quot;.length()).replace(&#39;/&#39;, &#39;.&#39;);
 ClassFile file = (ClassFile) classes.get(qualifiedClassName);
 if (file != null) {
 return new ByteArrayInputStream(file.getBytes());
@@ -1557,7 +1555,7 @@ null);&lt;/pre&gt;
  <entry>
    <title>JNA, Java Native开发利器</title>
    <link href="http://hackfisher.github.com/blog/2011/06/jna-java-native"/>
-   <updated>2011-06-30T00:00:00+08:00</updated>
+   <updated>2011-06-30T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2011/06/jna-java-native</id>
    <content type="html">简单的来说，这篇文章就是介绍一个十分好用的Java Native开发工具, JNA。
 
@@ -1623,7 +1621,7 @@ void GetSystemTime(SYSTEMTIME result);&lt;/pre&gt;
  <entry>
    <title>ClassLoader Memory Leak: Detection and Protection in Tomcat</title>
    <link href="http://hackfisher.github.com/blog/2011/06/classloader-leak-protection-in-tomcat"/>
-   <updated>2011-06-28T00:00:00+08:00</updated>
+   <updated>2011-06-28T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2011/06/classloader-leak-protection-in-tomcat</id>
    <content type="html">最近在tomcat 6下面重新部署应用时，发现了下面一个抛错，非常困惑，所以就研究了一下。
 
@@ -1686,7 +1684,7 @@ Logger.getLogger(&quot;test&quot;).log(customLevel, &quot;doGet() called&quot;);
  <entry>
    <title>Java平台利用OpenOffice实现不同Office文件格式的转化，比如将Word转换成Html</title>
    <link href="http://hackfisher.github.com/blog/2011/06/word_to_html"/>
-   <updated>2011-06-23T00:00:00+08:00</updated>
+   <updated>2011-06-23T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2011/06/word_to_html</id>
    <content type="html">首先刚开始，除了Google, Baidu之外，还有一个重要的去处，那就是stackoverflow，现在经常可以在上面得到我想要的答案。下面是stackoverflow上面关于这个topic的讨论。
 
@@ -1712,7 +1710,7 @@ JODConverter, the Java OpenDocument Converter，是一个利用OpenOffice提供�
  <entry>
    <title>A Post Test from Android</title>
    <link href="http://hackfisher.github.com/blog/2011/06/a-post-test-from-android"/>
-   <updated>2011-06-23T00:00:00+08:00</updated>
+   <updated>2011-06-23T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2011/06/a-post-test-from-android</id>
    <content type="html">&lt;img style=&quot;display: block; margin-right: auto; margin-left: auto;&quot; src=&quot;/uploads/2011/06/wpid-t.jpg&quot; alt=&quot;image&quot; /&gt;
 
@@ -1723,9 +1721,9 @@ JODConverter, the Java OpenDocument Converter，是一个利用OpenOffice提供�
  </entry>
  
  <entry>
-   <title>Little-Endian和Big-Endian理解</title>
+   <title>Little-EndianåBig-Endiançè§£</title>
    <link href="http://hackfisher.github.com/blog/2011/06/little_endian_big_endian"/>
-   <updated>2011-06-16T00:00:00+08:00</updated>
+   <updated>2011-06-16T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2011/06/little_endian_big_endian</id>
    <content type="html">1. Big-Endian，表示“高字节在内存的低地址”。在Big-Endian的计算机中，变量的高字节在前;
 Little-Endian，表示“低字节在内存的低地址”。在Little-Endian的计算机中，变量的低字节在前
@@ -1773,7 +1771,7 @@ public final int readInt() throws IOException {
  <entry>
    <title>电子签章分析</title>
    <link href="http://hackfisher.github.com/blog/2011/06/e_signature_analysis"/>
-   <updated>2011-06-16T00:00:00+08:00</updated>
+   <updated>2011-06-16T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2011/06/e_signature_analysis</id>
    <content type="html">像任何传统的签名签章一样，电子签章必须能够起到认证的作用，同时应该能够起到法律效力的作用，满足&lt;a title=&quot;电子签章法&quot; href=&quot;http://wenku.baidu.com/view/3ceb6700bed5b9f3f90f1cf4.html&quot; target=&quot;_blank&quot;&gt;&amp;lt;电子签章法&amp;gt;&lt;/a&gt;里面规定必须满足的条件，否则没有法律效力的电子签章，即使具有签章的作用，也没有实际的意义，很难满足一般客户的需求。
 电子签章必须能够能够保证如下几点:
@@ -1800,7 +1798,7 @@ public final int readInt() throws IOException {
  <entry>
    <title>五.一上海行</title>
    <link href="http://hackfisher.github.com/blog/2011/05/tour_shanghai"/>
-   <updated>2011-05-31T00:00:00+08:00</updated>
+   <updated>2011-05-31T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2011/05/tour_shanghai</id>
    <content type="html">&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;上海城隍庙&lt;/strong&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;&lt;a href=&quot;/uploads/2011/05/IMG_1400.jpg&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-167&quot; title=&quot;城隍庙&quot; src=&quot;/uploads/2011/05/IMG_1400.jpg&quot; alt=&quot;&quot; width=&quot;1024&quot; height=&quot;768&quot; /&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -1821,7 +1819,7 @@ public final int readInt() throws IOException {
  <entry>
    <title>浙北安吉</title>
    <link href="http://hackfisher.github.com/blog/2011/05/north-of-zhejiang-anji"/>
-   <updated>2011-05-31T00:00:00+08:00</updated>
+   <updated>2011-05-31T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2011/05/north-of-zhejiang-anji</id>
    <content type="html">&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;中南百草园&lt;/strong&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;/uploads/2011/05/Grass.jpg&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-158&quot; title=&quot;中南百草园&quot; src=&quot;/uploads/2011/05/Grass.jpg&quot; alt=&quot;&quot; width=&quot;1024&quot; height=&quot;681&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -1840,7 +1838,7 @@ public final int readInt() throws IOException {
  <entry>
    <title>32位和64位，以及跨平台的那点儿事</title>
    <link href="http://hackfisher.github.com/blog/2011/03/32bit-64bit-cross-platform"/>
-   <updated>2011-03-11T00:00:00+08:00</updated>
+   <updated>2011-03-11T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2011/03/32bit-64bit-cross-platform</id>
    <content type="html">64位的CPU可以跑 32位或者64位的OS
 
@@ -1915,7 +1913,7 @@ at java.lang.System.loadLibrary(System.java:1028)
  <entry>
    <title>(? (= Clojure (+ Lisp Java-Platform)))</title>
    <link href="http://hackfisher.github.com/blog/2011/03/clojure-lisp-java-platform"/>
-   <updated>2011-03-03T00:00:00+08:00</updated>
+   <updated>2011-03-03T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2011/03/clojure-lisp-java-platform</id>
    <content type="html">仅仅经过三年的时间，Java就这样开始有点被我厌恶了，因为我最近一直在寻找一些和Java不一样的东西。模块化，可扩展性，函数编程，并行计算等等。
 
@@ -1939,7 +1937,7 @@ at java.lang.System.loadLibrary(System.java:1028)
  <entry>
    <title>【趣味Hack】Try2hack.nl第八关——phf漏洞和破解Linux密码</title>
    <link href="http://hackfisher.github.com/blog/2011/03/try2hack_nl-8th"/>
-   <updated>2011-03-01T00:00:00+08:00</updated>
+   <updated>2011-03-01T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2011/03/try2hack_nl-8th</id>
    <content type="html">第八关地址：
 
@@ -1981,7 +1979,7 @@ f. 输入用户名密码，拿到&lt;a href=&quot;http://www.try2hack.nl/levels/
  <entry>
    <title>【趣味Hack】Try2hack.nl第九关——修改Cookies</title>
    <link href="http://hackfisher.github.com/blog/2011/03/try2hack-9th"/>
-   <updated>2011-03-01T00:00:00+08:00</updated>
+   <updated>2011-03-01T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2011/03/try2hack-9th</id>
    <content type="html">第九关地址：
 
@@ -2004,7 +2002,7 @@ Keep-Alive	timeout=5, max=100&lt;/pre&gt;
 &lt;div&gt;可以在firebug中的获取附加组件中搜索&quot;cookies&quot;，可以找到很多修改cookies的插件，选择安装一个，比如&lt;a href=&quot;http://addneditcookies.mozdev.org/&quot;&gt;Add &amp;amp; Edit Cookies&lt;/a&gt;。&lt;/div&gt;
 d. 搜索try2hack.nl，将cookies中的auth值改为yes，重新登录，得到第10关的入口：
 
-&lt;em&gt;Good job! You can find Level 10 at our IRC channels. Go to #try2hack.level10 on irc.efnet.org and use 'yu0aertehbomb' as key to continue. See the &lt;a href=&quot;http://www.try2hack.nl/chat/&quot;&gt;chat&lt;/a&gt; page for more information.&lt;/em&gt;
+&lt;em&gt;Good job! You can find Level 10 at our IRC channels. Go to #try2hack.level10 on irc.efnet.org and use &#39;yu0aertehbomb&#39; as key to continue. See the &lt;a href=&quot;http://www.try2hack.nl/chat/&quot;&gt;chat&lt;/a&gt; page for more information.&lt;/em&gt;
 
 &lt;em&gt;http://www.try2hack.nl/chat/&lt;/em&gt;
 </content>
@@ -2013,7 +2011,7 @@ d. 搜索try2hack.nl，将cookies中的auth值改为yes，重新登录，得到�
  <entry>
    <title>【趣味Hack】Try2hack.nl第七关</title>
    <link href="http://hackfisher.github.com/blog/2011/02/try2hack_nl-7th"/>
-   <updated>2011-02-28T00:00:00+08:00</updated>
+   <updated>2011-02-28T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2011/02/try2hack_nl-7th</id>
    <content type="html">第七关地址：
 
@@ -2036,7 +2034,7 @@ f. google 搜索 lisp http client，找到&lt;a href=&quot;http://weitz.de/drakm
 h. 最终，使用drakma的http-request访问第七关的网址，输出返回的信息保存为html，用浏览器打开，得到&lt;a href=&quot;http://www.try2hack.nl/levels/level8-balnrg.xhtml&quot;&gt;第八关的地址&lt;/a&gt;。
 &lt;pre escaped=&quot;true&quot; lang=&quot;lisp&quot; line=&quot;1&quot;&gt;(http-request &quot;http://www.try2hack.nl/levels/level7-xfkohc.php&quot;
 :user-agent &quot;Mozilla/4.0 (compatible;MSIE 7.66;Linux)\\r\\n&quot;
-:additional-headers '((Referer . &quot;http://www.microsoft.com/ms.htm&quot;))
+:additional-headers &#39;((Referer . &quot;http://www.microsoft.com/ms.htm&quot;))
 )&lt;/pre&gt;
 </content>
  </entry>
@@ -2044,7 +2042,7 @@ h. 最终，使用drakma的http-request访问第七关的网址，输出返回�
  <entry>
    <title>doubanclaimcbd55902b8d99113</title>
    <link href="http://hackfisher.github.com/blog/2011/02/doubanclaimcbd55902b8d99113"/>
-   <updated>2011-02-16T00:00:00+08:00</updated>
+   <updated>2011-02-16T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2011/02/doubanclaimcbd55902b8d99113</id>
    <content type="html">豆瓣验证
 doubanclaim202ffef0a9699bae
@@ -2054,7 +2052,7 @@ doubanclaim202ffef0a9699bae
  <entry>
    <title>【趣味Hack】Try2hack.nl第三关</title>
    <link href="http://hackfisher.github.com/blog/2011/02/try2hack_nl-third"/>
-   <updated>2011-02-15T00:00:00+08:00</updated>
+   <updated>2011-02-15T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2011/02/try2hack_nl-third</id>
    <content type="html">第三关地址：&lt;a href=&quot;http://www.try2hack.nl/levels/level3-.xhtml&quot;&gt;http://www.try2hack.nl/levels/level3-.xhtml&lt;/a&gt;
 
@@ -2086,7 +2084,7 @@ new java.io.InputStreamReader(in, encode));
 while ((line = br.readLine()) != null) {
 // 换行
 if (sb.length() &amp;gt; 0) {
-sb.append('\n');
+sb.append(&#39;\n&#39;);
 }
 sb.append(line);
 }
@@ -2102,7 +2100,7 @@ return sb.toString();
 import java.io.BufferedReader;import java.io.IOException;import java.io.InputStream;import java.io.UnsupportedEncodingException;import java.net.URL;
 
 public class Main {
-/**	 * @param args	 */	public static void main(String[] args) throws Exception {	 String htmlContent = readResourceAsString((new URL(&quot;http://www.try2hack.nl/levels/level3-.xhtml&quot;)).openStream(), &quot;utf-8&quot;);	 System.out.println(htmlContent);	}	 public static String readResourceAsString(InputStream in, String encode) {	 StringBuffer sb = new StringBuffer();	 String line = null;	 if (in != null) {	 try { java.io.BufferedReader br = new BufferedReader(	 new java.io.InputStreamReader(in, encode));	 while ((line = br.readLine()) != null) { // 换行	 if (sb.length() &amp;gt; 0) {	 sb.append('\n');	 }	 sb.append(line);	 }	 } catch (UnsupportedEncodingException e) {	 e.printStackTrace();	 } catch (IOException e) {	 e.printStackTrace();	 }	 }
+/**	 * @param args	 */	public static void main(String[] args) throws Exception {	 String htmlContent = readResourceAsString((new URL(&quot;http://www.try2hack.nl/levels/level3-.xhtml&quot;)).openStream(), &quot;utf-8&quot;);	 System.out.println(htmlContent);	}	 public static String readResourceAsString(InputStream in, String encode) {	 StringBuffer sb = new StringBuffer();	 String line = null;	 if (in != null) {	 try { java.io.BufferedReader br = new BufferedReader(	 new java.io.InputStreamReader(in, encode));	 while ((line = br.readLine()) != null) { // 换行	 if (sb.length() &amp;gt; 0) {	 sb.append(&#39;\n&#39;);	 }	 sb.append(line);	 }	 } catch (UnsupportedEncodingException e) {	 e.printStackTrace();	 } catch (IOException e) {	 e.printStackTrace();	 }	 }
 return sb.toString();	}
 }&lt;/pre&gt;
 c. 运行这个Java程序，然后得到输出的HTML，注意输出中的脚本逻辑具有迷惑性：
@@ -2131,7 +2129,7 @@ d. 你可能意味密码就是&quot;AbCdE&quot;，但是错了，这是为了误
  <entry>
    <title>【趣味Hack】Try2hack.nl第五关和第六关</title>
    <link href="http://hackfisher.github.com/blog/2011/02/try2hack_nl-5th-6th"/>
-   <updated>2011-02-15T00:00:00+08:00</updated>
+   <updated>2011-02-15T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2011/02/try2hack_nl-5th-6th</id>
    <content type="html">&lt;strong&gt;第五关&lt;/strong&gt;地址：
 
@@ -2140,7 +2138,7 @@ http://www.try2hack.nl/levels/level5-fdvbdf.xhtml
 a. 提示下载一个Visual Basic 3.0程序，运行之提示输入用户名密码。
 
 b. 先尝试反编译之，vb3的程序似乎比vb5, vb6好反编译一些，找到一个好用的反编译软件Dodi，&lt;a href=&quot;http://download.csdn.net/down/3011468/zjx20&quot; target=&quot;_blank&quot;&gt;下载地址&lt;/a&gt;。反编译LEVEL5.EXE，得到LEVEL5.BAS代码
-&lt;pre escaped=&quot;true&quot; lang=&quot;vb&quot; line=&quot;1&quot;&gt;' LEVEL5.FRM
+&lt;pre escaped=&quot;true&quot; lang=&quot;vb&quot; line=&quot;1&quot;&gt;&#39; LEVEL5.FRM
 Option Explicit
 Sub cmdLogin_Click ()
 If  edtUsername = Mid(gc0006, 56, 1) &amp;amp; Mid(gc0006, 28, 1) &amp;amp; Mid(gc0006, 35, 1) &amp;amp; Mid(gc0006, 3, 1) &amp;amp; Mid(gc0006, 44, 1) &amp;amp; Mid(gc0006, 11, 1) &amp;amp; Mid(gc0006, 13, 1) &amp;amp; Mid(gc0006, 21, 1) Then
@@ -2154,7 +2152,7 @@ End Sub
 Sub Form_Load ()
 Me.Move (Screen.Width - Me.Width) / 2, (Screen.Height - Me.Height) / 2
 End Su
-' LEVEL5.FRMOption Explicit
+&#39; LEVEL5.FRMOption Explicit
 Sub cmdLogin_Click ()If  edtUsername = Mid(gc0006, 56, 1) &amp;amp; Mid(gc0006, 28, 1) &amp;amp; Mid(gc0006, 35, 1) &amp;amp; Mid(gc0006, 3, 1) &amp;amp; Mid(gc0006, 44, 1) &amp;amp; Mid(gc0006, 11, 1) &amp;amp; Mid(gc0006, 13, 1) &amp;amp; Mid(gc0006, 21, 1) Then  If  edtPassword = Mid(gc0006, 45, 1) &amp;amp; Mid(gc0006, 48, 1) &amp;amp; Mid(gc0006, 25, 1) &amp;amp; Mid(gc0006, 32, 1) &amp;amp; Mid(gc0006, 15, 1) &amp;amp; Mid(gc0006, 40, 1) &amp;amp; Mid(gc0006, 25, 1) &amp;amp; Mid(gc0006, 14, 1) &amp;amp; Mid(gc0006, 19, 1) Then    MsgBox &quot;Level 6 can be found at: &quot; &amp;amp; Left$(gc000A, 37) &amp;amp; Mid(gc0006, 21, 1) &amp;amp; Mid(gc0006, 14, 1) &amp;amp; Mid(gc0006, 29, 1) &amp;amp; Mid(gc0006, 32, 1) &amp;amp; Mid(gc0006, 12, 1) &amp;amp; Mid(gc0006, 14, 1) &amp;amp; Mid(gc000A, 44, 6), 0, &quot;Horray!&quot;    End  End IfEnd IfMsgBox &quot;Invalid username and/or password!&quot;, 0, &quot;ERROR!&quot;End Sub
 Sub Form_Load ()Me.Move (Screen.Width - Me.Width) / 2, (Screen.Height - Me.Height) / 2End Su&lt;/pre&gt;
 c. Mid是VB的库函数，没有VB也没关系，逻辑是一样的，用其他语言实现一下，处理的字符串在MAIN.TXT里，可得到结果。关键知道反编译成功就行了。
@@ -2165,9 +2163,9 @@ a. 打开网页，同样是VB程序，但是是Visual Basic 6.0的。先看看�
 
 b. 运行LEVEL6.EXE，随便输入用户名密码，确定，嘿，发现连接了网络读取数据，这下有招了。
 
-&lt;a href=&quot;/uploads/2011/02/level6_exe.png&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-114&quot; title=&quot;level6_exe&quot; src=&quot;/uploads/2011/02/level6_exe.png&quot; alt=&quot;&quot; width=&quot;471&quot; height=&quot;330&quot; /&gt;&lt;/a&gt;c. 还记得&lt;a href=&quot;http://www.hackfisher.info/blog/?p=68&quot; target=&quot;_blank&quot;&gt;如何在咖啡厅，网吧等公共场所要到漂亮MM的QQ号&lt;/a&gt;这篇文章了，那里用到了网络抓取工具&lt;span style=&quot;color: #333333; font-family: Georgia, 'Times New Roman', Times, serif; line-height: 26px;&quot;&gt;&lt;a style=&quot;text-decoration: underline; color: #772124;&quot; title=&quot;Wireshark&quot; href=&quot;http://www.wireshark.org/&quot; target=&quot;_blank&quot;&gt;Wireshark软件&lt;/a&gt;。这里我们也可以派上用场。首先获得try2hack.nl的ip，wireshark下设置过滤&quot;host 217.195.122.51&quot;，再测试一下，捕捉获得如下信息。&lt;/span&gt;
+&lt;a href=&quot;/uploads/2011/02/level6_exe.png&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-114&quot; title=&quot;level6_exe&quot; src=&quot;/uploads/2011/02/level6_exe.png&quot; alt=&quot;&quot; width=&quot;471&quot; height=&quot;330&quot; /&gt;&lt;/a&gt;c. 还记得&lt;a href=&quot;http://www.hackfisher.info/blog/?p=68&quot; target=&quot;_blank&quot;&gt;如何在咖啡厅，网吧等公共场所要到漂亮MM的QQ号&lt;/a&gt;这篇文章了，那里用到了网络抓取工具&lt;span style=&quot;color: #333333; font-family: Georgia, &#39;Times New Roman&#39;, Times, serif; line-height: 26px;&quot;&gt;&lt;a style=&quot;text-decoration: underline; color: #772124;&quot; title=&quot;Wireshark&quot; href=&quot;http://www.wireshark.org/&quot; target=&quot;_blank&quot;&gt;Wireshark软件&lt;/a&gt;。这里我们也可以派上用场。首先获得try2hack.nl的ip，wireshark下设置过滤&quot;host 217.195.122.51&quot;，再测试一下，捕捉获得如下信息。&lt;/span&gt;
 
-&lt;span style=&quot;color: #333333; font-family: Georgia, 'Times New Roman', Times, serif; line-height: 26px;&quot;&gt;&lt;a href=&quot;/uploads/2011/02/level6_capture.png&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-115&quot; title=&quot;level6_capture&quot; src=&quot;/uploads/2011/02/level6_capture.png&quot; alt=&quot;&quot; width=&quot;685&quot; height=&quot;379&quot; /&gt;&lt;/a&gt;d. 将level6.data下载下来，获得如下文本：&lt;/span&gt;
+&lt;span style=&quot;color: #333333; font-family: Georgia, &#39;Times New Roman&#39;, Times, serif; line-height: 26px;&quot;&gt;&lt;a href=&quot;/uploads/2011/02/level6_capture.png&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-115&quot; title=&quot;level6_capture&quot; src=&quot;/uploads/2011/02/level6_capture.png&quot; alt=&quot;&quot; width=&quot;685&quot; height=&quot;379&quot; /&gt;&lt;/a&gt;d. 将level6.data下载下来，获得如下文本：&lt;/span&gt;
 
 &amp;nbsp;
 &lt;pre escaped=&quot;true&quot; lang=&quot;php&quot; line=&quot;1&quot;&gt;(ENCRYPTION TYPE)
@@ -2187,11 +2185,11 @@ aabaa abbaa aaaba baaaa babba abbba baaba abaaa abbab abbaa baaaa aaaaa babaa ab
 babab aabab abaab abbab aabbb aaaba&lt;/pre&gt;
 &amp;nbsp;
 
-&lt;span style=&quot;font-family: Georgia, 'Times New Roman', Times, serif; color: #333333;&quot;&gt;&lt;span style=&quot;line-height: 26px;&quot;&gt;e. 简单的Google搜索&quot;B*C*N**N ENCRYPTION&quot;后(google的技巧，*通配符要加引号)，获得如下链接&lt;/span&gt;&lt;/span&gt;
+&lt;span style=&quot;font-family: Georgia, &#39;Times New Roman&#39;, Times, serif; color: #333333;&quot;&gt;&lt;span style=&quot;line-height: 26px;&quot;&gt;e. 简单的Google搜索&quot;B*C*N**N ENCRYPTION&quot;后(google的技巧，*通配符要加引号)，获得如下链接&lt;/span&gt;&lt;/span&gt;
 
-&lt;span style=&quot;font-family: Georgia, 'Times New Roman', Times, serif; color: #333333;&quot;&gt;&lt;span style=&quot;line-height: 26px;&quot;&gt;http://www.bbc.co.uk/dna/h2g2/A9837183&lt;/span&gt;&lt;/span&gt;
+&lt;span style=&quot;font-family: Georgia, &#39;Times New Roman&#39;, Times, serif; color: #333333;&quot;&gt;&lt;span style=&quot;line-height: 26px;&quot;&gt;http://www.bbc.co.uk/dna/h2g2/A9837183&lt;/span&gt;&lt;/span&gt;
 
-&lt;span style=&quot;font-family: Georgia, 'Times New Roman', Times, serif; color: #333333;&quot;&gt;&lt;span style=&quot;line-height: 26px;&quot;&gt;说明这是种编码方式，叫Baconian Cipher，写程序解码eve6.data得到用户名，密码和下一关的地址。&lt;/span&gt;&lt;/span&gt;
+&lt;span style=&quot;font-family: Georgia, &#39;Times New Roman&#39;, Times, serif; color: #333333;&quot;&gt;&lt;span style=&quot;line-height: 26px;&quot;&gt;说明这是种编码方式，叫Baconian Cipher，写程序解码eve6.data得到用户名，密码和下一关的地址。&lt;/span&gt;&lt;/span&gt;
 
 &amp;nbsp;
 &lt;pre escaped=&quot;true&quot; lang=&quot;java&quot; line=&quot;1&quot;&gt;public class BaconianCypher {
@@ -2214,7 +2212,7 @@ babab aabab abaab abbab aabbb aaaba&lt;/pre&gt;
 
 		};
 
-		char[] digits = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
+		char[] digits = { &#39;A&#39;, &#39;B&#39;, &#39;C&#39;, &#39;D&#39;, &#39;E&#39;, &#39;F&#39;, &#39;G&#39;, &#39;H&#39;, &#39;I&#39;, &#39;J&#39;, &#39;K&#39;, &#39;L&#39;, &#39;M&#39;, &#39;N&#39;, &#39;O&#39;, &#39;P&#39;, &#39;Q&#39;, &#39;R&#39;, &#39;S&#39;, &#39;T&#39;, &#39;U&#39;, &#39;V&#39;, &#39;W&#39;, &#39;X&#39;, &#39;Y&#39;, &#39;Z&#39; };
 
 		java.util.Map cypherMap = new java.util.HashMap();
 
@@ -2258,7 +2256,7 @@ babab aabab abaab abbab aabbb aaaba&lt;/pre&gt;
  <entry>
    <title>【趣味Hack】Try2hack.nl第四关</title>
    <link href="http://hackfisher.github.com/blog/2011/02/try2hack_nl-4th"/>
-   <updated>2011-02-15T00:00:00+08:00</updated>
+   <updated>2011-02-15T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2011/02/try2hack_nl-4th</id>
    <content type="html">第四关地址：
 
@@ -2293,7 +2291,7 @@ d. leve4文件地址：http://www.try2hack.nl/levels/level4，打开后就可以
  <entry>
    <title>情人节●南京●晨雪</title>
    <link href="http://hackfisher.github.com/blog/2011/02/%25e6%2583%2585%25e4%25ba%25ba%25e8%258a%2582%25e2%2597%258f%25e5%258d%2597%25e4%25ba%25ac%25e2%2597%258f%25e6%2599%25a8%25e9%259b%25aa"/>
-   <updated>2011-02-15T00:00:00+08:00</updated>
+   <updated>2011-02-15T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2011/02/%e6%83%85%e4%ba%ba%e8%8a%82%e2%97%8f%e5%8d%97%e4%ba%ac%e2%97%8f%e6%99%a8%e9%9b%aa</id>
    <content type="html">昨天是情人节，据说南京半城下雪，半城没下，有人进地铁时还阳光高照，出地铁就见到漫天大雪了。
 &lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;亭子&lt;/strong&gt;&lt;/p&gt;
@@ -2307,7 +2305,7 @@ d. leve4文件地址：http://www.try2hack.nl/levels/level4，打开后就可以
  <entry>
    <title>【趣味Hack】黑客模拟攻击闯关网站，闯前两关</title>
    <link href="http://hackfisher.github.com/blog/2011/02/try2hack-first-second"/>
-   <updated>2011-02-13T00:00:00+08:00</updated>
+   <updated>2011-02-13T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2011/02/try2hack-first-second</id>
    <content type="html">黑客模拟攻击闯关网站的地址是：http://www.try2hack.nl/。
 
@@ -2342,7 +2340,7 @@ e. 反编译一下，嗨，还真行，变成了as，得到如下.flr文件，�
  <entry>
    <title>【趣味Hack】如何在咖啡厅，网吧等公共场所要到漂亮MM的QQ号</title>
    <link href="http://hackfisher.github.com/blog/2011/02/cafe-bar-girls-qq"/>
-   <updated>2011-02-13T00:00:00+08:00</updated>
+   <updated>2011-02-13T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2011/02/cafe-bar-girls-qq</id>
    <content type="html">今天是2月14号，情人节，如果你还是光棍的话，也许想趁这个机会告别单身。如果你现在在咖啡厅、网吧等公共场所上网，或者宽松的工作场所，我也许能帮你一点忙。找到目标后第一步，就是要到对方的QQ号。
 
@@ -2369,7 +2367,7 @@ e. 反编译一下，嗨，还真行，变成了as，得到如下.flr文件，�
  <entry>
    <title>代码质量系列之六：重复代码实战案例及其分析总结</title>
    <link href="http://hackfisher.github.com/blog/2011/02/best-practice-repeat-code-and-analytics"/>
-   <updated>2011-02-09T00:00:00+08:00</updated>
+   <updated>2011-02-09T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2011/02/best-practice-repeat-code-and-analytics</id>
    <content type="html">&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;案例一&lt;/strong&gt;：使用递归去除嵌套重复代码，不难看出下面的代码一层套一层，但是代码完全一样，递归是最佳解决方案。&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;border-collapse: collapse; font-family: arial, sans-serif; font-size: 13px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;border-collapse: collapse; font-family: arial, sans-serif; font-size: 13px;&quot;&gt;if (tokenizer.hasMoreTokens()) {&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;div&gt;
@@ -2478,11 +2476,11 @@ e. 反编译一下，嗨，还真行，变成了as，得到如下.flr文件，�
  <entry>
    <title>代码质量系列之五：利用CodePro Analytic工具检测和删除重复代码——Don't Repeat Yourself</title>
    <link href="http://hackfisher.github.com/blog/2011/01/dry-codepro-analitic"/>
-   <updated>2011-01-28T00:00:00+08:00</updated>
+   <updated>2011-01-28T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2011/01/dry-codepro-analitic</id>
    <content type="html">这个系列的&lt;a title=&quot;破窗理论&quot; href=&quot;http://www.hackfisher.info/blog/?p=55&quot; target=&quot;_blank&quot;&gt;上一篇文章&lt;/a&gt;给我们介绍了破窗理论，说明代码里发现了坏味道要及时清理。而代码中最常见的坏味道就包括我们今天要说的重复代码。重复代码使得软件产品的可变更性迅速变差，复杂度增高，可读性也变差，重复的代码往往抽象度不高，说明对模型理解不够透彻。
 
-刘未鹏同学曾经在stackoverflow.com开张不久，跑上去问过一个问题，&lt;a href=&quot;http://mindhacks.cn/2009/03/09/first-principles-of-programming/&quot;&gt;编程的首要原则(s)是什么&lt;/a&gt;?结果在得到的一大堆答案中，DRY原则(Don't Repeat Yourself)位居前列。我们今天先不谈其他的编程原则，先介绍一下DRY原则的简单实践。
+刘未鹏同学曾经在stackoverflow.com开张不久，跑上去问过一个问题，&lt;a href=&quot;http://mindhacks.cn/2009/03/09/first-principles-of-programming/&quot;&gt;编程的首要原则(s)是什么&lt;/a&gt;?结果在得到的一大堆答案中，DRY原则(Don&#39;t Repeat Yourself)位居前列。我们今天先不谈其他的编程原则，先介绍一下DRY原则的简单实践。
 &lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;/uploads/2011/01/do_not_duplicate.jpg&quot; alt=&quot;do-not-duplicate.jpg&quot; width=&quot;482&quot; height=&quot;249&quot; /&gt;&lt;/p&gt;
 如果让我例举一个我最讨厌的编程行为，最先跳出我脑海的该是复制粘贴，如果不是我用CodePro的Find Similar Code功能对代码进行了检测，大概我自己都不相信有怎么多的重复代码隐藏在工程的某些旮旯角落。首先感谢Google将其免费开放出来，官方地址在&lt;a href=&quot;http://code.google.com/javadevtools/download-codepro.html&quot;&gt;http://code.google.com/javadevtools/download-codepro.html&lt;/a&gt;。
 
@@ -2526,7 +2524,7 @@ e. 反编译一下，嗨，还真行，变成了as，得到如下.flr文件，�
  <entry>
    <title>代码质量系列之四：垃圾代码清理重构的紧急性——破窗理论</title>
    <link href="http://hackfisher.github.com/blog/2011/01/urgency_broken-windows-theory"/>
-   <updated>2011-01-16T00:00:00+08:00</updated>
+   <updated>2011-01-16T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2011/01/urgency_broken-windows-theory</id>
    <content type="html">可能很多人都知道时间管理里面有个&lt;a title=&quot;时间管理四象限法&quot; href=&quot;http://baike.baidu.com/view/3916978.htm&quot; target=&quot;_blank&quot;&gt;四象限法&lt;/a&gt;，根据事件的紧急性和重要性的程度，区分为四个象限。第一象限是紧急并且重要的事情，第二象限是不紧急但是重要的事情，第三象限是紧急但不重要的事情，第四象限是既不紧急也不重要的事情。对于第一类重要且紧急的事，要马上去做。对于第二类重要而不紧急的事，要重点去做。
 
@@ -2568,7 +2566,7 @@ e. 反编译一下，嗨，还真行，变成了as，得到如下.flr文件，�
  <entry>
    <title>图片驱动的计算机技术(译文)</title>
    <link href="http://hackfisher.github.com/blog/2011/01/picture-driven-tech-translate"/>
-   <updated>2011-01-16T00:00:00+08:00</updated>
+   <updated>2011-01-16T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2011/01/picture-driven-tech-translate</id>
    <content type="html">&lt;p style=&quot;margin: 0px; padding: 0px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;widows: 2; text-transform: none; text-indent: 0px; border-collapse: separate; font: medium Simsun; white-space: normal; orphans: 2; letter-spacing: normal; color: #000000; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;&quot;&gt;这是MIT上介绍Sikuli的一篇文章&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;margin: 0px; padding: 0px;&quot;&gt;Sikuli的网站： &lt;span style=&quot;line-height: 18px; font-family: Tahoma, Helvetica, Arial, sans-serif; color: #353535;&quot;&gt;http://sikuli.org/&lt;/span&gt;&lt;/p&gt;
@@ -2587,7 +2585,7 @@ e. 反编译一下，嗨，还真行，变成了as，得到如下.flr文件，�
 &lt;p style=&quot;line-height: 1.8; margin: 0px 0px 10px; padding: 0px;&quot;&gt;&lt;span style=&quot;font-size: x-small;&quot;&gt;&lt;br style=&quot;margin: 0px; padding: 0px;&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;line-height: 1.8; margin: 0px 0px 10px; padding: 0px;&quot;&gt;&lt;span style=&quot;font-size: x-small;&quot;&gt;假设，比方说，某个Pyhon程序员想要写一个脚本，可以当她乘坐的公共汽车正好转过某个弯时，程序自动发送消息到她的手机里。如果当地交通管理局维护了一个网站，可以描述汽车标记在Google地图上行驶的过程，那么这个程序员就可以指定当汽车的标记进入某个指定的地图区域时发送消息。不是使用难以理解的术语来描述标记，或者指定地图区域边界的地理坐标，取而代之程序员可以简单的将截图加入脚本命令中：当(标记)到达(拐弯处)，给我发送消息。&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;line-height: 1.8; margin: 0px 0px 10px; padding: 0px;&quot;&gt;&lt;span style=&quot;font-size: x-small;&quot;&gt;&lt;br style=&quot;margin: 0px; padding: 0px;&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;line-height: 1.8; margin: 0px 0px 10px; padding: 0px;&quot;&gt;&lt;span style=&quot;font-size: x-small;&quot;&gt;&quot;我看到那个的时候，我想， '天哪， 你可以做到？'&quot;Allen Cypher说到，他是一位IBM的Almaden研究中心专攻人机交互的研究员。&quot;我从没想过你可以做任何像那样的事情。他们不仅做了，而且做得很好。已经是实用性的了。我想立即开始尝试那些以前不能做的事情。&quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;line-height: 1.8; margin: 0px 0px 10px; padding: 0px;&quot;&gt;&lt;span style=&quot;font-size: x-small;&quot;&gt;&quot;我看到那个的时候，我想， &#39;天哪， 你可以做到？&#39;&quot;Allen Cypher说到，他是一位IBM的Almaden研究中心专攻人机交互的研究员。&quot;我从没想过你可以做任何像那样的事情。他们不仅做了，而且做得很好。已经是实用性的了。我想立即开始尝试那些以前不能做的事情。&quot;&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;line-height: 1.8; margin: 0px 0px 10px; padding: 0px;&quot;&gt;&lt;span style=&quot;font-size: x-small;&quot;&gt;&lt;br style=&quot;margin: 0px; padding: 0px;&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;line-height: 1.8; margin: 0px 0px 10px; padding: 0px;&quot;&gt;&lt;span style=&quot;font-size: x-small;&quot;&gt;在同一篇论文中，研究者们展示了一个面向更广受众的Sikuli应用。一个计算机用户希望学习使用某个计算机程序难以理解的特征，可以借助于GUI的截屏--也就是说，用一个像Adobe Photoshop中套索工具一样的按钮--在网络上来搜索相关内容。在一个允许人们在网络上使用这个系统的实验中，研究者发现用户们用可视化图片的方法来找到有用的内容只需要花费原来一般的时间。&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;line-height: 1.8; margin: 0px 0px 10px; padding: 0px;&quot;&gt;&lt;span style=&quot;font-size: x-small;&quot;&gt;&lt;br style=&quot;margin: 0px; padding: 0px;&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
@@ -2606,7 +2604,7 @@ e. 反编译一下，嗨，还真行，变成了as，得到如下.flr文件，�
  <entry>
    <title>代码质量系列之三：盒子外面看世界，技术之外的思考——关于沟通</title>
    <link href="http://hackfisher.github.com/blog/2011/01/out-of-box-communication"/>
-   <updated>2011-01-16T00:00:00+08:00</updated>
+   <updated>2011-01-16T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2011/01/out-of-box-communication</id>
    <content type="html">&lt;span style=&quot;font-family: Arial;&quot;&gt;一直以来，很多尝试解决代码质量的思路都是从技术角度出发，也许技术出身的原因，思维一直局限于这个盒子里面。&lt;/span&gt;&lt;span style=&quot;font-family: Arial;&quot;&gt;突然想到也许代码质量这个问题的解决思路不在这个盒子里面，需要在盒子外面看这个世界。&lt;/span&gt;
 
@@ -2630,7 +2628,7 @@ e. 反编译一下，嗨，还真行，变成了as，得到如下.flr文件，�
  <entry>
    <title>2011年1月8日于南京中山陵</title>
    <link href="http://hackfisher.github.com/blog/2011/01/nanjing-sun-yat-sen"/>
-   <updated>2011-01-16T00:00:00+08:00</updated>
+   <updated>2011-01-16T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2011/01/nanjing-sun-yat-sen</id>
    <content type="html">&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;天下为公&lt;/strong&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;/uploads/2011/01/IMG_1251.jpg&quot; alt=&quot;IMG_1251.JPG&quot; width=&quot;800&quot; height=&quot;600&quot; /&gt;&lt;/p&gt;
@@ -2642,7 +2640,7 @@ e. 反编译一下，嗨，还真行，变成了as，得到如下.flr文件，�
  <entry>
    <title>代码质量系列之二：如何利用TortoiseSVN的CreatePatch功能进行CodeReview</title>
    <link href="http://hackfisher.github.com/blog/2011/01/tortoisesvn-create-patch-codereview"/>
-   <updated>2011-01-07T00:00:00+08:00</updated>
+   <updated>2011-01-07T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2011/01/tortoisesvn-create-patch-codereview</id>
    <content type="html">上次的代码质量系列之一讨论&lt;a title=&quot;什么是代码质量&quot; href=&quot;http://fisher.leehoan.com/wp/?p=46&quot; target=&quot;_blank&quot;&gt;什么是代码质量&lt;/a&gt;？
 
@@ -2685,7 +2683,7 @@ Window默认可在安装目录的bin目录下找到此工具
  <entry>
    <title>代码质量系列之一：什么是代码质量?</title>
    <link href="http://hackfisher.github.com/blog/2011/01/what-is-code-quality"/>
-   <updated>2011-01-05T00:00:00+08:00</updated>
+   <updated>2011-01-05T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2011/01/what-is-code-quality</id>
    <content type="html">最近整天讨论代码质量，到底&quot;代码质量&quot;是什么，它为什么这么重要？搞不清楚它的意义，会让我们有时候觉得这个话题不仅大，而且空洞。
 
@@ -2710,13 +2708,13 @@ Alice: 客户是上帝，你们程序员又不是。Bob: 可我曾听一个程�
  <entry>
    <title>JQuery选择器性能分析</title>
    <link href="http://hackfisher.github.com/blog/2011/01/jquery-performance-profile"/>
-   <updated>2011-01-05T00:00:00+08:00</updated>
+   <updated>2011-01-05T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2011/01/jquery-performance-profile</id>
    <content type="html">关于&lt;a title=&quot;JQuery选择器&quot; href=&quot;http://api.jquery.com/category/selectors/&quot; target=&quot;_blank&quot;&gt;JQuery选择器&lt;/a&gt;，有很多介绍其&lt;a title=&quot;性能影响&quot; href=&quot;http://www.artzstudio.com/2009/04/jquery-performance-rules/&quot; target=&quot;_blank&quot;&gt;性能影响&lt;/a&gt;的好文章，但因为一直没有遇到，知其然不知其所以然，所以一直没有十分关注，最近刚好碰到了一个严重的性能问题，经过分析，才使我意识到了JQuery选择器性能的重要性，看来东西还是要亲自实践一把，才能理解透彻。
 
 我在一个页面里面用到了多个Table，每个table里面会有很多td格子，多的时候能达到上千个。实现的是一个客户端浏览器自动重新计算公式的功能，我发现并没有要取很多格子的值，却十分的慢，特别是IE下面。我发现公式计算中有很多的冗余计算，首先我先把公式的冗余计算问题解决，FF没问题，但是IE中还是有一点顿的感觉。于是第二次，我打算profile一下，看看还有哪些可以优化的点，一般来说，当你决定进一步深入研究时，总有意外的收获在等着你。
 
-感谢firebug的概况功能，能让我通过profile获得性能初步的宝贵信息，截图如下，可以发现ID()方法和filter()方法，占用了超过70%的时间，而这两个方法都是$('#A1-0', $table)惹的祸，这样一个选择器，大概也就只需要选择不到100次，怎么这个ID方法调用却超过4万次？
+感谢firebug的概况功能，能让我通过profile获得性能初步的宝贵信息，截图如下，可以发现ID()方法和filter()方法，占用了超过70%的时间，而这两个方法都是$(&#39;#A1-0&#39;, $table)惹的祸，这样一个选择器，大概也就只需要选择不到100次，怎么这个ID方法调用却超过4万次？
 
 &lt;img src=&quot;http://hackfisher.info/uploads/2011/01/jquery_profile.png&quot; alt=&quot;点击查看原始尺寸&quot; width=&quot;640&quot; height=&quot;204&quot; border=&quot;0&quot; /&gt;
 
@@ -2732,18 +2730,18 @@ return elem.nodeType === 1 &amp;amp;&amp;amp; elem.getAttribute(&quot;id&quot;) 
 
 &lt;img src=&quot;http://hackfisher.info/uploads/2011/01/jquery_code.png&quot; alt=&quot;&quot; width=&quot;607&quot; height=&quot;271&quot; border=&quot;0&quot; /&gt;
 
-没错，当前调用是在filter方法的一个循环里，你突然就会奇怪，哎，我只不过是想在$table里面拿一个id是A1-0的td罢了，$('#A1-0', $table)直接取不就行了，为什么还要遍历560多个元素，JQuery的那些大牛不会不知道吧。你转念一想如果是你自己来实现这个功能，通过id取元素的办法只有getElementByID，但是这个方法只有document对象能调用，如果调用的化我怎么判断这个元素$table里面，很遗憾我没有找到办法。而且如果document里面有有多个id为A1-0的td，那么$('#A1-0')和document.getElementById('A1-0')只能选择第一个，我觉得这是DOM设计上的缺陷，凭啥不能有诸如$table[0].getElementById的方法？
+没错，当前调用是在filter方法的一个循环里，你突然就会奇怪，哎，我只不过是想在$table里面拿一个id是A1-0的td罢了，$(&#39;#A1-0&#39;, $table)直接取不就行了，为什么还要遍历560多个元素，JQuery的那些大牛不会不知道吧。你转念一想如果是你自己来实现这个功能，通过id取元素的办法只有getElementByID，但是这个方法只有document对象能调用，如果调用的化我怎么判断这个元素$table里面，很遗憾我没有找到办法。而且如果document里面有有多个id为A1-0的td，那么$(&#39;#A1-0&#39;)和document.getElementById(&#39;A1-0&#39;)只能选择第一个，我觉得这是DOM设计上的缺陷，凭啥不能有诸如$table[0].getElementById的方法？
 
-很可惜，没有，所以Jquery那些大牛面对$('#A1-0', $table)也只能遍历所有元素。
+很可惜，没有，所以Jquery那些大牛面对$(&#39;#A1-0&#39;, $table)也只能遍历所有元素。
 
-结论：$(&quot;#A1-0&quot;)的性能要大大好于$('#A1-0', $table)或者$('td#A1-0')，最理想的办法，保证同一个document即使多个table(比如有参数面板)，td的id也能保持唯一性，这样就可以用$(&quot;#A1-0&quot;)，而不需要担心不唯一性，导致必须用$('#A1-0', $table)。
+结论：$(&quot;#A1-0&quot;)的性能要大大好于$(&#39;#A1-0&#39;, $table)或者$(&#39;td#A1-0&#39;)，最理想的办法，保证同一个document即使多个table(比如有参数面板)，td的id也能保持唯一性，这样就可以用$(&quot;#A1-0&quot;)，而不需要担心不唯一性，导致必须用$(&#39;#A1-0&#39;, $table)。
 </content>
  </entry>
  
  <entry>
    <title>Chrome浏览器Date.setDate遇到的一个问题</title>
    <link href="http://hackfisher.github.com/blog/2011/01/chrome-date-setdate-problem"/>
-   <updated>2011-01-05T00:00:00+08:00</updated>
+   <updated>2011-01-05T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2011/01/chrome-date-setdate-problem</id>
    <content type="html">在Chrome中，下面这段代码竟然是有问题的！
 
@@ -2759,14 +2757,14 @@ var a = 0; var dat = new Date(); dat.setDate(0-a);
  <entry>
    <title>B/S交互数据时，用户自定义回调函数的一种直观方法</title>
    <link href="http://hackfisher.github.com/blog/2011/01/b_s-user-defined-callback"/>
-   <updated>2011-01-05T00:00:00+08:00</updated>
+   <updated>2011-01-05T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2011/01/b_s-user-defined-callback</id>
    <content type="html">在js中经常有各种各样的回调函数，可以让用户自定义内容，比如：
 
 1 dosomething({
 2 callback: function(res) {
 3 // content
-4 alert('hello world' + res)
+4 alert(&#39;hello world&#39; + res)
 5 }
 6 })
 
@@ -2842,14 +2840,14 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
  <entry>
    <title>Java性能优化之实时性[3]</title>
    <link href="http://hackfisher.github.com/blog/2009/05/java-performance-3"/>
-   <updated>2009-05-10T00:00:00+08:00</updated>
+   <updated>2009-05-10T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2009/05/java-performance-3</id>
    <content type="html">&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;——万事开头难&lt;/span&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
 &lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: 'Trebuchet MS'; font-weight: bold; line-height: 22px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;&lt;a href=&quot;http://yangtsefisher.blogspot.com/2009/05/test-code.html&quot;&gt;Java性能优化之实战漫谈[1]&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
+&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: &#39;Trebuchet MS&#39;; font-weight: bold; line-height: 22px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;&lt;a href=&quot;http://yangtsefisher.blogspot.com/2009/05/test-code.html&quot;&gt;Java性能优化之实战漫谈[1]&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
 &lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: 'Trebuchet MS'; font-size: 20px; font-weight: bold; line-height: 22px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;&lt;a href=&quot;http://yangtsefisher.blogspot.com/2009/05/java-performance-tuning-algorithm-2.html&quot;&gt;Java性能优化之实战算法[2]&lt;/a&gt;&lt;/span&gt;
+&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: &#39;Trebuchet MS&#39;; font-size: 20px; font-weight: bold; line-height: 22px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;&lt;a href=&quot;http://yangtsefisher.blogspot.com/2009/05/java-performance-tuning-algorithm-2.html&quot;&gt;Java性能优化之实战算法[2]&lt;/a&gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: 13px;&quot;&gt;
 &lt;/span&gt;&lt;/div&gt;
@@ -2863,13 +2861,13 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
 &lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: 22px; font-family: verdana;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: 22px; font-family: verdana;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;当然，为了解决这些问题，使得Java能够用来构建实时系统，一些规范应运而生，比如&lt;/span&gt;&lt;a href=&quot;http://www.rtsj.org/&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;RTSJ&lt;/span&gt;&lt;/a&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;。关于实时系统和RTSJ，可以参照文章：&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: 18px; font-family: 'Microsoft yahei';&quot;&gt;&lt;a href=&quot;http://www.ibm.com/developerworks/cn/java/j-rtj1/index.html&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;实时 Java: 使用 Java 语言编写实时系统&lt;/span&gt;&lt;/a&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;或者&lt;/span&gt;&lt;a href=&quot;http://blog.csdn.net/hdy007/archive/2007/05/12/1605856.aspx&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;这里的转载&lt;/span&gt;&lt;/a&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;。我这里不再赘述。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: 18px; font-family: 'Microsoft yahei';&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
+&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: 22px; font-family: verdana;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;当然，为了解决这些问题，使得Java能够用来构建实时系统，一些规范应运而生，比如&lt;/span&gt;&lt;a href=&quot;http://www.rtsj.org/&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;RTSJ&lt;/span&gt;&lt;/a&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;。关于实时系统和RTSJ，可以参照文章：&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: 18px; font-family: &#39;Microsoft yahei&#39;;&quot;&gt;&lt;a href=&quot;http://www.ibm.com/developerworks/cn/java/j-rtj1/index.html&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;实时 Java: 使用 Java 语言编写实时系统&lt;/span&gt;&lt;/a&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;或者&lt;/span&gt;&lt;a href=&quot;http://blog.csdn.net/hdy007/archive/2007/05/12/1605856.aspx&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;这里的转载&lt;/span&gt;&lt;/a&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;。我这里不再赘述。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: 18px; font-family: &#39;Microsoft yahei&#39;;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: 18px; font-family: 'Microsoft yahei';&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;我主要讲一下我碰到的一个例子: 在某些Swing应用程序中发现，做某些操作时，第一次总是比较慢，以后就好了，有时候时间相差一个数量级，导致使用起来达不到正常的用户RT需求，用户就不高兴了，这正是没有满足用户缺乏耐心的需求，可以说是软障碍。为什么第一次总是比较慢呢，第一次新建慢，第一次编辑慢，第一次弹出某个对话框也慢？这真是奇怪。我之所以出现这样的困惑，其实是因为那时候我还不理解类加载和本地代码编译的具体细节。&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: 18px; font-family: &#39;Microsoft yahei&#39;;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;我主要讲一下我碰到的一个例子: 在某些Swing应用程序中发现，做某些操作时，第一次总是比较慢，以后就好了，有时候时间相差一个数量级，导致使用起来达不到正常的用户RT需求，用户就不高兴了，这正是没有满足用户缺乏耐心的需求，可以说是软障碍。为什么第一次总是比较慢呢，第一次新建慢，第一次编辑慢，第一次弹出某个对话框也慢？这真是奇怪。我之所以出现这样的困惑，其实是因为那时候我还不理解类加载和本地代码编译的具体细节。&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
 &lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: 18px; font-family: 'Microsoft yahei';&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;在运行时，当我们想生成这个类的对象时，JVM首先检查这个类的Class对象是否已经加载。如果尚未加载，JVM就会根据类名查找.class文件，并将其载入内存。&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: 22px; font-family: verdana;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;一个与 Java 一致的 JVM 必须延迟加载类，直到程序第一次引用该类。根据被加载类所在的介质（磁盘或其他）的速度、类的大小、类加载器本身的开销，类加载的时间有所不同。加载类的延迟通常高达 10 毫秒。如果需要加载几十或几百个类，则加载时间本身就会引起很长时间的意外延迟。仔细地设计应用程序，使应用程序在启动时加载所有的类，但是这必须手动完成，因为 Java 语言规范不让 JVM 提前执行这一步。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: 18px; font-family: &#39;Microsoft yahei&#39;;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;在运行时，当我们想生成这个类的对象时，JVM首先检查这个类的Class对象是否已经加载。如果尚未加载，JVM就会根据类名查找.class文件，并将其载入内存。&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: 22px; font-family: verdana;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;一个与 Java 一致的 JVM 必须延迟加载类，直到程序第一次引用该类。根据被加载类所在的介质（磁盘或其他）的速度、类的大小、类加载器本身的开销，类加载的时间有所不同。加载类的延迟通常高达 10 毫秒。如果需要加载几十或几百个类，则加载时间本身就会引起很长时间的意外延迟。仔细地设计应用程序，使应用程序在启动时加载所有的类，但是这必须手动完成，因为 Java 语言规范不让 JVM 提前执行这一步。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: 22px; font-family: verdana;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: 22px; font-family: verdana;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;再让我们来看看编译：将 Java 代码编译为本地代码引发了与类加载类似的问题。大多数现代 JVM 开始先解释 Java 方法，然后仅将频繁执行的方法编译成本地代码。延迟编译促成了快速启动，并减少了应用程序运行期间执行的编译数量。但是使用解释后的代码执行任务和使用编译后的代码执行任务在时间上有巨大的差异。对于硬 RT 应用程序来说，由于无法预测何时发生编译，将导致很大程度的不确定性，从而无法有效地规划应用程序的行为。对于类加载，通过在应用程序启动阶段使用 &lt;/span&gt;&lt;code style=&quot;font-style: normal;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;Compiler&lt;/span&gt;&lt;/code&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt; 类以编程的方式编译方法可以减轻这一问题，但是维护这样的方法非常乏味并且容易发生错误。&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
@@ -2882,14 +2880,14 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
  <entry>
    <title>Java性能优化之实战算法[2]</title>
    <link href="http://hackfisher.github.com/blog/2009/05/java-performance-2"/>
-   <updated>2009-05-10T00:00:00+08:00</updated>
+   <updated>2009-05-10T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2009/05/java-performance-2</id>
    <content type="html">&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;——当你拿着一把锤子的时候，所有的东西看起来都像钉子。&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
 &lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;——当你看到钉子的时候，手上拿着的东西看起来就像一把锤子。&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
 &lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: 'Trebuchet MS'; font-weight: bold; line-height: 22px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;&lt;a href=&quot;http://yangtsefisher.blogspot.com/2009/05/test-code.html&quot;&gt;Java性能优化之实战漫谈[1]&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: &#39;Trebuchet MS&#39;; font-weight: bold; line-height: 22px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;&lt;a href=&quot;http://yangtsefisher.blogspot.com/2009/05/test-code.html&quot;&gt;Java性能优化之实战漫谈[1]&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;性能优化有时候很像玩一个策略游戏(免费)，对手不是计算机，程序员，设计架构，编译器，控制流，而是时间，内存，竞争条件，预算限制等等。有三个资源限制几乎所有应用都会面临：1.CPU速度和有效性2.系统内存3.磁盘I/O。
 &lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
@@ -2928,7 +2926,7 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
 &lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;原来的做法，每插入一次就调整一次为的是保证插入过程中每个记录状态都要保持一致性，这个要求太高了，所以导致了O(N^2)的高代价。真正的要求没有那么高，我们只需要开始和结束两个状态的一致性就行了，而这只需要N(O)就可以做到，这个代价就低了。这样这个瓶颈就通过算法来解决了，可以看出算法在性能优化中还是很重要的。&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: 'Trebuchet MS'; font-weight: bold; line-height: 22px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;&lt;a href=&quot;http://yangtsefisher.blogspot.com/2009/05/java-performance-tuning-realtime-3.html&quot;&gt;Java性能优化之实时性[3]&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: &#39;Trebuchet MS&#39;; font-weight: bold; line-height: 22px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;&lt;a href=&quot;http://yangtsefisher.blogspot.com/2009/05/java-performance-tuning-realtime-3.html&quot;&gt;Java性能优化之实时性[3]&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
 </content>
  </entry>
@@ -2936,7 +2934,7 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
  <entry>
    <title>Java性能优化之实战漫谈[1]</title>
    <link href="http://hackfisher.github.com/blog/2009/05/java-performence-1"/>
-   <updated>2009-05-09T00:00:00+08:00</updated>
+   <updated>2009-05-09T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2009/05/java-performence-1</id>
    <content type="html">&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;——I can feel the need, the need of speed...&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;——提前优化是万恶之源&lt;/span&gt;&lt;/div&gt;
@@ -2950,32 +2948,32 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
 &lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;border-collapse: collapse; font-family: arial;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;今天就先将两个简单的例子作为开头吧，大家轻松轻松。
 例子一：&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;pre escaped=&quot;true&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: 'courier new';&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;class A {&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: 'courier new';&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;int a_num;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: 'courier new';&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;B b;}&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
-&lt;pre escaped=&quot;true&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: 'courier new';&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;class B{&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: 'courier new';&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;int b_num;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: 'courier new';&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;A a;}&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
+&lt;pre escaped=&quot;true&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: &#39;courier new&#39;;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;class A {&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: &#39;courier new&#39;;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;int a_num;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: &#39;courier new&#39;;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;B b;}&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
+&lt;pre escaped=&quot;true&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: &#39;courier new&#39;;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;class B{&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: &#39;courier new&#39;;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;int b_num;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: &#39;courier new&#39;;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;A a;}&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
 &lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;如果改成下面这样怎么样？&lt;/span&gt;
-&lt;pre escaped=&quot;true&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: 'courier new';&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;class AB {&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: 'courier new';&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;int a_num;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: 'courier new';&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;int b_num;}&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
+&lt;pre escaped=&quot;true&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: &#39;courier new&#39;;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;class AB {&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: &#39;courier new&#39;;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;int a_num;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: &#39;courier new&#39;;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;int b_num;}&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
 &lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;某些Java应用程序当对象太多而垃圾回收器还没有来得及回收的时候，就可能会导致堆内存溢出，其实内存溢出是分为栈内存溢出和堆内存溢出的，关于堆和栈的区别，可以参考program-think的&lt;/span&gt;&lt;a href=&quot;http://program-think.blogspot.com/2009/03/java-performance-tuning-1-two-types.html&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;这篇文章&lt;/span&gt;&lt;/a&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;,讲的通俗易懂。关于上面的这个例子，就是我在实际编码中发现的一个造成内存消耗严重的一个问题，你或许还会认为上面那种写法更技术，更××。如果A的实例和B的实例个数很少的时候还好，但是如果他们的实例个数达到上百万的级别的时候，你就会思考一下是不是要换成下面这种写法了。首先你要了解怎么去计算一个对象会占多少字节的内存，然后思考为什么下面的写法会比上面的占用更少的内存？&lt;/span&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
 &lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;例子二：&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;如果你用Java写程序，那么你会怎么样把一个数组objct_array：Object[]加到一个list:java.util.List中去？&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;我并不清楚你是怎么写的，不过我却见过一种非常常用的写法：&lt;/span&gt;&lt;/div&gt;
-&lt;pre escaped=&quot;true&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: 'courier new';&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;list.addAll(java.util.Arrays.asList(objct_array))&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: 'courier new';&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
+&lt;pre escaped=&quot;true&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: &#39;courier new&#39;;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;list.addAll(java.util.Arrays.asList(objct_array))&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: &#39;courier new&#39;;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
 &lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;其实，如果不是在内核运算的地方，或者某个对性能要求很高的地方写这句话完全没有问题，但如果在某个关键的地方，比如在某个要调用极多次数的方法里写用这个方法，也许就会出现问题。在这种地方，最好还是不要偷懒，用最原始但很高效的数组来解决问题。&lt;/span&gt;
-&lt;pre escaped=&quot;true&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: 'courier new';&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;Object[] old_array = array;array = new Object[old_array.length + new_array.length];System.arraycopy(old_array, 0, array, 0, old_array.length);System.arraycopy(new_array, 0, array, old_array.lengyh, new_array.length);&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
+&lt;pre escaped=&quot;true&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: &#39;courier new&#39;;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;Object[] old_array = array;array = new Object[old_array.length + new_array.length];System.arraycopy(old_array, 0, array, 0, old_array.length);System.arraycopy(new_array, 0, array, old_array.lengyh, new_array.length);&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
 &lt;pre escaped=&quot;true&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;事实上：ce_list.addAll(java.util.Arrays.asList(ce_array));这句效率是非常慢的，它将&lt;/span&gt;&lt;/pre&gt;
 &lt;pre escaped=&quot;true&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;一个数组变成了一个list又变成一个数组又变成一个list，因为内部是这样实现的：&lt;/span&gt;&lt;/pre&gt;
-&lt;pre escaped=&quot;true&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: 'courier new';&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;public static List asList(Object[] a) {return new ArrayList(a); // 新建了一个对象，同时数组变成一个list.}public boolean addAll(Collection c) {Object[] a = c.toArray(); // 看这里, list又变成了一个数组，绕了一圈啊int numNew = a.length;ensureCapacity(size + numNew); // Increments modCountSystem.arraycopy(a, 0, elementData, size, numNew); // 这个跟修改后做的差不多size += numNew;return numNew != 0;}&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
+&lt;pre escaped=&quot;true&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: &#39;courier new&#39;;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;public static List asList(Object[] a) {return new ArrayList(a); // 新建了一个对象，同时数组变成一个list.}public boolean addAll(Collection c) {Object[] a = c.toArray(); // 看这里, list又变成了一个数组，绕了一圈啊int numNew = a.length;ensureCapacity(size + numNew); // Increments modCountSystem.arraycopy(a, 0, elementData, size, numNew); // 这个跟修改后做的差不多size += numNew;return numNew != 0;}&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
 &lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;结果证明：修改后这部分消耗的临时内存没有了，速度也变快了。&lt;/span&gt;
-&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: 'Trebuchet MS'; font-weight: bold; line-height: 22px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;&lt;a href=&quot;http://yangtsefisher.blogspot.com/2009/05/java-performance-tuning-algorithm-2.html&quot;&gt;Java性能优化之实战算法[2]&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: 'Trebuchet MS'; font-weight: bold; line-height: 22px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;&lt;a href=&quot;http://yangtsefisher.blogspot.com/2009/05/java-performance-tuning-realtime-3.html&quot;&gt;Java性能优化之实时性[3]&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: &#39;Trebuchet MS&#39;; font-weight: bold; line-height: 22px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;&lt;a href=&quot;http://yangtsefisher.blogspot.com/2009/05/java-performance-tuning-algorithm-2.html&quot;&gt;Java性能优化之实战算法[2]&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: &#39;Trebuchet MS&#39;; font-weight: bold; line-height: 22px;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;&lt;a href=&quot;http://yangtsefisher.blogspot.com/2009/05/java-performance-tuning-realtime-3.html&quot;&gt;Java性能优化之实时性[3]&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
 </content>
  </entry>
  
  <entry>
    <title>信息2.0(译文)</title>
    <link href="http://hackfisher.github.com/blog/2009/04/info2_0-translation"/>
-   <updated>2009-04-25T00:00:00+08:00</updated>
+   <updated>2009-04-25T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2009/04/info2_0-translation</id>
    <content type="html">&lt;p class=&quot;inner&quot; style=&quot;padding: 0px; margin: 5px;&quot;&gt;这篇文章的作者是印度一家公司www.InRev.org的市场总监，这是一家十分年轻的公司，刚刚成立不久，致力于数据分析。就像它的名字InRev一样，他们野心勃勃的想要参与到信息革命中的浪潮来，并在其中充当至关重要的弄潮儿。
 在作者的另外一篇博客&lt;a href=&quot;http://engineeringanalytics.blogspot.com/2009/04/analytics-industry.html&quot;&gt;Analytics Industry(分析工业)&lt;/a&gt;中曾指出在中国这样数据分析公司几乎没有，而国外这些公司已经小有规模，中国如果想要赶上信息革命的浪潮，也许应该具备更长远的眼光。&lt;/p&gt;
@@ -3009,7 +3007,7 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
  <entry>
    <title>读《少有人走的路》</title>
    <link href="http://hackfisher.github.com/blog/2009/04/read-road-less-traveled"/>
-   <updated>2009-04-06T00:00:00+08:00</updated>
+   <updated>2009-04-06T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2009/04/read-road-less-traveled</id>
    <content type="html">在谈及这本书 之前，先说说一些个人经历。本人作为一个不修边幅的80后男生，平常对穿着打扮实在不太感冒，认为浪费时间。去年回家过年，我妈认为我头发太难看，逼着我去理发，而我这个从不烫发的老实小子怀着叛逆的心理第一次去理发店烫了个稍显古怪的发型。说实话，我自己也不喜欢这个发型，回南京有空就把它修理了。重要的不是发型，而是我所想要表达的，那种渴望独立的心情。正如不久前，即将毕业时，自己和父母在关于选择人生道路时的分歧一样，我所想要表达是每个人都应该选择他自己的独一无二的道路，这是一个心智成熟的旅程，而每个人的这条道路对于其他人来说都是“少有人走的”。
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #0000ee;&quot;&gt;&lt;img id=&quot;BLOGGER_PHOTO_ID_5321590232451303330&quot; style=&quot;display: block; margin-top: 0px; margin-right: auto; margin-bottom: 10px; margin-left: auto; text-align: center; cursor: pointer; width: 225px; height: 320px;&quot; src=&quot;http://2.bp.blogspot.com/_BU0qLYlS0SQ/SdoWHxVyx6I/AAAAAAAABCM/pdQvwl1FFBY/s320/%E5%B0%91%E6%9C%89%E4%BA%BA%E8%B5%B0%E7%9A%84%E8%B7%AF.jpg&quot; alt=&quot;&quot; border=&quot;0&quot; /&gt;&lt;/span&gt;
@@ -3030,7 +3028,7 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
  <entry>
    <title>读《影响力》</title>
    <link href="http://hackfisher.github.com/blog/2009/04/read-influence"/>
-   <updated>2009-04-05T00:00:00+08:00</updated>
+   <updated>2009-04-05T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2009/04/read-influence</id>
    <content type="html">&lt;div&gt;&lt;a href=&quot;http://www.douban.com/subject/1005576/&quot;&gt;《影响力》&lt;/a&gt;是一本销售心理学的书，按道理来说，它是写来给那些销售工作者看的，但事实上，这却不是作者的本意。书的作者写这本书时恰恰是用来告诉人们，甚至帮助人们，来应付那些怀有目的让他们轻易“说是”的“影响专家”。这本书阐述了各种有意无意的利用心理武器来捕猎的技巧，它的本意是用来教会人们怎么防止被捕猎，但同时也会教会人们去怎么捕猎别人。从某种意义上来说，每个人既是猎物又是猎人。因此，这本书对于每个人的教育都是意义深刻的，精彩之极。&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #0000ee;&quot;&gt;&lt;img id=&quot;BLOGGER_PHOTO_ID_5321589834695801682&quot; style=&quot;display: block; margin-top: 0px; margin-right: auto; margin-bottom: 10px; margin-left: auto; text-align: center; cursor: pointer; width: 224px; height: 320px;&quot; src=&quot;http://2.bp.blogspot.com/_BU0qLYlS0SQ/SdoVwnlfe1I/AAAAAAAABCE/PVxT_eYhhqE/s320/%E5%BD%B1%E5%93%8D%E5%8A%9B.jpg&quot; alt=&quot;&quot; border=&quot;0&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
@@ -3044,7 +3042,7 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
  <entry>
    <title>合肥行记</title>
    <link href="http://hackfisher.github.com/blog/2009/03/travel-hefei"/>
-   <updated>2009-03-22T00:00:00+08:00</updated>
+   <updated>2009-03-22T00:00:00-04:00</updated>
    <id>http://hackfisher.github.com/blog/2009/03/travel-hefei</id>
    <content type="html">&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;最近公司派同事和我到合肥中科大去了一趟，公司事务不便详谈，谈谈对合肥这个城市的印象吧。以前对合肥的了解很少，只知道是安徽的省会，还有就是中科大的所在，这正是我们此行的目的。我们整个行程，从离开南京火车站到回到南京火车站，整个行程28小时，看看这效率..&lt;/span&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
@@ -3073,7 +3071,7 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
  <entry>
    <title>谈谈学习型组织的实践</title>
    <link href="http://hackfisher.github.com/blog/2009/03/talk-about-the-practice-of-the-learning-organization"/>
-   <updated>2009-03-07T00:00:00+08:00</updated>
+   <updated>2009-03-07T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2009/03/talk-about-the-practice-of-the-learning-organization</id>
    <content type="html">&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;学习型组织（Learning Organization），美国学者彼得·圣吉（Peter M. Senge）在《第五项修炼》（The Fifth Discipline）一书中提出此管理观念，企业应建立学习型组织，其涵义为面临变遭剧烈的外在环境，组织应力求精简、扁平化、弹性因应、终生学习、不断自我组织再造，以维持竞争力。
 &lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
@@ -3089,7 +3087,7 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;过了一段时间，觉得不行，还得写，不写leader不踏实。但是意识到了大家支持反对不一，广泛征求意见，我指出了以前形式化错误，以及参与者的不良体验。于是重新开始，规定了上面的三项(今天，想法，明天)，至于内容可以比较自由化。这次有了以前的经验，真的比以前好多了。但是还是仍然存在一些问题，导致我对这种措施的实施效果的持久性仍不太乐观。&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;可以从想法谈起。我平时属于比较活跃的人之一，想法也比较多，也比较乐于跟别人分享和沟通自己的想法，知道分享的价值所在。所以刚刚开始时，有了想法就说出来，而且顾忌比较少，对各个方面的事情都会谈谈，但是马上感觉到了一些不对劲。首先，回应的人寥寥，大家各说各的，无法形成有效的沟通。其次，有一个现象是公司里面管事的人位置比较高的人谈的比较多，但是做事的人进来比较晚的人谈的比较少，一般是寥寥带过。我属于后者，所以感觉不对劲，人们往往会根据现象来反推本质。于是对公司各个方面评头论足的就少了，而是渐渐主要谈谈自己工作的一些想法，一堆形式化的东西我写不来。于是每天，我开始谈论一堆关于编程方面经验感想啊什么的，不过这些东西公司里面也就那么几个人听的懂，所以我很怀疑这样的效果和意义，我对其他部门的细节不感兴趣，学习型组织有个要素就是——“&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: 19px; font-family: '-webkit-sans-serif';&quot;&gt;&lt;a style=&quot;text-decoration: underline; margin: 0px;&quot; title=&quot;自我超越&quot; href=&quot;http://wiki.mbalib.com/wiki/%E8%87%AA%E6%88%91%E8%B6%85%E8%B6%8A&quot;&gt;&lt;span class=&quot;Apple-style-span&quot;&gt;&lt;span class=&quot;Apple-style-span&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #cc9933;&quot;&gt;自我超越&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;（&lt;/span&gt;&lt;/span&gt;&lt;a style=&quot;text-decoration: none; margin: 0px;&quot; title=&quot;Personal Mastery&quot; href=&quot;http://wiki.mbalib.com/wiki/Personal_Mastery&quot;&gt;&lt;span class=&quot;Apple-style-span&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;Personal Mastery&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;）：个人有意愿投入工作，专精工作技巧的专业等等。而且，在别人面前谈论一些他们不懂也不需要懂得东西让我觉得自己有点&quot;自大和白痴&quot;。所以结果我发现，那些愿意分享自己想法的人，不仅没有得到什么，而且失去了不少，没有任何的激励。这个制度本身的价值就是互相矛盾的，与学习型组织互相提高，互相激励共赢的精神是违背的，付出的多收获的却少。而违背自然规律法必定会自我消亡，很可惜的是，在今天的中国，仍然有不少公司或组织的领导人还在沿袭毛时代那种狂妄自大，人定胜天的落后理念。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;可以从想法谈起。我平时属于比较活跃的人之一，想法也比较多，也比较乐于跟别人分享和沟通自己的想法，知道分享的价值所在。所以刚刚开始时，有了想法就说出来，而且顾忌比较少，对各个方面的事情都会谈谈，但是马上感觉到了一些不对劲。首先，回应的人寥寥，大家各说各的，无法形成有效的沟通。其次，有一个现象是公司里面管事的人位置比较高的人谈的比较多，但是做事的人进来比较晚的人谈的比较少，一般是寥寥带过。我属于后者，所以感觉不对劲，人们往往会根据现象来反推本质。于是对公司各个方面评头论足的就少了，而是渐渐主要谈谈自己工作的一些想法，一堆形式化的东西我写不来。于是每天，我开始谈论一堆关于编程方面经验感想啊什么的，不过这些东西公司里面也就那么几个人听的懂，所以我很怀疑这样的效果和意义，我对其他部门的细节不感兴趣，学习型组织有个要素就是——“&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: 19px; font-family: &#39;-webkit-sans-serif&#39;;&quot;&gt;&lt;a style=&quot;text-decoration: underline; margin: 0px;&quot; title=&quot;自我超越&quot; href=&quot;http://wiki.mbalib.com/wiki/%E8%87%AA%E6%88%91%E8%B6%85%E8%B6%8A&quot;&gt;&lt;span class=&quot;Apple-style-span&quot;&gt;&lt;span class=&quot;Apple-style-span&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #cc9933;&quot;&gt;自我超越&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;（&lt;/span&gt;&lt;/span&gt;&lt;a style=&quot;text-decoration: none; margin: 0px;&quot; title=&quot;Personal Mastery&quot; href=&quot;http://wiki.mbalib.com/wiki/Personal_Mastery&quot;&gt;&lt;span class=&quot;Apple-style-span&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;Personal Mastery&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;）：个人有意愿投入工作，专精工作技巧的专业等等。而且，在别人面前谈论一些他们不懂也不需要懂得东西让我觉得自己有点&quot;自大和白痴&quot;。所以结果我发现，那些愿意分享自己想法的人，不仅没有得到什么，而且失去了不少，没有任何的激励。这个制度本身的价值就是互相矛盾的，与学习型组织互相提高，互相激励共赢的精神是违背的，付出的多收获的却少。而违背自然规律法必定会自我消亡，很可惜的是，在今天的中国，仍然有不少公司或组织的领导人还在沿袭毛时代那种狂妄自大，人定胜天的落后理念。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;打个也许不恰当的比方。感觉每天这样说出自己的想法就像过去吃大锅饭一样(当然了，我没吃过，不过听父辈提起过)，大家一起吃，每个人都可以吃到，但是每个人都吃的少，每个人都吃不好，每个人提供粮食的积极性都不高(假设提供劳动力=提供粮食)；类似的，每个人大家的想法一起提，一起看，但是每个人看到的都很少，每个人接受到想法质量也不高，每个人提供想法的积极性不高。问题关键，不是积极性高不高的问题，而是这种大锅饭造成了这种格局。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
@@ -3098,7 +3096,7 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;学习型组织还有一个要素就是——&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: 19px; font-family: -webkit-sans-serif;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;团队学习（Team Learning）：团队智慧应大于个人智慧的平均值，以做出正确的组织决策，透过集体思考和分析，找出个人弱点，强化团队向心力。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: normal; font-family: Georgia;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;要想找出个人弱点，继而改掉个人的缺点，有时候靠的就是把自己撕裂，把自己的价值观暴露的在众目睽睽之下，让烈日暴晒，让雨雪吹打。其中的一条途径就是能在一个&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: normal; font-family: Georgia;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;绿色的环境中，充分的表达出自己的观点，接受各种价值观的冲击，被不断的考验。而要做到这点，最重要的也许就是勇气和绿色的环境。勇气指的是每个参与者都勇于表达自己，把自己曝光，敢于承担一定的风险；而绿色的环境值得是对于那些敢于表达自己观点的人，这个环境不会施之以相应的惩罚。充满勇气并不是目标，目标是充分的交流。勇气和环境的绿化不但可以提高表达的概率，而且可以保持表达的持续性，降低表达所需要勇气的程度。因为两者之间是相互作用的，即勇气的提高可以作用于环境使更加绿化，而环境的绿化也可以作用于勇气使更勇敢。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;那么到底是哪边出问题了呢，怎样才能解决呢？&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: 19px; font-family: '-webkit-sans-serif';&quot;&gt;&lt;span class=&quot;Apple-style-span&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;学习型组织是从组织领导人的头脑中开始的，如果要想领导建立学习型组织，在一切开始之前，领导人应该让自己变得有头脑，理解学习型组织，并能够帮助其他人获得成功，然后再开始行动。执行力很重要，但不是指“过早的执行”。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;那么到底是哪边出问题了呢，怎样才能解决呢？&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: 19px; font-family: &#39;-webkit-sans-serif&#39;;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;学习型组织是从组织领导人的头脑中开始的，如果要想领导建立学习型组织，在一切开始之前，领导人应该让自己变得有头脑，理解学习型组织，并能够帮助其他人获得成功，然后再开始行动。执行力很重要，但不是指“过早的执行”。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: 19px; font-family: -webkit-sans-serif;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;line-height: 19px; font-family: -webkit-sans-serif;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;color: #666666;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;其实如果在以前，这些想法我也许会在每天的邮件总结中发出来，但是我现在只是把它们写在私人博客中。虽然有点遗憾，不能充分的分享，但我我认为遵守自然法则是聪明的选择。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
@@ -3119,7 +3117,7 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
  <entry>
    <title>能坚持</title>
    <link href="http://hackfisher.github.com/blog/2009/02/can-persist"/>
-   <updated>2009-02-15T00:00:00+08:00</updated>
+   <updated>2009-02-15T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2009/02/can-persist</id>
    <content type="html">&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;过完年后回到工作岗位，一直提醒自己脚踏实地，做的多点，想的少点，可是写的却也变少了。&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
@@ -3149,7 +3147,7 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
  <entry>
    <title>酒、诗和女人</title>
    <link href="http://hackfisher.github.com/blog/2009/01/wine-poetry-girls"/>
-   <updated>2009-01-19T00:00:00+08:00</updated>
+   <updated>2009-01-19T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2009/01/wine-poetry-girls</id>
    <content type="html">&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;我最近读到一则关于诗人的笑话，说是让一个诗人远离尘世，去一个岛上过一辈子，让他挑选三件最喜欢的和他一同前往。诗人毫不犹豫地选了三样：诗、酒和女人。如果让他选择两样，他会放弃酒，如果让他只选一样，他会放弃诗。&lt;/span&gt;&lt;/div&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
@@ -3167,7 +3165,7 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
  <entry>
    <title>要想创新，就不要让一个人做同一个任务两次</title>
    <link href="http://hackfisher.github.com/blog/2009/01/innovation-by-do-things-times"/>
-   <updated>2009-01-15T00:00:00+08:00</updated>
+   <updated>2009-01-15T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2009/01/innovation-by-do-things-times</id>
    <content type="html">&lt;pre escaped=&quot;true&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: arial;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;今天看着我写的设计器，呆呆地凝视了好久，发现自己已经不容易想到哪些地方可以改进了，回想到刚刚碰到它的时候，感觉浑身都是毛病，觉得处处都有地方可以提高？&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
 &lt;pre escaped=&quot;true&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: arial;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;那么，是现在的设计器达到完美的状态了吗？如果我不是犯傻的话，肯定不会这么认为，更不会觉得已经达到完美的状态了。那么为什么我不像刚接触它时有那么多想法可以去改进它呢？&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;
@@ -3180,7 +3178,7 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
  <entry>
    <title>大前研一的“专业主义”</title>
    <link href="http://hackfisher.github.com/blog/2009/01/ohmae-professionalism"/>
-   <updated>2009-01-07T00:00:00+08:00</updated>
+   <updated>2009-01-07T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2009/01/ohmae-professionalism</id>
    <content type="html">&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;前段时间读管理类的书籍，收获很大，不过最近想要收收心，从而专心学习软件开发，最近发现自己不懂的东西很多，如果面面俱到，恐怕这一生都学不完的了，于是学乖了，懂得了要专注于一个方向，这样才可能深入，有所得。&lt;/span&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
@@ -3213,7 +3211,7 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
  <entry>
    <title>高敏者和高感觉寻求者</title>
    <link href="http://hackfisher.github.com/blog/2009/01/high-sensation-seekers"/>
-   <updated>2009-01-03T00:00:00+08:00</updated>
+   <updated>2009-01-03T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2009/01/high-sensation-seekers</id>
    <content type="html">&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;几天前，我偶然接触到两个新的心理学名词：“高敏者”和“高感觉寻求者”。我下意识的带着好奇心来了解相关的概念。了解完之后，很是兴奋，发现自己既是高敏者，也是高感觉寻求者，通过这两个概念，我发现自己从未这么深刻的理解自己的本性。因此，我有必要对我的读书笔记做一些总结。&lt;/span&gt;
 &lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-size: small;&quot;&gt;
@@ -3286,7 +3284,7 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
  <entry>
    <title>管理者的素质是留住人才的重要因素</title>
    <link href="http://hackfisher.github.com/blog/2008/12/management-quality-personnel"/>
-   <updated>2008-12-29T00:00:00+08:00</updated>
+   <updated>2008-12-29T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2008/12/management-quality-personnel</id>
    <content type="html">有很多创业型公司苦于寻找真正的人才，这样的人才能为公司带来正真的提升，帮助公司成长壮大。但是这些公司的管理者真的准备好了接纳这些人才吗？
 &lt;div&gt;
@@ -3299,7 +3297,7 @@ PS: createDelegate请看&lt;a href=&quot;http://www.extjs.com/learn/Manual:Utili
  <entry>
    <title>职业并不重要，重要的是事业</title>
    <link href="http://hackfisher.github.com/blog/2008/12/occupational-cause"/>
-   <updated>2008-12-09T00:00:00+08:00</updated>
+   <updated>2008-12-09T00:00:00-05:00</updated>
    <id>http://hackfisher.github.com/blog/2008/12/occupational-cause</id>
    <content type="html">&lt;div&gt;我是谁?我是做什么的？&lt;/div&gt;
 &lt;div&gt;我是Fisher，职业是Java程序员，看标题你就会猜到我是做什么的了。职业是什么并不重要，更多的时候它只是一个饭碗，衣食保障。天哪，衣食保障不重要，还有什么是重要的？且慢，我说的不重要是相对而言的，如果你的目标仅仅停留在一个职业上，那你永远也走不远，真正聪明的人懂得拿什么作为选择的依据，从这个角度上来说，依靠事业而不是职业来做出选择，显然要靠谱的多。这就是我最近由于困惑而得来的启发。人的一生中可以有很多个职业，可以在这个公司干完了去另外一家，甚至可以换到各行各业，但是事业只有一个，它是你生命中的精华，意义所在。&lt;/div&gt;
